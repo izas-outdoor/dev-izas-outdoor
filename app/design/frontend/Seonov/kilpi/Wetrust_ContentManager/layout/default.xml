@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Wetrust_ContentManager::css/jquery.mmenu.all.css"/>
+    </head>
+    <body>
+        <referenceContainer name="header-wrapper" htmlClass="header content row">
+            <container name="header.wrapper.left" htmlTag="div" htmlClass="col-xl-9 col-lg-10 col-md-8 col-8 menu-left">
+                <block class="Wetrust\ContentManager\Block\Content\Menu" name="wt.menu.mobile" template="Wetrust_ContentManager::menu/mobile.phtml" before="-">
+                    <block class="Magento\Framework\View\Element\Template" name="wt.menu.mobile.search" template="Wetrust_ContentManager::menu/mobile/search.phtml" />
+                </block>
+                <container name="header.menu" htmlTag="div" after="header.panel" htmlClass="menu-categories hidden-md-down">
+                    <block class="Wetrust\ContentManager\Block\Content\Menu" name="wt.menu" before="-" />
+                    <block class="Wetrust\ContentManager\Block\Content\Menu" name="wt.submenu" template="Wetrust_ContentManager::menu/submenu.phtml"/>
+                </container>
+            </container>
+
+            <container name="header.wrapper.middle" htmlTag="div" htmlClass="hidden-lg-up col-md-3 col menu-middle" />
+
+            <container name="header.wrapper.right" htmlTag="div" htmlClass="col-xl-3 col-lg-2 col-md-3 col-4 menu-right" >
+                <block class="Magento\Framework\View\Element\Template" name="wt.menu.mobile.top.links" template="Wetrust_ContentManager::menu/mobile/top-links.phtml" after="header.container.nav">
+                    <arguments>
+                        <argument name="jsLayout" xsi:type="array">
+                            <item name="types" xsi:type="array"/>
+                            <item name="components" xsi:type="array">
+                                <item name="toplink_minicart_content" xsi:type="array">
+                                    <item name="component" xsi:type="string">Magento_Checkout/js/view/minicart</item>
+                                </item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <referenceBlock name="top.search">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Wetrust_ContentManager::search/form.mini.phtml</argument>
+            </action>
+        </referenceBlock>
+
+        <move element="logo" destination="header.wrapper.left" after="wt.menu.mobile" />
+        <referenceBlock name="catalog.topnav" remove="true" />
+    </body>
+</page>

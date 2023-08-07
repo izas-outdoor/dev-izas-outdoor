@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="WebPanda_Rma::css/style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="WebPanda\Rma\Block\Guest\Rma\NewReturn\Create" name="guest_rma_create" template="guest/rma/new-return/create.phtml" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>

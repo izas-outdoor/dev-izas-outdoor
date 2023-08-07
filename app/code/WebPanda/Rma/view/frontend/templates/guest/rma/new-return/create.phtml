@@ -1,0 +1,172 @@
+<?php
+/* @var $block \WebPanda\Rma\Block\Guest\Rma\NewReturn\Create */
+?>
+<form id="rma-create-form" method="POST" action="<?php echo $block->getRmaCreateUrl() ?>" enctype="multipart/form-data">
+    <?php echo $block->getBlockHtml('formkey') ?>
+    <input type="hidden" name="order_id" value="<?php /* @escapeNotVerified */ echo $block->getCurrentOrder() ?>" />
+    <div class="rma-container">
+        <div class="rma-view-wrapper">
+            <div class="block-content">
+                <div class="rma-box general-info"></div>
+                <div class="rma-box contact-info"></div>
+            </div>
+            <div class="block-content">
+                <div class="items-wrapper">
+                    <table>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="rma-messages-fields" class="comment-wrapper">
+                <div class="field">
+                    <textarea id="wp-rma-message" name="text" rows="5" placeholder="<?php echo __("Add message") ?>" spellcheck="false"></textarea>
+                </div>
+                <div class="contents-uploader">
+                    <div class="fileinput-button form-buttons">
+                        <input id="message-attachment" type="file" name="attachments[]" multiple="multiple">
+                        <p class="note">
+                            <span><?php echo __('A picture is worth a thousand words!. Attach them here in the following formats: jpg, jpeg, png, pdf, doc, xls') ?></span>
+                        </p>
+                    </div>
+                </div>
+                <button class="action primary" type="submit" title="<?php echo __("Post Reply") ?>" disabled>
+                    <span><?php echo __("Submit Request") ?></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script id="general-info-template" type="text/x-magento-template">
+    <div class="box-title"><span><?php echo __('Request Information') ?>:</span></div>
+    <div class="box-content">
+        <div class="fieldset">
+            <div class="field order">
+                <label class="label"><span><?php echo __('Order') ?></span></label>
+                <div class="value">
+                    <span>#<%- data.order.increment_id %></span>
+                </div>
+            </div>
+            <div class="field customer_name">
+                <label class="label"><span><?php echo __('Customer Name') ?></span></label>
+                <div class="value">
+                    <input type="hidden" name="customer_name" value="<%- data.order.customer_name %>" />
+                    <span><%- data.order.customer_name %></span>
+                </div>
+            </div>
+            <div class="field customer_email">
+                <label class="label"><span><?php echo __('Email Address') ?></span></label>
+                <div class="value">
+                    <input type="hidden" name="customer_email" value="<%- data.order.customer_email %>" />
+                    <span><%- data.order.customer_email %></span>
+                </div>
+            </div>
+            <div class="field order_date">
+                <label class="label"><span><?php echo __('Order Date') ?></span></label>
+                <div class="value">
+                    <span><%- data.order.date %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script id="contact-info-template" type="text/x-magento-template">
+    <div class="box-title"><span><?php echo __('Contact Information') ?>:</span></div>
+    <div class="box-content">
+        <div class="info">
+            <input type="hidden" name="packing_slip" value="<%- data.packing_slip %>" />
+            <%- data.contact.firstname %> <%- data.contact.lastname %><br/>
+            <% if (data.contact.company) { %>
+                <%- data.contact.company %><br/>
+            <% } %>
+            <%- data.contact.street %><br/>
+            <%- data.contact.city %>, <%- data.contact.region %> <%- data.contact.postcode %><br/>
+            <%- data.contact.country_name %><br/>
+            <% if (data.contact.telephone) { %>
+                <%- data.contact.telephone %><br/>
+            <% } %>
+        </div>
+    </div>
+</script>
+<script id="return-item-template" type="text/x-magento-template">
+    <tr>
+        <td class="col-active">
+            <input type="hidden" name="items[<%- data.id %>][order_item_id]" value="<%- data.id %>" />
+            <input id="items_<%- data.id %>_active" name="items[<%- data.id %>][active]" value="1" type="checkbox"<% if (data.qty <= 0) { %> disabled="disabled" <% } %> />
+        </td>
+        <td class="col-image">
+            <img class="rma-item-photo" src="<%- data.image.image_url %>" width="110" height="110" alt="<%- data.image.label %>"/>
+        </td>
+        <td class="col-name">
+            <strong><%- data.name %></strong>
+            <div class="product-detail"><strong><?php echo __("SKU") ?>:</strong> <%- data.sku %></div>
+        </td>
+        <td class="col-request">
+            <input type="hidden" name="items[<%- data.id %>][available-qty]" value="<%- data.qty %>" />
+            <fieldset class="fieldset" style="display: none;">
+                <div class="field">
+                    <div class="qty-wrapper">
+                        <label class="label" for="items_<%- data.id %>_qty" >
+                            <span><?php echo __("Return Qty") ?></span>
+                        </label>
+                        <input type="number" min="0.01" class="field" id="items_<%- data.id %>_qty" name="items[<%- data.id %>][qty]" value="1" />
+                    </div> / <%- data.qty %>
+                </div>
+                <div class="field">
+                    <label class="label" for="items_<%- data.id %>_reason_id" >
+                        <span><?php echo $block->getReasonLabel() ?></span>
+                    </label>
+                    <select class="select" id="items_<%- data.id %>_reason_id" name="items[<%- data.id %>][reason_id]">
+                        <option value=""><?php echo __("Please select") ?></option>
+                        <?php foreach ($block->getReasonOptions() as $id => $value): ?>
+                            <option value="<?php echo $id ?>"><?php echo $value ?></option>
+                        <?php endforeach ?>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="label" for="items_<%- data.id %>_item_condition_id" >
+                        <span><?php echo $block->getItemConditionLabel() ?></span>
+                    </label>
+                    <select class="select" id="items_<%- data.id %>_item_condition_id" name="items[<%- data.id %>][item_condition_id]">
+                        <option value=""><?php echo __("Please select") ?></option>
+                        <?php foreach ($block->getItemConditionOptions() as $id => $value): ?>
+                            <option value="<?php echo $id ?>"><?php echo $value ?></option>
+                        <?php endforeach ?>
+                    </select>
+                </div>
+                <div class="field">
+                    <label class="label" for="items_<%- data.id %>_resolution_id" >
+                        <span><?php echo $block->getResolutionLabel() ?></span>
+                    </label>
+                    <select class="select" id="items_<%- data.id %>_resolution_id" name="items[<%- data.id %>][resolution_id]">
+                        <option value=""><?php echo __("Please select") ?></option>
+                        <?php foreach ($block->getResolutionOptions() as $id => $value): ?>
+                            <option value="<?php echo $id ?>"><?php echo $value ?></option>
+                        <?php endforeach ?>
+                    </select>
+                </div>
+            </fieldset>
+            <% if (data.has_returns) { %>
+                <div class="rma-item-notice">
+                    <?php echo __('This product already has return requests:') ?><br/>
+                    <% _.each(data.existing_returns, function(item) { %>
+                        <a href="<%- item.url %>">#<%- item.increment_id %></a>
+                    <% }); %>
+                </div>
+            <% } %>
+        </td>
+    </tr>
+</script>
+<style><?php echo $block->getSpecialStyle() ?></style>
+<script type="text/x-magento-init">
+    {
+        "#rma-create-form": {
+            "WebPanda_Rma/js/rma-create": {
+                "getOrderInfoCallback": "<?php /* @escapeNotVerified */ echo $block->getOrderInfoUrl() ?>",
+                "rmaForm": "#rma-create-form",
+                "jsonData": <?php /* @escapeNotVerified */ echo $block->getJsonConfig() ?>,
+                "currentOrder": "<?php /* @escapeNotVerified */ echo $block->getCurrentOrder() ?>"
+            }
+        }
+    }
+</script>

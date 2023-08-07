@@ -1,0 +1,9 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+<update handle="customer_account"/>
+<body>
+     <referenceContainer name="content">
+        <block class="Seonov\Customer\Block\Customer" name="my_preference" cacheable="false" template="Seonov_Customer::preference/index/index.phtml">
+        </block>
+    </referenceContainer>
+</body>
+</page>

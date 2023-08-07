@@ -1,0 +1,18 @@
+<?php
+/** @var \Izas\Catalog\Block\Product\ProductList\Color $block */
+$_helper = $this->helper(\Wetrust\Catalog\Helper\Product::class);
+$_colorHelper = $this->helper(\Izas\Catalog\Helper\Color::class);
+$_product = $block->getProduct();
+?>
+<div class="product-colors">
+    <span><?= __('Color') ?> - </span><span class="product-color-label"><?= __($block->getColorText()) ?></span>
+    <ul class="row colors-row">
+        <?php if ($_colors = $block->getColors()): ?>
+            <?php foreach ($_colors as $_color):?>
+                <li class="col<?= $_product->getId() == $_color->getId() ? ' selected' : ''?>">
+                    <?= $_helper->getProductRenderHtml($_color, 'color'); ?>
+                </li>
+            <?php endforeach; ?>
+        <?php endif; ?>
+    </ul>
+</div>

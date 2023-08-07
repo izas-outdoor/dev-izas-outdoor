@@ -1,0 +1,19 @@
+<?php $product = $block->getProduct(); ?>
+<script type="text/x-magento-init">
+{
+	"*": {
+		"Omnisend_Omnisend/js/product-picker": {
+		    "productID": "<?php echo $block->escapeHtml($product->getId()); ?>",
+            "variantID": "<?php echo $block->escapeHtml($product->getId()); ?>",
+            "currency": "<?php echo $block->escapeHtml($block->getPriceCurrencyCode()); ?>",
+            "price": <?php echo $block->escapeHtml($block->getFinalPrice()); ?>,
+            "title": "<?php echo $block->escapeHtml($product->getName()); ?>",
+            "imageUrl": "<?php echo $block->escapeHtml($block->getProductImageUrl($product)); ?>",
+            "productUrl": "<?php echo $block->escapeHtml($block->getProductPageUrl($product)); ?>",
+            "oldPrice": <?php echo $block->escapeHtml($block->getOldPrice()); ?>,
+            "description": <?php echo $block->getDescription(); ?>,
+            "vendor": "<?php echo $block->escapeHtml($product->getAttributeText('manufacturer')); ?>"
+		}
+    }
+}
+</script>

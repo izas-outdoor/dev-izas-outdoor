@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="WebPanda_Rma::css/style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="left">
+            <block class="WebPanda\Rma\Block\Adminhtml\Rma\Edit\Tabs" name="webpanda_rma_rma_edit_tabs">
+                <block class="WebPanda\Rma\Block\Adminhtml\Rma\Edit\Tab\Main" name="webpanda_rma_rma_edit_tabs_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">webpanda_rma_rma_edit_tabs_main</argument>
+                </action>
+                <block class="WebPanda\Rma\Block\Adminhtml\Rma\Edit\Tab\Products" name="webpanda_rma_rma_edit_tabs_products"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">products_section</argument>
+                    <argument name="block" xsi:type="string">webpanda_rma_rma_edit_tabs_products</argument>
+                </action>
+                <block class="WebPanda\Rma\Block\Adminhtml\Rma\Edit\Tab\Customer" name="webpanda_rma_rma_edit_tabs_customer"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">customer_section</argument>
+                    <argument name="block" xsi:type="string">webpanda_rma_rma_edit_tabs_customer</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="WebPanda\Rma\Block\Adminhtml\Rma\Edit" name="webpanda_rma_rma_edit"/>
+            <block class="WebPanda\Rma\Block\Adminhtml\Rma\Edit\Messages" name="webpanda_rma_rma_edit_messages"/>
+        </referenceContainer>
+    </body>
+</page>

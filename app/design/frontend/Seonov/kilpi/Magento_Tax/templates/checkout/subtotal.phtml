@@ -1,0 +1,40 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var $block \Magento\Tax\Block\Checkout\Subtotal
+ * @see \Magento\Tax\Block\Checkout\Subtotal
+ */
+?>
+<?php if ($block->displayBoth()):?>
+<div class="pris_line">
+    <span class="pris_title f_bold">
+        <?= /* @escapeNotVerified */ __('Subtotal (Excl. Tax)') ?>
+    </span>
+    <td style="<?= /* @escapeNotVerified */ $block->getStyle() ?>" class="amount" data-th="<?= $block->escapeHtml(__('Subtotal (Excl. Tax)')) ?>">
+        <?= /* @escapeNotVerified */ $this->helper('Magento\Checkout\Helper\Data')->formatPrice($block->getTotal()->getValueExclTax()) ?>
+    </td>
+</div>
+<div class="pris_line">
+    <span class="pris_title f_bold">
+        <?= /* @escapeNotVerified */ __('Subtotal (Incl. Tax)') ?>
+    </span>
+    <td style="<?= /* @escapeNotVerified */ $block->getStyle() ?>" class="amount" data-th="<?= $block->escapeHtml(__('Subtotal (Incl. Tax)')) ?>">
+        <?= /* @escapeNotVerified */ $this->helper('Magento\Checkout\Helper\Data')->formatPrice($block->getTotal()->getValueInclTax()) ?>
+    </td>
+</div>
+<?php else : ?>
+<div class="pris_line">
+    <span class="pris_title f_bold">
+        <?= /* @escapeNotVerified */ $block->getTotal()->getTitle() ?>
+    </span>
+    <td style="<?= /* @escapeNotVerified */ $block->getStyle() ?>" class="amount" data-th="<?= $block->escapeHtml($block->getTotal()->getTitle()) ?>">
+        <?= /* @escapeNotVerified */ $this->helper('Magento\Checkout\Helper\Data')->formatPrice($block->getTotal()->getValue()) ?>
+    </td>
+</div>
+<?php endif;?>

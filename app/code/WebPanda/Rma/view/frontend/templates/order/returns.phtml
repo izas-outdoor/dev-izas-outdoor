@@ -1,0 +1,66 @@
+<?php
+/* @var $block \WebPanda\Rma\Block\Order\Returns */
+?>
+<?php
+$rmas = $block->getRmaCollection();
+$helper = $this->helper('\WebPanda\Rma\Helper\Data');
+?>
+<div class="order-details-items invoice">
+    <div class="table-wrapper my-rma-list" style="margin-top: 30px;">
+        <table class="data table my-rma-items history" id="my-rma-table">
+            <caption class="table-caption"><?php echo __('My Returns') ?></caption>
+            <thead>
+            <tr>
+                <th scope="col" class="table-col id"><?php echo __('Return ID #') ?></th>
+                <th scope="col" class="table-col products"><?php echo __('Product(s)') ?></th>
+                <th scope="col" class="table-col status"><?php echo __('Status') ?></th>
+                <th scope="col" class="table-col updated_at"><?php echo __('Updated At') ?></th>
+                <th scope="col" class="table-col created_at"><?php echo __('Created At') ?></th>
+                <th scope="col" class="table-col actions">&nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($rmas as $rma): ?>
+                <tr>
+                    <td data-th="<?php echo $block->escapeHtml(__('Return ID #')) ?>" class="table-col id">
+                        <?php echo $rma->getIncrementId() ?>
+                    </td>
+                    <td data-th="<?php echo $block->escapeHtml(__('Products')) ?>" class="table-col products">
+                        <?php foreach($rma->getItemsCollection() as $rmaItem): ?>
+                            <?php if ($block->getProductExists($rmaItem->getProductId())): ?>
+                                <a href="<?php echo $block->getProductUrl($rmaItem) ?>">
+                                    <span><?php echo $rmaItem->getName() ?></span>
+                                </a>
+                            <?php else: ?>
+                                <?php echo $rmaItem->getName() ?>
+                            <?php endif; ?>
+                            <br/>
+                        <?php endforeach; ?>
+                    </td>
+                    <td data-th="<?php echo $block->escapeHtml(__('Status')) ?>" class="table-col status">
+                        <?php echo $helper->getStatusHtml($rma) ?>
+                    </td>
+                    <td data-th="<?php echo $block->escapeHtml(__('Updated At')) ?>" class="table-col updated_at">
+                        <?php echo $block->formatDate($rma->getUpdatedAt()) ?>
+                    </td>
+                    <td data-th="<?php echo $block->escapeHtml(__('Created At')) ?>" class="table-col created_at">
+                        <?php echo $block->formatDate($rma->getCreatedAt()) ?>
+                    </td>
+                    <td data-th="<?php echo $block->escapeHtml(__('Actions')) ?>" class="table-col actions">
+                        <a href="<?php echo $block->getRequestUrl($rma->getId()) ?>">
+                            <span><?php echo __('View Return') ?></span>
+                        </a>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+    <div class="actions-toolbar">
+        <div class="secondary">
+            <a href="<?= /* @escapeNotVerified */ $block->getBackUrl() ?>" class="action back">
+                <span><?= /* @escapeNotVerified */ $block->getBackTitle() ?></span>
+            </a>
+        </div>
+    </div>
+</div>

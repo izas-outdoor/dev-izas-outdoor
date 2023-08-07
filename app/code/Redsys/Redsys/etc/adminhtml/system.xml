@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+<!--
+/**
+* NOTA SOBRE LA LICENCIA DE USO DEL SOFTWARE
+* 
+* El uso de este software está sujeto a las Condiciones de uso de software que
+* se incluyen en el paquete en el documento "Aviso Legal.pdf". También puede
+* obtener una copia en la siguiente url:
+* http://www.redsys.es/wps/portal/redsys/publica/areadeserviciosweb/descargaDeDocumentacionYEjecutables
+* 
+* Redsys es titular de todos los derechos de propiedad intelectual e industrial
+* del software.
+* 
+* Quedan expresamente prohibidas la reproducción, la distribución y la
+* comunicación pública, incluida su modalidad de puesta a disposición con fines
+* distintos a los descritos en las Condiciones de uso.
+* 
+* Redsys se reserva la posibilidad de ejercer las acciones legales que le
+* correspondan para hacer valer sus derechos frente a cualquier infracción de
+* los derechos de propiedad intelectual y/o industrial.
+* 
+* Redsys Servicios de Procesamiento, S.L., CIF B85955367
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Config/etc/system_file.xsd">
+    <system>
+        <section id="payment">
+            <group id="redsys" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Redsys · Pago con Tarjeta por Redirección</label>
+				<comment><![CDATA[<img src="http://www.redsys.es/img/logo.png" height="50" width="120"/>]]></comment>
+           	
+           		<field id="active" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Activar metodo de pago</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys/active</config_path>
+				</field>
+				
+                <field id="entorno" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Entorno de Redsys</label>
+                    <comment>Recuerde no activar el modo "Sandbox" en su entorno de producción, de lo contrario podrían producirse ventas no deseadas. Dispone de más información sobre cómo realizar pruebas en nuestra web de pagosOnline</comment>
+                    <tooltip>Cuando el módulo se encuentra configurado como modo "Sandbox", las operaciones no tienen ningún efecto contable</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Entornoptions</source_model>
+					<config_path>payment/redsys/entorno</config_path>
+                </field>
+				
+                <field id="nombre" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Nombre del comercio</label>
+                    <tooltip>Nombre de su comercio que se establecerá a la hora de enviar las operaciones</tooltip>
+					<config_path>payment/redsys/nombre</config_path>
+                </field>
+                
+                <field id="num" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Número de comercio</label>
+                    <tooltip>El número de comercio, también denominado FUC, es un número que identifica a su comercio y debe habérselo provisto su Entidad Bancaria</tooltip>
+					<config_path>payment/redsys/num</config_path>
+                </field>
+                
+                <field id="terminal" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Número de terminal</label>
+                    <tooltip>El número de terminal es el número que identifica el terminal dentro de su comercio y debe habérselo provisto su Entidad Bancaria</tooltip>
+				    <config_path>payment/redsys/terminal</config_path>
+                </field>
+                
+                <field id="clave256" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Clave de Encriptación SHA-256</label>
+                    <comment>Para realizar pruebas en el entorno Sandbox, puede usar: sq7HjrUOBfKmC576ILgskD5srU870gJ7 o la provista por su Entidad Bancaria</comment>
+                    <tooltip>Esta clave permite firmar todas las operaciones enviadas por el módulo y ha debido ser provista de ella por su Entidad Bancaria. Recuerde guardarla en un lugar seguro.</tooltip>
+					<config_path>payment/redsys/clave256</config_path>
+                </field>
+                
+               <field id="tipopago" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tipo de transacción</label>
+                    <tooltip>ATENCIÓN: Si selecciona "preautorización", deberá realizar las confirmaciones desde el Portal de Administración del TPV Virtual</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Pagoptions</source_model>
+					<config_path>payment/redsys/tipopago</config_path>
+                </field>
+                
+                <field id="estado" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                   	<label>Estado del pedido al verificarse el pago</label>
+                    <tooltip>Aquí puede configurar el estado en el que se mostrará el pedido en el apartado "Pedidos" de su backoffice una vez el módulo reciba la notificación de que el pago ha sido correcto</tooltip>
+					<source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+					<config_path>payment/redsys/estado</config_path>
+                </field>
+                
+                <field id="logactivo" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Guardar registros de comportamiento</label>
+                    <tooltip>Si activa esta opción, se guardarán registros (logs) de los procesos que realice el módulo dentro de la carpeta de logs del la tienda, normalmente en /var/log</tooltip>
+					<comment>A la hora de notificar cualquier incidencia, los logs completos son de gran utilidad para poder detectar el problema</comment>
+                    <source_model>Redsys\Redsys\Model\Config\Source\Logoptions</source_model>
+					<config_path>payment/redsys/logactivo</config_path>
+                </field>
+
+                <field id="genpedido" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Método de generación del número de pedido</label>
+                    <comment>Esta opción no modifica la forma en la que se identifica la orden en su Backoffice, sino el número de pedido (adaptado para que siempre ocupe doce dígitos) que se envía a Redsys para identificar la operación</comment>
+                    <tooltip>Configure cómo se generará el número de pedido que se enviará a Redsys para identificar la operación en el Portal de Administración del TPV Virtual</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Npedoptions</source_model>
+                    <config_path>payment/redsys/genpedido</config_path>
+                </field>
+
+                <field id="pedidoextendido" translate="label" type="select" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>El terminal permite número de pedido extendido</label>
+                    <comment>Marque esta opción si su terminal está configurado para admitir números de pedidos extendidos. Esto es útil para tiendas cuyos número de pedidos podrían exceder las doce posiciones que tiene como máximo un número de pedido estándar. Recuerde que debe solicitar a su entidad bancaria que activen esta configuración en su terminal antes de marcar esta opción.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys/pedidoextendido</config_path>
+                </field>
+                
+                <field id="activar3ds" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pago seguro usando 3D Secure</label>
+                    <tooltip>Esta opción permite enviar información adicional del cliente que está realizando la compra, proporcionando más seguirdad a la hora de autenticar la operación</tooltip>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys/activar3ds</config_path>
+                </field>
+
+                <field id="idiomas" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Permitir seleccionar idioma en el TPV</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <tooltip>Si activa esta opción, el cliente podrá visualizar en su idioma, además de seleccionar cualquier otro, la pantalla de pago de Redsys</tooltip>
+					<config_path>payment/redsys/idiomas</config_path>
+                </field>
+
+                <field id="ref" translate="label" type="select" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pago por referencia</label>
+                    <comment>ATENCIÓN: Esta configuración podría requerir activación por parte de su Entidad Bancaria</comment>
+                    <tooltip>El Pago por Referencia permite al cliente guardar su tarjeta para futuras compras en formato de Token y de forma totalmente segura</tooltip>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys/ref</config_path>
+                </field>
+
+                <field id="modal" translate="label" type="select" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Habilitar ventana de pago modal</label>
+                    <tooltip>La ventana de pago modal funciona de forma que imprime los campos de introducción de la tarjeta sobre su tienda, y no redirige al cliente a la pasarela de Redsys, de manera parecida a inSite, pero mucho más fiable</tooltip>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys/modal</config_path>
+                </field>
+				
+                <field id="urlok" translate="label" type="text" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL para operaciones correctas</label>
+                    <comment>Si este campo se rellena, se ignorará la configuración del parámetro establecida en el Portal de Administración del TPV Virtual. Tenga en cuenta que deberá establecer este campo con la dirección completa de la página a la que quiere redirigir, usando procotolo (https://) y dominio completos</comment>
+                    <tooltip>Este campo, denominado URL_OK, establece a qué página se redirigirá al cliente al volver de Redsys una vez la operación haya finalizado y esta sea correcta</tooltip>
+					<config_path>payment/redsys/urlok</config_path>
+                </field>
+				
+                <field id="urlko" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL para operaciones fallidas</label>
+                    <comment>Si este campo se rellena, se ignorará la configuración del parámetro establecida en el Portal de Administración del TPV Virtual. Tenga en cuenta que deberá establecer este campo con la dirección completa de la página a la que quiere redirigir, usando procotolo (https://) y dominio completos</comment>
+                    <tooltip>Este campo, denominado URL_KO, establece a qué página se redirigirá al cliente al volver de Redsys una vez la operación haya finalizado y esta haya tenido algún error</tooltip>
+					<config_path>payment/redsys/urlko</config_path>
+                </field>
+            </group>
+            <!-- payment-group -->
+            <!-- payment-group -->
+            <group id="redsys_insite" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Redsys · Pago con Tarjeta inSite</label>
+				<comment><![CDATA[<img src="http://www.redsys.es/img/logo.png" height="50" width="120"/>]]></comment>
+           	
+           		<field id="active" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Activar metodo de pago</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys_insite/active</config_path>
+				</field>
+				
+                <field id="entorno" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Entorno de Redsys</label>
+                    <comment>Recuerde no activar el modo "Sandbox" en su entorno de producción, de lo contrario podrían producirse ventas no deseadas. Dispone de más información sobre cómo realizar pruebas en nuestra web de pagosOnline</comment>
+                    <tooltip>Cuando el módulo se encuentra configurado como modo "Sandbox", las operaciones no tienen ningún efecto contable</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Entornoptions</source_model>
+					<config_path>payment/redsys_insite/entorno</config_path>
+                </field>
+				
+                <field id="nombre" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Nombre del comercio</label>
+					<tooltip>Nombre de su comercio que se establecerá a la hora de enviar las operaciones</tooltip>
+                    <config_path>payment/redsys_insite/nombre</config_path>
+                </field>
+                
+                <field id="num" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Número del comercio</label>
+                    <tooltip>El número de comercio, también denominado FUC, es un número que identifica a su comercio y debe habérselo provisto su Entidad Bancaria</tooltip>
+					<config_path>payment/redsys_insite/num</config_path>
+                </field>
+                
+                <field id="terminal" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Número de terminal</label>
+                    <tooltip>El número de terminal es el número que identifica el terminal dentro de su comercio y debe habérselo provisto su Entidad Bancaria</tooltip>
+					<config_path>payment/redsys_insite/terminal</config_path>
+                </field>
+                
+                <field id="clave256" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Clave de Encriptación SHA-256</label>
+                    <comment>Para realizar pruebas en el entorno Sandbox, puede usar: sq7HjrUOBfKmC576ILgskD5srU870gJ7 o la provista por su Entidad Bancaria</comment>
+                    <tooltip>Esta clave permite firmar todas las operaciones enviadas por el módulo y ha debido ser provista de ella por su Entidad Bancaria. Recuerde guardarla en un lugar seguro.</tooltip>
+					<config_path>payment/redsys_insite/clave256</config_path>
+                </field>
+
+                <field id="tipopago" translate="label" type="select" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tipo de transacción</label>
+                    <tooltip>ATENCIÓN: Si selecciona "preautorización", deberá realizar las confirmaciones desde el Portal de Administración del TPV Virtual</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Pagoptions</source_model>
+					<config_path>payment/redsys_insite/tipopago</config_path>
+                </field>
+
+                <field id="estado" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                   	<label>Estado del pedido al verificarse el pago</label>
+                    <tooltip>Aquí puede configurar el estado en el que se mostrará el pedido en el apartado "Pedidos" de su backoffice una vez el módulo reciba la notificación de que el pago ha sido correcto</tooltip>
+					<source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+					<config_path>payment/redsys_insite/estado</config_path>
+                </field>
+               
+                <field id="logactivo" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Guardar registros de comportamiento</label>
+                    <tooltip>Si activa esta opción, se guardarán registros (logs) de los procesos que realice el módulo dentro de la carpeta de logs del la tienda, normalmente en /var/log</tooltip>
+					<comment>A la hora de notificar cualquier incidencia, los logs completos son de gran utilidad para poder detectar el problema</comment>
+                    <source_model>Redsys\Redsys\Model\Config\Source\Logoptions</source_model>
+					<config_path>payment/redsys_insite/logactivo</config_path>
+                </field>
+
+                <field id="genpedido" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Método de generación del número de pedido</label>
+                    <comment>Esta opción no modifica la forma en la que se identifica la orden en su Backoffice, sino el número de pedido (adaptado para que siempre ocupe doce dígitos) que se envía a Redsys para identificar la operación</comment>
+                    <tooltip>Configure cómo se generará el número de pedido que se enviará a Redsys para identificar la operación en el Portal de Administración del TPV Virtual</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Npedoptions</source_model>
+                    <config_path>payment/redsys_insite/genpedido</config_path>
+                </field>
+
+                <field id="activar3ds" translate="label" type="select" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pago seguro usando 3D Secure</label>
+                    <tooltip>Esta opción permite enviar información adicional del cliente que está realizando la compra, proporcionando más seguirdad a la hora de autenticar la operación</tooltip>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys_insite/activar3ds</config_path>
+                </field>
+
+                <field id="errorpago" translate="label" type="select" sortOrder="8" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Mantener pedido si se produce un error</label>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys_insite/errorpago</config_path>
+                </field>
+                
+                <field id="ref" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Pago por referencia</label>
+                    <comment>ATENCIÓN: Esta configuración podría requerir activación por parte de su Entidad Bancaria</comment>
+                    <tooltip>El Pago por Referencia permite al cliente guardar su tarjeta para futuras compras en formato de Token y de forma totalmente segura</tooltip>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys_insite/ref</config_path>
+                </field>
+
+                <field id="text_btn" translate="label" type="text" sortOrder="14" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Texto del boton de pago</label>
+                    <config_path>payment/redsys_insite/text_btn</config_path>
+                </field>
+
+                <field id="style_btn" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Estilo del boton de pago</label>
+                    <config_path>payment/redsys_insite/style_btn</config_path>
+                </field>
+
+                <field id="style_body" translate="label" type="text" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Estilo del iframe</label>
+                    <config_path>payment/redsys_insite/style_body</config_path>
+                </field>
+
+                <field id="style_form" translate="label" type="text" sortOrder="17" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Estilo del formulario</label>
+                    <config_path>payment/redsys_insite/style_form</config_path>
+                </field>
+
+                <field id="style_text" translate="label" type="text" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Estilo del texto del formuario</label>
+                    <config_path>payment/redsys_insite/style_text</config_path>
+                </field>
+
+            </group>
+            <!-- payment-group -->
+            <!-- payment-group -->
+            <group id="redsys_bizum" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+				<label>Redsys · Pago con Bizum</label>
+				<comment>Permita a sus clientes pagar con Bizum redirigiéndoles a los servicios de Redsys.</comment>
+           	
+           		<field id="active" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+					<label>Activar metodo de pago</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys_bizum/active</config_path>
+				</field>
+				
+                <field id="entorno" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Entorno de Redsys</label>
+                    <comment>Recuerde no activar el modo "Sandbox" en su entorno de producción, de lo contrario podrían producirse ventas no deseadas. Dispone de más información sobre cómo realizar pruebas en nuestra web de pagosOnline</comment>
+                    <tooltip>Cuando el módulo se encuentra configurado como modo "Sandbox", las operaciones no tienen ningún efecto contable</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Entornoptions</source_model>
+					<config_path>payment/redsys_bizum/entorno</config_path>
+                </field>
+				
+                <field id="nombre" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Nombre del comercio</label>
+                    <tooltip>Nombre de su comercio que se establecerá a la hora de enviar las operaciones</tooltip>
+					<config_path>payment/redsys_bizum/nombre</config_path>
+                </field>
+                
+                <field id="num" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Número de comercio</label>
+                    <tooltip>El número de comercio, también denominado FUC, es un número que identifica a su comercio y debe habérselo provisto su Entidad Bancaria</tooltip>
+					<config_path>payment/redsys_bizum/num</config_path>
+                </field>
+                
+                <field id="terminal" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Número de terminal</label>
+                    <tooltip>El número de terminal es el número que identifica el terminal dentro de su comercio y debe habérselo provisto su Entidad Bancaria</tooltip>
+					<config_path>payment/redsys_bizum/terminal</config_path>
+                </field>
+                
+                <field id="clave256" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Clave de Encriptación SHA-256</label>
+                    <comment>Para realizar pruebas en el entorno Sandbox, puede usar: sq7HjrUOBfKmC576ILgskD5srU870gJ7 o la provista por su Entidad Bancaria</comment>
+                    <tooltip>Esta clave permite firmar todas las operaciones enviadas por el módulo y ha debido ser provista de ella por su Entidad Bancaria. Recuerde guardarla en un lugar seguro.</tooltip>
+					<config_path>payment/redsys_bizum/clave256</config_path>
+                </field>
+                
+                <field id="estado" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                   	<label>Estado del pedido al verificarse el pago</label>
+                    <tooltip>Aquí puede configurar el estado en el que se mostrará el pedido en el apartado "Pedidos" de su backoffice una vez el módulo reciba la notificación de que el pago ha sido correcto</tooltip>
+					<source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+					<config_path>payment/redsys_bizum/estado</config_path>
+                </field>
+                
+                <field id="logactivo" translate="label" type="select" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Guardar registros de comportamiento</label>
+                    <tooltip>Si activa esta opción, se guardarán registros (logs) de los procesos que realice el módulo dentro de la carpeta de logs del la tienda, normalmente en /var/log</tooltip>
+					<comment>A la hora de notificar cualquier incidencia, los logs completos son de gran utilidad para poder detectar el problema</comment>
+					<source_model>Redsys\Redsys\Model\Config\Source\Logoptions</source_model>
+					<config_path>payment/redsys_bizum/logactivo</config_path>
+                </field>
+                
+                <field id="genpedido" translate="label" type="select" sortOrder="12" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Método de generación del número de pedido</label>
+                    <comment>Esta opción no modifica la forma en la que se identifica la orden en su Backoffice, sino el número de pedido (adaptado para que siempre ocupe doce dígitos) que se envía a Redsys para identificar la operación</comment>
+                    <tooltip>Configure cómo se generará el número de pedido que se enviará a Redsys para identificar la operación en el Portal de Administración del TPV Virtual</tooltip>
+					<source_model>Redsys\Redsys\Model\Config\Source\Npedoptions</source_model>
+                    <config_path>payment/redsys_bizum/genpedido</config_path>
+                </field>
+
+                <field id="pedidoextendido" translate="label" type="select" sortOrder="13" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>El terminal permite número de pedido extendido</label>
+                    <comment>Marque esta opción si su terminal está configurado para admitir números de pedidos extendidos. Esto es útil para tiendas cuyos número de pedidos podrían exceder las doce posiciones que tiene como máximo un número de pedido estándar. Recuerde que debe solicitar a su entidad bancaria que activen esta configuración en su terminal antes de marcar esta opción.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<config_path>payment/redsys_bizum/pedidoextendido</config_path>
+                </field>
+
+                <field id="idiomas" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Permitir seleccionar idioma en el TPV</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <tooltip>Si activa esta opción, el cliente podrá visualizar en su idioma, además de seleccionar cualquier otro, la pantalla de pago de Redsys</tooltip>
+					<config_path>payment/redsys_bizum/idiomas</config_path>
+                </field>
+				
+                <field id="urlok" translate="label" type="text" sortOrder="18" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL para operaciones correctas</label>
+                    <comment>Si este campo se rellena, se ignorará la configuración del parámetro establecida en el Portal de Administración del TPV Virtual. Tenga en cuenta que deberá establecer este campo con la dirección completa de la página a la que quiere redirigir, usando procotolo (https://) y dominio completos</comment>
+                    <tooltip>Este campo, denominado URL_OK, establece a qué página se redirigirá al cliente al volver de Redsys una vez la operación haya finalizado y esta sea correcta</tooltip>
+					<config_path>payment/redsys_bizum/urlok</config_path>
+                </field>
+				
+                <field id="urlko" translate="label" type="text" sortOrder="19" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>URL para operaciones fallidas</label>
+                    <comment>Si este campo se rellena, se ignorará la configuración del parámetro establecida en el Portal de Administración del TPV Virtual. Tenga en cuenta que deberá establecer este campo con la dirección completa de la página a la que quiere redirigir, usando procotolo (https://) y dominio completos</comment>
+                    <tooltip>Este campo, denominado URL_KO, establece a qué página se redirigirá al cliente al volver de Redsys una vez la operación haya finalizado y esta haya tenido algún error</tooltip>
+					<config_path>payment/redsys_bizum/urlko</config_path>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

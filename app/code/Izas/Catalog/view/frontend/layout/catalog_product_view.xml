@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main.right.sticky">
+            <container name="product.info.right.product.name" htmlTag="div"  htmlClass="product-info-wrapper" >
+                <block class="Izas\Catalog\Block\Product\View\Category" name="catalog.product.category" template="Izas_Catalog::product/view/category.phtml" />
+            </container>
+            <block class="Izas\Catalog\Block\Product\ProductList\Color" name="catalog.product.colors" template="Izas_Catalog::product/list/colors.phtml" />
+            <block class="Izas\Catalog\Block\Product\ProductList\OutOfStock" name="catalog.product.outofstock" template="Izas_Catalog::product/list/outofstock.phtml" />
+        </referenceContainer>
+
+        <referenceBlock name="product.info.options.wrapper.bottom">
+            <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.activity" template="Izas_Catalog::product/view/activity.phtml"/>
+            <block class="Izas\Catalog\Block\Product\View\Attributes" name="product.info_water" template="Izas_Catalog::product/view/accordion.phtml">
+                <block class="Magento\Cms\Block\Block" name="izas.advantages">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">advantages</argument>
+                    </arguments>
+                </block>
+                <block class="Izas\Catalog\Block\Product\View\Technology" name="product.info.technology" template="Izas_Catalog::product/view/technology.phtml"/>
+            </block>
+        </referenceBlock>
+
+        <referenceBlock name="product.info.options.wrapper">
+            <block class="Izas\Catalog\Block\Product\View\Size" name="product.info.sizes" template="Izas_Catalog::product/view/sizes.phtml" />
+        </referenceBlock>
+
+        <referenceBlock name="content.aside">
+            <block class="Izas\Catalog\Block\Product\ProductList\Upsell" name="izas.catalog.product.upsell" template="Izas_Catalog::product/list/upsell.phtml">
+                <arguments>
+                    <argument name="type" xsi:type="string">upsell</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

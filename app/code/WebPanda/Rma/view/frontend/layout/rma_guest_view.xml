@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="WebPanda_Rma::css/style.css"/>
+    </head>
+    <body>
+        <referenceBlock name="page.main.title">
+            <block class="WebPanda\Rma\Block\Guest\Rma\View\Actions" name="guest_rma_actions" template="guest/rma/view/actions.phtml" />
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="WebPanda\Rma\Block\Guest\Rma\View" name="guest_rma_view" template="guest/rma/view.phtml" cacheable="false">
+                <block class="WebPanda\Rma\Block\Guest\Rma\View\Contact" name="guest_rma_view_contact" as="contact" template="guest/rma/view/contact.phtml">
+                    <arguments>
+                        <argument name="jsLayout" xsi:type="array">
+                            <item name="components" xsi:type="array">
+                                <item name="rma_view_address" xsi:type="array">
+                                    <item name="component" xsi:type="string">WebPanda_Rma/js/customer/rma/view/address</item>
+                                </item>
+                            </item>
+                        </argument>
+                    </arguments>
+                </block>
+                <block class="WebPanda\Rma\Block\Guest\Rma\View\Messages" name="guest_rma_messages" template="guest/rma/view/messages.phtml" as="messages" cacheable="false" />
+            </block>
+        </referenceContainer>
+    </body>
+</page>

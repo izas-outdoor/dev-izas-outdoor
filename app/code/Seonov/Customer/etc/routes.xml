@@ -1,0 +1,12 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+
+<router id="standard">
+    <route id="seonov" frontName="customaccount">
+       <module name="Seonov_Customer" before="Magento_Customer" />
+    </route>
+    <route frontName="cusacc" id="preference">
+        <module name="Seonov_Customer"/>
+    </route>
+</router>
+
+</config>

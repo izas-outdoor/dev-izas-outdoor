@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">rma_status_listing.rma_status_listing_data_source</item>
+            <item name="deps" xsi:type="string">rma_status_listing.rma_status_listing_data_source</item>
+        </item>
+        <item name="spinner" xsi:type="string">rma_status_columns</item>
+    </argument>
+    <settings>
+        <buttons>
+            <button name="add">
+                <url path="rma_admin/status/add"/>
+                <class>primary</class>
+                <label translate="true">Add Status</label>
+            </button>
+        </buttons>
+        <spinner>rma_status_columns</spinner>
+        <deps>
+            <dep>rma_status_listing.rma_status_listing_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="rma_status_listing_data_source">
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">\WebPanda\Rma\Ui\DataProvider\RmaStatusDataProvider</argument>
+            <argument name="name" xsi:type="string">rma_status_listing_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">id</argument>
+            <argument name="requestFieldName" xsi:type="string">id</argument>
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/provider</item>
+                    <item name="update_url" xsi:type="url" path="mui/index/render"/>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="indexField" xsi:type="string">id</item>
+                    </item>
+                </item>
+            </argument>
+        </argument>
+    </dataSource>
+    <columns name="rma_status_columns">
+        <column name="id" sortOrder="10">
+            <settings>
+                <label translate="true">ID</label>
+                <sorting>asc</sorting>
+            </settings>
+        </column>
+        <column name="name" component="WebPanda_Rma/js/ui/grid/columns/status-colored" sortOrder="20">
+            <settings>
+                <label translate="true">Name</label>
+            </settings>
+        </column>
+        <column name="is_core" class="WebPanda\Rma\Ui\Component\Listing\Column\Boolean" sortOrder="30">
+            <settings>
+                <label translate="true">Is Core Status</label>
+            </settings>
+        </column>
+        <column name="is_email_customer" class="WebPanda\Rma\Ui\Component\Listing\Column\Boolean" sortOrder="40">
+            <settings>
+                <label translate="true">Send Email to Customer</label>
+            </settings>
+        </column>
+        <column name="is_email_admin" class="WebPanda\Rma\Ui\Component\Listing\Column\Boolean" sortOrder="50">
+            <settings>
+                <label translate="true">Send Email to Admin</label>
+            </settings>
+        </column>
+        <column name="is_message" class="WebPanda\Rma\Ui\Component\Listing\Column\Boolean" sortOrder="60">
+            <settings>
+                <label translate="true">Add Message to RMA</label>
+            </settings>
+        </column>
+        <actionsColumn name="actions" class="WebPanda\Rma\Ui\Component\Listing\Column\RmaStatusActions" sortOrder="70">
+            <settings>
+                <indexField>id</indexField>
+            </settings>
+        </actionsColumn>
+    </columns>
+</listing>

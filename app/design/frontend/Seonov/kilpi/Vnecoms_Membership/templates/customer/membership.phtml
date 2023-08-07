@@ -1,0 +1,129 @@
+<?php
+use Magento\Framework\App\Action\Action;
+
+/** @var $block \Vnecoms\Membership\Block\Customer\Membership*/
+?>
+<h1 class="title_form"><?= __('MEMBERSHIP INFORMATION') ?></h1>
+<div class="block block-dashboard-info block-membership-info orders_liste">
+
+        <?php if($block->isMembership()):?>
+        <button class="save_change action primary" style="float: right;" onclick="jQuery('#membership-popup-mpdal').toggle();"><span><?php echo __("Renew")?></span></button>
+        <?php endif;?>
+
+    <div class="block-content">
+        <?php if($block->isMembership()):?>
+            <?php $_package = $block->getCurrentPackageProduct()?>
+            <div class="box box-information">
+                <div class="box-content">
+                    <div class="box box-membership">
+                        <div class="box-content">
+                            <div class='pris_line'>
+                              <div class="pris_title f_bold"><?php echo __("Package:")?></div>
+                              <div class="pris_value f_bold"><?php echo $block->getCurrentGroupName();?></div>
+                            </div>
+                            <div class='pris_line'>
+                              <div class="pris_title f_bold"><?php echo __("Expiry Date:")?> </div>
+                              <div class="pris_value f_bold"><?php echo $block->getExpiryDate()?></div>
+
+                              </div>
+                            <div class='pris_line'>
+                              <div class="pris_title f_bold"><?php echo __("Package Info:")?> </div>
+                              <div class="pris_value f_bold"><?php echo $_package->getDescription()?></div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box box-newsletter box-membership-renew">
+                <div class="box-content">
+                    <div id="membership-popup-mpdal" class="cmd_item" style="display: none;">
+                        <div class="renewmembership-form">
+                            <h3 class="title_form"><?php echo __("Renew package: %1",$_package->getName())?></h3>
+                            <?php $postParams = $block->getAddToCartPostParams($_package); ?>
+                            <form data-role="tocart-form" action="<?php /* @escapeNotVerified */ echo $postParams['action']; ?>" method="post">
+                                <div class="fieldset info">
+                                    <div class="field">
+                                        <select name="membership[duration]"
+                                            data-validate="{required:true}"
+                                            id="vnecoms_membership_duration_<?php echo $_package->getId()?>"
+                                            class="input-text required-entry">
+                                        </select>
+                                    </div>
+                                    <input type="hidden" name="product" value="<?php /* @escapeNotVerified */ echo $postParams['data']['product']; ?>">
+                                    <input type="hidden" name="<?php /* @escapeNotVerified */ echo Action::PARAM_NAME_URL_ENCODED; ?>" value="<?php /* @escapeNotVerified */ echo $postParams['data'][Action::PARAM_NAME_URL_ENCODED]; ?>">
+                                    <?php echo $block->getBlockHtml('formkey')?>
+                                    <div class="field">
+                                        <button type="submit"
+                                                title="<?php echo $block->escapeHtml(__('Add to Cart')); ?>"
+                                                class="save_change action tocart primary">
+                                            <span><?php /* @escapeNotVerified */ echo __('Add to Cart') ?></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/x-magento-init">
+            {
+                "#vnecoms_membership_duration_<?php echo $_package->getId()?>": {
+                        "Vnecoms_Membership/js/membership": {
+                        "valueFieldSelector": "#vnecoms_membership_duration_<?php echo $_package->getId()?>",
+                        "priceHolderSelector": ".membership-price .price-box",
+                        "durationOptions": <?php /* @escapeNotVerified */ echo $block->getOptionsJSON($_package) ?>,
+                        "priceFormat": <?php echo $block->getPriceFormatJSON()?>
+                    }
+                }
+            }
+            </script>
+
+            <script type="text/x-magento-init">
+            {
+                "[data-role=tocart-form], .form.map.checkout": {
+                    "catalogAddToCart": {}
+                }
+            }
+            </script>
+        <?php else:?>
+            <p><?php echo __("You are not in any memberhsip group. %1 to signup a membership group",'<a href="'.$block->getMembershipPricingUrl().'">'.__("Click Here").'</a>')?></p>
+        <?php endif;?>
+    </div>
+</div>
+
+<h1 class="title_form"><?= __('PAYMENT HISTORY') ?></h1>
+<div class="block block-dashboard-orders block-membership-payment orders_liste">
+
+    <div class="block-content">
+        <div class="table-wrapper payments-recent">
+
+                    <?php if($block->getPaymentHistory()->count()):?>
+                    <?php foreach($block->getPaymentHistory() as $_payment):?>
+                    <div class="order_item">
+                      <div class="order_item_level">
+                        <div class="order_level active">
+                        <span class="order_level_text"><?php echo __("Date")?> : <?php echo $block->formatDate($_payment->getCreatedAt())?></span>
+                      </div>
+                      <div class="order_level active">
+                        <span class="order_level_text"><?php echo __("Package")?> : <?php echo $_payment->getPackage();?></span>
+                      </div>
+                      <div class="order_level active">
+                        <span class="order_level_text"><?php echo __("Amount")?> : <span class="price"><?php echo $block->formatPrice($_payment->getAmount());?></span></span>
+                      </div>
+                      <div class="order_level active">
+                        <span class="order_level_text"><?php echo __("Duration")?> : <?php echo $block->getDurationLabel($_payment->getDuration(), $_payment->getDurationUnit())?></span>
+                      </div>
+                      </div>
+                    </div>
+                    <?php endforeach;?>
+                    <?php else:?>
+                        <div class="order_item">
+                          <div class="order_item_level"><?php echo __("There is no item found.")?></div>
+                        </div>
+                    <?php endif;?>
+
+        </div>
+
+        <?php echo $block->getPagerHtml();?>
+    </div>
+</div>

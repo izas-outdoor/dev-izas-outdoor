@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <rma>
+            <default>
+                <guest>1</guest>
+                <return_period>30</return_period>
+                <order_statuses>complete</order_statuses>
+                <status_dropdown>0</status_dropdown>
+                <max_attachment_size>10</max_attachment_size>
+                <return_instructions_block>return-instructions</return_instructions_block>
+                <confirm_shipping_popup_text><![CDATA[Before clicking "Yes", please ensure that:
+1. You have included the Packing Slip inside the package
+2. You have sent the package to the RMA department]]></confirm_shipping_popup_text>
+            </default>
+            <contact>
+                <name>RMA Department</name>
+                <email>rma@department.com</email>
+                <notify_customer>1</notify_customer>
+                <notify_admin>1</notify_admin>
+            </contact>
+            <email_templates>
+                <notify_customer_admin_comment_template>rma_email_templates_notify_customer_admin_comment_template</notify_customer_admin_comment_template>
+                <notify_admin_customer_comment_template>rma_email_templates_notify_admin_customer_comment_template</notify_admin_customer_comment_template>
+            </email_templates>
+            <resolution>
+                <frontend_label>Resolution</frontend_label>
+                <admin_can_edit_at>1</admin_can_edit_at>
+                <customer_can_edit_at>1</customer_can_edit_at>
+            </resolution>
+            <item_condition>
+                <frontend_label>Item Condition</frontend_label>
+                <admin_can_edit_at>1</admin_can_edit_at>
+                <customer_can_edit_at>1</customer_can_edit_at>
+            </item_condition>
+            <reason>
+                <frontend_label>Reason for Return</frontend_label>
+                <admin_can_edit_at>1</admin_can_edit_at>
+                <customer_can_edit_at>1</customer_can_edit_at>
+            </reason>
+            <admin_style>
+                <special_style>/* Custom css style */</special_style>
+            </admin_style>
+        </rma>
+    </default>
+</config>

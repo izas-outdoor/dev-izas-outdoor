@@ -1,0 +1,18 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!-- ko if: isDisplayed() -->
+
+<div class="pris_line">
+    <span colspan="1" style="" class="mark" scope="row">
+        <span class="pris_title" data-bind="text: getTitle()"></span>
+        <span class="pris_title" data-bind="text: getCouponCode()"></span>
+    </span>
+
+        <span class="pris_value" data-bind="text: getValue(), attr: {'data-th': name}"></span>
+
+</div>
+<!-- /ko -->

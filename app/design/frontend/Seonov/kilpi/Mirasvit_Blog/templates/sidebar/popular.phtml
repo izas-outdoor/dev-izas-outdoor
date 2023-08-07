@@ -1,0 +1,35 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var \Mirasvit\Blog\Block\Sidebar\Recent $block */
+$collection = $block->getCollection()
+    ->setPageSize($this->getPageSize());
+if ($collection->getSize() === 0) {
+    return;
+}
+?>
+
+
+
+<div class="popular-post">
+                <span class="title"><?= __('MOST POPULAR POSTS') ?></span>
+
+                <ul class="popular-post-items">
+                  <?php foreach ($collection as $post): ?>
+                      <?php
+                      $imgPath = $post->getFeaturedImageUrl();
+                      ?>
+                  <li>
+                    <a href="<?= $post->getUrl() ?>">
+                      <?php if ($imgPath): ?>
+                      <img src="<?= $imgPath ?>" alt="<?= $post->getName() ?>">
+                      <?php endif ?>
+                      <div class="popular-post-info">
+                        <span class="title"><?= $post->getName() ?></span>
+                        <span class="date"><?= $post->getCreatedAt() ?> </span>
+                      </div>
+                    </a>
+                  </li>
+<?php endforeach ?>
+                </ul>
+              </div>

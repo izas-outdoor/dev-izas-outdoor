@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="sales_quote_save_after">
+        <observer name="quoteUpdateObserver" instance="Omnisend\Omnisend\Observer\QuoteUpdateObserver" />
+    </event>
+    <event name="sales_order_save_after">
+        <observer name="orderUpdateObserver" instance="Omnisend\Omnisend\Observer\OrderUpdateObserver" />
+    </event>
+    <event name="catalog_product_save_before">
+        <observer name="productUpdateObserverBefore" instance="Omnisend\Omnisend\Observer\ProductUpdateObserverBefore" />
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="productUpdateObserverAfter" instance="Omnisend\Omnisend\Observer\ProductUpdateObserverAfter" />
+    </event>
+    <event name="customer_save_after">
+        <observer name="customerUpdateObserver" instance="Omnisend\Omnisend\Observer\CustomerUpdateObserver" />
+    </event>
+    <event name="newsletter_subscriber_save_after">
+        <observer name="guestSubscriberUpdateObserver" instance="Omnisend\Omnisend\Observer\GuestSubscriberUpdateObserver" />
+    </event>
+</config>

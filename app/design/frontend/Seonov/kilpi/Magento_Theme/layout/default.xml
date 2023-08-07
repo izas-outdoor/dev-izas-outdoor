@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.wrapper">
+            <container name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header row" before="breadcrumbs">
+                <block class="Magento\Cms\Block\Block" name="top.header.message" before="-">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">top_header_message</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+
+        <referenceContainer name="header.wrapper.middle">
+            <block class="Magento\Theme\Block\Html\Header\Logo" name="logo-mobile">
+                <action method="setTemplate">
+                    <argument name="template" xsi:type="string">Wetrust_ContentManager::logo.phtml</argument>
+                </action>
+                <arguments>
+                    <argument name="logo_file" xsi:type="string">img/logo-izas-black.png</argument>
+                    <argument name="logo_alt" xsi:type="string">Izas</argument>
+                    <argument name="logo_img_width" xsi:type="number">170</argument>
+                    <argument name="logo_img_height" xsi:type="number">64</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="header.wrapper.left">
+            <block class="Izas\Theme\Block\Html\Header\Logo" name="logo-white" template="Wetrust_ContentManager::logo.phtml" before="-">
+                <arguments>
+                    <argument name="css_class" xsi:type="string">hidden-md-down</argument>
+                    <argument name="logo_file" xsi:type="string">img/logo-izas-white.png</argument>
+                    <argument name="logo_alt" xsi:type="string">Izas</argument>
+                    <argument name="logo_img_width" xsi:type="number">170</argument>
+                    <argument name="logo_img_height" xsi:type="number">64</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceBlock name="top.links">
+            <arguments>
+                <argument name="css_class" xsi:type="string">header links col hidden-md-down</argument>
+            </arguments>
+            <block class="Magento\Framework\View\Element\Html\Link" name="newsletter">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Subscribe to Newsletter</argument>
+                    <argument name="path" xsi:type="string">#</argument>
+                    <argument name="sortOrder" xsi:type="number">10</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="store-finder">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">Store Finder</argument>
+                    <argument name="path" xsi:type="string">store-locator</argument>
+                    <argument name="sortOrder" xsi:type="number">20</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Link" name="my-account">
+                <arguments>
+                    <argument name="label" xsi:type="string" translate="true">My Account</argument>
+                    <argument name="path" xsi:type="string">customer/account</argument>
+                    <argument name="sortOrder" xsi:type="number">30</argument>
+                </arguments>
+            </block>
+            <!--<block class="Magento\Framework\View\Element\Html\Link" name="newsletter">-->
+                <!--<arguments>-->
+                    <!--<argument name="label" xsi:type="string">Newsletter</argument>-->
+                    <!--<argument name="path" xsi:type="string">#</argument>-->
+                    <!--<argument name="sortOrder" xsi:type="number">30</argument>-->
+                <!--</arguments>-->
+            <!--</block>-->
+        </referenceBlock>
+
+        <referenceBlock name="logo">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">Wetrust_ContentManager::logo.phtml</argument>
+            </action>
+            <arguments>
+                <argument name="css_class" xsi:type="string">logo-black</argument>
+                <argument name="logo_file" xsi:type="string">img/logo-izas-black.png</argument>
+                <argument name="logo_alt" xsi:type="string">Izas</argument>
+                <argument name="logo_img_width" xsi:type="number">170</argument>
+                <argument name="logo_img_height" xsi:type="number">64</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="footer-container">
+            <container name="footer_topc" as="footer_topc" label="Page Footer" htmlTag="div" htmlClass="container">
+                <block class="Magento\Cms\Block\Block" name="footer_top">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">footer_top</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+        <container name="footer_bo" as="footer_bo" label="Page Footer" htmlTag="section" htmlId="footer_bootom">
+            <block class="Magento\Cms\Block\Block" name="footer_bottom">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer_bottom</argument>
+                </arguments>
+            </block>
+        </container>
+        <referenceContainer name="before.body.end">
+            <block class="Magento\Framework\View\Element\Template" name="overlay" template="Magento_Theme::overlay.phtml"/>
+        </referenceContainer>
+
+        <move element="top.search" destination="header.wrapper.right" />
+        <move element="header.panel" destination="header.container" before="-"/>
+        <move element="minicart" destination="header.panel" after="-"/>
+        <move element="breadcrumbs" destination="columns" before="-"/>
+        <move element="page.messages" destination="columns" after="breadcrumbs"/>
+        <referenceBlock name="wish-list-link" remove="true"/>
+        <referenceBlock name="my-account-link" remove="true"/>
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="report.bugs" remove="true"/>
+        <referenceBlock name="copyright" remove="true"/>
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="navigation.sections" remove="true"/>
+        <referenceBlock name="header" remove="true"/>
+        <referenceBlock name="catalog.compare.link" remove="true"/>
+        <referenceBlock name="skip_to_content" remove="true"/>
+      
+        <referenceBlock name="authorization-link" remove="true"/>
+        <referenceBlock name="register-link" remove="true"/>
+    </body>
+</page>

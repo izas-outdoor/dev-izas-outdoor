@@ -1,0 +1,22 @@
+<?php
+/** @var $block \Wetrust\Catalog\Block\Product\Render */
+$_product = $block->getProduct();
+$_colorHelper = $this->helper(\Izas\Catalog\Helper\Color::class);
+$_color = $_colorHelper->getSwatch($_product->getId());
+$_price = $block->getPrice($_product, 'regular_price');
+$_finalPrice = $block->getPrice($_product, 'final_price');
+?>
+<a href="<?= $_product->getProductUrl(); ?>">
+    <?= $block->getImage($_product, 'category_page_grid')->toHtml() ?>
+</a>
+<?php if ($_count = $_colorHelper->getColors($_product)): ?>
+    <div class="colors">
+        <span class="current-color<?= $_color->getValue() == '#ffffff' ? ' white' : ''?>" style="background:<?= $_color->getValue() ?>"></span>
+        <span class="more-colors"><?= ($_count > 1) ? '+' . $_count . ' ' . __('Colors') : "" ?></span>
+    </div>
+<?php endif; ?>
+<h3 class="name"><?= $_product->getName(); ?></h3>
+<?php if ($_price != $_finalPrice): ?>
+    <span class="label-percent"><?= $block->getDiscountPercent($_price, $_finalPrice) ?>%</span>
+<?php endif; ?>
+<?= /* @escapeNotVerified */ $block->getProductPrice($_product) ?>

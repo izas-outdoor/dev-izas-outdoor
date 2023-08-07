@@ -1,0 +1,36 @@
+<?php
+/**@var Izas\Checkout\Block\Onepage\Link $block */
+$quote = $block->getQuote();
+$blockObj = $block->getLayout()->createBlock('Magento\Customer\Block\Account\Customer');
+?>
+<div>
+    <span><?= __('Order Total') ?></span>
+    <span class="total-price"><?= $block->getGrandTotal(); ?></span>
+    <span>(<?= (int) $quote->getItemsQty() . ' ' . __('products') ?>)</span>
+</div>
+<?php if ($block->isPossibleOnepageCheckout()):?>
+    <?php if ($blockObj->customerLoggedIn()):?>
+        <button type="button"
+                data-role="proceed-to-checkout"
+                disabled="disabled"
+                title="<?= /* @escapeNotVerified */ __('Proceed to Checkout') ?>"
+                data-mage-init='{"Magento_Checkout/js/proceed-to-checkout":{"checkoutUrl":"<?= /* @escapeNotVerified */ $block->getCheckoutUrl() ?>"}}'
+                class="action primary button checkout<?= ($block->isDisabled()) ? ' disabled' : '' ?>"
+                <?php if ($block->isDisabled()):?>disabled="disabled"<?php endif; ?>>
+                <span><?= /* @escapeNotVerified */ __('Checkout') ?></span>
+        </button>
+    <?php endif?>
+    <?php if (!$blockObj->customerLoggedIn()):?>
+        <button type="button"
+            data-role="proceed-to-checkout"
+            disabled="disabled"
+            title="<?= /* @escapeNotVerified */ __('Proceed to Checkout') ?>"
+            data-mage-init='{"Magento_Checkout/js/proceed-to-checkout":{"checkoutUrl":"/customer/account/login"}}'
+            class="action primary button checkout<?= ($block->isDisabled()) ? ' disabled' : '' ?>"
+            <?php if ($block->isDisabled()):?>disabled="disabled"<?php endif; ?>>
+            <span><?= /* @escapeNotVerified */ __('Checkout') ?></span>
+        </button>
+    <?php endif?>
+<?php endif?>
+
+

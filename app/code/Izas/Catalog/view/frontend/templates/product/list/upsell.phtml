@@ -1,0 +1,40 @@
+<?php
+/** @var \Izas\Catalog\Block\Product\ProductList\Upsell $block */
+if ($_products = $block->getItems()): ?>
+    <?php $_helper = $this->helper(\Wetrust\Catalog\Helper\Product::class); ?>
+    <div class="related-products">
+        <span class="label"><?= __('We found other products you might like!'); ?></span>
+        <ul class="upsell-products-row row">
+            <?php foreach ($_products as $_product): ?>
+                <li class="col-12 upsell-product">
+                    <?= $_helper->getProductRenderHtml($_product, 'upsell'); ?>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
+<script>
+    require([
+        'jquery',
+        'Wetrust_Catalog/js/slick/slick.min'
+    ], function ($) {
+        $('.upsell-products-row').slick({
+            slidesToShow: 4,
+            arrows: true,
+            dots: false,
+            infinite: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: false,
+                        dots: true
+                    }
+                }
+            ]
+        });
+
+    });
+</script>

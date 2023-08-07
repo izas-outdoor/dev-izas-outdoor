@@ -1,0 +1,46 @@
+<?php
+/* @var $block \Lof\Rma\Block\Rma\RmaList */
+  $helper_Rma = $this->helper('Lof\Rma\Helper\Help');
+
+?>
+<div>
+    <button onclick="window.location.href='<?= $block->getNewRmaUrl() ?>';" class="save_change action primary new-rma-button" style="float: right; margin-top: -45px" >
+        <span ><?= __('New Return') ?></span>
+    </button>
+    <?php
+$list = $block->getRmaList();
+?>
+<?php if (count($list)): ?>
+    <div class="table-wrapper">
+
+            <?php foreach ($list as $rma):
+
+            ?>
+
+                <div class="cmd_item">
+
+
+
+                    <div class="pris_line">
+                      <div class="pris_line"><div class="pris_title f_bold"><?= __('RMA') ?> :</div><div class="pris_value f_bold">  <?= $rma->getIncrementId() ?></div></div>
+                      <div class="pris_line"><div class="pris_title f_bold"><?= __('Date') ?> :</div><div class="pris_value f_bold">  <?= $block->formatDate($rma->getCreatedAt(), \IntlDateFormatter::MEDIUM) ?></div></div>
+                      <div class="pris_line"><div class="pris_title f_bold"><?= __('Order #') ?> :</div><div class="pris_value f_bold">  <?php echo $rma["order_increment_id"] ?></div></div>
+                      <div class="pris_line"><div class="pris_title f_bold"><?= __('Status') ?> :</div><div class="pris_value f_bold">  <?php echo $block->GetStatusname($rma->getStatusId()) ?></div></div>
+                    </div>
+                    <div class="bottom_cmd_product">
+                      <a href="<?php echo $this->getBaseUrl().'returns/rma/view/id/'.$rma["rma_id"]?>" class=""><span class="remove_item"><?= __('View Return') ?></span></a>
+                    </div>
+                    <div class="bottom_cmd_product">
+                      <a href="<?= $this->getUrl('sales/order/view', ['order_id' => $rma->getOrderId()]) ?>" class=""><span class="remove_item"><?= __('View Order') ?></span></a>
+                    </div>
+                </div>
+            <?php endforeach?>
+
+    </div>
+<?php else: ?>
+    <div class="message info empty">
+        <span><?= __('There are no Returns') ?></span>
+    </div>
+<?php endif ?>
+
+</div>

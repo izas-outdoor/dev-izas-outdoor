@@ -1,0 +1,47 @@
+<li class="basket_item" data-role="product-item">
+    <a href="#" data-bind="attr: {'data-cart-item': item_id, title: $t('Remove item')}" class="action delete delete_item">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </a>
+    <div class="img_item">
+        <!-- ko if: product_has_url -->
+        <a data-bind="attr: {href: product_url, title: product_name}" tabindex="-1" class="product-item-photo">
+            <!-- ko foreach: $parent.getRegion('itemImage') -->
+            <!-- ko template: {name: getTemplate(), data: item.product_image} --><!-- /ko -->
+            <!-- /ko -->
+        </a>
+        <!-- /ko -->
+        <!-- ko ifnot: product_has_url -->
+        <span class="product-item-photo">
+            <!-- ko foreach: $parent.getRegion('itemImage') -->
+            <!-- ko template: {name: getTemplate(), data: item.product_image} --><!-- /ko -->
+            <!-- /ko -->
+        </span>
+        <!-- /ko -->
+    </div>
+    <div class="info_right">
+        <a class="title_item" data-bind="attr: {href: product_url}, html: product_name"></a>
+        <!-- ko if: options.length -->
+            <!-- ko foreach: { data: options, as: 'option' } -->
+            <span class="info_item">
+                <!-- ko if: Array.isArray(option.value) -->
+                <span data-bind="html: option.value.join('<br>')"></span>
+                <!-- /ko -->
+                <span data-bind="html:$t('Size')"></span>:
+                <!-- ko ifnot: Array.isArray(option.value) -->
+                <span data-bind="html: option.value"></span>
+                <!-- /ko -->
+            </span>
+            <!-- /ko -->
+        <!-- /ko -->
+        <span class="info_item bold_700">
+            <!-- ko ifnot: canApplyMsrp -->
+                <!-- ko foreach: $parent.getRegion('priceSidebar') -->
+                    <!-- ko template: {name: getTemplate(), data: item.product_price, as: 'price'} --><!-- /ko -->
+                <!-- /ko -->
+            <!-- /ko -->
+        </span>
+        <span class="info_item">
+            <span data-bind="html:$t('Qty')"></span>: <span data-bind="html: qty"></span>
+        </span>
+    </div>
+</li>

@@ -1,0 +1,73 @@
+<?php
+/** @var \Lof\Rma\Block\Rma\NewRma $block */
+?>
+
+
+<?php
+    $orders = $block->getOrderList();
+    if (count($orders)): ?>
+        <div class="block">
+            <h1 class="title_form"><?= __('Select an order to return') ?></h1>
+            <div class="orders_liste">
+
+                        <?php foreach ($orders as $_order): ?>
+                          <div class="order_item">
+
+                                        <div class="order-item-left">
+                                          <?php $state = $_order->getState();
+                                          $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                                          ?>
+                                          <?php $order = $objectManager->create('Magento\Sales\Model\Order')->load($_order->getId());
+                                          $orderItems = $order->getAllVisibleItems();
+                                          foreach ($orderItems as $item) {
+                                            $productOptions = $item->getProductOptions();
+                                            ?>
+                                            <div class="order-item-detail">
+                                              <?php
+                                              $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                                              $product = $objectManager->get('Magento\Catalog\Model\Product')->loadByAttribute('sku',$item->getData('sku'));
+                                              $imagehelper = $objectManager->get('Magento\Catalog\Helper\Image')->init($product, 'product_page_image_small')->resize(300)->getUrl();
+                                              
+                                                      ?>
+                                                      <img class="order-item-img"
+                                                            src="<?php echo $imagehelper; ?>"
+                                                            width="154px"/>
+                                            <div class="order-item-infos">
+                                              <a href="#" class="order-item-title"><?php echo $item->getName(); ?></a>
+                                              <span><?= __('SIZE') ?>: <?php echo $productOptions['attributes_info'][0]['value']; ?></span>
+                                              <span><?= __('QTY') ?>: <?php echo $productOptions['info_buyRequest']['qty']; ?></span>
+                                              <span><?php echo $item->getPrice(); ?></span>
+                                            </div>
+                                          </div>
+                                          <span class="order-line"></span>
+                        <?php  }  ?>
+                                        </div>
+                                        <div class="order-item-right">
+                                          <div class="item-right">
+                                          <span class="order-item-libelle"><?= __('ORDER NO') ?>:</span> <span><a class="order-number" href="<?= /* @escapeNotVerified */ $block->getViewUrl($_order) ?>" class=""><?= /* @escapeNotVerified */ $_order->getRealOrderId() ?></a></span>
+                                        </div>
+                                        <div class="item-right">
+                                          <span class="order-item-libelle"><?= __('ORDER PLACED') ?></span><span class="order-date"> <?= /* @escapeNotVerified */ $block->formatDate($_order->getCreatedAt()) ?></span>
+                                        </div>
+                                        <div class="item-right">
+                                            <span class="order-item-libelle"><?= __('ORDER STATUS') ?></span>
+                                            <span class="order-status">#<?php echo $state; ?></span>
+                                          </div>
+                                          <?php if($block->IsItemsQtyAvailable($_order)):
+                                          ?>
+                                          <a href="<?= /* @escapeNotVerified */ $block->getCreateRmaUrl($_order->getId()) ?>" class="track-view-order">
+                                              <span><?= /* @escapeNotVerified */ __('Return') ?></span>
+                                          </a>
+                                          <?php
+                                            endif;
+                                          ?>
+                                        </div>
+                          </div>
+                            <?php endforeach; ?>
+            </div>
+        </div>
+<?php else: ?>
+    <div class="message info empty">
+        <span><?= __('You have no orders to request RMA or your orders were placed more than %1 days ago. Please contact customer service.',$block->getReturnPeriod()) ?></span>
+    </div>
+<?php endif ?>

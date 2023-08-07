@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="1column" >
+    <update handle="faq_default"/>
+    <body>
+        <referenceContainer name="columns" htmlClass="container"/>
+        <referenceBlock name="page.main.title" remove="true"/>
+        <referenceBlock name="root">
+            <action method="setHeaderTitle">
+                <argument translate="true" name="title" xsi:type="string">FAQ</argument>
+            </action>
+        </referenceBlock>
+        <referenceContainer name="content">
+            <block class="Metagento\Faq\Block\Content" name="faq" cacheable="false"/>
+        </referenceContainer>
+    </body>
+</page>

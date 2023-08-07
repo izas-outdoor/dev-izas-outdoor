@@ -1,0 +1,13 @@
+<input class="input-text" type="text" data-bind="
+    value: value,
+    valueUpdate: 'keyup',
+    hasFocus: focused,
+    afterRender: onElementRender,
+    attr: {
+        name: inputName,
+        placeholder: $t(label),
+        'aria-required': required,
+        'aria-invalid': error() ? true : 'false',
+        id: uid,
+        disabled: disabled
+    }" />

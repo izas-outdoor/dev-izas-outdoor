@@ -1,0 +1,23 @@
+<!--@subject New RMA Request #{{var rma_id}} @-->
+<!--@vars {
+"var rma_id":"RMA ID",
+"var status":"RMA Status",
+"var created_at":"RMA Created At",
+"var customer_name":"RMA Customer Name",
+"var customer_email":"RMA Customer Email",
+"var url":"RMA Frontend URL",
+"var admin_url":"RMA Admin URL",
+"var order_id":"RMA Order ID",
+"var order_url":"RMA Order Admin URL",
+"var store_name":"RMA Store Name",
+"var rma_department_address":"RMA Department Address"
+} @-->
+{{template config_path="design/email/header_template"}}
+
+<p>New RMA Request #{{var rma_id}} initiated by {{var customer_name}} &lt;{{var customer_email}}&gt; for order <a href="{{var order_admin_url}}">#{{var order_id}}</a>.</p>
+<p>Items:<br />
+    {{layout handle="rma_email_item" items=$items area="frontend"}}</p>
+<br/>
+<p>You can manage the request by following the link: <a href="{{var admin_url}}">#{{var rma_id}}</a>.</p>
+
+{{template config_path="design/email/footer_template"}}

@@ -1,0 +1,66 @@
+<?php
+
+/** @var \Wetrust\ContentManager\Block\Content\Banner $block */ ?>
+<?php
+// @codingStandardsIgnoreFile
+$_collection = $block->getCollection();
+$_helper = $this->helper(\Izas\ContentManager\Helper\Banner::class);
+?>
+<?php if ($_collection->getSize() > 0) : ?>
+    <div class='container-fluid'>
+        <ul class='banner-slider hidden-md-down'>
+            <?php foreach ($_collection as $item) : ?>
+                <?php if ($item->getImage('banner_desktop_image') != '') : ?>
+                    <?= $_helper->getBannerRenderHtml(
+                        $_helper->createBannerItem($item, 'banner_desktop_image', 'hidden-lg-down')
+                    );
+                    ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </ul>
+
+        <ul class='banner-slider hidden-md-up'>
+            <?php foreach ($_collection as $item) : ?>
+                <?php if ($item->getImage('banner_mobile_image') != '') : ?>
+                    <?= $_helper->getBannerRenderHtml(
+                        $_helper->createBannerItem($item, 'banner_mobile_image', 'hidden-lg-up')
+                    );
+                    ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </ul>
+
+        <ul class='banner-slider hidden-lg-up hidden-sm-down'>
+            <?php foreach ($_collection as $item) : ?>
+                <?php if ($item->getImage('banner_ipad_image') != '') : ?>
+                    <?= $_helper->getBannerRenderHtml(
+                        $_helper->createBannerItem($item, 'banner_ipad_image', 'hidden-lg-up hidden-sm-down')
+                    );
+                    ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>
+<script>
+    require([
+        'jquery',
+        'Wetrust_Catalog/js/slick/slick.min'
+    ], function($) {
+        try {
+            $('.banner-slider').slick({
+                autoplay: true,
+                infinite: true,
+                autoplaySpeed: 5000,
+                arrows: true,
+                dots: true,
+                slidesToShow: 1,
+                draggable: true,
+                slidesToScroll: 1
+
+            });
+        } catch (e) {
+            console.log(e)
+        }
+    });
+</script>

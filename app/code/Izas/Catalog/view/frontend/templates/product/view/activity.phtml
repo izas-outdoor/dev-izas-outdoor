@@ -1,0 +1,21 @@
+<?php /**@var $block \Magento\Catalog\Block\Product\View\Description */ ?>
+<?php $_product = $block->getProduct();?>
+<?php if ($_product->getActivity()): ?>
+    <?php
+        $_helper = $this->helper('Izas\Catalog\Helper\Product');
+        $attr = $_product->getResource()->getAttribute('activity');
+        $attrAdmin = clone $attr;
+        $_activities = explode(',', $_product->getActivity());
+
+    ?>
+    <div class="used-for-block">
+        <ul class="row">
+            <?php foreach ($_activities as $_activity): ?>
+                <li class="col" style="text-align: center">
+                    <img src="<?= $_helper->getMediaUrl('wysiwyg/activity/' . strtolower($attrAdmin->setStoreId(0)->getSource()->getOptionText($_activity)) . '.png'); ?>">
+                    <span><?= $attr->getSource()->getOptionText($_activity) ?></span>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+<?php endif; ?>

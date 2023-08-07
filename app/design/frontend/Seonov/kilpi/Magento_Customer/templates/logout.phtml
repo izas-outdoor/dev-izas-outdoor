@@ -1,0 +1,38 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+<section id="breadcrumb">
+  <div class="container">
+      <div class="content_box">
+        <ul class="ul_breadcrumb">
+                    <li class=" home">
+                            <a style="text-transform:uppercase" href="/" title="HOME"><?php echo __('HOME') ?></a>/
+                        </li>
+                    <li class=" account">
+                            <strong><?php echo __('ACCOUNT LOGOUT') ?></strong>
+                        </li>
+            </ul>
+  </div>
+</div>
+</section>
+<section class="" id="product_detail" style="min-height:500px">
+  <div class="container">
+    <div class="content_box">
+<p><?= $block->escapeHtml(__('You have signed out and will go to our homepage in 5 seconds.')) ?></p>
+</div>
+</div>
+</section>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Customer/js/logout-redirect": {
+                "url": "<?= $block->escapeJs($block->escapeUrl($block->getUrl())) ?>"
+            }
+        }
+    }
+</script>

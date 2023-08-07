@@ -1,0 +1,31 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?php $_item = $block->getItem() ?>
+<?php $_order = $block->getItem()->getOrder(); ?>
+<tr>
+    <td class="item-info<?= ($block->getItemOptions() ? ' has-extra' : '') ?>" style="border-bottom:1px solid;">
+        <?= $block->escapeHtml($_item->getName()) ?><wbr>
+        <?php if ($block->getItemOptions()) : ?>
+            <dl>
+                <?php foreach ($block->getItemOptions() as $option) : ?>
+                    <dt><strong><em><?= $block->escapeHtml($option['label']) ?></em></strong> <?= /* @noEscape */  nl2br($block->escapeHtml($option['value'])) ?></dt>
+                <?php endforeach; ?>
+            </dl>
+        
+        <?php endif; ?>        
+        <?php $addInfoBlock = $block->getProductAdditionalInformationBlock(); ?>
+        <?php if ($addInfoBlock) : ?>
+            <?= $addInfoBlock->setItem($_item->getOrderItem())->toHtml() ?>
+        <?php endif; ?>
+        <?= $block->escapeHtml($_item->getDescription()) ?>
+    </td>
+        <!-- <p class="sku"><?php //$block->escapeHtml(__('SKU')) ?>: <?php //$block->escapeHtml($block->getSku($_item)) ?></p> -->
+    <td  class="item-qty" style="text-align:right; padding-right:16px;border-bottom:1px solid;"><?= (float) $_item->getQty() ?></td>
+    <td  class="item-price" style="text-align:right; padding-right:16px;border-bottom:1px solid;">
+        <?= /* @noEscape */ $block->getItemPrice($_item->getOrderItem()) ?>
+    </td>
+</tr>

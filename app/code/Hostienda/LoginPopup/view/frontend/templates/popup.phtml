@@ -1,0 +1,107 @@
+<?php 
+
+if($block->getShowPopup() != 'no'): ?>
+
+    <div id="popup-modal" style="z-index: 900;display:none;">
+    <div class="logoPop">
+        <img src="https://stage.izas-outdoor.com/media/logo/default/logo.png" title="Izas" alt="Izas">
+        <div class="welcome">Welcome</div>
+    </div>
+
+    <div class="entrada">
+    Select your shipping location
+    <select name="select">
+           <option value="es">España</option>
+           <option value="es">Albania</option>
+           <option value="es">Armenia</option>
+           <option value="es">Austria</option>
+           <option value="es">Belarus</option>
+           <option value="es">Belgium</option>
+           <option value="es">Bosnia & Herzegovina</option>
+           <option value="es">Bulgaria</option>
+		   <option value="ch">Chile</option>
+           <option value="es">Croatia</option>
+           <option value="es">Cyprus</option>
+           <option value="es">Czechia</option>
+           <option value="es">Denmark</option>
+           <option value="es">Estonia</option>
+           <option value="es">Finland</option>           
+           <option value="fr">France</option>
+           <option value="fr">Germany</option>
+           <option value="fr">Greece</option>
+           <option value="fr">Hungary</option>
+           <option value="fr">Iceland</option>
+           <option value="fr">Ireland</option>
+           <option value="it">Italy</option>
+           <option value="it">Latvia</option>
+           <option value="it">Liechtenstein</option>
+           <option value="it">Lithuania</option>
+           <option value="it">Luxemburg</option>
+           <option value="it">Macedonia</option>
+           <option value="it">Malta</option>
+           <option value="it">Moldova</option>
+           <option value="it">Monaco</option>
+           <option value="it">Montenegro</option>
+           <option value="it">Netherlands</option>
+           <option value="it">Norway</option>
+           <option value="it">Poland</option>
+           <option value="it">Portugal</option>
+           <option value="it">Romania</option>
+           <option value="it">San Marino</option>
+           <option value="it">Serbia</option>
+           <option value="it">Slovakia</option>
+           <option value="it">Slovenia</option>
+           <option value="it">Sweden</option>
+           <option value="it">Ukranie</option>
+           <option value="it">Vatican City</option>         
+       </select>
+    </div>
+    <div class="entrada">
+    Select your Language
+    <select name="language" id="languageSelect">         
+           <option value="es">Español</option>
+		   <option value="ch">Español (Chile)</option>
+           <option value="fr">Français</option>
+           <option value="it">Italiano</option>
+       </select>
+    </div>
+
+     
+    </div>
+
+    <script type="text/javascript">
+        require(['jquery', 'Magento_Ui/js/modal/modal', 'mage/cookies'],function($, modal, cookies)
+        {
+            
+            var date = new Date();
+            var days = 60 * 24;
+            date.setTime(date.getTime() + days * 60 * 60 * 1000);
+            var options = {
+                type: 'popup',
+                responsive: true,
+                innerScroll: true,
+                modalClass: 'idioma',
+                buttons: [{
+                    text: $.mage.__('ENTER'),
+                    class: 'mymodal1',
+                    click: function () 
+                    {
+                       
+                        console.log( $("#languageSelect").val())
+                        $.cookie('showpopup', 'nop', { path: '/', expires:  date});
+                        window.location.href = "https://www.izas-outdoor.com/"+$("#languageSelect").val();
+                    }
+                }]
+            };
+  
+           if( $.mage.cookies.get('showpopup') == null){
+
+            var popup = modal(options, $('#popup-modal'));
+        }
+            $('#popup-modal').modal('openModal').on('modalclosed', function() 
+            {
+                $.cookie('showpopup', 'nop', { path: '/', expires:  date});
+            });
+        });
+    </script>
+<?php endif; ?>

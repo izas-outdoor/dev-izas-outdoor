@@ -1,0 +1,52 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var \Mirasvit\Blog\Block\Post\PostList $block */
+$collection = $block->getPostCollection();
+?>
+
+
+<?php if ($collection->count()): ?>
+            <?php /** @var \Mirasvit\Blog\Api\Data\PostInterface $post */ ?>
+            <?php foreach ($collection as $post): ?>
+                <div class="post-item col-lg-6 col-md-6 col-sm-12 col-xs-12 filters all">
+                  <?php if ($post->getFeaturedImageUrl() && $post->getFeaturedShowOnHome()): ?>
+                  <a class="img-post" href="<?= $post->getUrl() ?>">
+                    <img src="<?= $post->getFeaturedImageUrl() ?>"
+                         alt="<?= $block->getFeaturedAlt($post) ?>" class="img-responsive"/>
+                </a>
+                <?php endif ?>
+                <span class="date-post"><?= $post->getCreatedAt() ?> </span>
+                <a class="" href="<?= $post->getUrl() ?>"><span class="title"><?= $post->getName() ?></span></a>
+                <a href="#" class="category-post">#INSERTTAGHERE</a>
+                <p class="description-post">
+                  <?= $block->getContentMoreTag($post) ?>
+                </p>
+                      <!--  <?= $block->getPostMetaHeader($post)->toHtml() ?>-->
+
+
+                    <!--<div class="blog__post-excerpt" itemprop="text">
+                        <?php if ($post->getFeaturedImageUrl() && $post->getFeaturedShowOnHome()): ?>
+                            <a href="<?= $post->getUrl() ?>">
+                                <img src="<?= $post->getFeaturedImageUrl() ?>"
+                                     alt="<?= $block->getFeaturedAlt($post) ?>"/>
+                            </a>
+                        <?php endif ?>
+
+                        <?= $block->getContentMoreTag($post) ?>
+
+                        <a class="read-more" href="<?= $post->getUrl() ?>"><?= __('Read more...') ?></a>
+                    </div>-->
+                    <!--
+                    <?= $block->getPostMetaFooter($post)->toHtml() ?>
+                  -->
+                </div>
+            <?php endforeach ?>
+
+
+
+<?php else: ?>
+    <div class="message notice">
+        <div><?= __('There are no posts available for this category.') ?></div>
+    </div>
+<?php endif ?>

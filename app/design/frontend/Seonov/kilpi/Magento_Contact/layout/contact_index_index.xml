@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Wetrust_Checkout::css/intlTelInput.min.css"/>
+        <link src="Wetrust_Checkout::js/view/checkout/utils.min.js"/>
+        <link src="Wetrust_Checkout::js/view/checkout/intltelinput.min.js"/>
+    </head>
+    <body>
+        <referenceBlock name="contactForm">
+            <block class="Magento\Cms\Block\Block" name="izas.data.protection.contact.form">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">data_protection_contact_form</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Framework\View\Element\Template" name="custom-news.checkbox" template="Magento_Customer::form/news.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

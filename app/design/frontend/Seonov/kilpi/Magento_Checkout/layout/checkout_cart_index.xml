@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="breadcrumbs">
+            <action method="addCrumb">
+                <argument name="crumbName" xsi:type="string">home</argument>
+                <argument name="crumbInfo" xsi:type="array">
+                    <item name="title" xsi:type="string" translate="true">HOME</item>
+                    <item name="label" xsi:type="string" translate="true">HOME</item>
+                    <item name="link" xsi:type="string">/</item>
+                </argument>
+            </action>
+            <action method="addCrumb">
+                <argument name="crumbName" xsi:type="string">cart</argument>
+                <argument name="crumbInfo" xsi:type="array">
+                    <item name="title" xsi:type="string" translate="true">CART</item>
+                    <item name="label" xsi:type="string" translate="true">CART</item>
+
+                    <item name="last" xsi:type="boolean">true</item>
+                </argument>
+            </action>
+        </referenceBlock>
+        <referenceBlock name="checkout.cart.totals">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="block-totals" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="tax" xsi:type="array">
+                                    <item name="config" xsi:type="array">
+                                        <item name="componentDisabled" xsi:type="boolean">true</item >
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="checkout.cart.container" htmlClass="cart-container row"/>
+        <referenceContainer name="cart.summary" htmlClass="cart-summary col-12 col-lg-4"/>
+        <referenceBlock name="checkout.cart.form">
+            <block class="Izas\Checkout\Block\Onepage\Link" name="custom.summary.top" template="Magento_Checkout::cart/topsummary.phtml"/>
+        </referenceBlock>
+        <!-- MOVE -->
+        <move element="cart.summary" destination="checkout.cart.container" after="cart-items"/>
+        <!-- REMOVE -->
+        <referenceBlock name="checkout.cart.summary.title" remove="true"/>
+        <referenceBlock name="checkout.cart.methods.multishipping" remove="true"/>
+    </body>
+</page>

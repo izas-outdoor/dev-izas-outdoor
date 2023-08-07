@@ -1,0 +1,19 @@
+[DATABASE]
+connectivity = "net"
+host = "wetrust.mysql"
+port = "3306"
+resource = "default_setup"
+unix_socket = 
+dbname = "izas"
+user = "izas"
+password = "YWhuTPZ3a6V8dJTR"
+table_prefix = 
+[MAGENTO]
+version = "2.1.x"
+basedir = "/home/izas/www"
+[GLOBAL]
+step = 
+multiselect_sep = ","
+dirmask = "755"
+filemask = "644"
+noattsetupdate = "off"

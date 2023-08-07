@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">rma_request_listing.rma_request_listing_data_source</item>
+            <item name="deps" xsi:type="string">rma_request_listing.rma_request_listing_data_source</item>
+        </item>
+        <item name="spinner" xsi:type="string">rma_request_columns</item>
+    </argument>
+    <dataSource name="rma_request_listing_data_source">
+        <argument name="dataProvider" xsi:type="configurableObject">
+            <argument name="class" xsi:type="string">\WebPanda\Rma\Ui\DataProvider\RmaDataProvider</argument>
+            <argument name="name" xsi:type="string">rma_request_listing_data_source</argument>
+            <argument name="primaryFieldName" xsi:type="string">id</argument>
+            <argument name="requestFieldName" xsi:type="string">id</argument>
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Magento_Ui/js/grid/provider</item>
+                    <item name="update_url" xsi:type="url" path="mui/index/render"/>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="indexField" xsi:type="string">id</item>
+                    </item>
+                </item>
+            </argument>
+        </argument>
+    </dataSource>
+    <container name="listing_top">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="template" xsi:type="string">ui/grid/toolbar</item>
+            </item>
+        </argument>
+        <bookmark name="bookmarks">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="namespace" xsi:type="string">rma_request_listing</item>
+                    </item>
+                </item>
+            </argument>
+        </bookmark>
+        <columnsControls name="columns_controls"/>
+        <filters name="listing_filters">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="columnsProvider" xsi:type="string">rma_request_listing.rma_request_listing.rma_request_columns</item>
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="provider" xsi:type="string">rma_request_listing.rma_request_listing.listing_top.bookmarks</item>
+                        <item name="namespace" xsi:type="string">current.filters</item>
+                    </item>
+                    <item name="templates" xsi:type="array">
+                        <item name="filters" xsi:type="array">
+                            <item name="select" xsi:type="array">
+                                <item name="component" xsi:type="string">Magento_Ui/js/form/element/ui-select</item>
+                                <item name="template" xsi:type="string">ui/grid/filters/elements/ui-select</item>
+                            </item>
+                        </item>
+                    </item>
+                    <item name="childDefaults" xsi:type="array">
+                        <item name="provider" xsi:type="string">rma_request_listing.rma_request_listing.listing_top.listing_filters</item>
+                        <item name="imports" xsi:type="array">
+                            <item name="visible" xsi:type="string">rma_request_listing.rma_request_listing.rma_request_columns.${ $.index }:visible</item>
+                        </item>
+                    </item>
+                </item>
+            </argument>
+            <filterSelect name="store_id" provider="${ $.parentName }">
+                <settings>
+                    <options class="Magento\Store\Ui\Component\Listing\Column\Store\Options"/>
+                    <caption translate="true">All Store Views</caption>
+                    <label translate="true">Store</label>
+                    <dataScope>store_id</dataScope>
+                    <imports>
+                        <link name="visible">ns = ${ $.ns }, componentType = column, index = ${ $.index }:visible</link>
+                    </imports>
+                </settings>
+            </filterSelect>
+        </filters>
+        <paging name="listing_paging">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="storageConfig" xsi:type="array">
+                        <item name="provider" xsi:type="string">rma_request_listing.rma_request_listing.listing_top.bookmarks</item>
+                        <item name="namespace" xsi:type="string">current.paging</item>
+                    </item>
+                    <item name="selectProvider" xsi:type="string">rma_request_listing.rma_request_listing.rma_request_columns.ids</item>
+                </item>
+            </argument>
+        </paging>
+    </container>
+    <columns name="rma_request_columns">
+        <settings>
+            <childDefaults>
+                <param name="storageConfig" xsi:type="array">
+                    <item name="provider" xsi:type="string">rma_request_listing.rma_request_listing.listing_top.bookmarks</item>
+                    <item name="root" xsi:type="string">columns.${ $.index }</item>
+                    <item name="namespace" xsi:type="string">current.${ $.storageConfig.root}</item>
+                </param>
+                <param name="controlVisibility" xsi:type="boolean">true</param>
+            </childDefaults>
+            <storageConfig>
+                <namespace>current</namespace>
+                <provider>rma_request_listing.rma_request_listing.listing_top.bookmarks</provider>
+            </storageConfig>
+        </settings>
+        <column name="id" class="WebPanda\Rma\Ui\Component\Listing\Column\RmaId" component="WebPanda_Rma/js/ui/grid/columns/link" sortOrder="10">
+            <settings>
+                <label translate="true">ID</label>
+                <filter>textRange</filter>
+                <sorting>desc</sorting>
+            </settings>
+        </column>
+        <column name="order_id" class="WebPanda\Rma\Ui\Component\Listing\Column\Order" component="WebPanda_Rma/js/ui/grid/columns/link" sortOrder="20">
+            <settings>
+                <label translate="true">Order #</label>
+                <filter>text</filter>
+            </settings>
+        </column>
+        <column name="customer_id" class="WebPanda\Rma\Ui\Component\Listing\Column\Customer" component="WebPanda_Rma/js/ui/grid/columns/link" sortOrder="30">
+            <settings>
+                <label translate="true">Customer</label>
+            </settings>
+        </column>
+        <column name="status_id" component="WebPanda_Rma/js/ui/grid/columns/select-status-colored" sortOrder="40">
+            <settings>
+                <label translate="true">Status</label>
+                <options class="WebPanda\Rma\Model\Source\Rma\Status"/>
+                <filter>select</filter>
+                <dataType>select</dataType>
+            </settings>
+        </column>
+        <column name="store_id" class="Magento\Store\Ui\Component\Listing\Column\Store" sortOrder="50">
+            <settings>
+                <label translate="true">Store</label>
+                <bodyTmpl>ui/grid/cells/html</bodyTmpl>
+                <sortable>false</sortable>
+            </settings>
+        </column>
+        <column name="created_at" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date" sortOrder="60">
+            <settings>
+                <label translate="true">Request Date</label>
+                <dataType>date</dataType>
+                <filter>dateRange</filter>
+            </settings>
+        </column>
+        <column name="updated_at" class="Magento\Ui\Component\Listing\Columns\Date" component="Magento_Ui/js/grid/columns/date" sortOrder="70">
+            <settings>
+                <label translate="true">Last Updated</label>
+                <dataType>date</dataType>
+                <filter>dateRange</filter>
+            </settings>
+        </column>
+        <column name="products" class="WebPanda\Rma\Ui\Component\Listing\Column\Items" component="WebPanda_Rma/js/ui/grid/columns/items" sortOrder="80">
+            <settings>
+                <label translate="true">Products</label>
+                <sortable>false</sortable>
+            </settings>
+        </column>
+        <actionsColumn name="actions" class="WebPanda\Rma\Ui\Component\Listing\Column\RmaActions" sortOrder="90">
+            <settings>
+                <indexField>id</indexField>
+            </settings>
+        </actionsColumn>
+    </columns>
+</listing>

@@ -1,0 +1,22 @@
+{
+    "name": "seonov/module-mykilpi",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "email": "hassan.boulmerhras@gmail.com",
+            "name": "Mage2Gen"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Seonov\\Mykilpi\\": ""
+        }
+    }
+}

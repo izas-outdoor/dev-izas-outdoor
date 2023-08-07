@@ -1,0 +1,38 @@
+<?php
+/**
+ * @var $block \Metagento\Faq\Block\Content\Faqlist
+ * @var $this \Metagento\Faq\Block\Content\Faqlist
+ */
+?>
+<?php
+$category = $block->getSelectedCategory();
+if ( $category ) {
+    $title = $category->getName();
+}else{
+    $title = __("Most FAQs");
+}
+
+?>
+<div class="faq-items col-sm-9 col-xs-12">
+    <ul id="most" class="faq-group">
+        <li class="faq-category current"><h2 class="title"><?php echo $title ?></h2></li>
+        <?php foreach ( $block->getFaqs() as $faq ): ?>
+            <li>
+                <a id="faq-<?php echo $faq->getId() ?>" onclick="return false;" class="faq-title" href="<?php echo $faq->getUrl() ?>"><?php echo $faq->getTitle() ?></a>
+                <div class="faq-content">
+                    <?php echo $faq->getContent() ?>
+                </div>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+
+<?php if ( $this->getSelectedFaq() ): ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('body').animate({
+                scrollTop: jQuery("#faq-<?php echo $this->getSelectedFaq()->getId() ?>").offset().top
+            }, 777);
+        });
+    </script>
+<?php endif; ?>

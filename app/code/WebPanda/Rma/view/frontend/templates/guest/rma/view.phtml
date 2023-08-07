@@ -1,0 +1,454 @@
+<?php
+/* @var $block \WebPanda\Rma\Block\Guest\Rma\View */
+?>
+
+<?php
+$rma = $block->getRmaModel();
+$itemsCollection = $rma->getItemsCollection();
+$helper = $this->helper('\WebPanda\Rma\Helper\Data');
+?>
+<div class="rma-view-wrapper">
+    <div class="block rma-general">
+        <div class="container-fluid">
+            <?php
+            $stepsFinishedClass = '';
+            $completeLabel = __('Resolved');
+            if ($block->getActiveStep() > 5) {
+                if ($rma->getStatusId() == 3) {
+                    $stepsFinishedClass = ' progress-canceled';
+                    $completeLabel = __('Canceled');
+                } else {
+                    $stepsFinishedClass = ' progress-completed';
+                }
+            }
+            $activeClass = ' class="is-active"';
+            ?>
+            <ul class="list-unstyled multi-steps<?php echo $stepsFinishedClass ?>">
+                <li<?php echo ($block->getActiveStep() == 1) ? $activeClass : '' ?>><?php echo __('Pending') ?></li>
+                <li<?php echo ($block->getActiveStep() == 2) ? $activeClass : '' ?>><?php echo __('Authorized') ?></li>
+                <li<?php echo ($block->getActiveStep() == 3) ? $activeClass : '' ?>><?php echo __('Package Sent') ?></li>
+                <li<?php echo ($block->getActiveStep() == 4) ? $activeClass : '' ?>><?php echo __('Package Received') ?></li>
+                <li<?php echo ($block->getActiveStep() == 5) ? $activeClass : '' ?>><?php echo $completeLabel ?></li>
+            </ul>
+        </div>
+        <?php if ($block->getActiveStep() > 1): ?>
+            <div id="return-instructions">
+                <div class="instructions-title" data-role="collapsible">
+                    <div data-role="trigger">
+                        <h3>
+                            <?php echo __('Return Instructions') ?>
+                            <i class="fas fa-angle-down rotate-icon"></i>
+                        </h3>
+                    </div>
+                </div>
+                <div id="instructions-content" data-role="content">
+                    <?php echo $block->getReturnInstructions() ?>
+                    <?php if (strlen($block->getRmaDepartmentAddress()) > 0): ?>
+                        <h3><?php echo __('After all the steps are completed, you need to ship the package to this address:') ?></h3>
+                        <i><?php echo nl2br($block->getRmaDepartmentAddress()) ?></i>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <script>
+                require([
+                    'jquery',
+                    'accordion'
+                ], function ($) {
+                    $("#return-instructions").accordion({'active': 0, 'collapsible': true});
+                });
+            </script>
+        <?php endif; ?>
+        <div class="block-content">
+            <div class="rma-box general-info">
+                <div class="box-title"><span><?php echo __('Request Information') ?>:</span></div>
+                <div class="box-content">
+                    <div class="fieldset">
+                        <div class="field status">
+                            <label class="label"><span><?php echo __('Status') ?></span></label>
+                            <div class="value">
+                                <span><?php echo $helper->getStatusHtml($rma) ?></span>
+                            </div>
+                        </div>
+                        <div class="field order">
+                            <label class="label"><span><?php echo __('Order') ?></span></label>
+                            <div class="value">
+                                <span>#<?php echo $rma->getOrder()->getIncrementId() ?></span>
+                            </div>
+                        </div>
+                        <div class="field customer_name">
+                            <label class="label"><span><?php echo __('Customer Name') ?></span></label>
+                            <div class="value">
+                                <span><?php echo $rma->getCustomerName() ?></span>
+                            </div>
+                        </div>
+                        <div class="field customer_email">
+                            <label class="label"><span><?php echo __('Email Address') ?></span></label>
+                            <div class="value">
+                                <span><?php echo $rma->getFinalCustomerEmail() ?></span>
+                            </div>
+                        </div>
+                        <div class="field order_date">
+                            <label class="label"><span><?php echo __('Order Date') ?></span></label>
+                            <div class="value">
+                                <span><?php echo $block->formatDate($rma->getOrder()->getCreatedAt(), 2, true) ?></span>
+                            </div>
+                        </div>
+                        <div class="field rma_date">
+                            <label class="label"><span><?php echo __('Return Request Date') ?></span></label>
+                            <div class="value">
+                                <span><?php echo $block->formatDate($rma->getCreatedAt(), 2, true) ?></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rma-box contact-info">
+                <div class="box-title"><span><?php echo __('Contact Information') ?>:</span></div>
+                <div class="box-content"><?php echo $block->getChildHtml('contact') ?></div>
+            </div>
+        </div>
+
+        <?php if ($itemsCollection->getSize() > 0): ?>
+            <div class="block-content">
+                <h3><?php echo __('Items to Return') ?></h3>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th><?php echo __('Product Name') ?></th>
+                        <th><?php echo __('SKU') ?></th>
+                        <th><?php echo __('Qty') ?></th>
+                        <th><?php echo $block->getReasonLabel() ?></th>
+                        <th><?php echo $block->getItemConditionLabel() ?></th>
+                        <th><?php echo $block->getResolutionLabel() ?></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($itemsCollection->getItems() as $item): ?>
+                        <?php if ($block->getProductExists($item->getProductId())): ?>
+                            <tr id="rma-row-<?php echo $item->getId() ?>">
+                                <td><?= $block->getImage($block->getProduct($item->getProductId()), 'product_thumbnail_image')->toHtml() ?></td>
+                                <td>
+                                    <a href="<?php echo $block->getProductUrl($item) ?>">
+                                        <span><?php echo $item->getName() ?></span>
+                                    </a>
+                                </td>
+                                <td><?php echo $item->getSku() ?></td>
+                                <td><?php echo $item->getQty() * 1 ?></td>
+                                <td>
+                                    <span class="reason-initial-value"><?php echo $item->getFinalReason() ?></span>
+                                    <?php if ($block->canEditReason()): ?>
+                                        <div class="update-value">
+                                            <a class="update-reason-action" data-id="<?php echo $item->getId() ?>" href="#"><?php echo __('Edit') ?></a>
+                                            <form class="update-value-form update-reason-form"
+                                                  action="<?php echo $block->getRmaUpdateUrl() ?>"
+                                                  method="post"
+                                                  style="display: none;"
+                                            >
+                                                <?php echo $block->getBlockHtml('formkey') ?>
+                                                <input type="hidden" name="id" value="<?php echo $item->getId() ?>" />
+                                                <select name="reason_id">
+                                                    <?php foreach ($block->getReasonOptions() as $id => $value): ?>
+                                                        <option
+                                                            value="<?php echo $id ?>"
+                                                            <?php echo ($item->getReasonId() == $id) ? ' selected' : '' ?>
+                                                        >
+                                                            <?php echo $value ?>
+                                                        </option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                                <button type="submit"
+                                                        title="<?php echo __('Save') ?>"
+                                                        class="action primary"
+                                                        style="margin-top: 8px;"
+                                                >
+                                                    <span><?php echo __('Save') ?></span>
+                                                </button>
+                                                <a
+                                                    class="hide-reason-form"
+                                                    href="#"
+                                                    style="display: block; margin-top: 4px;"
+                                                    data-id="<?php echo $item->getId() ?>"
+                                                >
+                                                    <?php echo __('Cancel') ?>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    <?php endif ?>
+                                </td>
+                                <td>
+                                    <span class="item-condition-initial-value"><?php echo $item->getFinalItemCondition() ?></span>
+                                    <?php if ($block->canEditItemCondition()): ?>
+                                        <div class="update-value">
+                                            <a class="update-item-condition-action" data-id="<?php echo $item->getId() ?>" href="#"><?php echo __('Edit') ?></a>
+                                            <form class="update-value-form update-item-condition-form"
+                                                  action="<?php echo $block->getRmaUpdateUrl() ?>"
+                                                  method="post"
+                                                  style="display: none;"
+                                            >
+                                                <?php echo $block->getBlockHtml('formkey') ?>
+                                                <input type="hidden" name="id" value="<?php echo $item->getId() ?>" />
+                                                <select name="item_condition_id">
+                                                    <?php foreach ($block->getItemConditionOptions() as $id => $value): ?>
+                                                        <option
+                                                            value="<?php echo $id ?>"
+                                                            <?php echo ($item->getItemConditionId() == $id) ? ' selected' : '' ?>
+                                                        >
+                                                            <?php echo $value ?>
+                                                        </option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                                <button type="submit"
+                                                        title="<?php echo __('Save') ?>"
+                                                        class="action primary"
+                                                        style="margin-top: 8px;"
+                                                >
+                                                    <span><?php echo __('Save') ?></span>
+                                                </button>
+                                                <a
+                                                    class="hide-item-condition-form"
+                                                    href="#"
+                                                    style="display: block; margin-top: 4px;"
+                                                    data-id="<?php echo $item->getId() ?>"
+                                                >
+                                                    <?php echo __('Cancel') ?>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    <?php endif ?>
+                                </td>
+                                <td>
+                                    <span class="resolution-initial-value"><?php echo $item->getFinalResolution() ?></span>
+                                    <?php if ($block->canEditResolution()): ?>
+                                        <div class="update-value">
+                                            <a class="update-resolution-action" href="#" data-id="<?php echo $item->getId() ?>"><?php echo __('Edit') ?></a>
+                                            <form class="update-value-form update-resolution-form"
+                                                  action="<?php echo $block->getRmaUpdateUrl() ?>"
+                                                  method="post"
+                                                  style="display: none;"
+                                            >
+                                                <?php echo $block->getBlockHtml('formkey') ?>
+                                                <input type="hidden" name="id" value="<?php echo $item->getId() ?>" />
+                                                <select name="resolution_id">
+                                                    <?php foreach ($block->getResolutionOptions() as $id => $value): ?>
+                                                        <option
+                                                            value="<?php echo $id ?>"
+                                                            <?php echo ($item->getResolutionId() == $id) ? ' selected' : '' ?>
+                                                        >
+                                                            <?php echo $value ?>
+                                                        </option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                                <button type="submit"
+                                                        title="<?php echo __('Save') ?>"
+                                                        class="action primary"
+                                                        style="margin-top: 8px;"
+                                                >
+                                                    <span><?php echo __('Save') ?></span>
+                                                </button>
+                                                <a
+                                                    class="hide-resolution-form"
+                                                    href="#"
+                                                    style="display: block; margin-top: 4px;"
+                                                    data-id="<?php echo $item->getId() ?>"
+                                                >
+                                                    <?php echo __('Cancel') ?>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    <?php endif ?>
+                                </td>
+                            </tr>
+                        <?php else: ?>
+                            <tr id="rma-row-<?php echo $item->getId() ?>">
+                                <td><?= $block->getImage($block->getProduct($item->getProductId()), 'product_thumbnail_image')->toHtml() ?></td>
+                                <td><?php echo $item->getName() ?></td>
+                                <td><?php echo $item->getSku() ?></td>
+                                <td><?php echo $item->getQty() * 1 ?></td>
+                                <td>
+                                    <span class="reason-initial-value"><?php echo $item->getFinalReason() ?></span>
+                                    <?php if ($block->canEditReason()): ?>
+                                        <div class="update-value">
+                                            <a class="update-reason-action" data-id="<?php echo $item->getId() ?>" href="#"><?php echo __('Edit') ?></a>
+                                            <form class="update-value-form update-reason-form"
+                                                  action="<?php echo $block->getRmaUpdateUrl() ?>"
+                                                  method="post"
+                                                  style="display: none;"
+                                            >
+                                                <?php echo $block->getBlockHtml('formkey') ?>
+                                                <input type="hidden" name="id" value="<?php echo $item->getId() ?>" />
+                                                <select name="reason_id">
+                                                    <?php foreach ($block->getReasonOptions() as $id => $value): ?>
+                                                        <option
+                                                            value="<?php echo $id ?>"
+                                                            <?php echo ($item->getReasonId() == $id) ? ' selected' : '' ?>
+                                                        >
+                                                            <?php echo $value ?>
+                                                        </option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                                <button type="submit"
+                                                        title="<?php echo __('Save') ?>"
+                                                        class="action primary"
+                                                        style="margin-top: 8px;"
+                                                >
+                                                    <span><?php echo __('Save') ?></span>
+                                                </button>
+                                                <a
+                                                    class="hide-reason-form"
+                                                    href="#"
+                                                    style="display: block; margin-top: 4px;"
+                                                    data-id="<?php echo $item->getId() ?>"
+                                                >
+                                                    <?php echo __('Cancel') ?>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    <?php endif ?>
+                                </td>
+                                <td>
+                                    <span class="item-condition-initial-value"><?php echo $item->getFinalItemCondition() ?></span>
+                                    <?php if ($block->canEditItemCondition()): ?>
+                                        <div class="update-value">
+                                            <a class="update-item-condition-action" data-id="<?php echo $item->getId() ?>" href="#"><?php echo __('Edit') ?></a>
+                                            <form class="update-value-form update-item-condition-form"
+                                                  action="<?php echo $block->getRmaUpdateUrl() ?>"
+                                                  method="post"
+                                                  style="display: none;"
+                                            >
+                                                <?php echo $block->getBlockHtml('formkey') ?>
+                                                <input type="hidden" name="id" value="<?php echo $item->getId() ?>" />
+                                                <select name="item_condition_id">
+                                                    <?php foreach ($block->getItemConditionOptions() as $id => $value): ?>
+                                                        <option
+                                                            value="<?php echo $id ?>"
+                                                            <?php echo ($item->getItemConditionId() == $id) ? ' selected' : '' ?>
+                                                        >
+                                                            <?php echo $value ?>
+                                                        </option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                                <button type="submit"
+                                                        title="<?php echo __('Save') ?>"
+                                                        class="action primary"
+                                                        style="margin-top: 8px;"
+                                                >
+                                                    <span><?php echo __('Save') ?></span>
+                                                </button>
+                                                <a
+                                                    class="hide-item-condition-form"
+                                                    href="#"
+                                                    style="display: block; margin-top: 4px;"
+                                                    data-id="<?php echo $item->getId() ?>"
+                                                >
+                                                    <?php echo __('Cancel') ?>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    <?php endif ?>
+                                </td>
+                                <td>
+                                    <span class="resolution-initial-value"><?php echo $item->getFinalResolution() ?></span>
+                                    <?php if ($block->canEditResolution()): ?>
+                                        <div class="update-value">
+                                            <a class="update-resolution-action" data-id="<?php echo $item->getId() ?>" href="#"><?php echo __('Edit') ?></a>
+                                            <form class="update-value-form update-resolution-form"
+                                                  action="<?php echo $block->getRmaUpdateUrl() ?>"
+                                                  method="post"
+                                                  style="display: none;"
+                                            >
+                                                <?php echo $block->getBlockHtml('formkey') ?>
+                                                <input type="hidden" name="id" value="<?php echo $item->getId() ?>" />
+                                                <select name="resolution_id">
+                                                    <?php foreach ($block->getResolutionOptions() as $id => $value): ?>
+                                                        <option
+                                                            value="<?php echo $id ?>"
+                                                            <?php echo ($item->getResolutionId() == $id) ? ' selected' : '' ?>
+                                                        >
+                                                            <?php echo $value ?>
+                                                        </option>
+                                                    <?php endforeach ?>
+                                                </select>
+                                                <button type="submit"
+                                                        title="<?php echo __('Save') ?>"
+                                                        class="action primary"
+                                                        style="margin-top: 8px;"
+                                                >
+                                                    <span><?php echo __('Save') ?></span>
+                                                </button>
+                                                <a
+                                                    class="hide-resolution-form"
+                                                    href="#"
+                                                    style="display: block; margin-top: 4px;"
+                                                    data-id="<?php echo $item->getId() ?>"
+                                                >
+                                                    <?php echo __('Cancel') ?>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    <?php endif ?>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        <?php endif; ?>
+        <div class="block-message-history">
+            <h3><?php echo __('Return History') ?></h3>
+            <?php echo $block->getChildHtml('messages') ?>
+        </div>
+    </div>
+</div>
+<style><?php echo $block->getSpecialStyle() ?></style>
+<script>
+    require(['jquery', 'mage/mage'], function ($) {
+        'use strict';
+
+        $('.update-reason-action').click(function(event) {
+            event.preventDefault();
+            $(this).hide();
+            var row = $('#rma-row-' + $(this).data('id'));
+            $('.reason-initial-value', row).hide();
+            $('.update-reason-form', row).show();
+        });
+        $('.hide-reason-form').click(function(event) {
+            event.preventDefault();
+            var row = $('#rma-row-' + $(this).data('id'));
+            $('.reason-initial-value', row).show();
+            $('.update-reason-form', row).hide();
+            $('.update-reason-action', row).show();
+        });
+
+        $('.update-item-condition-action').click(function(event) {
+            event.preventDefault();
+            $(this).hide();
+            var row = $('#rma-row-' + $(this).data('id'));
+            $('.item-condition-initial-value', row).hide();
+            $('.update-item-condition-form', row).show();
+        });
+        $('.hide-item-condition-form').click(function(event) {
+            event.preventDefault();
+            var row = $('#rma-row-' + $(this).data('id'));
+            $('.item-condition-initial-value', row).show();
+            $('.update-item-condition-form', row).hide();
+            $('.update-item-condition-action', row).show();
+        });
+
+        $('.update-resolution-action').click(function(event) {
+            event.preventDefault();
+            $(this).hide();
+            var row = $('#rma-row-' + $(this).data('id'));
+            $('.resolution-initial-value', row).hide();
+            $('.update-resolution-form', row).show();
+        });
+        $('.hide-resolution-form').click(function(event) {
+            event.preventDefault();
+            var row = $('#rma-row-' + $(this).data('id'));
+            $('.resolution-initial-value', row).show();
+            $('.update-resolution-form', row).hide();
+            $('.update-resolution-action', row).show();
+        });
+    });
+</script>

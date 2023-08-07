@@ -1,0 +1,32 @@
+<div class="row checkout-row">
+    <div class="col-12 col-md-7 opc-wrapper">
+        <div class="col-main-fix">
+            <div class="row opc-wrapper-header">
+                <!-- ko foreach: getRegion('logo') -->
+                <!-- ko template: getTemplate() --><!-- /ko -->
+                <!--/ko-->
+
+                <!-- ko foreach: getRegion('progressBar') -->
+                <!-- ko template: getTemplate() --><!-- /ko -->
+                <!--/ko-->
+
+                <!-- ko foreach: getRegion('messages') -->
+                <!-- ko template: getTemplate() --><!-- /ko -->
+                <!--/ko-->
+            </div>
+            <ul id="checkoutSteps">
+                <!-- ko foreach: getRegion('steps') -->
+                <!-- ko template: getTemplate() --><!-- /ko -->
+                <!--/ko-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-5 sidebar">
+        <div class="block block-progress opc-block-progress">
+            <!-- ko foreach: getRegion('sidebar') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </div>
+    </div>
+</div>

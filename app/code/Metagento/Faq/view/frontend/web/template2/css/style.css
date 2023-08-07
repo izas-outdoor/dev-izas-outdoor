@@ -1,0 +1,61 @@
+#faq-container {
+    overflow: auto;
+    margin-bottom: 50px;
+}
+#faq-container h1.title {
+    text-align: center;
+}
+#faq-search input{margin-left: 40px;width: 80%;}
+#faq-search button{margin-left: -80px;}
+#faq-search
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a, img, span, input, button {
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+#sidebar {
+    margin-top: 70px;
+}
+
+#sidebar ul li a {
+    display: block;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    color: #666;
+    border-top: none;
+}
+
+#sidebar ul li.selected a {
+    border: 1px solid #222 !important;
+    font-weight: 700;
+}
+
+#sidebar ul li.top a {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+#sidebar ul li {
+    margin: 0;
+}
+
+.faq-items .faq-title {
+    color: #6eb800;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.faq-items .faq-group li {
+    margin-bottom: 20px;
+}

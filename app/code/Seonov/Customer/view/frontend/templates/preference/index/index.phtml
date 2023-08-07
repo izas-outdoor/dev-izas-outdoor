@@ -1,0 +1,70 @@
+<h1 class="title_form"><?php echo __('MY EMAIL PREFERENCES') ?></h1>
+<div class="header_order">
+    <h2 class="title_order"><?php echo __('What sports do you want to hear about?') ?></h2>
+    <p class="description_order">
+        <?php echo __('Tick the boxes below to show us which sports you do and don’t want to hear about') ?>.
+    </p>
+</div>
+
+<form class="form-sports" method="post" action="<?php $block->getUrl('categories/data/importPost') ?>">
+    <?php
+    $customerId = $block->getLoggedinCustomerId();
+    $customerData = $block->getCustomerData();
+    ?>
+    <div class="radio-boxs">
+        <div class="radio-box">
+            <label for="skiing">
+                <?php echo __('Skiing') ?>
+            </label>
+            <input type="checkbox" name="skiing" id="skiing" <?= $customerData->getCustomAttribute('skiing') && $customerData->getCustomAttribute('skiing')->getValue() == 1 ? ' checked="checked"' : ''; ?>/>
+
+            <span class="checkbox_check"><i class="fas fa-check"></i></span>
+        </div>
+        <div class="radio-box">
+            <label for="running">
+                <?php echo __('Running') ?>
+            </label>
+            <input type="checkbox" name="running" id="running" <?= $customerData->getCustomAttribute('running') && $customerData->getCustomAttribute('running')->getValue() == 1 ? "checked='checked'" : '' ?>/>
+            <span class="checkbox_check"><i class="fas fa-check"></i></span>
+        </div>
+
+        <div class="radio-box">
+            <label for="cycling">
+                <?php echo __('Cycling') ?>
+            </label>
+            <input type="checkbox" name="cycling" id="cycling" <?= $customerData->getCustomAttribute('cycling') && $customerData->getCustomAttribute('cycling')->getValue() == 1 ? "checked='checked'" : '' ?>/>
+            <span class="checkbox_check"><i class="fas fa-check"></i></span>
+        </div>
+
+        <div class="radio-box">
+            <label for="climbing">
+                <?php echo __('Climbing') ?>
+            </label>
+            <input type="checkbox" name="climbing" id="climbing" <?= $customerData->getCustomAttribute('climbing') && $customerData->getCustomAttribute('climbing')->getValue() == 1 ? "checked='checked'" : '' ?>/>
+            <span class="checkbox_check"><i class="fas fa-check"></i></span>
+        </div>
+
+        <div class="radio-box">
+            <label for="kids">
+                <?php echo __('Kids') ?>
+            </label>
+            <input type="checkbox" name="kids" id="kids" <?= $customerData->getCustomAttribute('kids') && $customerData->getCustomAttribute('kids')->getValue() == 1 ? "checked='checked'" : '' ?>/>
+            <span class="checkbox_check"><i class="fas fa-check"></i></span>
+        </div>
+
+        <div class="radio-box">
+            <label for="fashion">
+                <?php echo __('Fashion') ?>
+            </label>
+            <input type="checkbox" name="fashion" id="fashion" <?= $customerData->getCustomAttribute('fashion') && $customerData->getCustomAttribute('fashion')->getValue() == 1 ? "checked='checked'" : '' ?>/>
+            <span class="checkbox_check"><i class="fas fa-check"></i></span>
+        </div>
+    </div>
+
+    <div class="submit_box">
+        <a  href="<?= $block->getUrl('cusacc/preference/index') ?>" class="back_link"> <?php echo __('Unsubscribe from all IZAS emails') ?></a>
+        <input type="submit" class="submit_input" value="<?php echo __('SAVE') ?>"
+        </input>
+    </div>
+    <div class="space_80"></div>    <a class="back_link" href="#">&lt; <?php echo __('Back') ?></a>
+</form>

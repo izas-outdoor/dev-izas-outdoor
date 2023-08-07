@@ -1,0 +1,18 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var \Mirasvit\Blog\Block\Post\View $block */
+$post = $block->getPost();
+?>
+
+<h1 class="title-post"><?= $post->getName() ?></h1>
+<div class="date-tag">
+                  <span class="date"><?= $post->getCreatedAt() ?></span>
+                </div>
+                <div class="content-post">
+    <?= $block->getPostContent() ?>
+</div>
+
+    <?= $this->getChildHtml('blog.post.related.posts') ?>
+
+    <?= $this->getChildHtml('blog.post.related.products') ?>

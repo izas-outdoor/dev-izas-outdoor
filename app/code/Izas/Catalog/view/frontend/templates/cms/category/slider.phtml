@@ -1,0 +1,19 @@
+<?php
+// @codingStandardsIgnoreFile
+/** @var \ND\Catalog\Block\Cms\Category\Slider $block */
+$_categories = $block->getCategoriesCollection();
+?>
+<?php if ($_categories->getSize() > 0): ?>
+    <div class="slick-carousel" data-items="5" data-min-slides-to-show="2">
+        <?php foreach ($_categories as $_category): ?>
+            <div>
+                <a href="<?php echo $_category->getUrl(); ?>">
+                <?php if ($sliderImage = $_category->getSliderImage()): ?>
+                    <img src="<?php echo $block->getSliderUrl($sliderImage); ?>" />
+                <?php endif; ?>
+                    <span><?php echo $_category->getName(); ?></span>
+                </a>
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>

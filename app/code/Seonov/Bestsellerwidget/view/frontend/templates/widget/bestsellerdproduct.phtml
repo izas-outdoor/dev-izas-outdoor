@@ -1,0 +1,54 @@
+<?php
+if ($exist = ($this->getBestsellerProduct() && $this->getBestsellerProduct()->getPageSize())) {
+$fetProdCollection = $this->getBestsellerProduct();
+$productcount = $this->getProductLimit();
+$imagewidth = $this->getProductimagewidth();
+$imageheight = $this->getProductimageheight();
+ $mode = 'grid';
+  $title = __('Bestseller Products');
+ $type = 'widget-bestseller-grid';
+ $image = 'bestseller_products_content_widget_grid';
+}
+?>
+<?php if ($exist):?>
+
+
+            <h2 class="first_title"><?php /* @escapeNotVerified */ echo $title; ?></h2>
+            <h3 class="second_title ">DISCOVER OUR MOST POPULAR PRODUCTS</h3>
+
+            <div class="owl-carousel">
+
+    <?php foreach ($fetProdCollection as $item):
+
+$prod = $block->loadProduct($item->getProductId());
+    ?>
+    <?php
+    $store = $block->getstore();
+$imageUrl = $store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'catalog/product' . $prod->getImage();
+/*$imageUrl = $block->imageHelperObj()->init($prod, 'product_page_image_small')
+    ->setImageFile($prod->getFile())
+    ->resize($imagewidth,$imageheight)
+    ->getUrl();*/
+    $imageBlock =  $block->getLayout()->createBlock('Magento\Catalog\Block\Product\ListProduct');
+//get product object...
+$productImage = $imageBlock->getImage($prod, 'category_page_list');
+?>
+
+    <div class="product_item">
+      <a href="<?php /* @escapeNotVerified */ echo $prod->getProductUrl() ?>">
+
+        <img class="img_product" width="212" height="212"  alt="<?php echo $this->escapeHtml($prod->getName()) ?>" src="<?php echo  $imageUrl;?>">
+      
+        <span class="title_product"><?php echo $block->escapeHtml($prod->getName()) ?></span>
+        <span class="pris_product">
+
+          <?php
+        echo $this->getProductPriceHtml($prod, $type);
+        ?></span>
+      </a>
+    </div>
+
+  <?php endforeach ?>
+</div>
+
+<?php endif;?>

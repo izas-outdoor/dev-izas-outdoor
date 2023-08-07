@@ -1,0 +1,162 @@
+<?php
+$fetSlider = $this->getSliderImage();
+?>
+<div id="home_slider" class="carousel slide nodesktop" data-ride="carousel" data-interval="false">
+    <ul class="carousel-indicators">
+        <?php
+        $i = 0;
+        foreach ($fetSlider as $key => $value) { ?>
+            <li data-target="#home_slider" data-slide-to="<?php echo $i; ?>" class="<?php if ($i == 0) {
+                echo 'active';
+            } ?>"></li>
+            <?php $i++;
+        } ?>
+    </ul>
+
+    <div class="carousel-inner">
+        <?php
+        $j = 0;
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $mediaDirectory = $objectManager->get('Magento\Framework\Filesystem')->getDirectoryRead(\Magento\Framework\App\Filesystem\DirectoryList::MEDIA);
+        $basurl = $objectManager->get('Magento\Store\Model\StoreManagerInterface')
+            ->getStore()
+            ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA); ?>
+
+        <?php foreach ($fetSlider as $key => $value) { ?>
+
+
+            <div class="carousel-item <?php if ($j == 0) {
+                echo 'active';
+            } ?>">
+
+                <img class="slider-image" src="<?php echo $basurl . '/bannerslider/images'; ?><?php echo $value['sliderimage'] ?>"/>
+                <div class="carousel-caption">
+                    <h3 class="title_slider"><?php echo $value['sliderbigtitle'] ?></h3>
+                    <p class="p_slider"><?php echo $value['slidersmalltitle'] ?></p>
+
+                    <div class="btn_slider">
+                        <?php if ($value['slidermenbtnlink'] && $value['slidermenbtntext']) { ?>
+                            <a href="<?php echo $value['slidermenbtnlink'] ?>"
+                               class="fleft link_btn"><?php echo $value['slidermenbtntext'] ?></a>
+                        <?php } ?>
+                        <?php if ($value['sliderwomenbtnlink'] && $value['sliderwomenbtntext']) { ?>
+                            <a href="<?php echo $value['sliderwomenbtnlink'] ?>"
+                               class="fright link_btn"><?php echo $value['sliderwomenbtntext'] ?></a>
+                        <?php } ?>
+                        <?php if ($value['sliderkidbtnlink'] && $value['sliderkidbtntext']) { ?>
+                            <a href="<?php echo $value['sliderkidbtnlink'] ?>"
+                               class="fright link_btn"><?php echo $value['sliderkidbtntext'] ?></a>
+                        <?php } ?>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <?php $j++;
+        } ?>
+    </div>
+    <a class="carousel-control-prev" href="#home_slider" data-slide="prev">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </a>
+    <a class="carousel-control-next" href="#home_slider" data-slide="next">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+<div id="home_slider_mobile" class="carousel slide nomobile" data-ride="carousel" data-interval="false">
+    <ul class="carousel-indicators">
+        <?php
+        $i = 0;
+        foreach ($fetSlider as $key => $value) { ?>
+            <li data-target="#home_slider_mobile" data-slide-to="<?php echo $i; ?>" class="<?php if ($i == 0) {
+                echo 'active';
+            } ?>"></li>
+            <?php $i++;
+        } ?>
+    </ul>
+
+    <div class="carousel-inner">
+        <?php
+        $j = 0;
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $mediaDirectory = $objectManager->get('Magento\Framework\Filesystem')->getDirectoryRead(\Magento\Framework\App\Filesystem\DirectoryList::MEDIA);
+        $basurl = $objectManager->get('Magento\Store\Model\StoreManagerInterface')
+            ->getStore()
+            ->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA); ?>
+
+        <?php foreach ($fetSlider as $key => $value) { ?>
+
+            <?php if ($value['mobileimage']) { ?>
+                <div class="carousel-item <?php if ($j == 0) {
+                    echo 'active';
+                } ?>">
+
+                    <img class="slider-image" src="<?php echo $basurl . '/bannerslider/images'; ?><?php echo $value['mobileimage'] ?>"/>
+
+                    <div class="carousel-caption">
+                        <h3 class="title_slider"><?php echo $value['sliderbigtitle'] ?></h3>
+                        <p class="p_slider"><?php echo $value['slidersmalltitle'] ?></p>
+
+                        <div class="btn_slider">
+                            <?php if ($value['slidermenbtnlink'] && $value['slidermenbtntext']) { ?>
+                                <a href="<?php echo $value['slidermenbtnlink'] ?>"
+                                   class="fleft link_btn"><?php echo $value['slidermenbtntext'] ?></a>
+                            <?php } ?>
+                            <?php if ($value['sliderwomenbtnlink'] && $value['sliderwomenbtntext']) { ?>
+                                <a href="<?php echo $value['sliderwomenbtnlink'] ?>"
+                                   class="fright link_btn"><?php echo $value['sliderwomenbtntext'] ?></a>
+                            <?php } ?>
+                            <?php if ($value['sliderkidbtnlink'] && $value['sliderkidbtntext']) { ?>
+                                <a href="<?php echo $value['sliderkidbtnlink'] ?>"
+                                   class="fright link_btn"><?php echo $value['sliderkidbtntext'] ?></a>
+                            <?php } ?>
+                        </div>
+                    </div>
+
+
+                </div>
+            <?php } else { ?>
+
+                <div class="carousel-item <?php if ($j == 0) {
+                    echo 'active';
+                } ?>">
+
+                    <img class="slider-image" src="<?php echo $basurl . '/bannerslider/images'; ?><?php echo $value['sliderimage'] ?>"/>
+
+                    <div class="carousel-caption">
+                        <h3 class="title_slider"><?php echo $value['sliderbigtitle'] ?></h3>
+                        <p class="p_slider"><?php echo $value['slidersmalltitle'] ?></p>
+
+                        <div class="btn_slider">
+                            <?php if ($value['slidermenbtnlink'] && $value['slidermenbtntext']) { ?>
+                                <a href="<?php echo $value['slidermenbtnlink'] ?>"
+                                   class="fleft link_btn"><?php echo $value['slidermenbtntext'] ?></a>
+                            <?php } ?>
+                            <?php if ($value['sliderwomenbtnlink'] && $value['sliderwomenbtntext']) { ?>
+                                <a href="<?php echo $value['sliderwomenbtnlink'] ?>"
+                                   class="fright link_btn"><?php echo $value['sliderwomenbtntext'] ?></a>
+                            <?php } ?>
+                            <?php if ($value['sliderkidbtnlink'] && $value['sliderkidbtntext']) { ?>
+                                <a href="<?php echo $value['sliderkidbtnlink'] ?>"
+                                   class="fright link_btn"><?php echo $value['sliderkidbtntext'] ?></a>
+                            <?php } ?>
+                        </div>
+                    </div>
+
+
+                </div>
+            <?php } ?>
+
+            <?php $j++;
+        } ?>
+    </div>
+
+    <a class="carousel-control-prev" href="#home_slider_mobile" data-slide="prev">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </a>
+    <a class="carousel-control-next" href="#home_slider_mobile" data-slide="next">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </a>
+</div>

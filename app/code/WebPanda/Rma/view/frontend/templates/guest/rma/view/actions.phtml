@@ -1,0 +1,42 @@
+<?php
+/* @var $block \WebPanda\Rma\Block\Guest\Rma\View\Actions */
+?>
+<?php
+$rma = $block->getRmaModel();
+?>
+<div class="rma-view-actions">
+    <?php if ($block->canCancel()): ?>
+        <button id="rma-cancel-button" type="button" class="action secondary" title="<?php echo __('Cancel Request') ?>">
+            <span><?php echo __('Cancel Request') ?></span>
+        </button>
+    <?php endif; ?>
+    <?php if ($block->canPrintPackingSlip()): ?>
+        <button id="rma-print-packing-slip-button" type="button" class="action primary" title="<?php echo __('Print Packing Slip') ?>">
+            <span><?php echo __('Print Packing Slip') ?></span>
+        </button>
+    <?php endif; ?>
+    <?php if ($block->canConfirmShipping()): ?>
+        <button id="rma-confirm-shipping-button" type="button" class="action primary" title="<?php echo __('Confirm Shipping') ?>">
+            <span><?php echo __('Confirm Shipping') ?></span>
+        </button>
+    <?php endif; ?>
+</div>
+<script>
+    require(['jquery'], function($) {
+        $(document).ready(function() {
+            $('#rma-cancel-button').on('click', function() {
+                if (confirm('<?php echo __('Are you sure you want to cancel this return request?') ?>')) {
+                    $(location).attr('href', <?php echo \Zend_Json::encode($block->getCancelUrl()) ?>);
+                }
+            });
+            $('#rma-print-packing-slip-button, #instructions-print-packing-slip-button').on('click', function() {
+                $(location).attr('href', <?php echo \Zend_Json::encode($block->getPrintPackingSlipUrl()) ?>);
+            });
+            $('#rma-confirm-shipping-button').on('click', function() {
+                if (confirm(<?php echo \Zend_Json::encode($block->getConfirmShippingPopupText()) ?>)) {
+                    $(location).attr('href', <?php echo \Zend_Json::encode($block->getConfirmShipping()) ?>);
+                }
+            });
+        });
+    });
+</script>

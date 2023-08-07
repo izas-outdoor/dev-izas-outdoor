@@ -1,0 +1,29 @@
+<div id="opc-sidebar">
+
+    <!-- ko foreach: getRegion('summary') -->
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <!--/ko-->
+
+    <div class="opc-block-shipping-information">
+        <!-- ko foreach: getRegion('shipping-information') -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+        <!--/ko-->
+    </div>
+
+    <div class="accepted-methods">
+        <p><!-- ko i18n: 'Accepted payment methods' -->:<!-- /ko --></p>
+        <img data-bind="attr: { src: require.toUrl('') + 'img/payement_type.png' }">
+    </div>
+    <div class="under-order">
+        <div class="under-order-header">
+            <span data-bind="i18n: 'Do you need help?'"></span>
+            <span>(+34) 976 50 20 40</span>
+        </div>
+        <p data-bind="i18n: 'If you are experiencing any technical difficulties when placing an order please contact one of our customer service advisors.'">
+        </p>
+        <div class="free-delivery-alert">
+            <img class="image-free-delivery" data-bind="attr: { src: require.toUrl('') + 'img/icons/icon_delivery.png' }">
+            <p class="bottom-msg" data-bind="i18n: getShippingMessage()">
+        </div>
+    </div>
+</div>

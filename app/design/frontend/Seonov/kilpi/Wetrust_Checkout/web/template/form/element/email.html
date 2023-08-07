@@ -1,0 +1,72 @@
+<!-- ko ifnot: isCustomerLoggedIn() -->
+<!-- ko foreach: getRegion('before-login-form') -->
+<!-- ko template: getTemplate() --><!-- /ko -->
+<!-- /ko -->
+<form class="form form-login" data-role="email-with-possible-login"
+      data-bind="submit:login"
+      method="post">
+    <div id="customer-email-fieldset" data-bind="blockLoader: isLoading">
+        <div class="title button">
+            <a href="#" data-bind="click: showLoginPopup, i18n: 'I already have an account'"></a>
+        </div>
+        <div class="field required">
+            <div class="control _with-tooltip">
+                <input class="input-text"
+                       type="email"
+                       data-bind="
+                            textInput: email,
+                            afterRender: onElementRender,
+                            hasFocus: emailFocused,
+                            attr: {
+                                placeholder: $t('Email')
+                            }"
+                       name="username"
+                       data-validate="{required:true, 'validate-email':true}"
+                       id="customer-email"/>
+            </div>
+        </div>
+        <div class="hidden-fields" data-bind="visible: !isGuest()">
+            <div class="field">
+                <div class="control">
+                    <div class="password row">
+                        <div class="col-12 col-md-6">
+
+                            <input class="input-text"
+                                   data-bind="
+                                textInput: password,
+                                hasFocus: passwordFocused,
+                                attr: {
+                                    placeholder: $t('Password'),
+                                    'data-password-min-length': minimumPasswordLength,
+                                    'data-password-min-character-sets': requiredCharacterClassesNumber
+                                }"
+                                   type="password"
+                                   name="password"
+                                   id="password"
+                                   data-validate="{required:true, 'validate-customer-password':true}"
+                                   autocomplete="off"/>
+
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input class="input-text"
+                                   data-bind="
+                                textInput: passwordConfirmation,
+                                hasFocus: confirmationPasswordFocused,
+                                attr: {
+                                    placeholder: $t('Confirm Password')
+                                }"
+                                   type="password"
+                                   name="password_confirmation"
+                                   id="customer-password-confirmation"
+                                   title="Confirm Password"
+                                   required
+                                   data-validate="{required:true, equalTo:'#password'}" />
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- /ko -->

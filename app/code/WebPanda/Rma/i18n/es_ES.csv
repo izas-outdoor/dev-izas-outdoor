@@ -1,0 +1,29 @@
+Return Instructions,Instrucciones de devolución
+Package Sent,Paquete enviado
+Package Received,Paquete recibido
+Resolved,Resultado
+"After all the steps are completed, you need to ship the package to this address:","Una vez completado todos los pasos, debe enviar el paquete a esta dirección:"
+Return Request Date,Fecha de solicitud de devolución
+Items to Return,Artículos a devolver
+Return History,Historial de devoluciones
+Add message,Agrega un mensaje
+Post Reply,Enviar mensaje
+Automatic Message,Mensaje automático
+Return ID #,Número de devolución
+Order ID #,Número de orden
+Product(s),Productos
+Please select an order,Por favor seleccione una orden
+-- Select an Order --,-- Selecciona una orden --
+This product already has return requests:,Este artículo ya tiene una solicitud de devolución
+"A picture is worth a thousand words!. Attach them here in the following formats: jpg, jpeg, png, pdf, doc, xls","¡Una imagen vale mas que mil palabras!. Adjúntelos aquí en los siguientes formatos: jpg, jpeg, png, pdf, doc, xls"
+Message was saved.,El mensaje fue enviado.
+Something went wrong while saving the message.,Se produjo un error al enviar el mensaje.
+Did you placed order as registered customer? Sign in with your email address to proceed.,¿Hizo un pedido como cliente registrado? Inicie sesión con su dirección de correo electrónico para continuar.
+Guest Order,Pedido de invitado
+"If you have placed order as guest, please enter Order Number and Email used for the order.","Si ha realizado un pedido como invitado, ingrese el número de pedido y el correo electrónico utilizado para el pedido."
+Order Number,Número de pedido
+Order Email,Correo electrónico del pedido
+You have no returns.,No tienes devoluciones.
+Return Qty,Cantidad a devolver
+Return Request was created %1,Se creo la solicitud de devolución %1
+Request Return,Solicitar devolución

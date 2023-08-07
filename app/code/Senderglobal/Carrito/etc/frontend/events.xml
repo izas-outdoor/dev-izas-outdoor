@@ -1,0 +1,11 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchemainstance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+	<event name="checkout_cart_product_add_after">
+		<observer name="sgAddCarrito" instance="Senderglobal\Carrito\Observer\sgAddCarrito" />
+	</event>
+	<event name="checkout_onepage_controller_success_action">
+		<observer name="sgDelCarrito" instance="Senderglobal\Carrito\Observer\sgDelCarrito" />
+	</event>
+	<event name="sales_quote_remove_item">
+		<observer name="sgDelProducto" instance="Senderglobal\Carrito\Observer\sgDelProducto" />
+	</event>
+</config>

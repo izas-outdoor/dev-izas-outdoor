@@ -1,0 +1,7 @@
+<?php
+/** @var $block \Wetrust\Catalog\Block\Product\Render */
+$_product = $block->getProduct();
+?>
+<a href="<?= $_product->getProductUrl(); ?>">
+    <img src="<?= $this->helper(\Izas\Catalog\Helper\Color::class)->getColorImage($_product); ?>">
+</a>

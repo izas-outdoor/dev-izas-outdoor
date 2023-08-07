@@ -1,0 +1,97 @@
+<?php
+// @codingStandardsIgnoreFile
+/** @var $_helper \Wetrust\Newsletter\Helper\Data */
+$_helper = $this->helper(Wetrust\Newsletter\Helper\Data::class);
+$_showCustomerInfo = $_helper->isCustomerInfoEnabled();
+?>
+<div id="popins-newsletter" class="mfp-hide row">
+    <div class="news-img col-12 col-md-8">
+        <img src="<?= $block->getViewFileUrl('Wetrust_Newsletter::images/image-newsletter.jpg'); ?>" alt="newsletters" />
+    </div><!--
+ --><div class="news-content col-12 col-md-4">
+        <div class="news-content-before">
+            <span><?= __('Don’t miss our latest news ! Get to know first our private sales and special offers. Introduce your email to get a'); ?></span> <span class="bold"><?= sprintf(__('%d%% DISCOUNT CODE'), 10); ?> </span>
+        </div>
+        <?= $block->getChildHtml('static.newsletter.popup.info'); ?>
+
+        
+        <form id="newsletter-popin-subscribe" action="<?= $block->getUrl('wtnewsletter/ajax/add')?>" method="post">
+            <div class="block-content popins-col2" id="newsletter-input">
+                <div>
+                    <div class="input-box">
+                        <input type="text" name="email" id="newsletter-popin-email" class="input-text required-entry validate-email" placeholder="<?= __('Please enter your email address'); ?>" />
+                        <div class="form-check"><label> <input id="consent" name="check" type="checkbox" style="display:none" onchange="document.getElementById('suscribe-button').disabled = !this.checked;"> <span class="label-text" style="font-size: 10px !important;"> <span class="label_text" style="font-size: 10px !important;"> <?= __('I acknowledge I have read and understood the IZAS <a href="https://www.izas-outdoor.com/en/politica-de-cookies">Privacy Policy</a> and I consent to the processing of my personal data for marketing and profiling purposes.') ?> </span> </span> </label></div>
+
+                    </div>
+                </div><!--
+             --><div class="actions">
+                    <button id="suscribe-button" type="submit" title="<?= __('Subscribe') ?>" class="button btn-red" disabled><?= __('Subscribe')  ?></button>
+                    <style>
+                        #suscribe-button:disabled{
+    background-color: #c2c2c2 !important;
+    color:#3c3a3a !important;
+}
+                    </style>
+                </div>
+            </div>
+        </form>
+        <a class="already-registered" title="<?php echo __('I am already registered'); ?>" href="<?= $block->getUrl('customer/account'); ?>"><?= __('I am already registered'); ?></a>
+    </div>
+    <?php if ($_showCustomerInfo): ?>
+        <div id="popins-newsletter-content-optional" class="hidden col-12">
+            <span><?= __('Done! Thanks for signing up!'); ?></span>
+            <div><?php __('Tell us more about you (optional)') ?></div>
+            <form id="newsletter-subscriber-info-form" method="post" action="<?php echo $block->getUrl('wtnewsletter/ajax/info'); ?>">
+                <input type="hidden" id="newsletter-info-email" name="subscriber_email" />
+                <div class="block-content">
+                    <div class="row">
+                        <div class="input-box col">
+                            <label for="newsletter_info_optional_name"><?= __('Name') ?></label>
+                            <input type="text" name="subscriber_firstname" placeholder="<?= __('Enter your name') ?>" class="input-text required-entry" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-box col">
+                            <label for="newsletter_info_optional_birthday"><?= __('Date of Birth') ?></label>
+                            <input type="date" name="subscriber_dob" class="required-entry validate-date" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-box col">
+                            <span><?= __('Gender') ?></span>
+                            <select name="subscriber_gender" title="<?= __('Gender') ?>" class="required-entry validate-select">
+                                <?php foreach ($_helper->getGenderOptions() as $option): ?>
+                                    <option value="<?php echo $option['value'] ?>">
+                                        <?= __($option['label']) ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box col button-container">
+                        <button class="hover-effect07 btn" type="submit" title="<?= __('Submit') ?>">
+                            <span><?= __('Submit') ?></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    <?php endif; ?>
+</div>
+<script type="text/x-magento-init">
+    {
+        "#newsletter-popin-subscribe": {
+            "validation": {}
+        }
+        <?php if ($_showCustomerInfo): ?>
+            ,"#newsletter-subscriber-info-form": {
+                "validation": {}
+            }
+        <?php endif; ?>
+    }
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    var newsletterPopupRules = <?php echo $_helper->getJsonConfig() ?>;
+    //]]>
+</script>

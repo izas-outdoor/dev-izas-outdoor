@@ -1,0 +1,42 @@
+<?php
+/**
+ * @var $block \Metagento\Faq\Block\Content\Category
+ * @var $this \Metagento\Faq\Block\Content\Category
+ */
+?>
+<?php $categories = $block->getCategories(); ?>
+
+
+<div id="sidebar" class="col-sm-3 col-xs-12">
+    <ul class="faq-categories">
+        <?php if ( $block->showMostFaq() ) : ?>
+            <li class="selected top"><a href="<?php echo $block->getUrl('faq') ?>" goto="#most">Most Faqs</a></li>
+        <?php endif ?>
+        <?php foreach ( $categories as $category ): ?>
+            <li id="category-<?php echo $category->getId() ?>">
+                <a goto="#category-<?php echo $category->getId() ?>"
+                   href="<?php echo $category->getUrl() ?>"><?php echo $category->getName() ?></a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+
+<?php if(!$block->showSidebar()): ?>
+    <style>
+        #sidebar{display: none}
+    </style>
+<?php endif; ?>
+
+<?php
+$category = $block->getSelectedCategory();
+?>
+
+<?php if ($category): ?>
+    <script type="text/javascript">
+        jQuery(".faq-categories li").each(function(index){
+           jQuery(this).removeClass('selected');
+        });
+        jQuery("#category-<?php echo $category->getId() ?>").addClass('selected');
+    </script>
+<?php endif; ?>
+

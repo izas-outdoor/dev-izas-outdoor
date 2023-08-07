@@ -1,0 +1,49 @@
+title:MAGMI by dweeves - version:0.7.23-git
+startup:Running Magmi Product Import Engine v1.10 by dweeves
+startup:Import Profile:categories
+startup:Import Mode:create
+step:step:0.5%
+startup:Attributeset update is enabled.
+title:MAGMI by dweeves - version:0.7.23-git
+startup:Import Profile:categories
+startup:Import Mode:create
+step:step:0.5%
+startup:Attributeset update is enabled.
+info:Initialized attribute_set_infos!
+plugin;Magmi_CSVDataSource;pluginhello:CSV Datasource-1.3.1-Dweeves- 
+plugin;CategoryImporter;pluginhello:On the fly category creator/importer-0.2.5-Dweeves-http://wiki.magmi.org/index.php?title=On_the_fly_category_creator/importer 
+plugin;ImageAttributeItemProcessor;pluginhello:Image attributes processor-1.0.33a-Dweeves, Tommy Goode-http://wiki.magmi.org/index.php?title=Image_attributes_processor 
+plugin;Magmi_ConfigurableItemProcessor;pluginhello:Configurable Item processor-1.3.7a-Dweeves-http://wiki.magmi.org/index.php?title=Configurable_Item_processor 
+plugin;CrossUpsellProducts;pluginhello:Cross/Upsell Importer-1.0.3-Dweeves-http://wiki.magmi.org/index.php?title=Cross/Upsell_Importer 
+plugin;RelatedProducts;pluginhello:Product relater-1.0.3-Dweeves,jwtechniek-http://wiki.magmi.org/index.php?title=Product_relater 
+plugin;Magmi_DefaultAttributeItemProcessor;pluginhello:Standard Attribute Import-1.1-Dweeves- 
+startup:Performing Datasource Lookup...
+lookup:8:0.00033092498779297
+startup:Found 8 records, took 0.00033092498779297 sec
+columns:46
+plugin;Magmi_ConfigurableItemProcessor;startup:Configurable Item processor v1.3.7a - no options_container set, defaulting to :Block after product info
+plugin;Magmi_DefaultAttributeItemProcessor;startup:Standard Attribute Import v1.1 - Newly created items will have default values for columns:page_layout,tax_class_id
+startup:Ajusted processed columns:49
+warning:Potential assignment problem, specific model found for select attribute => model(Magento\Eav\Model\Entity\Attribute\Source\Table)
+itime:1 - 3.7193298339844E-5 - 3.7193298339844E-5
+dbtime:0 - 0 - 0 - 0
+itime:2 - 0.047032117843628 - 0.046972036361694
+dbtime:27 - 0.043553352355957 - 0.043553352355957 - 27
+itime:3 - 0.05730414390564 - 0.010210037231445
+dbtime:43 - 0.050828695297241 - 0.0072753429412842 - 16
+itime:4 - 0.067646026611328 - 0.010278940200806
+dbtime:62 - 0.058207273483276 - 0.0073785781860352 - 19
+itime:5 - 0.10562610626221 - 0.03792405128479
+dbtime:112 - 0.091733455657959 - 0.033526182174683 - 50
+itime:6 - 0.1156690120697 - 0.0099718570709229
+dbtime:128 - 0.098505258560181 - 0.0067718029022217 - 16
+itime:7 - 0.12546420097351 - 0.009735107421875
+dbtime:144 - 0.1054539680481 - 0.006948709487915 - 16
+itime:8 - 0.13538217544556 - 0.0098609924316406
+dbtime:160 - 0.11221528053284 - 0.0067613124847412 - 16
+plugin;CategoryImporter;info:On the fly category creator/importer v0.2.5 - Updating Category children count....
+itime:8 - 0.16038513183594 - 0.024946928024292
+dbtime:190 - 0.13400411605835 - 0.021788835525513 - 30
+info:Skus imported OK:8/8
+plugin;CategoryImporter;info:On the fly category creator/importer v0.2.5 - Updating Category children count....
+end:Import Ended

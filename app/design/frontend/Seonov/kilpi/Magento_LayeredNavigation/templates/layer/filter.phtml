@@ -1,0 +1,47 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Template for filter items block
+ *
+ * @var $block \Magento\LayeredNavigation\Block\Navigation\FilterRenderer
+ */
+?>
+
+<ul>
+  <?php $i = 0; ?>
+    <?php foreach ($filterItems as $filterItem): ?>
+        <li>
+          
+            <?php if ($filterItem->getCount() > 0): ?>
+                <a href="<?= $block->escapeUrl($filterItem->getUrl()) ?>">
+                  <input type="checkbox" id="" class="input_checkbox" >
+                  <label class="" for="">
+                    <?= /* @escapeNotVerified */ $filterItem->getLabel() ?>
+                    <!--<?php if ($this->helper('\Magento\Catalog\Helper\Data')->shouldDisplayProductCountOnLayer()): ?>
+                        <span class="count"><?= /* @escapeNotVerified */ $filterItem->getCount() ?><span class="filter-count-label">
+                            <?php if ($filterItem->getCount() == 1):?> <?= /* @escapeNotVerified */ __('item') ?><?php else:?> <?= /* @escapeNotVerified */ __('items') ?><?php endif;?></span></span>
+                    <?php endif; ?>-->
+                  </label>
+                </a>
+            <?php else:?>
+              <input type="checkbox" id="" class="input_checkbox" >
+              <label class="" for="">
+                <?= /* @escapeNotVerified */ $filterItem->getLabel() ?>
+              </label>
+                <!--<?php if ($this->helper('\Magento\Catalog\Helper\Data')->shouldDisplayProductCountOnLayer()): ?>
+                    <span class="count"><?= /* @escapeNotVerified */ $filterItem->getCount() ?><span class="filter-count-label">
+                        <?php if ($filterItem->getCount() == 1):?><?= /* @escapeNotVerified */ __('item') ?><?php else:?><?= /* @escapeNotVerified */ __('items') ?><?php endif;?></span></span>
+                <?php endif; ?>-->
+            <?php endif; ?>
+        </li>
+        <?php $i++ ; ?>
+    <?php endforeach ?>
+</ul>

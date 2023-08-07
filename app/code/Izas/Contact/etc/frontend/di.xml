@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Contact\Controller\Index\Post" type="Izas\Contact\Controller\Index\Post"/>
+    <!-- Start of plugins -->
+    <type name="Magento\Contact\Controller\Index\Post">
+        <plugin name="izas_contact_contact_post" type="Izas\Contact\Plugin\Controller\Index\Post" />
+    </type>
+    <!-- End of plugins -->
+</config>

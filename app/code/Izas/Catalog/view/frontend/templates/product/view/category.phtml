@@ -1,0 +1,5 @@
+<?php
+/**@var \Izas\Catalog\Block\Product\View\Category $block */
+$_category = $block->getCategory();
+?>
+<a href="<?= $_category->getUrl(); ?>"><?= $_category->getName() ?></a>

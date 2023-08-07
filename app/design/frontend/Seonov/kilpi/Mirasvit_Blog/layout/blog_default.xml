@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <attribute name="class" value="blog"/>
+
+
+        <container name="section_blog" htmlTag="section">
+          <block class="Magento\Cms\Block\Block" name="blogheader">
+              <arguments>
+                  <argument name="block_id" xsi:type="string">blog_header</argument>
+              </arguments>
+          </block>
+          <block class="Mirasvit\Blog\Block\Sidebar\CategoryTree" name="blog.sidebar.category.tree" after="blogheader"
+                 template="sidebar/category_tree.phtml"/>
+          <container name="container_blog" htmlTag="div" htmlClass="container">
+            <container name="content_box_blog" htmlTag="div" htmlClass="content_box">
+              <container name="row_blog" htmlTag="div" htmlClass="row">
+              <container name="postsdiv" htmlTag="div" htmlClass="col-lg-8 post-items">
+              </container>
+              </container>
+            </container>
+          </container>
+        </container>
+        <move element="section_blog" destination="columns" />
+        <referenceContainer name="content">
+            <block name="blog.post.comments.count" class="Mirasvit\Blog\Block\Post\Meta" template="post/meta/js.phtml"
+                   after="-"/>
+        </referenceContainer>
+
+        <referenceBlock name="sidebar.additional" remove="true"/>
+
+        <referenceContainer name="sidebar.main" htmlTag="div" htmlClass="col-lg-4">
+            <block name="blog.sidebar.search" class="Mirasvit\Blog\Block\Sidebar\Search" template="sidebar/search.phtml"
+                   before="-"/>
+
+
+
+            <block class="Mirasvit\Blog\Block\Sidebar\Recent" name="blog.sidebar.recent"
+                   template="sidebar/popular.phtml"/>
+
+            <block class="Mirasvit\Blog\Block\Sidebar\TagCloud" name="blog.sidebar.tag.cloud"
+                   template="sidebar/tag_cloud.phtml"/>
+
+        </referenceContainer>
+
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="blog.right" after="-"
+                   template="Mirasvit_Blog::html/copyright.phtml"/>
+        </referenceContainer>
+        <move element="content" destination="postsdiv" />
+        <move element="sidebar.main" destination="row_blog" after="content" />
+        <referenceBlock name="breadcrumbs" remove="true" />
+    </body>
+</page>

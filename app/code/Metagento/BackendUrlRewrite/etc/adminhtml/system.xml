@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/system_file.xsd">
+    <system>
+        <tab id="metagento" translate="label" sortOrder="700" class="metagento-extensions">
+            <label>Metagento Extensions</label>
+        </tab>
+        <section id="backendurlrewrite" translate="label" sortOrder="1" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Backend URL Rewrites</label>
+            <tab>metagento</tab>
+            <resource>Metagento_BackendUrlRewrite::introduction</resource>
+            <group id="metagento_introduction" translate="label" type="text" sortOrder="1" showInDefault="1"
+                   showInWebsite="1"
+                   showInStore="1">
+                <label>Metagento Introduction</label>
+                <frontend_model>Metagento\BackendUrlRewrite\Block\Adminhtml\System\Config\Introduction</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>

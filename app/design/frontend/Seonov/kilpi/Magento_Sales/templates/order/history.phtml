@@ -1,0 +1,117 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<h1 class="title_form"><?= /* @escapeNotVerified */  __('MY ORDERS') ?></h1>
+
+
+<?php $_orders = $block->getOrders(); ?>
+<?= $block->getChildHtml('info') ?>
+<?php if ($_orders && count($_orders)): ?>
+  <div class="orders_liste">
+<?php foreach ($_orders as $_order): ?>
+  <div class="order_item">
+
+                <div class="order-item-left">
+                  <?php $state = $_order->getState();
+                  $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                  ?>
+                  <?php $order = $objectManager->create('Magento\Sales\Model\Order')->load($_order->getId());
+                  $orderItems = $order->getAllVisibleItems();
+                  foreach ($orderItems as $item) {
+                    $productOptions = $item->getProductOptions();
+                    ?>
+                    <div class="order-item-detail">
+                      <?php
+                      $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+                      $product = $objectManager->get('Magento\Catalog\Model\Product')->loadByAttribute('sku',$item->getData('sku'));
+                      $imagehelper = $objectManager->get('Magento\Catalog\Helper\Image')->init($product, 'product_page_image_small')->resize(300)->getUrl();
+                              ?>
+                              <img class="order-item-img"
+                                    src="<?php echo $imagehelper; ?>"
+                                    width="154px"/>
+                    <div class="order-item-infos">
+                      <a href="#" class="order-item-title"><?php echo $item->getName(); ?></a>
+                      <span><?= /* @escapeNotVerified */  __('SIZE') ?>: <?php echo $productOptions['attributes_info'][0]['value']; ?></span>
+                      <span><?= /* @escapeNotVerified */  __('QTY') ?>: <?php echo $productOptions['info_buyRequest']['qty']; ?></span>
+                      <span><?php echo $item->getPrice(); ?></span>
+                    </div>
+                  </div>
+                  <span class="order-line"></span>
+<?php  }  ?>
+                </div>
+                <div class="order-item-right">
+                  <div class="item-right">
+                  <span class="order-item-libelle"><?= /* @escapeNotVerified */  __('ORDER NO') ?>:</span> <span><a class="order-number" href="<?= /* @escapeNotVerified */ $block->getViewUrl($_order) ?>" class=""><?= /* @escapeNotVerified */ $_order->getRealOrderId() ?></a></span>
+                </div>
+                <div class="item-right">
+                  <span class="order-item-libelle"><?= /* @escapeNotVerified */  __('ORDER PLACED') ?></span><span class="order-date"> <?= /* @escapeNotVerified */ $block->formatDate($_order->getCreatedAt()) ?></span>
+                </div>
+                <div class="item-right">
+                    <span class="order-item-libelle"><?= /* @escapeNotVerified */  __('ORDER STATUS') ?></span>
+                    <span class="order-status">#<?php echo $state; ?></span>
+                  </div>
+                  <a href="<?= /* @escapeNotVerified */ $block->getViewUrl($_order) ?>" class="track-view-order">
+                      <span><?= /* @escapeNotVerified */ __('View Order') ?></span>
+                  </a>
+                </div>
+  </div>
+
+<?php endforeach; ?>
+  </div>
+    <!--<div class="table-wrapper orders-history">
+        <table class="data table table-order-items history" id="my-orders-table">
+            <caption class="table-caption"><?= /* @escapeNotVerified */ __('Orders') ?></caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="col id"><?= /* @escapeNotVerified */ __('Order #') ?></th>
+                    <th scope="col" class="col date"><?= /* @escapeNotVerified */ __('Date') ?></th>
+                    <?= /* @noEscape */ $block->getChildHtml('extra.column.header') ?>
+                    <th scope="col" class="col shipping"><?= /* @escapeNotVerified */ __('Ship To') ?></th>
+                    <th scope="col" class="col total"><?= /* @escapeNotVerified */ __('Order Total') ?></th>
+                    <th scope="col" class="col status"><?= /* @escapeNotVerified */ __('Status') ?></th>
+                    <th scope="col" class="col actions"><?= /* @escapeNotVerified */ __('Action') ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($_orders as $_order): ?>
+                    <tr>
+                        <td data-th="<?= $block->escapeHtml(__('Order #')) ?>" class="col id"><?= /* @escapeNotVerified */ $_order->getRealOrderId() ?></td>
+                        <td data-th="<?= $block->escapeHtml(__('Date')) ?>" class="col date"><?= /* @escapeNotVerified */ $block->formatDate($_order->getCreatedAt()) ?></td>
+                        <?php $extra = $block->getChildBlock('extra.container'); ?>
+                        <?php if ($extra): ?>
+                            <?php $extra->setOrder($_order); ?>
+                            <?= /* @noEscape */ $extra->getChildHtml() ?>
+                        <?php endif; ?>
+                        <td data-th="<?= $block->escapeHtml(__('Ship To')) ?>" class="col shipping"><?= $_order->getShippingAddress() ? $block->escapeHtml($_order->getShippingAddress()->getName()) : '&nbsp;' ?></td>
+                        <td data-th="<?= $block->escapeHtml(__('Order Total')) ?>" class="col total"><?= /* @escapeNotVerified */ $_order->formatPrice($_order->getGrandTotal()) ?></td>
+                        <td data-th="<?= $block->escapeHtml(__('Status')) ?>" class="col status"><?= /* @escapeNotVerified */ $_order->getStatusLabel() ?></td>
+                        <td data-th="<?= $block->escapeHtml(__('Actions')) ?>" class="col actions">
+                            <a href="<?= /* @escapeNotVerified */ $block->getViewUrl($_order) ?>" class="action view">
+                                <span><?= /* @escapeNotVerified */ __('View Order') ?></span>
+                            </a>
+                            <?php if ($this->helper('Magento\Sales\Helper\Reorder')->canReorder($_order->getEntityId())) : ?>
+                                <a href="#" data-post='<?php /* @escapeNotVerified */ echo
+                                $this->helper(\Magento\Framework\Data\Helper\PostHelper::class)
+                                    ->getPostData($block->getReorderUrl($_order))
+                                ?>' class="action order">
+                                    <span><?= /* @escapeNotVerified */ __('Reorder') ?></span>
+                                </a>
+                            <?php endif ?>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>-->
+    <?php if ($block->getPagerHtml()): ?>
+        <div class="order-products-toolbar toolbar bottom"><?= $block->getPagerHtml() ?></div>
+    <?php endif ?>
+<?php else: ?>
+    <div class="message info empty"><span><?= /* @escapeNotVerified */ __('You have placed no orders.') ?></span></div>
+<?php endif ?>

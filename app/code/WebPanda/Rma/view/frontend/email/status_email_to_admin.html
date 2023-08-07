@@ -1,0 +1,20 @@
+<!--@subject RMA Request #{{var rma_id}} Status Update @-->
+<!--@vars {
+"var rma_id":"RMA ID",
+"var status":"RMA Status",
+"var created_at":"RMA Created At",
+"var customer_name":"RMA Customer Name",
+"var customer_email":"RMA Customer Email",
+"var url":"RMA Frontend URL",
+"var admin_url":"RMA Admin URL",
+"var order_id":"RMA Order ID",
+"var order_url":"RMA Order Admin URL",
+"var store_name":"RMA Store Name",
+"var rma_department_address":"RMA Department Address"
+} @-->
+{{template config_path="design/email/header_template"}}
+
+<p>RMA Request #{{var rma_id}} status changed to "{{var status}}".</p>
+<p>You can manage the request by following the link: <a href="{{var admin_url}}">#{{var rma_id}}</a>.</p>
+
+{{template config_path="design/email/footer_template"}}

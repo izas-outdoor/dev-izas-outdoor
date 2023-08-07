@@ -1,0 +1,65 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**  @var $block \Magento\Checkout\Block\Cart\Grid */
+
+$helperShipping = $this->helper(\Izas\Checkout\Helper\Shipping::class);
+?>
+<?php $mergedCells = ($this->helper('Magento\Tax\Helper\Data')->displayCartBothPrices() ? 2 : 1); ?>
+<?= $block->getChildHtml('form_before') ?>
+<form action="<?= /* @escapeNotVerified */
+$block->getUrl('checkout/cart/updatePost') ?>"
+      method="post"
+      id="form-validate"
+      data-mage-init='{"Magento_Checkout/js/action/update-shopping-cart":
+              {"validationURL" : "/checkout/cart/updateItemQty"}
+          }'
+      class="form form-cart col-12 col-lg-8">
+    <?= $block->getBlockHtml('formkey') ?>
+    <h3 class="title-cart"><?= __('Shopping bag') ?></h3>
+    <div class="summary-top hidden-lg-up">
+        <?= $block->getChildHtml('custom.summary.top') ?>
+    </div>
+    <div class="cart table-wrapper<?= $mergedCells == 2 ? ' detailed' : '' ?>">
+        <?php if ($block->getPagerHtml()): ?>
+            <div class="cart-products-toolbar cart-products-toolbar-top toolbar"
+                 data-attribute="cart-products-toolbar-top"><?= $block->getPagerHtml() ?></div>
+        <?php endif ?>
+        <?php foreach ($block->getItems() as $_item): ?>
+            <?= $block->getItemHtml($_item) ?>
+        <?php endforeach ?>
+        <div class="free-delivery-alert">
+            <img class="image-free-delivery" src="<?= $this->getViewFileUrl('img/icons/icon_delivery.png'); ?>"/>
+            <div class="bottom-msg"><?= $helperShipping->getShippingMessage() ?></div>
+        </div>
+        <?php if ($block->getPagerHtml()): ?>
+            <div class="cart-products-toolbar cart-products-toolbar-bottom toolbar"
+                 data-attribute="cart-products-toolbar-bottom"><?= $block->getPagerHtml() ?></div>
+        <?php endif ?>
+    </div>
+</form>
+<?= $block->getChildHtml('checkout.cart.order.actions') ?>
+<?= $block->getChildHtml('shopping.cart.table.after') ?>
+<script type="text/javascript">
+    require(["jquery"], function ($) {
+        $('body').on("click", ".btn-minus, .btn-plus", function (e) {
+            e.preventDefault();
+            var obj = $(this);
+            var currentQty = obj.closest(".change-qty").find('.qty_input').val();
+            if (obj.hasClass('btn-plus')) {
+                var newAdd = parseInt(currentQty) + parseInt(1);
+                obj.closest(".change-qty").find('.qty_input').val(newAdd);
+            }  else if (parseInt(currentQty) >= 1) {
+                    var newAdd = parseInt(currentQty) - parseInt(1);
+                    obj.closest(".change-qty").find('.qty_input').val(newAdd);
+            }
+            $('#form-validate').submit();
+        });
+    });
+</script>
+

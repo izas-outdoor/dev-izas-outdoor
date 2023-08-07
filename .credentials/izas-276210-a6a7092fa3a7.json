@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "izas-276210",
+  "private_key_id": "a6a7092fa3a7f045ce839e67de204842eddf2950",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC04ZuPqh2Yl9jn\nrvTutc8LoAIGG+MH1i3nNxH/pEUfC5p/60Ed3LqVUcHonur/9kO64AMmPOIp+vyQ\nkX/ooeDDW4F7KPd2XULpNL2hCH4F+gkVf/mORnPIkmNsdc7lPpf4iK8oOlccRBW0\nHPQJ0xUYHtP1YYLF1tZ3+RtrItsfJLcPjCEeeXKqC+5Nd5PDUKEOfFHsmkN2RgO/\nkn+HUFHC//8KDWkRv/txMySnN/pIq/T9CJW18TndRaGJU68K65QIe115ob2Cqaeh\ndIcY43XYYP6CMkdauXvCq5MJcsQ6WJ3tfGeVMv88JuRv+g8eyCmmvYhWFqPePI6p\nJD39yVQFAgMBAAECggEAL2u0SlJJhw9MNNVH7msouD3/OdXGy++pQiRMai6JVo3G\nuAGXpToQioQQJ6m+J1PLRutit/wfOO1NmKMkmvsRf3X2eLDxS41AtP34NwcQbwWx\nqvrNlLDAuxUxzqYGE1C5K9W9wfiljMoGvJ0Yl5jIv3WZkQu66p4bxQFAYHKXas7W\n/fZY+mCBnlysu5CcbAZhU0PHi86aEN473OWhVr+artRKe/+pd5Nwzk2xNS3gpExi\n9Yc56OO86xMwdzyUWW6mSdZqMf0jAGcx88O4l1+RMRmmL4WB8LZ904sfw/tmeH9E\nEOFhCMdUHYpKxVhOXZ/4Y+0zMSi6RIkBAHT5PwJWQwKBgQDaII+vvhZIcTKEABvL\n4HAPwJbj4rDHpSvnGLsXOAbXsxMu7Hiozvl+qOcMUMFLpZRV0qu0tP0vye6VluLK\nkfmt0eIzn8QdrmbZaSV8THPMW49pAIY0xkh5DQS9nREhzqDXMdu0AnzD9PgVwVvA\nsU9ObrVlvQrAdE9Gai+CiHV/qwKBgQDUSYT0iwfaFfMfk421xgjE87x894vAUZ9s\niOaG9dZVJEGSrBCuH9Jos4yj/re8tQ+aEi9py+xB0XtGWQKab3f8eyvdq4mXA+4F\nTCcTZPKXta2xlwr/2uNyj7uKK61AWieuDoffTxdk9kk6OA9Y/DEXalbkuKZmWU1a\n8DBX1r+LDwKBgQCezNXOvDS8yKxeLTYPV3Y+AZfYkFDjB/zOYdLTNJbGsjhlEQNG\n4mgBLjYHYUNYL1Oup5EaHim1gO2ROigiEeQUB5kGvGmqsi1uWn5P39juDjp510fd\nY/2fIzswUAkI88Vk5YdtpeHvR4jVTc/emTeDglXNm7MYKZUNToEIJxBjwQKBgQCP\nOJapwY7nlL11RUBrLZNHBUXabcxsUOUk/WvCC+Oxh4dx5AJQ54k2OESfc78UYneH\nM9OnJfxcH29y86Rs+t1Riuv6XruyFeWkz07hp85/igQId2XlXhDrfotBWdxGOUzi\nAk2q3BpldD/NNnssRuD78jNzlhw1mvQ0cS28ZVbPAwKBgBUyI5k0wH6yJCBsEfqm\nB2Zwqi4OxFGO3ExqSTkbxq+lrSEx+G1aPZhXS0JD5jBZlggGy+2ywDU+YS09F75T\n92TjQUhLSOjThMLdY488b6Ft0+ZpBuvu3kaN4H2k2SyPpFvG+2qr/e+o5bsV5ANz\n02IDepfwM/Qe2Ma101cXu/ud\n-----END PRIVATE KEY-----\n",
+  "client_email": "magento-magmi@izas-276210.iam.gserviceaccount.com",
+  "client_id": "116372656978356686484",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/magento-magmi%40izas-276210.iam.gserviceaccount.com"
+}

@@ -1,0 +1,34 @@
+<?php
+/** @var $this \Izas\ContentManager\Block\Banner\Render **/
+$item = $block->getItem();
+$banner = $item->getBanner();
+$url = $banner->getBannerUrlDestination();
+$colorButton = $banner->getBannerColorButton();
+?>
+<li class="<?= $item->getClassName() ?>">
+<?php if ($url): ?>
+                    <a  href="<?= $banner->getBannerUrlDestination(); ?>">
+           
+                <?php endif; ?>
+    <div>
+        <img src="<?= $banner->getImage($item->getImageType()) ?>">
+    </div>
+    <div class="container text-container <?= $colorButton ?>">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <span class="pre-title"><?= $banner->getBannerPreTitle(); ?></span>
+                <span class="banner-title"><?= $banner->getBannerTitle(); ?></span>
+                <p class="banner-description"><?= $banner->getBannerAfterTitle(); ?></p>
+                <?php if ($url): ?>
+                    <!-- <a class="banner-btn btn btn-white" href="<?= $banner->getBannerUrlDestination(); ?>">
+                        <?= $banner->getBannerButton(); ?>
+                    </a> -->
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    <?php if ($url): ?>
+          </a>
+    <?php endif; ?>
+</li>
+

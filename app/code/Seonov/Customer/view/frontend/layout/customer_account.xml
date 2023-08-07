@@ -1,0 +1,56 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" label="Customer My Account (All Pages)" design_abstraction="custom">
+    <body>
+        <attribute name="class" value="account"/>
+        <referenceContainer name="sidebar.main">
+            <block class="Magento\Framework\View\Element\Html\Links" name="customer_account_navigation_secondary" after="customer_account_navigation">
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-account-link-secondary" template="Magento_Customer::account/link.phtml"> <!-- duplicate this as many times as you need, just make sure the name is unique -->
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Email Preference</argument>
+                        <argument name="path" xsi:type="string">cusacc/preference/index</argument>
+                        <argument name="icon" xsi:type="string">mail</argument>
+                    </arguments>
+                </block>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Links" name="customer_account_navigation_order" before="customer_account_navigation_secondary">
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-account-link-order" template="Magento_Customer::account/link.phtml"> <!-- duplicate this as many times as you need, just make sure the name is unique -->
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">My orders</argument>
+                        <argument name="path" xsi:type="string">sales/order/history</argument>
+                        <argument name="icon" xsi:type="string">box</argument>
+                    </arguments>
+                </block>
+            </block>
+            <block class="Magento\Framework\View\Element\Html\Links" name="customer_account_navigation_return" after="customer_account_navigation_order">
+              <block class="Magento\Framework\View\Element\Html\Link\Current" ifconfig="rma/general/is_active_frontend" name="customer-account-navigation-rma" template="Magento_Customer::account/link.phtml">
+                  <arguments>
+                      <argument name="path" xsi:type="string">rma/rma</argument>
+                      <argument name="label" xsi:type="string"  translate="true">Returns</argument>
+                      <argument name="icon" xsi:type="string">back</argument>
+                  </arguments>
+              </block>
+
+            </block>
+
+            <block class="Magento\Framework\View\Element\Html\Links" name="customer_account_navigation_logout" after="-">
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="customer-account-navigation-account-link-logout" template="Magento_Customer::account/link.phtml"> <!-- duplicate this as many times as you need, just make sure the name is unique -->
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Logout</argument>
+                        <argument name="path" xsi:type="string">customer/account/logout</argument>
+                        <argument name="icon" xsi:type="string">logout</argument>
+                    </arguments>
+                </block>
+            </block>
+
+        </referenceContainer>
+        <referenceBlock name="customer-account-navigation-orders-link">
+            <arguments>
+                <argument name="label" xsi:type="string" translate="true">My Orders History</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="customer-account-navigation-address-link" template="Magento_Customer::account/link.phtml">
+          <arguments>
+            <argument name="icon" xsi:type="string">home</argument>
+          </arguments>
+        </referenceBlock>
+    </body>
+</page>

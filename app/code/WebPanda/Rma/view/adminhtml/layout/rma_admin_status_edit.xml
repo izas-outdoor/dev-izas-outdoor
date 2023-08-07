@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="WebPanda_Rma::css/style.css"/>
+    </head>
+    <body>
+        <referenceContainer name="left">
+            <block class="WebPanda\Rma\Block\Adminhtml\Status\Edit\Tabs" name="webpanda_rma_status_edit_tabs">
+                <block class="WebPanda\Rma\Block\Adminhtml\Status\Edit\Tab\Main" name="webpanda_rma_status_edit_tabs_main"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">main_section</argument>
+                    <argument name="block" xsi:type="string">webpanda_rma_status_edit_tabs_main</argument>
+                </action>
+                <block class="WebPanda\Rma\Block\Adminhtml\Status\Edit\Tab\Messages" name="webpanda_rma_status_edit_tabs_messages"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">messages_section</argument>
+                    <argument name="block" xsi:type="string">webpanda_rma_status_edit_tabs_messages</argument>
+                </action>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="WebPanda\Rma\Block\Adminhtml\Status\Edit" name="webpanda_rma_status_edit"/>
+        </referenceContainer>
+    </body>
+</page>

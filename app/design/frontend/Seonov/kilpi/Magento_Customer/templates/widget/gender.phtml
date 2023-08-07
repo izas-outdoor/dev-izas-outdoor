@@ -1,0 +1,48 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Customer\Block\Widget\Gender $block */
+?>
+<!--
+<div class="form-group radio-item">
+  <span class="title-sexe"><?= $block->escapeHtml(__('Gender')) ?></span>
+  <?php $options = $block->getGenderOptions(); ?>
+  <?php $value = $block->getGender();?>
+  <?php foreach ($options as $option):?>
+<?php if ($option->getValue()){ ?>
+
+  <div class="radio_line">
+    <input id="<?= $block->escapeHtmlAttr($option->getValue()) ?>" value="<?= $block->escapeHtmlAttr($option->getValue()) ?>" type="radio" name="<?= $block->escapeHtmlAttr($block->getFieldName('gender')) ?>" class="radio">
+    <span class="radio_check"><i class="fas fa-circle"></i></span>
+    <label for="<?= $block->escapeHtmlAttr($option->getValue()) ?>" class="">
+      <?= $block->escapeHtml(__($option->getLabel())) ?>
+    </label>
+  </div>
+<?php } ?>
+  <?php endforeach;?>
+</div>
+-->
+<div class="form-group radio-item">
+  <span class="title-sexe"><?= $block->escapeHtml(__('Gender')) ?></span>
+
+  <div class="radio_line">
+    <input id="man1" value="1" type="radio" name="gender" class="radio">
+
+    <label for="man1" class="">
+      <span class="radio_check"><i class="fas fa-circle"></i></span>
+      <?= $block->escapeHtml(__('Man')) ?>    </label>
+  </div>
+
+  <div class="radio_line">
+    <input id="women2" value="2" type="radio" name="gender" class="radio">
+
+    <label for="women2" class="">
+      <span class="radio_check"><i class="fas fa-circle"></i></span>
+      <?= $block->escapeHtml(__('Women')) ?>    </label>
+  </div>
+  </div>

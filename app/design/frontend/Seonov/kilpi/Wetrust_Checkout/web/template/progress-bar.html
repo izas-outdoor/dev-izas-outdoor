@@ -1,0 +1,12 @@
+<ul class="opc-progress-bar col">
+    <li class="opc-progress-bar-item">
+        <a data-bind="attr: {href: cartUrl}">
+            <span data-bind="i18n: 'Cart'"></span>
+        </a>
+    </li>
+    <!-- ko foreach: { data: steps().sort(sortItems), as: 'item' } -->
+    <li class="opc-progress-bar-item" data-bind="css: item.isVisible() ? '_active' : ($parent.isProcessed(item) ? '_complete' : '')">
+        <span data-bind="i18n: item.title, click: $parent.navigateTo"></span>
+    </li>
+    <!-- /ko -->
+</ul>

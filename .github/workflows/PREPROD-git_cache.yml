@@ -1,0 +1,34 @@
+name: 01/ PREPROD - GIT + cache
+on:
+    workflow_dispatch:
+        inputs:
+            logLevel:
+                description: 'Log level'
+                required: true
+                default: 'warning'
+            tags:
+                description: 'Test scenario tags'
+jobs:
+    deploy:
+        name: 01/ PREPROD - GIT + cache
+        runs-on: ubuntu-latest
+        steps:
+            -   name: pass environment
+                uses: appleboy/ssh-action@master
+                env:
+                    ROOT_DIR: "/home/izas/preprod/"
+                    BRANCH: "preprod"
+                    DEPLOY: "sh bin/flush-cache.sh preprod"
+                    COMPOSER: "/usr/sbin/container-run oxeva/php-7.2-gw php -dmemory_limit=2048M /home/izas/composer.phar"
+                with:
+                    host: ${{ secrets.HOST }}
+                    username: ${{ secrets.USERNAME }}
+                    password: ${{ secrets.PASSWORD }}
+                    port: ${{ secrets.PORT }}
+                    envs: ROOT_DIR,BRANCH,DEPLOY,COMPOSER
+                    script: |
+                        cd $ROOT_DIR
+                        git fetch
+                        git checkout $BRANCH
+                        git pull
+                        $DEPLOY

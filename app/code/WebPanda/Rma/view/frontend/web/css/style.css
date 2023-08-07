@@ -1,0 +1,351 @@
+.clearfix {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+.rma-view-wrapper .block-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.rma-view-wrapper .block-content .rma-box {
+    border: 1px solid #cccccc;
+    padding: 2rem;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+.rma-view-wrapper .block-content .box-title {
+    margin-bottom: 15px;
+}
+.rma-view-wrapper .block-content .contact-info {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.rma-view-wrapper .block-content .fieldset {
+    margin-bottom: 0;
+}
+span.rma-status-color {
+    padding: 2px 15px;
+    border-radius: 8px;
+    color: #fff;
+    white-space: pre;
+}
+.rma-view-wrapper .block-content .contact-info .actions:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.rma-view-wrapper .block-content .field {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+.rma-view-wrapper .block-content .field:last-child {
+    margin-bottom: 0;
+}
+.rma-view-wrapper .block-content .field:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.account .column.main .rma-view-wrapper .block-content .box-title span {
+    font-weight: 600;
+}
+.rma-view-wrapper .block-content .field .label {
+    float: left;
+    width: 50%;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.rma-view-wrapper .block-content .field .value, .rma-view-wrapper .block-content .field .control {
+    float: left;
+    width: 50%;
+}
+.update-value-form:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.rma-view-wrapper .block-content .field .control .required-entry.error {
+    border: 2px solid red;
+}
+.rma-view-wrapper .block-content .field .control label.error {
+    color: red;
+    font-size: 1rem;
+}
+.rma-customer-create .rma-view-wrapper {
+    display: none;
+}
+#return-instructions {
+    border: 1px solid #cccccc;
+    padding: 2rem;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+#return-instructions .instructions-title h3 {
+    font-weight: 600;
+    margin: 0;
+}
+#return-instructions .instructions-title h3:hover {
+    cursor: pointer;
+}
+#return-instructions .instructions-title h3 i {
+    float: right;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/arrow.png);
+}
+#return-instructions .instructions-title[aria-expanded='true'] h3 i {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+}
+/*#instructions-content {
+    display: none;
+    border: 1px solid #cccccc;
+    padding: 1.5rem;
+    background-color: #FFF9E6;
+}*/
+.rma-view-actions {
+    float: right;
+}
+body.rma-customer-index .column.main .page-title-wrapper {
+    float: left;
+}
+#new-rma-button {
+    float: right;
+    margin: 1rem 0 2rem;
+}
+.select-order-wrapper {
+    margin-bottom: 20px;
+}
+.select-order-wrapper .section-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.select-order-wrapper  #order-select {
+    max-width: 35rem;
+    float: left;
+}
+.select-order-wrapper .apply-order-select {
+    margin-left: 2rem;
+}
+.rma-view-wrapper .block-content .items-wrapper {
+    border: 2px dashed #cccccc;
+    padding: 2rem;
+    width: 100%;
+}
+.rma-view-wrapper .block-content .items-wrapper table td {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: 2px dashed #cccccc;
+}
+.rma-view-wrapper .block-content .items-wrapper table tr:first-child td {
+    border: none;
+}
+.rma-view-wrapper .block-content .items-wrapper .col-active {
+    padding-top: 5rem;
+}
+.rma-view-wrapper .block-content .items-wrapper .rma-item-notice {
+    padding: 1rem;
+    background: #FFE473;
+}
+.rma-view-wrapper .block-content .items-wrapper .col-request .fieldset {
+    margin-bottom: 1.5rem;
+}
+.rma-view-wrapper .block-content .items-wrapper .col-request .fieldset label {
+    margin-bottom: 8px;
+}
+.rma-view-wrapper .block-content .items-wrapper .col-request .fieldset .field, .rma-view-wrapper .block-content .items-wrapper .col-request .fieldset .select {
+    margin-bottom: 10px;
+}
+.rma-view-wrapper .block-content .items-wrapper .col-request .fieldset .qty-wrapper {
+    display: inline-block;
+}
+.rma-view-wrapper .block-content .items-wrapper .col-request .fieldset .qty-wrapper label {
+    width: auto;
+    line-height: 2;
+    margin-right: 2rem;
+}
+.rma-view-wrapper .block-content .items-wrapper .col-request .fieldset .qty-wrapper input {
+    width: 50px;
+}
+.rma-view-wrapper #rma-messages-fields {
+    margin-top: 2rem;
+}
+.rma-view-wrapper #rma-messages-fields .field {
+    float: none;
+    width: 100%;
+}
+.rma-view-wrapper #rma-messages-fields .action.primary {
+    margin-top: 2rem;
+}
+.rma-view-wrapper .required.error {
+    border: 2px solid red;
+}
+.rma-view-wrapper .field.required label.error {
+    color: red;
+}
+.rma-view-wrapper #rma-messages-fields p.note {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+
+
+
+    /* RMA Progress Bar */
+.multi-steps {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
+    content: counter(stepNum);
+    font-family: inherit;
+    font-weight: 700;
+}
+.multi-steps > li.is-active:after, .multi-steps > li.is-active ~ li:after {
+    background-color: #ededed;
+}
+.multi-steps {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.multi-steps > li {
+    counter-increment: stepNum;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    color: #f16321;
+    font-weight: 600;
+}
+.multi-steps > li:before {
+    content: '\f00c';
+    content: '\2713;';
+    content: '\10003';
+    content: '\10004';
+    content: '\2713';
+    display: block;
+    margin: 0 auto 4px;
+    background-color: #fff;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f16321;
+    border-radius: 50%;
+}
+.multi-steps > li:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #f16321;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    z-index: -1;
+}
+.multi-steps > li:last-child:after {
+    display: none;
+}
+.multi-steps > li.is-active:before {
+    background-color: #ededed;
+    border-color: #ededed;
+}
+.multi-steps > li.is-active ~ li {
+    color: #808080;
+}
+.multi-steps > li.is-active ~ li:before {
+    background-color: #ededed;
+    border-color: #ededed;
+}
+.multi-steps > li.is-active {
+    color: #808080;
+}
+.multi-steps.progress-completed > li {
+    color: #48982B;
+}
+.multi-steps.progress-completed > li:before {
+    border-color: #48982B;
+}
+.multi-steps.progress-completed > li:after {
+    background-color: #48982B;
+}
+.multi-steps.progress-canceled > li {
+    color: #7F7F7F;
+}
+.multi-steps.progress-canceled > li:before {
+    border-color: #7F7F7F;
+}
+.multi-steps.progress-canceled > li:after {
+    background-color: #7F7F7F;
+}
+
+/* Message History */
+.block-message-history {
+    margin-top: 40px;
+}
+#rma-messages-form textarea, #rma-messages-fields textarea {
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+    margin-bottom: 12px;
+}
+.rma-message-history {
+    margin-top: 1em;
+    list-style: none;
+    padding: 0;
+}
+.rma-message-history:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.rma-message-history .message-item {
+    background: #f4feff;
+    border: 1px solid #a2d7e1;
+    border-radius: 6px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    float: right;
+}
+.rma-message-history .message-item.sender-customer {
+    background: #f6fff4;
+    border: 1px solid #b5eaab;
+    float: left;
+}
+.rma-message-history .message-item.auto {
+    background: #fff9e6 !important;
+    border: 1px solid #e1cb87 !important;
+}
+.rma-message-history .message-item h4 {
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 0;
+}
+.rma-message-history .message-item .message-body {
+    font-size: 13px;
+}
+#rma-reply-button {
+    display: block;
+    clear: both;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .rma-view-wrapper .block-content .contact-info {
+        margin-left: 0;
+    }
+}

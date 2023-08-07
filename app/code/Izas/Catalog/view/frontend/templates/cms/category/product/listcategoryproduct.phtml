@@ -1,0 +1,48 @@
+<?php
+/**
+ * Product list template
+ *
+ * @var $block \Izas\Catalog\Block\Cms\Category\Product\ListCategoryProduct
+ */
+?>
+<?php
+    // @codingStandardsIgnoreFile
+    $_productCollection = $this->getLoadedProductCollection();
+    $_categoriesCollection = $block->getCategoriesCollection();
+?>
+<?php if (!$_productCollection->count()): ?>
+    <div class="message info empty"><div><?= /* @escapeNotVerified */ __('We can\'t find products matching the selection.') ?></div></div>
+<?php else: ?>
+    <div class="container homepage-product-list">
+
+        <?php $i = 0; ?>
+        <?php foreach ($_categoriesCollection as $categoryId => $category) : ?>
+            <?php if (isset($category['products'])): ?>
+                <?php $products = $category['products']; ?>
+                <div class="products wrapper product-list<?php echo $i != 0 ? ' hidden' : ''?>" data-category="<?php echo $categoryId; ?>">
+                    <ol id="owl-two" class="products list items product-items owl-carousel owl-theme owl-loaded owl-carousel-product row">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <?php /** @var $_product \Magento\Catalog\Model\Product */ ?>
+                                <?php foreach ($products as $_product): ?>
+                                    <li class="item product product-item col-12 col-md-6 col-lg-4 owl-item hidden">
+                                        <?php echo $block->getProductRenderHtml($_product) ?>
+                                    </li>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </ol>
+                </div>
+            <?php endif; ?>
+            <?php $i++ ?>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Tabs": {}
+    }
+}
+</script>

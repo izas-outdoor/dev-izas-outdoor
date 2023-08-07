@@ -1,0 +1,65 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Sales\Block\Order\Email\Items\DefaultItems */
+
+/** @var $_item \Magento\Sales\Model\Order\Item */
+$_item = $block->getItem();
+$_order = $_item->getOrder();
+$_store = $_order->getStore();
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+$productHelper = $objectManager->get('Magento\Catalog\Helper\Product');
+$product = $objectManager->get('Magento\Catalog\Model\Product')->loadByAttribute('sku',$_item->getData('sku'));
+$imagehelper = $objectManager->get('Magento\Catalog\Helper\Image')->init($product, 'product_page_image_small')->resize(300)->getUrl();
+
+$imageUrl = $_store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA) . 'catalog/product' . $_item->getImage();
+$_imageHelper = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Catalog\Helper\Image');
+$_baseImageUrl = $_store->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA).'catalog/product';
+	$imageSize = 135;
+$_imagehelper = $this->helper('Magento\Catalog\Helper\Image');
+if($childProd = current($_item->getChildrenItems()))
+{
+        $productImage = $_imagehelper->init($childProd->getProduct(), 'category_page_list', array('height' => $imageSize , 'width'=> $imageSize))->getUrl();
+}
+else
+{
+        $productImage = $_imagehelper->init($_item->getProduct(), 'category_page_list', array('height' => $imageSize , 'width'=> $imageSize))->getUrl();
+}
+?>
+
+<tr>
+    <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding:0 9px 9px 9px;">
+    <img src="<?= $_imageHelper->init($_item->getProduct(), 'small_image', ['type'=>'small_image'])->keepAspectRatio(true)->resize('65','65')->getUrl();?>" alt="<?= __('Product Image');?>">
+    </td>
+
+    <td valign="top" class="mcnTextContent"
+        style="padding-top:0;padding-right:18px;padding-bottom:9px;padding-left:18px;">
+        <p style="font-size:16px;font-weight:800;font-style:italic;margin:0px;">
+            <?= $block->escapeHtml($_item->getName()) ?> 
+        </p>
+
+        <p>
+            
+            <?php if ($block->getItemOptions()): ?>
+            <?php foreach ($block->getItemOptions() as $option): ?>
+            <?= /* @escapeNotVerified */  $option['label'] ?>: <?= /* @escapeNotVerified */  nl2br($option['value']) ?>
+            <br>
+
+            <?php endforeach; ?>
+
+            <?php endif; ?>
+            <?php echo __('QTY') ?>: <?= /* @escapeNotVerified */  $_item->getQtyOrdered() * 1 ?> <br>
+
+        </p>
+    </td>
+    <td valign="top" class="mcnTextContent" style="padding-top:0;font-size:16px;font-weight:800;letter-spacing:2px;">
+        <div style="text-align:right;"><?= /* @escapeNotVerified */  $block->getItemPrice($_item) ?></div>
+    </td>
+</tr>

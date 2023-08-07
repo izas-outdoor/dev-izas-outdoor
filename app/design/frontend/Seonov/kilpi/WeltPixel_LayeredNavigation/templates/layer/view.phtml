@@ -1,0 +1,96 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+<?php
+/**
+ * Category layered navigation
+ *
+ * @var $block WeltPixel\LayeredNavigation\Block\Navigation
+ */
+$isAjaxMode = $block->isAjaxMode();
+$jsClass = ($isAjaxMode) ? 'WeltPixel_LayeredNavigation/js/product/list/toolbar' : false;
+?>
+
+<?php if ($block->canShowBlock()): ?>
+
+  <span class="filter"><i class="fas fa-filter"></i></span>
+
+
+    <div class="panels col-md-3 col-12">
+      <div class="close-filters hidden-lg-up">
+          <a class="close-filters-link" href="#"></a>
+      </div>
+      <?php $filtered = count($block->getLayer()->getState()->getFilters()) ?>
+      <div class="wrapper center-block" data-count="<?= /* @escapeNotVerified */   $filtered ?>">
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <?= $block->getChildHtml('state') ?>
+
+
+            <?php $activeFilters = $block->getActiveFilters() ?>
+            <?php $wrapOptions = false; ?>
+              <?php $i = 0; ?>
+            <?php foreach ($block->getFilters() as $k => $filter): ?>
+        <?php $attributeId = (!$block->isCategoryFilter($filter)) ? $filter->getData('attribute_model')->getAttributeId() : 0; ?>
+        <?php if ($filter->getItemsCount()): ?>
+        <?php if (!$wrapOptions): ?>
+          <div class="panel panel-default">
+            <?php $wrapOptions = true; ?>
+                <?php endif; ?>
+                <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $i; ?>" aria-expanded="false" aria-controls="collapse<?php echo $i; ?>">
+                  <?= $block->escapeHtml(__($filter->getName())) ?>
+                </a>
+                </h4>
+                </div>
+                <div id="collapse<?php echo $i; ?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?php echo $i; ?>">
+                  <div class="panel-body">
+                  <?= /* @escapeNotVerified */ $block->getChildBlock('renderer')->render($filter) ?>
+                </div>
+              </div>
+
+                <?php endif; ?>
+                  <?php $i++; ?>
+                <?php endforeach; ?>
+                <?php if ($wrapOptions): ?>
+            </div>
+        <?php else: ?>
+            <script>
+                require([
+                    'jquery'
+                ], function ($) {
+                    $('#layered-filter-block').addClass('filter-no-options');
+
+                });
+            </script>
+            <?php endif; ?>
+          </div>
+        </div>
+    </div>
+<?php endif; ?>
+<div class="wp-ln-overlay"></div>
+<div class="wp-ln-slider-js" data-mage-init='<?= /* @escapeNotVerified */ $block->getWidgetOptionsJson() ?>'>
+    <script>
+        <?php if ($jsClass): ?>
+            require.config({
+                map: {
+                    '*': {
+                        "productListToolbarForm": "<?= $jsClass?>"
+                    }
+                }
+            });
+        <?php endif; ?>
+
+        require(['wpFilterSelect'], function(){
+            wpFilterSelect.markSelected();
+        });
+    </script>
+
+</div>

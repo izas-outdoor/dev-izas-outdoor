@@ -1,0 +1,122 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer */
+
+$_item = $block->getItem();
+$product = $_item->getProduct();
+$isVisibleProduct = $product->isVisibleInSiteVisibility();
+/** @var \Magento\Msrp\Helper\Data $helper */
+$helper = $this->helper('Magento\Msrp\Helper\Data');
+$canApplyMsrp = $helper->isShowBeforeOrderConfirm($product) && $helper->isMinimalPriceLessMsrp($product);
+?>
+<div class="item-in-cart" data-th="<?= $block->escapeHtml(__('Item')) ?>">
+    <?php if ($block->hasProductUrl()): ?>
+    <a href="<?= /* @escapeNotVerified */
+    $block->getProductUrl() ?>"
+       title="<?= $block->escapeHtml($block->getProductName()) ?>"
+       tabindex="-1"
+       class="product-item-photo">
+        <?php else: ?>
+        <span class="product-item-photo">
+            <?php endif; ?>
+            <?= $block->getImage($block->getProductForThumbnail(), 'cart_page_product_thumbnail')->toHtml() ?>
+            <?php if ($block->hasProductUrl()): ?>
+    </a>
+<?php else: ?>
+    </span>
+<?php endif; ?>
+    <div class="product-item-details">
+        <span class="product-item-name">
+            <?php if ($block->hasProductUrl()): ?>
+                <a href="<?= /* @escapeNotVerified */
+                $block->getProductUrl() ?>"><?= $block->escapeHtml($block->getProductName()) ?></a>
+            <?php else: ?>
+                <?= $block->escapeHtml($block->getProductName()) ?>
+            <?php endif; ?>
+            <?php if ($_options = $block->getOptionList()): ?>
+                <ul class="option-list">
+                <?php foreach ($_options as $_option) : ?>
+                    <li>
+                        <?php $_formatedOptionValue = $block->getFormatedOptionValue($_option) ?>
+                        <span><?= $block->escapeHtml($_option['label']) ?>: </span>
+                        <span>
+                                <?php if (isset($_formatedOptionValue['full_view'])): ?>
+                                    <?= /* @escapeNotVerified */
+                                    $_formatedOptionValue['full_view'] ?>
+                                <?php else: ?>
+                                    <?= /* @escapeNotVerified */
+                                    $_formatedOptionValue['value'] ?>
+                                <?php endif; ?>
+                        </span>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+            <?php endif; ?>
+        </span>
+
+        <?php if ($messages = $block->getMessages()): ?>
+            <?php foreach ($messages as $message): ?>
+                <div class="cart item message <?= /* @escapeNotVerified */
+                $message['type'] ?>">
+                    <div><?= $block->escapeHtml($message['text']) ?></div>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <?php $addInfoBlock = $block->getProductAdditionalInformationBlock(); ?>
+        <?php if ($addInfoBlock): ?>
+            <?= $addInfoBlock->setItem($_item)->toHtml() ?>
+        <?php endif; ?>
+        <div class="qty" data-th="<?= $block->escapeHtml(__('Qty')) ?>">
+            <div class="change-qty">
+                <div class="button-decrease">
+                    <a href="#" id="minus-btn-<?= $_item->getId() ?>" class="btn-minus"><span>-</span></a>
+                </div>
+                <input id="cart-<?= /* @escapeNotVerified */
+                $_item->getId() ?>-qty"
+                       name="cart[<?= /* @escapeNotVerified */
+                       $_item->getId() ?>][qty]"
+                       data-cart-item-id="<?= $block->escapeHtml($_item->getSku()) ?>"
+                       value="<?= /* @escapeNotVerified */
+                       $block->getQty() ?>"
+                       type="text"
+                       size="4"
+                       title="<?= $block->escapeHtml(__('Qty')) ?>"
+                       class="qty_input form-control form-control-sm"
+                       data-validate="{required:true,'validate-greater-than-zero':true}"
+                       data-role="cart-item-qty"/>
+                <div class="button-increasy">
+                    <a href="#" id="plus-btn-<?= $_item->getId() ?>" class="btn-plus"><span>+</span></a>
+                </div>
+            </div>
+            <a href="#"
+               class="action action-delete"
+               data-post='<?= /* @escapeNotVerified */
+               $this->helper('Magento\Checkout\Helper\Cart')->getDeletePostJson($_item) ?>'><span
+                        class="remove_item"><?php echo __('REMOVE') ?></span></a>
+        </div>
+        <?php if ($canApplyMsrp): ?>
+            <span class="pricing msrp">
+                    <span class="msrp notice"><?= /* @escapeNotVerified */
+                        __('See price before order confirmation.') ?></span>
+                    <?php $helpLinkId = 'cart-msrp-help-' . $_item->getId(); ?>
+                    <a href="#" class="action help map" id="<?= /* @escapeNotVerified */
+                    ($helpLinkId) ?>" data-mage-init='{"addToCart":{"helpLinkId": "#<?= /* @escapeNotVerified */
+                    $helpLinkId ?>","productName": "<?= /* @escapeNotVerified */
+                    $product->getName() ?>","showAddToCart": false}}'>
+                        <span><?= /* @escapeNotVerified */
+                            __("What's this?") ?></span>
+                    </a>
+                </span>
+        <?php else: ?>
+            <span class="col price" data-th="<?= $block->escapeHtml(__('Price')) ?>">
+                <?= $block->getUnitPriceHtml($_item) ?>
+            </span>
+        <?php endif; ?>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div style="min-width: 300px">
+    <!-- ko foreach: {data: getItems($row()), as: 'product'} -->
+    <!-- ko if: product.url -->
+    <a class="rma-list-product" data-bind="
+                attr: {href: product.url},
+                text: product.name">
+    </a>
+    <!-- /ko -->
+    <!-- ko ifnot: product.url -->
+    <span class="rma-list-product" data-bind="
+                text: product.name">
+    </span>
+    <!-- /ko -->
+    <span data-bind="html: product.statuses"></span>
+    <!-- /ko -->
+</div>

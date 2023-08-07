@@ -1,0 +1,27 @@
+<?php
+/**
+ * @var $this \Metagento\Faq\Block\Head
+ * @var $block \Metagento\Faq\Block\Head
+ */
+?>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php $jsPath = $block->getJsUrl() ?>
+<?php if ( count($jsPath) ): ?>
+    <?php foreach ( $jsPath as $js ): ?>
+        <script type="text/javascript" src="<?php echo $js ?>"></script>
+    <?php endforeach; ?>
+<?php endif ?>
+
+<?php $cssPath = $block->getCssUrl() ?>
+<?php if ( count($cssPath) ): ?>
+    <?php foreach ( $cssPath as $css ): ?>
+        <link rel="stylesheet" href="<?php echo $css ?>">
+    <?php endforeach; ?>
+<?php endif ?>
+
+<?php if($block->getCustomCss()): ?>
+    <style>
+        <?php echo $block->getCustomCss() ?>
+    </style>
+<?php endif ?>

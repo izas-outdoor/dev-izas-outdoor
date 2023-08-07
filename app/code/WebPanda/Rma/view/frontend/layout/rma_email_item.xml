@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" label="Email RMA Request Items List" design_abstraction="custom">
+    <body>
+        <block class="Magento\Framework\View\Element\Template" name="rma.items" template="WebPanda_Rma::email/items.phtml" cacheable="false" />
+    </body>
+</page>

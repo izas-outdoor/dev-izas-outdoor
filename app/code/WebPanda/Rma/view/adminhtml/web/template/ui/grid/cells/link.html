@@ -1,0 +1,10 @@
+<!-- ko if: getLinkUrl($row()) -->
+<a data-bind="
+    attr: {
+        href: getLinkUrl($row())
+    },
+    html: getLinkText($row())"></a>
+<!-- /ko -->
+<!-- ko ifnot: getLinkUrl($row()) -->
+<span data-bind="text: getLinkText($row())"></span>
+<!-- /ko -->

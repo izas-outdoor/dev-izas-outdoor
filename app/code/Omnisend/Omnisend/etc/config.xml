@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <omnisend_config>
+            <general>
+                <base_url>https://api.omnisend.com/v3</base_url>
+                <is_cron_synchronization_enabled>0</is_cron_synchronization_enabled>
+                <is_real_time_synchronization_enabled>0</is_real_time_synchronization_enabled>
+                <maximum_entities_per_cron>2500</maximum_entities_per_cron>
+            </general>
+        </omnisend_config>
+        <update_quotes>
+            <cron>
+                <expr>0 2 * * *</expr>
+            </cron>
+        </update_quotes>
+        <update_orders>
+            <cron>
+                <expr>0 3 * * *</expr>
+            </cron>
+        </update_orders>
+        <update_customers>
+            <cron>
+                <expr>0 4 * * *</expr>
+            </cron>
+        </update_customers>
+        <update_products>
+            <cron>
+                <expr>0 5 * * *</expr>
+            </cron>
+        </update_products>
+        <update_guest_subscribers>
+            <cron>
+                <expr>0 6 * * *</expr>
+            </cron>
+        </update_guest_subscribers>
+    </default>
+</config>

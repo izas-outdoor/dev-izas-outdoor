@@ -1,0 +1,14 @@
+{
+  "name": "izas/empathy",
+  "description": "A Magento 2 Empathy Feed.",
+  "version": "1.6.16",
+  "type": "magento2-module",
+  "require": {
+  },
+  "autoload": {
+      "files": [ "registration.php" ],
+      "psr-4": {
+        "Izas\\Empathy\\": ""
+      }
+  }
+}

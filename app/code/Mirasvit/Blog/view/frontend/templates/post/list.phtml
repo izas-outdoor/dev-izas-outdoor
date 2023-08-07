@@ -1,0 +1,63 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var \Mirasvit\Blog\Block\Post\PostList $block */
+$collection = $block->getPostCollection();
+?>
+<header class="blog" style="background-image: url(<?php echo $this->getViewFileUrl('img/banner-blog.jpg'); ?>);">
+      <div class="container">
+        <div class="header-blog row align-items-center">
+          <div class="col-12 text-center">
+            <h1 class="font-weight-light"><?= __('IZAS NEWS') ?></h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="">
+      <div class="container">
+        <div class="content_box">
+          <div class="row">
+<?php if ($collection->count()): ?>
+    <div class="blog__post-list-wrapper">
+
+        <div class="col-lg-8 post-items">
+            <?php /** @var \Mirasvit\Blog\Api\Data\PostInterface $post */ ?>
+            <?php foreach ($collection as $post): ?>
+                <div class="post-item col-lg-6 col-md-6 col-sm-12 col-xs-12 filters all">
+                    <header class="blog__post-header">
+                        <h2 class="blog__post-title" itemprop="headline">
+                            <a href="<?= $post->getUrl() ?>" rel="bookmark"><?= $post->getName() ?></a>
+                        </h2>
+
+                        <?= $block->getPostMetaHeader($post)->toHtml() ?>
+                    </header>
+
+                    <div class="blog__post-excerpt" itemprop="text">
+                        <?php if ($post->getFeaturedImageUrl() && $post->getFeaturedShowOnHome()): ?>
+                            <a href="<?= $post->getUrl() ?>">
+                                <img src="<?= $post->getFeaturedImageUrl() ?>"
+                                     alt="<?= $block->getFeaturedAlt($post) ?>"/>
+                            </a>
+                        <?php endif ?>
+
+                        <?= $block->getContentMoreTag($post) ?>
+
+                        <a class="read-more" href="<?= $post->getUrl() ?>"><?= __('Read more...') ?></a>
+                    </div>
+
+                    <?= $block->getPostMetaFooter($post)->toHtml() ?>
+                </div>
+            <?php endforeach ?>
+        </div>
+
+      
+    </div>
+<?php else: ?>
+    <div class="message notice">
+        <div><?= __('There are no posts available for this category.') ?></div>
+    </div>
+<?php endif ?>
+</div>
+</div>
+</div>
+</section>

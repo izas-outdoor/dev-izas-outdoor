@@ -1,0 +1,18 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var $block \Mirasvit\Blog\Block\Sidebar\CategoryTree */
+?>
+
+<section class="filter-blog">
+  <div class="container">
+    <div class="content_box">
+      <div class="filter-header d-flex justify-content-between" align="center">
+            <?php foreach ($block->getTree() as $category): ?>
+              <a class="filter-button" href="<?= $category->getUrl() ?>" data-filter="<?= $category->getName() ?>"><?= $category->getName() ?></a>
+
+            <?php endforeach ?>
+          </div>
+        </div>
+      </div>
+    </section>

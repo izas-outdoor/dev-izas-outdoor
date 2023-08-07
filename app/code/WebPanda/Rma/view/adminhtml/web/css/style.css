@@ -1,0 +1,79 @@
+.wp-store-label-required:after {
+    color: #e22626;
+    content: '*' !important;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-left: 10px;
+    margin-top: .2rem;
+    position: absolute;
+    z-index: 1;
+}
+span.rma-status-color {
+    padding: 2px 15px;
+    border-radius: 8px;
+    color: #fff;
+    white-space: pre;
+}
+#webpanda_rma_rma_edit_tabs_main_section_content .fieldset .field, #webpanda_rma_rma_edit_tabs_customer_section_content .fieldset .field {
+    margin-bottom: 15px;
+}
+#rma-message-history-wrapper {
+    padding: 0 2em;
+}
+#rma-messages-form textarea {
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+}
+.rma-message-history {
+    margin-top: 1em;
+    list-style: none;
+}
+.rma-message-history:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.rma-message-history .message-item {
+    background: #f4feff;
+    border: 1px solid #a2d7e1;
+    border-radius: 6px;
+    padding: 15px 10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+    float: right;
+}
+.rma-message-history .message-item.sender-customer {
+    background: #f6fff4;
+    border: 1px solid #b5eaab;
+    float: left;
+}
+.rma-message-history .message-item.auto {
+    background: #fff9e6 !important;
+    border: 1px solid #e1cb87 !important;
+}
+.rma-message-history .message-item h4 {
+    font-weight: bold;
+    font-size: 14px;
+}
+.rma-message-history .message-item .message-body {
+    font-size: 13px;
+}
+#rma-reply-button {
+    display: block;
+    clear: both;
+    margin-top: 20px;
+}
+.rma-admin-rma-edit .admin__scope-old .fieldset-wrapper, .rma-admin-rma-edit .admin__scope-old .fieldset {
+    padding-bottom: 0;
+}
+.rma-list-product {
+    display: block;
+    font-weight: 600;
+}

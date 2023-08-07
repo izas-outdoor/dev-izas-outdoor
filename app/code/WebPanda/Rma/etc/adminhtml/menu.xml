@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="WebPanda_Rma::base" title="WebPanda RMA" module="WebPanda_Rma" sortOrder="400" parent="Magento_Sales::sales" resource="WebPanda_Rma::base"/>
+        <add id="WebPanda_Rma::rma" title="Manage Returns" module="WebPanda_Rma" sortOrder="10" parent="WebPanda_Rma::base" action="rma_admin/rma/index" resource="WebPanda_Rma::base"/>
+        <add id="WebPanda_Rma::statuses" title="RMA Statuses" module="WebPanda_Rma" sortOrder="20" parent="WebPanda_Rma::base" action="rma_admin/status/index" resource="WebPanda_Rma::statuses"/>
+        <add id="WebPanda_Rma::configuration" title="RMA Configuration" module="WebPanda_Rma" sortOrder="30" parent="WebPanda_Rma::base" action="adminhtml/system_config/edit/section/rma/" resource="WebPanda_Rma::statuses"/>
+    </menu>
+</config>

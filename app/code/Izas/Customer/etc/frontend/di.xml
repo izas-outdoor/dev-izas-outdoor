@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Start of Plugins -->
+    <type name="Seonov\Customer\Controller\Account\CreatePost">
+        <plugin name="izas_contact_create_account" type="Izas\Customer\Plugin\Controller\Account\CreatePost" />
+    </type>
+    <type name="Magento\Customer\Controller\Account\LoginPost">
+        <plugin name="izas_contact_login" type="Izas\Customer\Plugin\Controller\Account\LoginPost" />
+    </type>
+    <!-- End of Plugins -->
+</config>

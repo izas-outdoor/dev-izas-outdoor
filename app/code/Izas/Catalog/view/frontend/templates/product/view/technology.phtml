@@ -1,0 +1,23 @@
+<?php
+/**@var $block \Izas\Catalog\Block\Product\View\Technology */
+$_product = $block->getProduct();
+$technologies = $block->getTechnologies();
+?>
+<?php if ($_technologies = $block->getTechnologies()): ?>
+    <?php $attr = $_product->getResource()->getAttribute('technology'); ?>
+    <?php $attrAdmin = clone $attr; ?>
+    <div>
+            <?php foreach ($_technologies as $_technology): ?>
+                <?php $_technologyName = $attr->getSource()->getOptionText($_technology->getTechnologyTechnology()); ?>
+                <div class="technology-container row">
+                    <div class="col image-container">
+                        <img class="technology-image" src="<?= $block->getTechnologyImage($attrAdmin, $_technology->getTechnologyTechnology()) ?>" alt="<?= $_technologyName ?>" />
+                    </div>
+                    <div class="text-container col">
+                        <span class="technology-name"><?= $_technologyName  ?></span>
+                        <p class="technology-description"><?= $_technology->getTechnologyDescription()?></p>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+    </div>
+<?php endif; ?>

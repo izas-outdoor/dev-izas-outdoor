@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job instance="Izas\Empathy\Cron\Feed" method="execute" name="izas_empathy_feed_cron">
+			<schedule>0 6 * * *</schedule>
+		</job>
+		<job instance="Izas\Empathy\Cron\FeedEn" method="execute" name="izas_empathy_feed_cron_en">
+			<schedule>0 5 * * *</schedule>
+		</job>
+		<job instance="Izas\Empathy\Cron\FeedFr" method="execute" name="izas_empathy_feed_cron_fr">
+			<schedule>0 4 * * *</schedule>
+		</job>
+		<job instance="Izas\Empathy\Cron\FeedIt" method="execute" name="izas_empathy_feed_cron_it">
+			<schedule>0 3 * * *</schedule>
+		</job>
+		<job instance="Izas\Empathy\Cron\FeedCl" method="execute" name="izas_empathy_feed_cron_cl">
+			<schedule>0 2 * * *</schedule>
+		</job>
+	</group>
+</config>

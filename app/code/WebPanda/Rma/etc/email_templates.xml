@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="rma_email_templates_notify_admin_new_rma_template" label="New RMA Request Created" file="notify_admin_new_rma_template.html" type="html" module="WebPanda_Rma" area="frontend" />
+    <template id="rma_email_templates_notify_admin_customer_comment_template" label="RMA Customer Comment" file="notify_admin_customer_comment_template.html" type="html" module="WebPanda_Rma" area="frontend" />
+    <template id="rma_email_templates_notify_customer_admin_comment_template" label="RMA Admin Comment" file="notify_customer_admin_comment_template.html" type="html" module="WebPanda_Rma" area="frontend" />
+    <template id="rma_email_templates_status_email_to_admin" label="RMA Status Update to Admin" file="status_email_to_admin.html" type="html" module="WebPanda_Rma" area="frontend" />
+    <template id="rma_email_templates_status_email_to_customer" label="RMA Status Update to Customer" file="status_email_to_customer.html" type="html" module="WebPanda_Rma" area="frontend" />
+</config>

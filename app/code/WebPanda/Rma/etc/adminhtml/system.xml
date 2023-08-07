@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      WebPanda
+ * @package     WebPanda_Rma
+ * @copyright   Copyright (c) WebPanda (https://webpanda-solutions.com/)
+ * @license     https://webpanda-solutions.com/license-agreement
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="webpanda_tab" translate="label" sortOrder="450">
+            <label>WebPanda Extensions</label>
+        </tab>
+        <section id="rma" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>RMA</label>
+            <tab>webpanda_tab</tab>
+            <resource>WebPanda_Rma::config</resource>
+            <group id="default" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="guest" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Allow guests to request RMA</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="status_dropdown" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Allow RMA Request Status to be set from dropdown by admin</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Select "Yes" and a Status Dropdown will appear in the RMA Request Edit Form enabling the admin to edit the status of the Request to any custom created RMA Status.</comment>
+                </field>
+                <field id="return_period" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Return Period</label>
+                    <validate>validate-digits</validate>
+                    <comment>Allow RMA requests to be made for X amount of days after order was completed</comment>
+                </field>
+                <field id="order_statuses" translate="label" type="multiselect" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Allowed order statuses for RMA</label>
+                    <source_model>Magento\Sales\Model\Config\Source\Order\Status</source_model>
+                </field>
+                <field id="max_attachment_size" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Max Attachment Size (Mb)</label>
+                    <validate>validate-digits</validate>
+                </field>
+                <field id="return_instructions_block" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Return Instructions Block</label>
+                    <source_model>Magento\Cms\Model\Config\Source\Block</source_model>
+                </field>
+                <field id="confirm_shipping_popup_text" translate="label" type="textarea" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>"Confirm Shipping" popup text</label>
+                    <comment>Customize the pop-up alert message that appears before the user certifies he sent the package back to you. Make sure he understood the instructions properly and the shipment is according to your standards!</comment>
+                </field>
+            </group>
+            <group id="contact" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Contact</label>
+                <field id="email" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>RMA Department Email</label>
+                    <validate>required-entry validate-email</validate>
+                </field>
+                <field id="name" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>RMA Department Name</label>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="address" translate="label" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>RMA Department Address</label>
+                    <validate>required-entry</validate>
+                    <comment>This address will be listed as Shipping Destination in the Return Instructions section.</comment>
+                </field>
+                <field id="notify_customer" translate="label comment" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Notify Customer by Email</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable/Disable sending emails to customers regarding their RMAs</comment>
+                </field>
+                <field id="notify_admin" translate="label comment" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Notify Admin by Email</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable/Disable sending emails to admin regarding RMAs</comment>
+                </field>
+            </group>
+            <group id="email_templates" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Email Templates</label>
+                <field id="notify_customer_admin_comment_template" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Admin Comment Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                    <comment>Notification email sent to customer when admin places a comment</comment>
+                </field>
+                <field id="notify_admin_customer_comment_template" translate="label comment" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Customer Comment Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                    <comment>Notification email sent to admin when customer places a comment</comment>
+                </field>
+            </group>
+            <group id="reason" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Reason for Return</label>
+                <field id="frontend_label" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Frontend Label</label>
+                </field>
+                <field id="admin_can_edit_at" translate="label comment" type="multiselect" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Admin Can Edit On</label>
+                    <source_model>WebPanda\Rma\Model\Config\Source\Status</source_model>
+                </field>
+                <field id="customer_can_edit_at" translate="label comment" type="multiselect" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Customer Can Edit On</label>
+                    <source_model>WebPanda\Rma\Model\Config\Source\Status</source_model>
+                </field>
+                <field id="options" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Options</label>
+                    <frontend_model>WebPanda\Rma\Block\Adminhtml\Config\Form\Field\OptionFlexibleReason</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+            </group>
+            <group id="item_condition" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Item Condition</label>
+                <field id="frontend_label" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Frontend Label</label>
+                </field>
+                <field id="admin_can_edit_at" translate="label comment" type="multiselect" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Admin Can Edit On</label>
+                    <source_model>WebPanda\Rma\Model\Config\Source\Status</source_model>
+                </field>
+                <field id="customer_can_edit_at" translate="label comment" type="multiselect" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Customer Can Edit On</label>
+                    <source_model>WebPanda\Rma\Model\Config\Source\Status</source_model>
+                </field>
+                <field id="options" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Options</label>
+                    <frontend_model>WebPanda\Rma\Block\Adminhtml\Config\Form\Field\OptionFlexibleItemCondition</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+            </group>
+            <group id="resolution" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Resolution</label>
+                <field id="frontend_label" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Frontend Label</label>
+                </field>
+                <field id="admin_can_edit_at" translate="label comment" type="multiselect" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Admin Can Edit On</label>
+                    <source_model>WebPanda\Rma\Model\Config\Source\Status</source_model>
+                </field>
+                <field id="customer_can_edit_at" translate="label comment" type="multiselect" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Customer Can Edit On</label>
+                    <source_model>WebPanda\Rma\Model\Config\Source\Status</source_model>
+                </field>
+                <field id="options" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Options</label>
+                    <frontend_model>WebPanda\Rma\Block\Adminhtml\Config\Form\Field\OptionResolution</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                </field>
+            </group>
+            <group id="admin_style" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Style</label>
+                <field id="special_style" translate="label" type="textarea" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Custom Style</label>
+                    <comment>Add your own style to the RMA Interface on storefront. This will affect all RMA pages in the front end area of your website.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

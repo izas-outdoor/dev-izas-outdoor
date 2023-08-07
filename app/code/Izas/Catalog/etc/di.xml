@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Indexer\Category\Product\Action\Full">
+        <arguments>
+            <argument name="batchRowsCount" xsi:type="number">10000</argument>
+        </arguments>
+    </type>
+    <!-- Start of Preferences -->
+    <preference for="Amasty\SeoSingleUrl\Plugin\Catalog\Helper\Data" type="Izas\Catalog\Plugin\Helper\Data" />
+    <preference for="Magento\Catalog\Block\Adminhtml\Product\Helper\Form\Category" type="Izas\Catalog\Block\Adminhtml\Product\Helper\Form\Category"/>
+    <!-- End of Preferences -->
+
+    <!-- Start of Logger -->
+    <type name="Izas\Catalog\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Izas\Catalog\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">error_image</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Izas\Catalog\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End of Logger -->
+</config>

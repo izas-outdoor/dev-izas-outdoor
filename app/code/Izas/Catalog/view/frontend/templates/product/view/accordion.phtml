@@ -1,0 +1,84 @@
+<?php
+/**@var $block \Izas\Catalog\Block\Product\View\Attributes */
+$_product = $block->getProduct();
+$_helper = $this->helper(\Magento\Catalog\Helper\Output::class);
+$_productHelper = $this->helper(\Izas\Catalog\Helper\Product::class);
+$_isOpen = false;
+?>
+<div class="product-info">
+<?php if($_product->getCharacteristics()):?>
+        <div class="product-info-section active">
+            <span class="label"><?= __('Characteristics'); ?></span>
+            <div>
+                <ul>
+                    <?= nl2br($_product->getCharacteristics()); ?>
+                </ul>
+            </div>
+        </div>
+        <?php $_isOpen = true; ?>
+    <?php endif; ?>
+    <?php if ($_activity = $this->getChildHtml('product.info.activity')): ?>
+        <div class="product-info-section ">
+            <span class="label"><?= __('Activities'); ?></span>
+            <div><?= $_activity; ?></div>
+        </div>
+        <?php $_isOpen = true; ?>
+    <?php endif;?>
+    <?php if ($_advantages = $block->getChildHtml('izas.advantages')): ?>
+        <div class="product-info-section<?= $_isOpen ? ' active' : '' ?>">
+            <span class="label"><?= __('Advantage'); ?></span>
+            <div><?= $block->getChildHtml('izas.advantages'); ?></div>
+        </div>
+        <?php $_isOpen = true; ?>
+    <?php endif; ?>
+    <?php if ($_technologyHtml = $this->getChildHtml('product.info.technology')): ?>
+        <div class="product-info-section<?= !$_isOpen ? ' active' : ''?>">
+            <span class="label"><?= __('Technology'); ?></span>
+            <div><?= $_technologyHtml; ?></div>
+        </div>
+        <?php $_isOpen = true; ?>
+    <?php endif;?>
+    <div class="product-info-section<?= !$_isOpen ? ' active' : '' ?>">
+        <span class="label"><?= __('Details'); ?></span>
+        <div>
+            <p><?= nl2br($_product->getDescription()); ?></p>
+            <?php if ($_materials = $_product->getMaterials()): ?>
+                <ul>       
+                <li>
+                            <strong><?= __('Material') ?>:</strong>
+                            <span><?= $_materials; ?></span>
+                        </li>
+                        </ul>
+                    <?php endif; ?>
+            <?php if ($_season = $_product->getSeason()): ?>
+                <span><?= __('Season') . ': ' . $_product->getAttributeText('season') ?></span>
+            <?php endif; ?>
+            <?php if ($_additional = $block->getAdditionalData()): ?>
+                <ul>
+                    <?php foreach ($_additional as $_data): ?>
+                        <li>
+                            <strong><?= $block->escapeHtml(__($_data['label'])) ?>: </strong>
+                            <span><?= /* @escapeNotVerified */ $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></span>
+                        </li>
+                    <?php endforeach; ?>
+                    <?php if ($_materials = $_product->getMaterials()): ?>
+                        <li>
+                            <strong><?= __('Material') ?>:</strong>
+                            <span><?= $_materials; ?></span>
+                        </li>
+                    <?php endif; ?>
+                </ul>
+            <?php endif; ?>
+            <p>Ref. <?= $_product->getSku()?> </p>
+        </div>
+    </div>
+    
+</div>
+
+<script type="text/x-magento-init">
+{
+    "*": {
+        "IzasProduct": {}
+    }
+}
+</script>

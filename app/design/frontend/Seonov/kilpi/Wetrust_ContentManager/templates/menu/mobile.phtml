@@ -1,0 +1,166 @@
+<?php
+/** @var \Wetrust\ContentManager\Block\Content\Menu $block */
+// @codingStandardsIgnoreFile
+$menuItems = $block->getMenuItems();
+?>
+<div class="menu-mobile hidden-lg-up">
+    <i class="icon-menu"><span><?php //__('Menu') ?></span></i>
+    <div class="hamburger hamburger--collapse js-hamburger mmenu-link">
+        <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+        </div>
+    </div>
+</div>
+<div class="hidden back">
+    <a class="return-arrow" href="javascript:history.back()">
+        <span class="icon-back"></span>
+    </a>
+</div>
+<script type="module" src='https://x.empathy.co/x-izas/app.js'>  
+
+
+
+</script>
+<script>
+   require(['jquery'], function ($) {
+$( document ).ready(function() {
+    var storeID = window.checkout.storeId
+var enviorment = 'staging'
+curren = 'EUR'
+if (storeID == 8){
+  language = 'es-cl';
+  curren = 'USD';
+  ui = 'es'
+} else if (storeID == 3){
+  language = 'es'
+  ui = 'es'
+} else if (storeID == 4){
+  language = 'fr'
+  ui = 'fr'
+} else if (storeID == 5){
+  language = 'it'
+  ui = 'it'
+}  else {
+  language = 'en'
+  ui = 'en'
+}
+  window.InterfaceX.init({
+  instance: "izas",
+  scope: "desktop",
+  lang: language,
+  currency: curren,
+  consent: true,
+  uiLang : ui
+});
+window.InterfaceX.search();
+
+});
+   });
+
+
+</script>
+
+<script type="text/javascript">
+    var menuJson = <?php echo $block->renderMenuJson() ?>;
+    var menuJsonMiddle = <?php echo json_encode(['content' => $block->getChildHtml('wt.menu.mobile.search')]) ?>;
+    var menuJsonBottom = <?php echo json_encode(['content' => $block->getChildHtml('wt.links.menu.mobile')]) ?>;
+    require(['jquery'], function ($) {
+    // aca pones el contendio de lo que queres hacer
+  
+ 
+
+
+
+$( "body" ).on( "keyup", "#search", function() {
+  event.preventDefault();
+  window.IntefaceX.search($("#search").val());
+});
+$( "body" ).on( "click", "#search", function() {
+event.preventDefault();
+var storeID = window.checkout.storeId
+curren = 'EUR';
+if (storeID == 8){
+  language = 'es-cl'
+  curren = 'USD';
+  ui = 'es'
+} else if (storeID == 3){
+  language = 'es'
+  ui = 'es'
+} else if (storeID == 4){
+  language = 'fr'
+  ui = 'fr'
+} else if (storeID == 5){
+  language = 'it'
+  ui = 'it'
+}  else {
+  language = 'en'
+  ui = 'en'
+}
+if (!window.InterfaceX.isXInitialized){
+    window.InterfaceX.init({
+  instance: "izas",
+  scope: "desktop",
+  lang: language,
+  currency: curren,
+  consent: true,
+  uiLang :ui,
+  callbacks: {
+    UserAcceptedAQuery: query => {
+    
+    //  alert(query);
+    },
+    UserClickedResultAddToCart: result => {
+    //  alert(result);
+    //  addToCartInWebApp(result);
+    }
+  }
+});
+}
+window.InterfaceX.search($("#search").val());
+});
+$( "body" ).on( "submit", "#search_mini_form", function() {
+event.preventDefault();
+window.InterfaceX.search($("#search").val());
+});
+
+$( "body" ).on( "click", ".top-link.search", function() {
+event.preventDefault();
+var storeID = window.checkout.storeId
+curren = 'EUR';
+if (storeID == 8){
+  language = 'es-cl'
+  curren = 'USD';
+  ui = 'es'
+} else if (storeID == 3){
+  language = 'es'
+  ui = 'es'
+} else if (storeID == 4){
+  language = 'fr'
+  ui = 'fr'
+} else if (storeID == 5){
+  language = 'it'
+  ui = 'it'
+}  else {
+  language = 'en'
+  ui = 'en'
+}
+if (!window.InterfaceX.isXInitialized){
+   window.InterfaceX.init({
+  instance: "izas",
+  scope: "mobile",
+  lang: language,
+  currency: curren,
+  consent: true,
+  uiLang :ui,
+});
+}
+window.InterfaceX.search($("#search").val());
+});
+
+$( "body" ).on( "click",'#product-addtocart-button', function() {
+    console.log("add to cart dev",$('input[name="item"]').val());
+    window.X.addProductToCart($('input[name="item"]').val())
+});
+
+    })
+</script>

@@ -1,0 +1,11 @@
+<?php
+/** @var $block Wetrust\Seo\Block\HrefLang */
+$alternatives = $block->getAlternatives();
+?>
+<?php if ($alternatives): ?>
+    <?php foreach ($alternatives as $hrefLang => $url): ?>
+        <?php if ($hrefLang != 'it_IT'): ?>
+            <link rel="alternate" hreflang="<?php echo $hrefLang ?>" href="<?php echo $url ?>" />
+        <?php endif; ?>
+    <?php endforeach; ?>
+<?php endif ?>

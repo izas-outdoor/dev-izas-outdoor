@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Omnisend_Omnisend::content"
+             title="Omnisend"
+             module="Omnisend_Omnisend"
+             sortOrder="20"
+             resource="Omnisend_Omnisend::content" />
+        <add id="Omnisend_Omnisend::omnisend_order_status_list"
+             title="Omnisend Order Statuses"
+             module="Omnisend_Omnisend"
+             sortOrder="1"
+             action="omnisend/orderstatus/index"
+             parent="Omnisend_Omnisend::content"
+             resource="Magento_Backend::content" />
+    </menu>
+</config>

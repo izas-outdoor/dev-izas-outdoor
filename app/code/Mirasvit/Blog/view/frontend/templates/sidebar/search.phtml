@@ -1,0 +1,18 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var \Mirasvit\Blog\Block\Sidebar\Search $block */
+?>
+<span class="title"><?= /* @escapeNotVerified */ __('SEARCH NEWS') ?></span>
+<form method="get" action="<?= $block->getSearchUrl() ?>">
+                <div class="input-group md-form form-sm form-2 pl-0">
+                  <input class="form-control input-serch my-0 py-1 amber-border" name="q" value="<?= $block->escapeHtml($block->getRequest()->getParam('q')) ?>" type="text" placeholder="<?= __('Search...') ?>" aria-label="Search....">
+                  <div class="input-group-append">
+                    <button class="" title="Submit" type="submit">
+                    <span class="input-group-text amber lighten-3" id="basic-text1">
+                      <i class="fas fa-chevron-right"></i>
+                    </span>
+                    </button>
+                  </div>
+                </div>
+              </form>

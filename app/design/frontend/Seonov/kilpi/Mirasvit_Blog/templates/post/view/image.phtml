@@ -1,0 +1,15 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var \Mirasvit\Blog\Block\Post\View $block */
+$post = $block->getPost();
+?>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 text-center">
+            <?php if ($post->getFeaturedImageUrl()): ?>
+                <img src="<?= $post->getFeaturedImageUrl() ?>"  alt="<?= $post->getName() ?>"/>
+            <?php endif ?>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,42 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Customer\Block\Form\Register $block */
+?>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<div class="block block-customer-login">
+    <div class="block-content" aria-labelledby="block-customer-login-heading">
+        <form class="form form-login"
+              action="<?= $block->escapeUrl($block->getPostActionUrl()) ?>"
+              method="post"
+              id="login-form"
+              data-mage-init='{"validation":{}}'>
+            <?= $block->getBlockHtml('formkey') ?>
+            <div class="" data-hasrequired="<?= $block->escapeHtml(__('* Required Fields')) ?>">
+                <h3 class="title-tab"><?php echo __('GUEST ACCESS') ?></h3>
+                <div class="form-group field required">
+                    <div class="control">
+                        <input type="email" name="email" autocomplete="email" id="email_address" value="<?= $block->escapeHtmlAttr($block->getFormData()->getEmail()) ?>" placeholder="<?= $block->escapeHtmlAttr(__('Email')) ?>" class="form-control" data-mage-init='{"mage/trim-input":{}}' data-validate="{required:true, 'validate-email':true}">
+                        <input type="hidden" name="guest" id="guest" value="1">
+                    </div>
+                    <div class="checkbox mb-3">
+                        <!-- The following line controls and configures the Turnstile widget. -->
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAAAChPM_XijmD2CI5" data-theme="light"></div>
+                        <!-- end. -->
+                    </div>
+                </div>
+                <div class="submit_form">
+                    <button type="submit" class="submit-payement action submit primary" title="<?= $block->escapeHtmlAttr(__('Acceso')) ?>"><span><?= $block->escapeHtml(__('Acceso')) ?></span></button>
+                </div>
+                <?php if(isset($_GET['origin'])){ ?>
+                        <a class="forgot-password action remind" href="<?= $block->getUrl('customer/account'); ?>"><span><?= $block->escapeHtml(__('Hazte Cliente')) ?></span></a>
+                <?php } ?>
+            </div>
+        </form>
+    </div>
+</div>
+

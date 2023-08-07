@@ -1,0 +1,33 @@
+<?php
+/**
+ * @var $block \Metagento\Faq\Block\Content\Category
+ * @var $this \Metagento\Faq\Block\Content\Category
+ */
+?>
+<?php $categories = $block->getCategories(); ?>
+<ul class="cd-faq-categories">
+    <?php if ( $block->showMostFaq() ) : ?>
+        <li><a class="selected" goto="#most">Most Faqs</a></li>
+    <?php endif ?>
+    <?php foreach ( $categories as $category ): ?>
+        <li>
+            <a goto="#category-<?php echo $category->getId() ?>"
+               href="<?php echo $category->getUrl() ?>"><?php echo $category->getName() ?></a>
+        </li>
+    <?php endforeach; ?>
+</ul>
+<?php if(!$block->showSidebar()): ?>
+    <style>
+        .cd-faq-categories{display: none}
+        .cd-faq-items{padding-left: 0;}
+    </style>
+<?php endif; ?>
+
+
+<?php if ($block->getSelectedCategory()): ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery('a[goto=#category-<?php echo $block->getSelectedCategory()->getId() ?>]').trigger('click');
+        });
+    </script>
+<?php endif; ?>

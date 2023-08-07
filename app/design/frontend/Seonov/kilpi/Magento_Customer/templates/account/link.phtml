@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var $block \Magento\Framework\View\Element\Html\Links */
+?>
+<div class="block account-nav">
+
+        <nav class="account-nav">
+            <ul class="nav items">
+                <li>
+
+                <a href="<?php echo $block->getHref() ?>">
+                  <i class="icon_<?php echo $block->getIcon() ?>"></i>
+                  <span><?php echo $block->getLabel() ?></span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+</div>

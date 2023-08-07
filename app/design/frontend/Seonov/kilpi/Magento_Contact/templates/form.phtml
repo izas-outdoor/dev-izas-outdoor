@@ -1,0 +1,97 @@
+<?php
+// @codingStandardsIgnoreFile
+/** @var \Magento\Contact\Block\ContactForm $block */
+/** @var \Izas\Contact\Helper\Data $helper */
+$helper = $this->helper(Izas\Contact\Helper\Data::class);
+?>
+<form class="form contact"
+      action="<?= $block->escapeUrl($block->getFormAction()) ?>"
+      id="contact-form"
+      method="post"
+      data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+      data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?= $block->escapeHtml(__('Write Us')) ?></span></legend>
+        <div class="field note no-label"><?= $block->escapeHtml(__('Jot us a note and we’ll get back to you as quickly as possible.')) ?></div>
+        <div class="row contact-row">
+            <div class="block-title client-info">
+                <span> <?= $block->escapeHtml(__('Client Information')) ?></span>
+            </div>
+            <div class="field name required col-md-6 col-12">
+                <div class="control">
+                    <input name="name" id="name" title="<?= $block->escapeHtmlAttr(__('First Name')) ?>" placeholder="<?= $block->escapeHtml(__('First Name')) ?>"
+                           value="<?= $block->escapeHtmlAttr($helper->getPostValue('name') ?: $helper->getUserName()) ?>"
+                           class="input-text" type="text" data-validate="{required:true}"/>
+                </div>
+            </div>
+            <div class="field required col-md-6 col-12">
+                <label class="label" for="lastname"><span><?= $block->escapeHtml(__('Last Name')) ?></span></label>
+                <div class="control">
+                    <input name="lastname" id="lastname" title="<?= $block->escapeHtmlAttr(__('Last Name')) ?>"  placeholder="<?= $block->escapeHtml(__('Last Name')) ?>"
+                           value="<?= $block->escapeHtmlAttr($helper->getPostValue('lastname') ?: $helper->getUserLastname()) ?>"
+                           class="input-text" type="text" data-validate="{required:true}"/>
+                </div>
+            </div>
+            <div class="field email required col-md-6 col-12">
+                <label class="label" for="email"><span><?= $block->escapeHtml(__('Email')) ?></span></label>
+                <div class="control">
+                    <input name="email" id="email" title="<?= $block->escapeHtmlAttr(__('Email')) ?>"  placeholder="<?= $block->escapeHtml(__('Email')) ?>"
+                           value="<?= $block->escapeHtmlAttr($helper->getPostValue('email') ?: $helper->getUserEmail()) ?>"
+                           class="input-text" type="email" data-validate="{required:true, 'validate-email':true}"/>
+                </div>
+            </div>
+            <div class="field telephone col-md-6 col-12">
+                <label class="label" for="telephone"><span><?= $block->escapeHtml(__('Phone Number')) ?></span></label>
+                <div class="control">
+                    <input name="telephone" id="telephone" title="<?= $block->escapeHtmlAttr(__('Phone Number')) ?>"  placeholder="<?= $block->escapeHtml(__('Phone Number')) ?>"
+                           value="<?= $block->escapeHtmlAttr($helper->getPostValue('telephone')) ?>"
+                           class="input-text validate-intl-tel" type="tel" data-validate="{required:true, 'validate-intl-tel':true}"
+                           data-mage-init='{"IzasTelephone":{
+                                "allowedCountries": "<?= $helper->getAllowedCountries() ?>",
+                                "utilsScript": "<?= $helper->getUtilsScript() ?>",
+                                "initialCountry": "<?= $helper->getInitialCountry() ?>"}
+                           }'
+
+                    />
+                </div>
+            </div>
+            <div class="field comment required col-12">
+
+                <div class="block-title observations">
+                    <span> <?= $block->escapeHtml(__('What’s on your mind?')) ?></span>
+                </div>
+                <div class="control">
+                    <textarea name="comment" id="comment" title="<?= $block->escapeHtmlAttr(__('What’s on your mind?')) ?>"
+                              class="input-text" cols="5" rows="3"
+                              data-validate="{required:true}"><?= $block->escapeHtml($helper->getPostValue('comment')) ?></textarea>
+                </div>
+            </div>
+            <?= $block->getChildHtml('izas.data.protection.contact.form') ?>
+
+            <div class="field terms required col-md-12 col-12">
+                <div class="control">
+                    <?= $block->getChildHtml('custom-news.checkbox') ?>
+                </div>
+            </div>
+
+            <?= $block->getChildHtml('form.additional.info') ?>
+
+        </div>
+    </fieldset>
+    <p> <?= $block->escapeHtml(__('Information')) ?> </p>
+    <?php if($helper->getInitialCountry() === 'CL'){ ?>
+        <p> <?= $block->escapeHtml(__('Email')) ?>: izaschile@izas-outdoor.com</p>
+        <p> <?= $block->escapeHtml(__('Phone')) ?>: +56 956051820</p>
+    <?php }else{ ?>
+        <p> <?= $block->escapeHtml(__('Email')) ?>: info@izas-outdoor.com</p>
+        <p> <?= $block->escapeHtml(__('Phone')) ?>: +34 976 50 20 40</p>
+    <?php } ?>
+    <div class="actions-toolbar col-md-6 col-12">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value=""/>
+            <button type="submit" title="<?= $block->escapeHtmlAttr(__('Submit')) ?>" class="action submit primary">
+                <span><?= $block->escapeHtml(__('Submit')) ?></span>
+            </button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="omnisend" translate="label" sortOrder="10">
+            <label>Omnisend</label>
+        </tab>
+        <section id="omnisend_config" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>omnisend</tab>
+            <resource>Omnisend_Omnisend::omnisend_general_config</resource>
+            <group id="general" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Omnisend Configurations</label>
+                <comment>
+                    <![CDATA[
+                    Follow these steps to link your magento store with Omnisend: <br />
+                    1. Using the button provided bellow, go to Omnisend website and log in. <br />
+                    2. In Omnisend website create an API key with all permissions, paste it in below and save the configuration. <br />
+                    3. In Omnisend website start the store connection process to receive your javascript snippet. <br />
+                    4. Once you have received the javascript snippet in Magento admin panel go to: Content->Design->Configuration->Edit Store View->Footer->Miscellaneous HTML. <br />
+                    5. Paste the snippet there and save the configuration. <br />
+                    6. In Magento admin panel go to: System->Tools->Cache Management and click Flush Magento Cache. <br />
+                    7. Go back to Omnisend and verify the snippet. <br />
+                    8. After that your store is connected to Omnisend, you can now tweak data synchronization configurations to suit your needs. <br />
+                    ]]>
+                </comment>
+                <field id="omnisend_website" translate="button_label" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <button_label>Go To Omnisend</button_label>
+                    <frontend_model>Omnisend\Omnisend\Block\Adminhtml\System\Config\WebsiteButton</frontend_model>
+                </field>
+                <field id="base_url" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Omnisend Base Url</label>
+                    <comment>Enter the url of Omnisend API you want to connect to.</comment>
+                </field>
+                <field id="api_key" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Omnisend Api Key</label>
+                    <comment>Enter your api key given by Omnisend.</comment>
+                </field>
+                <field id="is_cron_synchronization_enabled" translate="label comment" type="select" sortOrder="50" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Data Synchronization Using Cron Jobs</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="is_real_time_synchronization_enabled" translate="label comment" type="select" sortOrder="60" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Real Time Data Synchronization</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="maximum_entities_per_cron" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Maximum entities loaded per cron job</label>
+                </field>
+            </group>
+        </section>
+        <section id="update_quotes" translate="label" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Quote Synchronization</label>
+            <tab>omnisend</tab>
+            <resource>Omnisend_Omnisend::omnisend_cron_config</resource>
+            <group id="cron" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Cron Settings</label>
+                <field id="expr" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Cron Expression</label>
+                </field>
+            </group>
+        </section>
+        <section id="update_orders" translate="label" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Order Synchronization</label>
+            <tab>omnisend</tab>
+            <resource>Omnisend_Omnisend::omnisend_cron_config</resource>
+            <group id="cron" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Cron Settings</label>
+                <field id="expr" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Cron Expression</label>
+                </field>
+            </group>
+        </section>
+        <section id="update_customers" translate="label" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Customer Synchronization</label>
+            <tab>omnisend</tab>
+            <resource>Omnisend_Omnisend::omnisend_cron_config</resource>
+            <group id="cron" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Cron Settings</label>
+                <field id="expr" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Cron Expression</label>
+                </field>
+            </group>
+        </section>
+        <section id="update_products" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Product Synchronization</label>
+            <tab>omnisend</tab>
+            <resource>Omnisend_Omnisend::omnisend_cron_config</resource>
+            <group id="cron" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Cron Settings</label>
+                <field id="expr" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Cron Expression</label>
+                </field>
+            </group>
+        </section>
+        <section id="update_guest_subscribers" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Guest Subscriber Synchronization</label>
+            <tab>omnisend</tab>
+            <resource>Omnisend_Omnisend::omnisend_cron_config</resource>
+            <group id="cron" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>Cron Settings</label>
+                <field id="expr" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Cron Expression</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

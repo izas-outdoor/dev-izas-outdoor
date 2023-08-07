@@ -1,0 +1,46 @@
+<?php
+//@codingStandardsIgnoreFile
+
+/** @var \Mirasvit\Blog\Block\Sidebar\Recent $block */
+$collection = $block->getCollection()
+    ->setPageSize($this->getPageSize());
+if ($collection->getSize() === 0) {
+    return;
+}
+?>
+
+<!-- SECTION OUR BESTSELLERS -->
+<section class="" id="our_bestsellers">
+  <div class="container">
+    <div class="content_box text-center">
+
+          <h2 class="first_title"><?= /* @escapeNotVerified */ __('THE STORYBOARD') ?></h2>
+          <h3 class="second_title "><?= /* @escapeNotVerified */ __('Find our diverse and varied stories') ?></h3>
+
+          <div class="owl-carousel" id="our_bestsellers_carousel">
+
+            <?php foreach ($collection as $post): ?>
+                <?php
+                $imgPath = $post->getFeaturedImageUrl();
+                ?>
+                <div class="product_item">
+                  <a href="<?= $post->getUrl() ?>">
+                    <?php if ($imgPath): ?>
+                            <img src="<?= $imgPath ?>" alt="<?= $post->getName() ?>" class="img_product" />
+                    <?php endif ?>
+                    <div class="info_product_item">
+                      <span class="date_year"><?= $post->getCreatedAt() ?></span>
+                      <span class="title_product"><?= $post->getName() ?></span>
+                      <!--<span class="category_product_item"><i class="fa fa-tag" aria-hidden="true"></i>Product</span>-->
+                    </div>
+                  </a>
+                </div>
+            <?php endforeach ?>
+        </div>
+        <!--<div class="owl-nav">
+          <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
+          <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+        </div>-->
+    </div>
+</div>
+</section>

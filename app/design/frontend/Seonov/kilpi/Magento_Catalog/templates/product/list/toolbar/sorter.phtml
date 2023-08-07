@@ -1,0 +1,19 @@
+<?php
+// @codingStandardsIgnoreFile
+/**
+ * Product list toolbar
+ *
+ * @var $block \Magento\Catalog\Block\Product\ProductList\Toolbar
+ */
+
+?>
+<div class="toolbar-sorter">
+    <select id="sorter" data-role="sorter">
+        <optgroup label="<?= __('Sort') ?>">
+        <?php foreach ($block->getAvailableOrders() as $_key => $_order): ?>
+            <option data-value="<?= /* @escapeNotVerified */ $_key ?>" value="<?= /* @escapeNotVerified */ $_key ?>">
+                <?= $block->escapeHtml(__($_order)) ?>
+            </option>
+        <?php endforeach; ?>
+    </select>
+</div>

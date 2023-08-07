@@ -1,0 +1,198 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Customer\Block\Account\Dashboard\Info $block */
+?>
+<!--<div class="block block-dashboard-info">
+    <div class="block-title"><strong><?= $block->escapeHtml(__('Account Information')) ?></strong></div>
+    <div class="block-content">
+        <div class="box box-information">
+            <strong class="box-title">
+                <span><?= $block->escapeHtml(__('Contact Information')) ?></span>
+            </strong>
+            <div class="box-content">
+                <p>
+                    <?= $block->escapeHtml($block->getName()) ?><br>
+                    <?= $block->escapeHtml($block->getCustomer()->getEmail()) ?><br>
+                </p>
+                <?= $block->getChildHtml('customer.account.dashboard.info.extra'); ?>
+            </div>
+            <div class="box-actions">
+                <a class="action edit" href="<?= $block->escapeUrl($block->getUrl('customer/account/edit')) ?>">
+                    <span><?= $block->escapeHtml(__('Edit')) ?></span>
+                </a>
+                <a href="<?= $block->escapeUrl($block->getChangePasswordUrl()) ?>" class="action change-password">
+                    <?= $block->escapeHtml(__('Change Password')) ?>
+                </a>
+            </div>
+        </div>
+        <?php if ($block->isNewsletterEnabled()): ?>
+            <div class="box box-newsletter">
+                <strong class="box-title">
+                    <span><?= $block->escapeHtml(__('Newsletters')) ?></span>
+                </strong>
+                <div class="box-content">
+                    <p>
+                        <?php if ($block->getIsSubscribed()): ?>
+                            <?= $block->escapeHtml(__('You are subscribed to "General Subscription".')) ?>
+                        <?php else: ?>
+                            <?= $block->escapeHtml(__('You aren\'t subscribed to our newsletter.')) ?>
+                        <?php endif; ?>
+                    </p>
+                </div>
+                <div class="box-actions">
+                    <a class="action edit" href="<?= $block->escapeUrl($block->getUrl('newsletter/manage')) ?>"><span><?= $block->escapeHtml(__('Edit')) ?></span></a>
+                </div>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>-->
+<?php
+/*
+$objm = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objm->get('Magento\Customer\Model\Session');
+if($customerSession->isLoggedIn())
+{
+    $customerData = $customerSession->getCustomer()->getDataModel(); ?>
+
+    <?php if ($customerData->getCustomAttribute('skiing')){
+    if (($customerData->getCustomAttribute('skiing')->getValue()) == 1) { ?>
+    <script>
+    metrilo.event('apply_tags', { tags: ["skiing"] });
+    </script>
+    <?php }
+  } ?>
+  <?php if ($customerData->getCustomAttribute('running')){
+  if (($customerData->getCustomAttribute('running')->getValue()) == 1) { ?>
+  <script>
+  metrilo.event('apply_tags', { tags: ["running"] });
+  </script>
+  <?php }
+  } ?>
+  <?php if ($customerData->getCustomAttribute('cycling')){
+  if (($customerData->getCustomAttribute('cycling')->getValue()) == 1) { ?>
+  <script>
+  metrilo.event('apply_tags', { tags: ["cycling"] });
+  </script>
+  <?php }
+} ?>
+<?php if ($customerData->getCustomAttribute('hiking')){
+if (($customerData->getCustomAttribute('hiking')->getValue()) == 1) { ?>
+<script>
+metrilo.event('apply_tags', { tags: ["hiking"] });
+</script>
+<?php }
+} ?>
+<?php if ($customerData->getCustomAttribute('climbing')){
+if (($customerData->getCustomAttribute('climbing')->getValue()) == 1) { ?>
+<script>
+metrilo.event('apply_tags', { tags: ["climbing"] });
+</script>
+<?php }
+} ?>
+<?php if ($customerData->getCustomAttribute('kids')){
+if (($customerData->getCustomAttribute('kids')->getValue()) == 1) { ?>
+<script>
+metrilo.event('apply_tags', { tags: ["kids"] });
+</script>
+<?php }
+} ?>
+<?php if ($customerData->getCustomAttribute('fashion')){
+if (($customerData->getCustomAttribute('fashion')->getValue()) == 1) { ?>
+<script>
+metrilo.event('apply_tags', { tags: ["fashion"] });
+</script>
+<?php }
+} ?>
+
+
+
+  <?php
+}
+*/
+?>
+<div class="orh">
+              <div class="orh_item">
+                <a class="" href="<?= $block->escapeUrl($block->getUrl('sales/order/history')) ?>">
+                  <img src="<?php echo $this->getViewFileUrl('img/icons/box_full.png'); ?>" class="orh_img">
+                <span class="orh_title"><?php echo __('MY ORDERS') ?></span>
+                </a>
+                <p class="orh_description">
+                  <?php echo __('Keep track of how all')?> <br>
+                  <?php echo __('your orders are progressing')?>
+                </p>
+                <?php echo $this->getChildHtml('customer_account_last_order'); ?>
+
+                <a class="bottom_link" href="<?= $block->escapeUrl($block->getUrl('sales/order/history')) ?>"><?php echo __('View all orders') ?> &gt;</a>
+              </div>
+              <div class="orh_item">
+                <a class="" href="<?= $block->escapeUrl($block->getUrl('rma/customer')) ?>">
+                  <img src="<?php echo $this->getViewFileUrl('img/icons/back_full.png'); ?>" class="orh_img">
+                <span class="orh_title"><?php echo __('RETURNS') ?></span>
+              </a>
+                <p class="orh_description">
+                  <?php echo __('Create new return requests') ?> <br>
+                  <?php echo __('and follow up on existing returns') ?>
+                </p>
+                <!--<p class="orh_description">You don’t have any returns</p>-->
+                <a class="bottom_link" href="<?= $block->escapeUrl($block->getUrl('rma/customer')) ?>"><?php echo __('View all returns') ?> &gt;</a>
+              </div>
+              <div class="orh_item">
+                <img src="<?php echo $this->getViewFileUrl('img/icons/help_full.png'); ?>" class="orh_img">
+                <span class="orh_title"><?php echo __('HELP') ?></span>
+                <p class="orh_description">
+                  <?php echo __('Find answers to FAQs')?> <br>
+                  <?php echo __('get product advice or get in touch') ?>
+                </p>
+
+                <ul class="menu_orh">
+                  <li>
+                    <a class="" href="<?= $block->escapeUrl($block->getUrl('metodos-de-envio')) ?>"><?php echo __('Delivery') ?></a>
+                  </li>
+                  <li>
+                    <a class="" href="<?= $block->escapeUrl($block->getUrl('return')) ?>"><?php echo __('Returns') ?></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="control_account">
+                      <ul>
+                        <li>
+                          <a href="<?= $block->escapeUrl($block->getChangePasswordUrl()) ?>">
+                            <img src="<?php echo $this->getViewFileUrl('img/icons/cadna.png'); ?>">
+                            <span><?php echo __('Update my email or password') ?> &gt;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="<?= $block->escapeUrl($block->getUrl('customer/address')) ?>">
+                            <img src="<?php echo $this->getViewFileUrl('img/icons/home_icon.png'); ?>">
+                            <span><?php echo __('Change default addresses') ?> &gt;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="<?= $block->escapeUrl($block->getUrl('customer/account/edit')) ?>">
+                            <img src="<?php echo $this->getViewFileUrl('img/icons/pencil_icon.png'); ?>">
+                            <span><?php echo __('Edit account details') ?> &gt;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="<?= $block->escapeUrl($block->getUrl('customer/account/edit')) ?>">
+                            <img src="<?php echo $this->getViewFileUrl('img/icons/mail_icon.png'); ?>">
+                            <span><?php echo __('Change my email preferences') ?> &gt;</span>
+                          </a>
+                        </li>
+                        <!--<li>
+                          <a href="<?= $block->escapeUrl($block->getUrl('customer/account/')) ?>">
+                            <img src="<?php echo $this->getViewFileUrl('img/icons/card_icon.png'); ?>">
+                            <span><?php echo __('Edit saved payment cards') ?> &gt;</span>
+                          </a>
+                        </li>-->
+                      </ul>
+                    </div>

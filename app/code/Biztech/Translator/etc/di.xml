@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<!-- Copyright © 2016 store.biztechconsultancy.com. All Rights Reserved. -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    
+    <type name="Biztech\Translator\Helper\Logger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Biztech\Translator\Helper\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">biztechTranslator</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Biztech\Translator\Helper\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <!-- Start Cron Logger -->
+    <type name="Biztech\Translator\Helper\Cron\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Biztech\Translator\Helper\Cron\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">biztechcronTranslator</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Biztech\Translator\Helper\Cron\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Cron Logger -->
+
+    <!-- Start Cron Status Checking Logger -->
+    <type name="Biztech\Translator\Helper\CronCheck\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Biztech\Translator\Helper\CronCheck\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">biztechcroncheck</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Biztech\Translator\Helper\CronCheck\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Cron Status Checking Logger -->
+
+    <!-- Start Cron MassTranslateInAllStoreviewLogger Logger -->
+    <type name="Biztech\Translator\Helper\MassTranslateInAllStoreviewLogger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Biztech\Translator\Helper\MassTranslateInAllStoreviewLogger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">masstranslateinallstorecron</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Biztech\Translator\Helper\MassTranslateInAllStoreviewLogger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Cron Status Checking Logger -->
+
+    <!-- Start Cron CheckMassTranslateInAllStoreviewLogger Logger -->
+    <type name="Biztech\Translator\Helper\CheckMassTranslateInAllStoreviewLogger\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Biztech\Translator\Helper\CheckMassTranslateInAllStoreviewLogger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">checkmasstranslateinallstorecron</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Biztech\Translator\Helper\CheckMassTranslateInAllStoreviewLogger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Cron Status Checking Logger -->
+
+    <!-- Start Cron NewAddedProductTranslate Logger -->
+    <type name="Biztech\Translator\Helper\NewAddedProductTranslate\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Biztech\Translator\Helper\NewAddedProductTranslate\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">newaddedproducttranslate</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Biztech\Translator\Helper\NewAddedProductTranslate\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Cron Status Checking Logger -->
+
+    <!-- Start Cron CheckMassTranslateInAllStoreviewLogger Logger -->
+    <type name="Biztech\Translator\Helper\CheckNewAddedProductTranslate\Handler">
+        <arguments>
+            <argument name="filesystem" xsi:type="object">Magento\Framework\Filesystem\Driver\File</argument>
+        </arguments>
+    </type>
+    <type name="Biztech\Translator\Helper\CheckNewAddedProductTranslate\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">checkNewAddedProductTranslate</argument>
+            <argument name="handlers"  xsi:type="array">
+                <item name="system" xsi:type="object">Biztech\Translator\Helper\CheckNewAddedProductTranslate\Handler</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Cron Status Checking Logger -->
+    
+    <!-- Console command for mass product translate -->
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="clean" xsi:type="object">Biztech\Translator\Model\ProductTranslateCommand</item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Console command for mass product translate -->
+
+    <!-- Start Cron MassAction for mass product translate -->
+    <type name="Biztech\Translator\Ui\Component\MassAction\Group\Options">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="urlPath" xsi:type="string">translator/translator/massTranslateProduct</item>
+                <item name="paramName" xsi:type="string">lang_to</item>
+                <item name="confirm" xsi:type="array">
+                    <item name="title" xsi:type="string" translatable="true">AppJetty Translator</item>
+                    <item name="message" xsi:type="string" translatable="true">Are you sure you want to change language of selected Product(s) on Filtered Storeview ?</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Cron MassAction for mass product translate -->
+    
+    <!-- Start Console MassAction for mass product translate -->
+    <type name="Biztech\Translator\Ui\Component\MassAction\Group\OptionsConsole">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="urlPath" xsi:type="string">translator/translator/massTranslateProductConsole</item>
+                <item name="paramName" xsi:type="string">lang_to</item>
+                <item name="confirm" xsi:type="array">
+                    <item name="title" xsi:type="string" translatable="true">AppJetty Translator</item>
+                    <item name="message" xsi:type="string" translatable="true">Are you sure you want to change language of selected Product(s) on Filtered Storeview ?</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End Console MassAction for mass product translate -->
+    
+    <!-- Start CMS Page MassAction for mass CMS Page translate -->
+    <type name="Biztech\Translator\Ui\Component\MassAction\Group\OptionsCmsPage">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="urlPath" xsi:type="string">translator/translator/massTranslateCMSPage</item>
+                <item name="paramName" xsi:type="string">lang_to</item>
+                <item name="confirm" xsi:type="array">
+                    <item name="title" xsi:type="string" translatable="true">AppJetty Translator</item>
+                    <item name="message" xsi:type="string" translatable="true">Are you sure you want to change language of selected Pages?</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End CMS Page MassAction for mass CMS Page translate -->
+    
+    <!-- Start CMS Blocks MassAction for mass CMS Blocks translate -->
+    <type name="Biztech\Translator\Ui\Component\MassAction\Group\OptionsCmsBlocks">
+        <arguments>
+            <argument name="data" xsi:type="array">
+                <item name="urlPath" xsi:type="string">translator/translator/massTranslateCMSBlock</item>
+                <item name="paramName" xsi:type="string">lang_to</item>
+                <item name="confirm" xsi:type="array">
+                    <item name="title" xsi:type="string" translatable="true">AppJetty Translator</item>
+                    <item name="message" xsi:type="string" translatable="true">Are you sure you want to change language of selected Blocks?</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <!-- End CMS Blocks MassAction for mass CMS Blocks translate -->
+
+    <!-- UI compoent data source for mass product transate in multipe store -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="mass_translation_in_multiple_store_listing_data_source" xsi:type="string">Biztech\Translator\Model\ResourceModel\MasstranslateinAllstore\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Biztech\Translator\Model\ResourceModel\MasstranslateinAllstore\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">translate_in_all_storeview</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Translator\Model\ResourceModel\MasstranslateinAllstore</argument>
+        </arguments>
+    </virtualType>
+    <!-- end -->
+
+    <!-- UI compoent data source for newly added product transate in multipe store -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="newly_added_product_translation_in_multiple_store_listing_data_source" xsi:type="string">Biztech\Translator\Model\ResourceModel\MasstranslateNewlyAddedProducts\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Biztech\Translator\Model\ResourceModel\MasstranslateNewlyAddedProducts\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">translate_newly_added_product</argument>
+            <argument name="resourceModel" xsi:type="string">Biztech\Translator\Model\ResourceModel\MasstranslateNewlyAddedProducts</argument>
+        </arguments>
+    </virtualType>
+    <!-- end -->
+</config>

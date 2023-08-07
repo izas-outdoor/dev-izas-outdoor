@@ -1,0 +1,37 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+    $_orders = $block->getOrders();
+    $count = count($_orders);
+?>
+
+    <?php if ($count > 0): ?>
+<ul class="ul_order">
+                    <?php $i = 0 ;foreach ($_orders as $_order):
+                      if ($i<2):
+                        $i++;
+                        ?>
+
+                        <li>
+                          <span class="li_title"><?= /* @escapeNotVerified */  __('Order No') ?>: </span>
+                          <span class="li_value"><?= /* @escapeNotVerified */ $_order->getRealOrderId() ?></span>
+                        </li>
+                        <li>
+                          <span class="li_title"><?= /* @escapeNotVerified */  __('Status') ?>: </span>
+                          <span class="li_value"><?= /* @escapeNotVerified */ $_order->getStatusLabel() ?></span>
+                        </li>
+                        <li><a href="<?= /* @escapeNotVerified */ $block->getViewUrl($_order) ?>" class="li_link"><?= /* @escapeNotVerified */  __('View') ?></a></li>
+
+
+                    <?php endif; endforeach; ?>
+</ul>
+    <?php else: ?>
+        <div class="message info empty"><span><?= /* @escapeNotVerified */ __('You have placed no orders.') ?></span></div>
+    <?php endif; ?>

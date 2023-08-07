@@ -1,0 +1,7 @@
+<?php
+/** @var \Izas\Catalog\Block\Product\View\Size $block */
+$_helper = $this->helper(\Izas\Catalog\Helper\Product::class);
+?>
+<div class="size-guide-container" <?php if (!$block->showSizeGuide()): ?> class="hidden" style="display:none"<?php endif;?>>
+    <a href="<?= $_helper->getMediaUrl($block->getSizeGuidePath()); ?>"><?php echo __('Size Guide') ?></a>
+</div>

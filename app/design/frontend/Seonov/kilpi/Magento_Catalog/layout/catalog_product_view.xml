@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main" htmlClass="product-info-main row">
+            <container name="product.info.main.left" htmlTag="div" htmlClass="col-12 col-md-7 col-xl-8 column-left" before="-" />
+            <container name="product.info.main.right" htmlTag="div" htmlClass="col-12 col-md-5 col-xl-4 column-right" after="product.info.main.left" >
+                <container name="product.info.main.right.sticky" htmlTag="div" htmlClass="sticky-container" />
+            </container>
+        </referenceContainer>
+
+        <referenceBlock name="breadcrumbs" template="Magento_Theme::html/breadcrumbs.phtml"/>
+
+        <move element="product.info.media" destination="product.info.main.left" before="-" />
+        <move element="page.main.title" destination="product.info.right.product.name" before="-" />
+        <move element="product.info.price" destination="product.info.main.right.sticky" after="product.info.right.product.name" />
+        <move element="product.info.overview" destination="product.info.main.right.sticky" before="catalog.product.colors" />
+        <move element="alert.urls" destination="product.info.main.right.sticky"/>
+        <move element="product.info" destination="product.info.main.right.sticky" />
+        <move element="product.info.social" destination="product.info.addtocart.additional" />
+
+        <referenceBlock name="related.product.addto" remove="true"/>
+        <referenceBlock name="product.info.mailto" remove="true"/>
+        <referenceBlock name="view.addto.compare" remove="true"/>
+        <referenceBlock name="product.info.details" remove="true"/>
+        <referenceBlock name="skip_gallery_after.target" remove="true"/>
+        <referenceBlock name="skip_gallery_before.target" remove="true"/>
+        <referenceContainer name="catalog.product.related" remove="true"/>
+        <referenceContainer name="product.info.upsell" remove="true"/>
+        <referenceContainer name="product.info.stock.sku" remove="true"/>
+        <referenceContainer name="product.info.review" remove="true"/>
+        <referenceContainer name="skip_gallery_before.wrapper" remove="true"/>
+        <referenceContainer name="skip_gallery_after.wrapper" remove="true"/>
+    </body>
+</page>

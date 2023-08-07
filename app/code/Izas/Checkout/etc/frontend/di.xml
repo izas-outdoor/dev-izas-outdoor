@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <!-- Start of Preferences -->
+    <preference for="Wetrust\Checkout\Plugin\Block\Checkout\LayoutProcessor" type="Izas\Checkout\Plugin\Block\Checkout\LayoutProcessor" />
+    <!-- End of Preferences -->
+    <!-- Start of Config Providers -->
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="izas_checkout_config_provider" xsi:type="object">Izas\Checkout\Model\ConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Izas\Checkout\Model\ConfigProvider" />
+    <!-- End of Config Providers -->
+</config>

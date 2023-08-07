@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+      layout="2columns-right">
+
+    <update handle="blog_default"/>
+
+    <body>
+      <block name="blog.post.view.image" class="Mirasvit\Blog\Block\Post\View"
+             template="post/view/image.phtml"/>
+      <container name="section_blog" htmlTag="section" htmlClass="blog-detail">
+        <container name="postpic" htmlTag="header" htmlClass="blog">
+
+        </container>
+
+        <container name="container_blog" htmlTag="div" htmlClass="container">
+          <container name="content_box_blog" htmlTag="div" htmlClass="content_box">
+            <container name="row_blog" htmlTag="div" htmlClass="row">
+            <container name="postsdiv" htmlTag="div" htmlClass="col-lg-8 post-items">
+            </container>
+            </container>
+          </container>
+        </container>
+      </container>
+      <move element="section_blog" destination="columns" />
+<move element="blog.post.view.image" destination="columns" before="-" />
+
+        <referenceContainer name="content">
+            <block name="blog.post.view" class="Mirasvit\Blog\Block\Post\View" template="post/view.phtml"
+                   cacheable="true">
+                <block name="blog.post.comments" class="Mirasvit\Blog\Block\Post\Meta"
+                       template="post/view/comments.phtml"/>
+
+                <block name="blog.post.related.posts" class="Mirasvit\Blog\Block\Post\View\RelatedPosts"
+                       template="post/view/related_posts.phtml"/>
+
+                <block name="blog.post.related.products" class="Mirasvit\Blog\Block\Post\View\RelatedProducts"
+                       template="post/view/related_products.phtml"/>
+            </block>
+        </referenceContainer>
+        <move element="content" destination="postsdiv" />
+        <move element="sidebar.main" destination="row_blog" after="content" />
+        <referenceBlock name="blogheader" remove="true"/>
+        <referenceBlock name="blog.sidebar.category.tree" remove="true"/>
+    </body>
+</page>

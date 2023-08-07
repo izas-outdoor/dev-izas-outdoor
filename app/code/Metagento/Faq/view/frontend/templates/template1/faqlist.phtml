@@ -1,0 +1,49 @@
+<?php
+/**
+ * @var $block \Metagento\Faq\Block\Content\Faqlist
+ * @var $this \Metagento\Faq\Block\Content\Faqlist
+ */
+?>
+
+<div class="cd-faq-items">
+    <?php if ( $block->showMostFaq() ): ?>
+        <ul id="most" class="cd-faq-group">
+            <li class="cd-faq-title"><h2 class="title">Most FAQs</h2></li>
+            <?php foreach ( $block->getMostFaqs() as $faq ): ?>
+                <li>
+                    <a class="cd-faq-trigger" href="<?php echo $faq->getUrl() ?>"><?php echo $faq->getTitle() ?></a>
+                    <div class="cd-faq-content">
+                        <?php echo $faq->getContent() ?>
+                    </div> <!-- cd-faq-content -->
+                </li>
+            <?php endforeach; ?>
+        </ul> <!-- cd-faq-group -->
+    <?php endif; ?>
+
+    <?php foreach ( $block->getCategories() as $category ): ?>
+        <ul id="category-<?php echo $category->getId() ?>" class="cd-faq-group">
+            <li class="cd-faq-title"><h2 class="title"><?php echo $category->getName() ?></h2></li>
+            <?php foreach ( $this->getFaqByCategory($category) as $faq ): ?>
+                <li>
+                    <a id="faq-<?php echo $faq->getId() ?>" class="cd-faq-trigger"
+                       href="<?php echo $faq->getUrl() ?>"><?php echo $faq->getTitle() ?></a>
+                    <div class="cd-faq-content">
+                        <?php echo $faq->getContent() ?>
+                    </div> <!-- cd-faq-content -->
+                </li>
+            <?php endforeach; ?>
+        </ul> <!-- cd-faq-group -->
+    <?php endforeach; ?>
+</div> <!-- cd-faq-items -->
+
+
+<?php if ( $this->getSelectedFaq() ): ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('body').animate({
+                scrollTop: jQuery("#faq-<?php echo $this->getSelectedFaq()->getId() ?>").offset().top
+            }, 777);
+            jQuery('#faq-<?php echo $this->getSelectedFaq()->getId() ?>').trigger('click');
+        });
+    </script>
+<?php endif; ?>

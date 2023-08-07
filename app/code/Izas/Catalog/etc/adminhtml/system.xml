@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog">
+             <group id="export_gallery" translate="label" type="text" sortOrder="710" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Export Gallery</label>
+                <field id="path" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Path</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

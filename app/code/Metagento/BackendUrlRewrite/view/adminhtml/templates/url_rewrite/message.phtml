@@ -1,0 +1,26 @@
+<?php
+/**
+ * @var $block \Magento\Backend\Block\Template
+ */
+$productGridUrl    = $block->getUrl('catalog/product/index');
+$manageCategoryUrl = $block->getUrl('catalog/category/index');
+$manageStoreUrl    = $block->getUrl('adminhtml/system_store/index');
+?>
+<ul class="generate-url-rewrite-message">
+    <li><?php echo __("Generate URL Rewrites for Products:") ?> <a
+                href="<?php echo $productGridUrl ?>"><?php echo __("Product Grid") ?></a>
+    </li>
+    <li><?php echo __("Generate URL Rewrites for Categories:") ?> <a
+                href="<?php echo $manageCategoryUrl ?>"><?php echo __("Manage Category") ?></a>
+    </li>
+    <li><?php echo __("Generate URL Rewrites for Stores:") ?> <a
+                href="<?php echo $manageStoreUrl ?>"><?php echo __("Manage Store") ?></a>
+    </li>
+</ul>
+
+<style>
+    .generate-url-rewrite-message li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+</style>

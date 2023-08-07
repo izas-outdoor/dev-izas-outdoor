@@ -1,0 +1,65 @@
+<?php
+/* @var $block \WebPanda\Rma\Block\Guest\Rma\View\Messages */
+?>
+
+<div id="rma-message-history-wrapper" class="block block-messages">
+    <form id="rma-messages-form" method="post" enctype="multipart/form-data" action="<?php echo $block->getSubmitUrl() ?>" >
+        <?php echo $block->getBlockHtml('formkey') ?>
+        <input type="hidden" name="rma_id" value="<?php echo $block->getRma()->getId() ?>" />
+        <div class="field">
+            <div class="control">
+                <textarea id="wp-rma-message" name="text" rows="5" class="required-entry" placeholder="<?php echo __('Add message'); ?>"></textarea>
+            </div>
+        </div>
+        <div class="contents-uploader">
+            <div class="fileinput-button form-buttons">
+                <input id="message-attachment" type="file" name="attachments[]" multiple="multiple" />
+            </div>
+        </div>
+        <button id="rma-reply-button" class="action primary" type="submit" title="<?php echo __('Post Reply') ?>">
+            <span><?php echo __('Post Reply') ?></span>
+        </button>
+    </form>
+
+    <ul class="rma-message-history">
+        <?php foreach ($block->getMessageCollection() as $message): ?>
+            <?php
+            $class = 'message-item';
+            if ($message->getIsAuto()) {
+                $class .= ' auto';
+            }
+            if ($message->isAdmin()) {
+                $class .= ' sender-admin';
+            }
+            if ($message->isCustomer()) {
+                $class .= ' sender-customer';
+            }
+            ?>
+            <li class="<?php echo $class ?>">
+                <h4 class="message-header"><?php echo $block->getMessageHeader($message) ?></h4>
+                <div class="message-body"><?php echo nl2br($block->escapeHtml($message->getText())) ?></div>
+                <?php foreach ($message->getAttachments() as $attachment): ?>
+                    <div class="rma-message-attachment">
+                        <a href="<?php echo $block->getAttachmentUrl($attachment->getName()) ?>" target="_blank"><?php echo $block->escapeHtml($attachment->getName()) ?></a>
+                    </div>
+                <?php endforeach; ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+
+    <script>
+        require([
+            'jquery',
+            'mage/mage'
+        ], function ($) {
+            'use strict';
+            var messageForm = $('#rma-messages-form');
+            messageForm.mage('validation', {});
+            messageForm.on('submit', function() {
+                if (messageForm.valid()) {
+                    $('#rma-reply-button').attr('disabled', 'disabled');
+                }
+            });
+        });
+    </script>
+</div>

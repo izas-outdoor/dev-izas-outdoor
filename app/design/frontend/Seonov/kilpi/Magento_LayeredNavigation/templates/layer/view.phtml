@@ -1,0 +1,62 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+/**
+ * Category layered navigation
+ *
+ * @var $block \Magento\LayeredNavigation\Block\Navigation
+ */
+
+?>
+
+<?php if ($block->canShowBlock()): ?>
+    <span class="filter"><i class="fas fa-filter"></i></span>
+    <span class="hr_line"></span>
+    <div class="panels">
+        <div class="wrapper center-block">
+            <?= $block->getChildHtml('state') ?>
+
+
+            <?php $wrapOptions = false; ?>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                <?php $i = 0; ?>
+                <?php foreach ($block->getFilters() as $filter): ?>
+            <?php if (!$wrapOptions): ?>
+                <div class="panel panel-default">
+                    <?php $wrapOptions = true;
+                    endif; ?>
+                    <?php if ($filter->getItemsCount()): ?>
+                        <div class="panel-heading" role="tab" id="heading<?php echo $i; ?>">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapse<?php echo $i; ?>" aria-expanded="false"
+                                   aria-controls="collapse<?php echo $i; ?>">
+                                    <?= $block->escapeHtml(__($filter->getName())) ?>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse<?php echo $i; ?>" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="heading<?php echo $i; ?>">
+                            <div class="panel-body">
+                                <?= /* @escapeNotVerified */
+                                $block->getChildBlock('renderer')->render($filter) ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php $i++; ?>
+                    <?php endforeach; ?>
+                    <?php if ($wrapOptions): ?>
+                </div>
+            <?php endif; ?>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>

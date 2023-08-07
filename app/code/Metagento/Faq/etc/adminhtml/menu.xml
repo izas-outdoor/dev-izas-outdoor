@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Metagento_Faq::content_faq" title="FAQ" translate="title" module="Metagento_Faq" sortOrder="0"
+             parent="Magento_Backend::content" resource="Metagento_Faq::faq"/>
+        <add id="Metagento_Faq::category" title="FAQ Category" translate="title" module="Metagento_Faq" sortOrder="10"
+             parent="Metagento_Faq::content_faq" action="faq/category" resource="Metagento_Faq::faq"/>
+        <add id="Metagento_Faq::faq" title="FAQ" translate="title" module="Metagento_Faq" sortOrder="20"
+             parent="Metagento_Faq::content_faq" action="faq/faq" resource="Metagento_Faq::faq"/>
+        <add id="Metagento_Faq::setting" title="FAQ Setting" translate="title" module="Metagento_Faq" sortOrder="30"
+             parent="Metagento_Faq::content_faq" action="adminhtml/system_config/edit/section/faq" resource="Metagento_Faq::faq"/>
+    </menu>
+</config>

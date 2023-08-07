@@ -1,0 +1,56 @@
+<?php
+// @codingStandardsIgnoreFile
+/** @var $block \Magento\Checkout\Block\Onepage\Success */
+
+$helperShipping = $this->helper(\Izas\Checkout\Helper\Shipping::class);
+?>
+<section>
+    <div class="success-content">
+        <div class="step-container">
+            <div class="step-row">
+                <div class="step">
+                    <span>1</span>
+                    <p><?php echo __('Shipping') ?></p>
+                </div>
+                <div class="step">
+                    <span>2</span>
+                    <p><?php echo __('Review & Payments') ?></p>
+                </div>
+                <div class="step">
+                    <span>3</span>
+                    <p><?php echo __('Complete') ?></p>
+                </div>
+            </div>
+        </div>
+        <div class="checkout-success confirmation">
+            <h3><?php echo __('CONFIRMATION') ?></h3>
+            <p><?php echo __('We know you\'re excited to get your new clothing so here\'s what to expect') ?></p>
+
+            <p><strong><?= $helperShipping->getShippingMessage()?> </strong></p>
+            <?php if ($block->getOrderId()): ?>
+                <?php if ($block->getCanViewOrder()) : ?>
+                    <p><?= __('Your order number is: %1.', sprintf('<a href="%s" class="order-number"><strong>%s</strong></a>', $block->escapeHtml($block->getViewOrderUrl()), $block->escapeHtml($block->getOrderId()))) ?></p>
+                <?php else : ?>
+                    <p><?= __('Your order # is: <strong>%1</strong>.', $block->escapeHtml($block->getOrderId())) ?></p>
+                <?php endif; ?>
+                <p><?= /* @escapeNotVerified */
+                    __('We\'ll email you an order confirmation with details and tracking info.') ?></p>
+            <?php endif; ?>
+            <p><?= __('Once it ships you will recieve a confirmation email with your tracking number') ?>.</p>
+            <p><?php echo __('Thank you for shopping with Izas We appreciate it') ?>!</p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    require(["jquery"], function ($) {
+        $(document).ready(function () {
+            $(document).click(function(){
+                var base_url = window.location.origin;
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.open( "GET", base_url+'/customer/account/logout/', false ); // false for synchronous request
+                xmlHttp.send( null );
+                window.location.replace(base_url);
+            })
+    });
+    });
+</script>

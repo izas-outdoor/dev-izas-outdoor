@@ -1,0 +1,30 @@
+<?php
+/* @var $block \Magento\Framework\View\Element\Template */
+?>
+<?php
+    $items = $block->getItems();
+?>
+<table border="1" class="rma-datatable" style="width: 100%;">
+    <thead style="font-size: -2px;">
+        <tr>
+            <th><?php echo __('Name') ?></th>
+            <th><?php echo __('SKU') ?></th>
+            <th><?php echo __('Qty') ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php if ($items && $items['totalRecords'] > 0): ?>
+            <?php foreach ($items['items'] as $item): ?>
+                <tr>
+                    <td><?php echo $item['name'] ?></td>
+                    <td><span class="nobr"><?php echo $item['sku'] ?></span></td>
+                    <td align="center"><?php echo $item['qty'] ?></td>
+                </tr>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <tr>
+                <td colspan="3"><?php echo __('No items requested') ?></td>
+            </tr>
+        <?php endif; ?>
+    </tbody>
+</table>
