@@ -1,3 +1,0 @@
-textreplace -std -t apps/Python39/Scripts/coverage-3.9-script.py
-textreplace -std -t apps/Python39/Scripts/coverage-script.py
-textreplace -std -t apps/Python39/Scripts/coverage3-script.py

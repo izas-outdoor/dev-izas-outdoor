@@ -1,2 +1,0 @@
-systemctl restart odoo.service (odoo.server)
-systemctl restart postgres.service

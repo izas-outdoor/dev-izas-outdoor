@@ -1,8 +1,0 @@
-=====================================================================================
-2023-04-12 10:01:04:923 => [                                                    main.cpp, 00402] => set font: Arial
-2023-04-12 10:01:05:047 => [                                          kvolumemanager.cpp, 00227] => Disk0, Micron_2210_MTFDHBA512QFD, CHS:62260,255,63, total sectors: 1000215216, bytes per sector = 512
-2023-04-12 10:01:05:193 => [                                          kvolumemanager.cpp, 00248] => Disk0 set alignmentFactor =AlignToMB
-2023-04-12 10:01:05:196 => [                                          kvolumemanager.cpp, 00227] => Disk1, SanDisk Cruzer Blade USB, CHS:3740,255,63, total sectors: 60088320, bytes per sector = 512
-2023-04-12 10:01:05:210 => [                                             dynamicdisk.cpp, 00268] => Invalid private header in DiskGroup[].
-2023-04-12 10:01:05:210 => [                                             dynamicdisk.cpp, 00268] => Invalid private header in DiskGroup[].
-2023-04-12 10:02:15:495 => [                                            kfullscandlg.cpp, 00294] => Scan started at:12:02:15

@@ -1,5 +1,0 @@
-sku,attribute_set,type,name,configurable_attributes,size,price,qty,is_in_stock,manage_stock,use_config_manage_stock,status,visibility,simples_skus
-hassantest1,Default,simple,hassantest1,size,EU34/UK6,140,1,1,1,1,1,1,
-hassantest2,Default,simple,hassantest2,size,EU35/UK7,140,1,1,1,1,1,1,
-hassantest3,Default,simple,hassantest3,size,EU36/UK8,140,1,1,1,1,1,1,
-hassantest,Default,configurable,hassantest,,,140,1,1,1,1,1,4,"hassantest1,hassantest2,hassantest3"
