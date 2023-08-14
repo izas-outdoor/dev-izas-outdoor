@@ -1,0 +1,4918 @@
+*%
+*% Copyright (c) 2010 Hewlett Packard
+*%
+*% All rights reserved.
+*%
+*% THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+*% ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+*% THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+*% PARTICULAR PURPOSE.
+*%
+*% File Name:
+*%
+*%    hppclms_Star.gpd
+*%
+*% Abstract:
+*%
+*%    Xps Rasterization Service HP PCL3 driver install file GPD file.
+*%
+
+*GPDFileVersion: "1.0"
+*GPDSpecVersion: "1.0"
+*GPDFileName: "hppclms_207-212_v4.gpd"
+
+*%%% Copyright (c) 1997-1999  Microsoft Corporation
+*%%% value macros for standard feature names and standard option names
+*%%% used in older Unidrv's.
+
+*CodePage: 1252      *% Windows 3.1 US (ANSI) code page
+
+*Feature: RESDLL
+{
+    *Name: "resource dll files"
+    *ConcealFromUI?: TRUE
+
+    *Option: UniresDLL
+    {
+        *Name: "unires.dll"
+    }
+}
+
+*Macros: StdFeatureNames
+{
+    ORIENTATION_DISPLAY:                RESDLL.UniresDLL.11100
+    PAPER_SIZE_DISPLAY:                 RESDLL.UniresDLL.11101
+    PAPER_SOURCE_DISPLAY:               RESDLL.UniresDLL.11102
+    RESOLUTION_DISPLAY:                 RESDLL.UniresDLL.11103
+    MEDIA_TYPE_DISPLAY:                 RESDLL.UniresDLL.11104
+    TEXT_QUALITY_DISPLAY:               RESDLL.UniresDLL.11105
+    COLOR_PRINTING_MODE_DISPLAY:        RESDLL.UniresDLL.11106
+    PRINTER_MEMORY_DISPLAY:             RESDLL.UniresDLL.11107
+    TWO_SIDED_PRINTING_DISPLAY:         RESDLL.UniresDLL.11108
+    PAGE_PROTECTION_DISPLAY:            RESDLL.UniresDLL.11109
+    HALFTONING_DISPLAY:                 RESDLL.UniresDLL.11110
+    OUTPUTBIN_DISPLAY:                  RESDLL.UniresDLL.11111
+    IMAGECONTROL_DISPLAY:               RESDLL.UniresDLL.11112
+    PRINTDENSITY_DISPLAY:               RESDLL.UniresDLL.11113
+    GRAPHICSMODE_DISPLAY:               RESDLL.UniresDLL.11114
+    TEXTHALFTONE_DISPLAY:               RESDLL.UniresDLL.11115
+    GRAPHICSHALFTONE_DISPLAY:           RESDLL.UniresDLL.11116
+    PHOTOHALFTONE_DISPLAY:              RESDLL.UniresDLL.11117
+}
+
+*Macros: StdPaperSizeNames
+{
+    RCID_DMPAPER_SYSTEM_NAME:               0x7fffffff
+    LETTER_DISPLAY:                         RESDLL.UniresDLL.10000
+    LETTERSMALL_DISPLAY:                    RESDLL.UniresDLL.10001
+    TABLOID_DISPLAY:                        RESDLL.UniresDLL.10002
+    LEDGER_DISPLAY:                         RESDLL.UniresDLL.10003
+    LEGAL_DISPLAY:                          RESDLL.UniresDLL.10004
+    STATEMENT_DISPLAY:                      RESDLL.UniresDLL.10005
+    EXECUTIVE_DISPLAY:                      RESDLL.UniresDLL.10006
+    A3_DISPLAY:                             RESDLL.UniresDLL.10007
+    A4_DISPLAY:                             RESDLL.UniresDLL.10008
+    A4SMALL_DISPLAY:                        RESDLL.UniresDLL.10009
+    A5_DISPLAY:                             RESDLL.UniresDLL.10010
+    B4_DISPLAY:                             RESDLL.UniresDLL.10011
+    B5_DISPLAY:                             RESDLL.UniresDLL.10012
+    FOLIO_DISPLAY:                          RESDLL.UniresDLL.10013
+    QUARTO:                                 RESDLL.UniresDLL.10014
+    10X14_DISPLAY:                          RESDLL.UniresDLL.10015
+    11X17_DISPLAY:                          RESDLL.UniresDLL.10016
+    NOTE_DISPLAY:                           RESDLL.UniresDLL.10017
+    ENV_9_DISPLAY:                          RESDLL.UniresDLL.10018
+    ENV_10_DISPLAY:                         RESDLL.UniresDLL.10019
+    ENV_11_DISPLAY:                             RESDLL.UniresDLL.10020
+    ENV_12_DISPLAY:                             RESDLL.UniresDLL.10021
+    ENV_14_DISPLAY:                             RESDLL.UniresDLL.10022
+    CSHEET_DISPLAY:                             RESDLL.UniresDLL.10023
+    DSHEET_DISPLAY:                             RESDLL.UniresDLL.10024
+    ESHEET_DISPLAY:                             RESDLL.UniresDLL.10025
+    ENV_DL_DISPLAY:                             RESDLL.UniresDLL.10026
+    ENV_C5_DISPLAY:                             RESDLL.UniresDLL.10027
+    ENV_C3_DISPLAY:                             RESDLL.UniresDLL.10028
+    ENV_C4_DISPLAY:                             RESDLL.UniresDLL.10029
+    ENV_C6_DISPLAY:                             RESDLL.UniresDLL.10030
+    ENV_C65_DISPLAY:                            RESDLL.UniresDLL.10031
+    ENV_B4_DISPLAY:                             RESDLL.UniresDLL.10032
+    ENV_B5_DISPLAY:                             RESDLL.UniresDLL.10033
+    ENV_B6_DISPLAY:                             RESDLL.UniresDLL.10034
+    ENV_ITALY_DISPLAY:                          RESDLL.UniresDLL.10035
+    ENV_MONARCH_DISPLAY:                        RESDLL.UniresDLL.10036
+    ENV_PERSONAL_DISPLAY:                       RESDLL.UniresDLL.10037
+    FANFOLD_US_DISPLAY:                         RESDLL.UniresDLL.10038
+    FANFOLD_STD_GERMAN_DISPLAY:                 RESDLL.UniresDLL.10039
+    FANFOLD_LGL_GERMAN_DISPLAY:                 RESDLL.UniresDLL.10040
+    ISO_B4_DISPLAY:                             RESDLL.UniresDLL.10041
+    JAPANESE_POSTCARD_DISPLAY:                  RESDLL.UniresDLL.10042
+    9X11_DISPLAY:                               RESDLL.UniresDLL.10043
+    10X11_DISPLAY:                              RESDLL.UniresDLL.10044
+    15X11_DISPLAY:                              RESDLL.UniresDLL.10045
+    ENV_INVITE_DISPLAY:                         RESDLL.UniresDLL.10046
+    RESERVED1:                                  RESDLL.UniresDLL.10047
+    RESERVED2:                                  RESDLL.UniresDLL.10048
+    LETTER_EXTRA_DISPLAY:                       RESDLL.UniresDLL.10049
+    LEGAL_EXTRA_DISPLAY:                        RESDLL.UniresDLL.10050
+    TABLOID_EXTRA_DISPLAY:                      RESDLL.UniresDLL.10051
+    A4_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10052
+    LETTER_TRANSVERSE_DISPLAY:                  RESDLL.UniresDLL.10053
+    A4_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10054
+    LETTER_EXTRA_TRANSVERSE_DISPLAY:            RESDLL.UniresDLL.10055
+    A_PLUS_DISPLAY:                             RESDLL.UniresDLL.10056
+    B_PLUS_DISPLAY:                             RESDLL.UniresDLL.10057
+    LETTER_PLUS_DISPLAY:                        RESDLL.UniresDLL.10058
+    A4_PLUS_DISPLAY:                            RESDLL.UniresDLL.10059
+    A5_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10060
+    B5_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10061
+    A3_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10062
+    A5_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10063
+    B5_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10064
+    A2_DISPLAY:                                 RESDLL.UniresDLL.10065
+    A3_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10066
+    A3_EXTRA_TRANSVERSE_DISPLAY:                RESDLL.UniresDLL.10067
+    DBL_JAPANESE_POSTCARD_DISPLAY:              RESDLL.UniresDLL.10068
+    A6_DISPLAY:                                 RESDLL.UniresDLL.10069
+    JENV_KAKU2_DISPLAY:                         RESDLL.UniresDLL.10070
+    JENV_KAKU3_DISPLAY:                         RESDLL.UniresDLL.10071
+    JENV_CHOU3_DISPLAY:                         RESDLL.UniresDLL.10072
+    JENV_CHOU4_DISPLAY:                         RESDLL.UniresDLL.10073
+    LETTER_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10074
+    A3_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10075
+    A4_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10076
+    A5_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10077
+    B4_JIS_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10078
+    B5_JIS_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10079
+    JAPANESE_POSTCARD_ROTATED_DISPLAY:          RESDLL.UniresDLL.10080
+    DBL_JAPANESE_POSTCARD_ROTATED_DISPLAY:      RESDLL.UniresDLL.10081
+    A6_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10082
+    JENV_KAKU2_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10083
+    JENV_KAKU3_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10084
+    JENV_CHOU3_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10085
+    JENV_CHOU4_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10086
+    B6_JIS_DISPLAY:                             RESDLL.UniresDLL.10087
+    B6_JIS_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10088
+    12X11_DISPLAY:                              RESDLL.UniresDLL.10089
+    JENV_YOU4_DISPLAY:                          RESDLL.UniresDLL.10090
+    JENV_YOU4_ROTATED_DISPLAY:                  RESDLL.UniresDLL.10091
+    P16K_DISPLAY:                               RESDLL.UniresDLL.10092
+    P32K_DISPLAY:                               RESDLL.UniresDLL.10093
+    P32KBIG_DISPLAY:                            RESDLL.UniresDLL.10094
+    PENV_1_DISPLAY:                             RESDLL.UniresDLL.10095
+    PENV_2_DISPLAY:                             RESDLL.UniresDLL.10096
+    PENV_3_DISPLAY:                             RESDLL.UniresDLL.10097
+    PENV_4_DISPLAY:                             RESDLL.UniresDLL.10098
+    PENV_5_DISPLAY:                             RESDLL.UniresDLL.10099
+    PENV_6_DISPLAY:                             RESDLL.UniresDLL.10100
+    PENV_7_DISPLAY:                             RESDLL.UniresDLL.10101
+    PENV_8_DISPLAY:                             RESDLL.UniresDLL.10102
+    PENV_9_DISPLAY:                             RESDLL.UniresDLL.10103
+    PENV_10_DISPLAY:                            RESDLL.UniresDLL.10104
+    P16K_ROTATED_DISPLAY:                       RESDLL.UniresDLL.10105
+    P32K_ROTATED_DISPLAY:                       RESDLL.UniresDLL.10106
+    P32KBIG_ROTATED_DISPLAY:                    RESDLL.UniresDLL.10107
+    PENV_1_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10108
+    PENV_2_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10109
+    PENV_3_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10110
+    PENV_4_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10111
+    PENV_5_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10112
+    PENV_6_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10113
+    PENV_7_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10114
+    PENV_8_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10115
+    PENV_9_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10116
+    PENV_10_ROTATED_DISPLAY:                    RESDLL.UniresDLL.10117
+
+    USER_DEFINED_SIZE_DISPLAY:                  RESDLL.UniresDLL.10255
+}
+
+*Macros: StdInputBinNames
+{
+    UPPER_TRAY_DISPLAY:                         RESDLL.UniresDLL.10256
+    LOWER_TRAY_DISPLAY:                         RESDLL.UniresDLL.10257
+    MIDDLE_TRAY_DISPLAY:                        RESDLL.UniresDLL.10258
+    MANUAL_FEED_DISPLAY:                        RESDLL.UniresDLL.10259
+    ENV_FEED_DISPLAY:                           RESDLL.UniresDLL.10260
+    ENV_MANUAL_DISPLAY:                         RESDLL.UniresDLL.10261
+    AUTO_DISPLAY:                               RESDLL.UniresDLL.10262
+    TRACTOR_DISPLAY:                            RESDLL.UniresDLL.10263
+    SMALL_FORMAT_DISPLAY:                       RESDLL.UniresDLL.10264
+    LARGE_FORMAT_DISPLAY:                       RESDLL.UniresDLL.10265
+    LARGE_CAP_DISPLAY:                          RESDLL.UniresDLL.10266
+    CASSETTE_DISPLAY:                           RESDLL.UniresDLL.10267
+}
+
+*Macros: StdMediaTypeNames
+{
+    PLAIN_PAPER_DISPLAY:                        RESDLL.UniresDLL.10512
+    TRANSPARENCY_DISPLAY:                       RESDLL.UniresDLL.10513
+    GLOSSY_PAPER_DISPLAY:                       RESDLL.UniresDLL.10514
+}
+
+*Macros: StdTextQualityNames
+{
+    LETTER_QUALITY_DISPLAY:                     RESDLL.UniresDLL.10768
+    NEAR_LETTER_QUALITY_DISPLAY:                RESDLL.UniresDLL.10769
+    MEMO_QUALITY_DISPLAY:                       RESDLL.UniresDLL.10770
+    DRAFT_QUALITY_DISPLAY:                      RESDLL.UniresDLL.10771
+    TEXT_QUALITY_DISPLAY:                       RESDLL.UniresDLL.10772
+}
+
+*Macros: OtherStdNames
+{
+    PORTRAIT_DISPLAY:                   RESDLL.UniresDLL.11025
+    LANDSCAPE_DISPLAY:                  RESDLL.UniresDLL.11026
+    MONO_DISPLAY:                       RESDLL.UniresDLL.11030
+    COLOR_DISPLAY:                      RESDLL.UniresDLL.11031
+    8BPP_DISPLAY:                       RESDLL.UniresDLL.11032
+    24BPP_DISPLAY:                      RESDLL.UniresDLL.11033
+    NONE_DISPLAY:                       RESDLL.UniresDLL.11040
+    FLIP_ON_LONG_EDGE_DISPLAY:          RESDLL.UniresDLL.11041
+    FLIP_ON_SHORT_EDGE_DISPLAY:         RESDLL.UniresDLL.11042
+    ON_DISPLAY:                         RESDLL.UniresDLL.11090
+    OFF_DISPLAY:                        RESDLL.UniresDLL.11091
+    DOTS_PER_INCH:                      "dots per inch"
+    HT_AUTO_SELECT_DISPLAY:             RESDLL.UniresDLL.11050
+    HT_SUPERCELL_DISPLAY:               RESDLL.UniresDLL.11051
+    HT_DITHER6X6_DISPLAY:               RESDLL.UniresDLL.11052
+    HT_DITHER8X8_DISPLAY:               RESDLL.UniresDLL.11053
+}
+
+*Macros:  StdPersonalities
+{
+    PERSONALITY_LIPS_DISPLAY:       RESDLL.UniresDLL.11500
+    PERSONALITY_ESCP2_DISPLAY:      RESDLL.UniresDLL.11501
+    PERSONALITY_PPDS_DISPLAY:       RESDLL.UniresDLL.11502
+    PERSONALITY_CaPSL_DISPLAY:      RESDLL.UniresDLL.11503
+    PERSONALITY_KPDL_DISPLAY:       RESDLL.UniresDLL.11504
+    PERSONALITY_TextOnly_DISPLAY:   RESDLL.UniresDLL.11505
+    PERSONALITY_201PL_DISPLAY:      RESDLL.UniresDLL.11506
+    PERSONALITY_ART_DISPLAY:        RESDLL.UniresDLL.11507
+    PERSONALITY_ESCPage_DISPLAY:    RESDLL.UniresDLL.11508
+    PERSONALITY_ESCP_DISPLAY:       RESDLL.UniresDLL.11509
+    PERSONALITY_KS_DISPLAY:         RESDLL.UniresDLL.11510
+    PERSONALITY_KSSM_DISPLAY:       RESDLL.UniresDLL.11511
+    PERSONALITY_PAGES_DISPLAY:      RESDLL.UniresDLL.11512
+    PERSONALITY_PCL_DISPLAY:        RESDLL.UniresDLL.11513
+    PERSONALITY_RPDL_DISPLAY:       RESDLL.UniresDLL.11514
+    PERSONALITY_Unknown_DISPLAY:    RESDLL.UniresDLL.11515
+    PERSONALITY_HPGL2_DISPLAY:      RESDLL.UniresDLL.11516
+    PERSONALITY_PCLXL_DISPLAY:      RESDLL.UniresDLL.11517
+
+    PERSONALITY_HPGL2:     "HPGL2"
+    PERSONALITY_PCLXL:     "PCLXL"
+}
+
+*Macros: GraphicModes
+{
+    GRAPHICSMODE_RASTER_DISPLAY:     RESDLL.UniresDLL.11601
+    GRAPHICSMODE_HPGL2_DISPLAY:      =PERSONALITY_HPGL2_DISPLAY
+    GRAPHICSMODE_PCLXL_DISPLAY:      =PERSONALITY_PCLXL_DISPLAY
+}
+
+*Macros: HalftoneSettings
+{
+    DETAIL_HT_DISPLAY:              RESDLL.UniresDLL.11401
+    SMOOTH_HT_DISPLAY:              RESDLL.UniresDLL.11402
+    BASIC_HT_DISPLAY:               RESDLL.UniresDLL.11403
+}
+
+*%%% Copyright (c) 2005  Microsoft Corporation
+
+*IsXPSDriver?: TRUE
+
+
+*%%%
+*%%%  Copyright (c) 1998 - 1999  Microsoft Corporation
+*%%%
+*%%% File:     locale.gpd
+*%%% Purpose:  To provide locale dependent flexibility to the printer.
+*%%% Use:      Optionally include from any gpd if locale support is desired.
+*%%%
+*%%% Locale Ids have been arranged in the order which is in intl.inf
+*%%% In most cases the name are same as those in intl.inf
+*%%% The locales for which we have a build (whose preconfigured LCIDs can
+*%%% be obtained using GetSystemDefaultLCID() ) have been
+*%%% put in the begining to enable efficient searching.
+*%%%
+*%%%
+
+
+*Feature: Locale
+{
+    *Name: "Locale"
+    *ConcealFromUI?: TRUE
+    *DefaultOption: English_United_States
+
+*IgnoreBlock: {
+
+    *Option: Language_Neutral
+    {
+        *Name: "  "
+        *OptionID: 0x0000
+    }
+
+    *Option: Process_Default_Language
+    {
+        *Name: "  "
+        *OptionID: 0x0400
+    }
+
+} *% End of Ignore Block.
+
+*%%%% LCIDs with build.
+
+    *Option: English_United_States
+    {
+        *Name: "  "
+        *OptionID: 0x0409
+    }
+
+    *Option: Chinese_PRC
+    {
+        *Name: "  "
+        *OptionID: 0x0804
+    }
+
+    *Option: Chinese_Taiwan_Region
+    {
+        *Name: "  "
+        *OptionID: 0x0404
+    }
+
+    *Option: German_Standard
+    {
+        *Name: "  "
+        *OptionID: 0x0407
+    }
+
+    *Option: Japanese
+    {
+        *Name: "  "
+        *OptionID: 0x0411
+    }
+
+    *Option: Korean
+    {
+        *Name: "  "
+        *OptionID: 0x0412
+    }
+
+    *Option: Arabic_Saudi_Arabia
+    {
+        *Name: "  "
+        *OptionID: 0x0401
+    }
+
+    *Option: Hebrew
+    {
+        *Name: "  "
+        *OptionID: 0x040d
+    }
+
+    *Option: Thai
+    {
+        *Name: "  "
+        *OptionID: 0x041e
+    }
+
+*%%%% LCIDs without build.
+
+    *Option: Afrikaans
+    {
+        *Name: "  "
+        *OptionID: 0x0436
+    }
+
+    *Option: Albanian
+    {
+        *Name: "  "
+        *OptionID: 0x041c
+    }
+
+    *Option: Arabic_Iraq
+    {
+        *Name: "  "
+        *OptionID: 0x0801
+    }
+
+    *Option: Arabic_Egypt
+    {
+        *Name: "  "
+        *OptionID: 0x0c01
+    }
+
+    *Option: Arabic_Libya
+    {
+        *Name: "  "
+        *OptionID: 0x1001
+    }
+
+    *Option: Arabic_Algeria
+    {
+        *Name: "  "
+        *OptionID: 0x1401
+    }
+
+    *Option: Arabic_Morocco
+    {
+        *Name: "  "
+        *OptionID: 0x1801
+    }
+
+    *Option: Arabic_Tunisia
+    {
+        *Name: "  "
+        *OptionID: 0x1c01
+    }
+
+    *Option: Arabic_Oman
+    {
+        *Name: "  "
+        *OptionID: 0x2001
+    }
+
+    *Option: Arabic_Yemen
+    {
+        *Name: "  "
+        *OptionID: 0x2401
+    }
+
+    *Option: Arabic_Syria
+    {
+        *Name: "  "
+        *OptionID: 0x2801
+    }
+
+    *Option: Arabic_Jordan
+    {
+        *Name: "  "
+        *OptionID: 0x2c01
+    }
+
+    *Option: Arabic_Lebanon
+    {
+        *Name: "  "
+        *OptionID: 0x3001
+    }
+
+    *Option: Arabic_Kuwait
+    {
+        *Name: "  "
+        *OptionID: 0x3401
+    }
+
+    *Option: Arabic_UAE
+    {
+        *Name: "  "
+        *OptionID: 0x3801
+    }
+
+    *Option: Arabic_Bahrain
+    {
+        *Name: "  "
+        *OptionID: 0x3c01
+    }
+
+    *Option: Arabic_Qatar
+    {
+        *Name: "  "
+        *OptionID: 0x4001
+    }
+
+    *Option: Armenian
+    {
+        *Name: "  "
+        *OptionID: 0x042b
+    }
+
+    *Option: Assamese
+    {
+        *Name: "  "
+        *OptionID: 0x044d
+    }
+
+    *Option: Azeri_Latin
+    {
+        *Name: "  "
+        *OptionID: 0x042c
+    }
+
+    *Option: Azeri_Cyrillic
+    {
+        *Name: "  "
+        *OptionID: 0x082c
+    }
+
+    *Option: Basque
+    {
+        *Name: "  "
+        *OptionID: 0x042d
+    }
+
+    *Option: Belarussian
+    {
+        *Name: "  "
+        *OptionID: 0x0423
+    }
+
+    *Option: Bengali
+    {
+        *Name: "  "
+        *OptionID: 0x0445
+    }
+
+    *Option: Bulgarian
+    {
+        *Name: "  "
+        *OptionID: 0x0402
+    }
+
+    *Option: Burmese
+    {
+        *Name: "  "
+        *OptionID: 0x0455
+    }
+
+    *Option: Catalan
+    {
+        *Name: "  "
+        *OptionID: 0x0403
+    }
+
+    *Option: Chinese_Hong_Kong_SAR_PRC
+    {
+        *Name: "  "
+        *OptionID: 0x0c04
+    }
+
+    *Option: Chinese_Singapore
+    {
+        *Name: "  "
+        *OptionID: 0x1004
+    }
+
+    *Option: Chinese_Macau
+    {
+        *Name: "  "
+        *OptionID: 0x1404
+    }
+
+    *Option: Croatian
+    {
+        *Name: "  "
+        *OptionID: 0x041a
+    }
+
+    *Option: Czech
+    {
+        *Name: "  "
+        *OptionID: 0x0405
+    }
+
+    *Option: Danish
+    {
+        *Name: "  "
+        *OptionID: 0x0406
+    }
+
+    *Option: Dutch_Netherlands
+    {
+        *Name: "  "
+        *OptionID: 0x0413
+    }
+
+    *Option: Dutch_Belgium
+    {
+        *Name: "  "
+        *OptionID: 0x0813
+    }
+
+    *Option: English_United_Kingdom
+    {
+        *Name: "  "
+        *OptionID: 0x0809
+    }
+
+    *Option: English_Australian
+    {
+        *Name: "  "
+        *OptionID: 0x0c09
+    }
+
+    *Option: English_Canadian
+    {
+        *Name: "  "
+        *OptionID: 0x1009
+    }
+
+    *Option: English_New_Zealand
+    {
+        *Name: "  "
+        *OptionID: 0x1409
+    }
+
+    *Option: English_Ireland
+    {
+        *Name: "  "
+        *OptionID: 0x1809
+    }
+
+    *Option: English_South_Africa
+    {
+        *Name: "  "
+        *OptionID: 0x1c09
+    }
+
+    *Option: English_Jamaica
+    {
+        *Name: "  "
+        *OptionID: 0x2009
+    }
+
+    *Option: English_Caribbean
+    {
+        *Name: "  "
+        *OptionID: 0x2409
+    }
+
+    *Option: English_Belize
+    {
+        *Name: "  "
+        *OptionID: 0x2809
+    }
+
+    *Option: English_Trinidad
+    {
+        *Name: "  "
+        *OptionID: 0x2c09
+    }
+
+    *Option: English_Zimbabwe
+    {
+        *Name: "  "
+        *OptionID: 0x3009
+    }
+
+    *Option: English_Philippines
+    {
+        *Name: "  "
+        *OptionID: 0x3409
+    }
+
+    *Option: Estonian
+    {
+        *Name: "  "
+        *OptionID: 0x0425
+    }
+
+    *Option: Faeroese
+    {
+        *Name: "  "
+        *OptionID: 0x0438
+    }
+
+    *Option: Farsi
+    {
+        *Name: "  "
+        *OptionID: 0x0429
+    }
+
+    *Option: Finnish
+    {
+        *Name: "  "
+        *OptionID: 0x040b
+    }
+
+    *Option: French_Standard
+    {
+        *Name: "  "
+        *OptionID: 0x040c
+    }
+
+    *Option: French_Belgian
+    {
+        *Name: "  "
+        *OptionID: 0x080c
+    }
+
+    *Option: French_Canadian
+    {
+        *Name: "  "
+        *OptionID: 0x0c0c
+    }
+
+    *Option: French_Switzerland
+    {
+        *Name: "  "
+        *OptionID: 0x100c
+    }
+
+    *Option: French_Luxembourg
+    {
+        *Name: "  "
+        *OptionID: 0x140c
+    }
+
+    *Option: French_Monaco
+    {
+        *Name: "  "
+        *OptionID: 0x180c
+    }
+
+    *Option: Georgian
+    {
+        *Name: "  "
+        *OptionID: 0x0437
+    }
+
+    *Option: German_Swiss
+    {
+        *Name: "  "
+        *OptionID: 0x0807
+    }
+
+    *Option: German_Austrian
+    {
+        *Name: "  "
+        *OptionID: 0x0c07
+    }
+
+    *Option: German_Luxembourg
+    {
+        *Name: "  "
+        *OptionID: 0x1007
+    }
+
+    *Option: German_Liechtenstein
+    {
+        *Name: "  "
+        *OptionID: 0x1407
+    }
+
+    *Option: Greek
+    {
+        *Name: "  "
+        *OptionID: 0x0408
+    }
+
+    *Option: Gujarati
+    {
+        *Name: "  "
+        *OptionID: 0x0447
+    }
+
+    *Option: Hindi
+    {
+        *Name: "  "
+        *OptionID: 0x0439
+    }
+
+    *Option: Hungarian
+    {
+        *Name: "  "
+        *OptionID: 0x040e
+    }
+
+    *Option: Icelandic
+    {
+        *Name: "  "
+        *OptionID: 0x040f
+    }
+
+    *Option: Indonesian
+    {
+        *Name: "  "
+        *OptionID: 0x0421
+    }
+
+    *Option: Italian_Standard
+    {
+        *Name: "  "
+        *OptionID: 0x0410
+    }
+
+    *Option: Italian_Swiss
+    {
+        *Name: "  "
+        *OptionID: 0x0810
+    }
+
+    *Option: Kannada
+    {
+        *Name: "  "
+        *OptionID: 0x044b
+    }
+
+    *Option: Kashmiri_India
+    {
+        *Name: "  "
+        *OptionID: 0x0860
+    }
+
+    *Option: Kazakh
+    {
+        *Name: "  "
+        *OptionID: 0x043f
+    }
+
+    *Option: Konkani
+    {
+        *Name: "  "
+        *OptionID: 0x0457
+    }
+
+    *Option: Korean_Johab
+    {
+        *Name: "  "
+        *OptionID: 0x0812
+    }
+
+    *Option: Latvian
+    {
+        *Name: "  "
+        *OptionID: 0x0426
+    }
+
+    *Option: Lithuanian
+    {
+        *Name: "  "
+        *OptionID: 0x0427
+    }
+
+    *Option: Lithuanian_Classic
+    {
+        *Name: "  "
+        *OptionID: 0x0827
+    }
+
+    *Option: Macedonian
+    {
+        *Name: "  "
+        *OptionID: 0x042f
+    }
+
+    *Option: Malay_Malaysia
+    {
+        *Name: "  "
+        *OptionID: 0x043e
+    }
+
+    *Option: Malay_Brunei_Darussalam
+    {
+        *Name: "  "
+        *OptionID: 0x083e
+    }
+
+    *Option: Malayalam
+    {
+        *Name: "  "
+        *OptionID: 0x044c
+    }
+
+    *Option: Manipuri
+    {
+        *Name: "  "
+        *OptionID: 0x0458
+    }
+
+    *Option: Marathi
+    {
+        *Name: "  "
+        *OptionID: 0x044e
+    }
+
+    *Option: Nepali_India
+    {
+        *Name: "  "
+        *OptionID: 0x0861
+    }
+
+    *Option: Norwegian_Bokmal
+    {
+        *Name: "  "
+        *OptionID: 0x0414
+    }
+
+    *Option: Norwegian_Nynorsk
+    {
+        *Name: "  "
+        *OptionID: 0x0814
+    }
+
+    *Option: Oriya
+    {
+        *Name: "  "
+        *OptionID: 0x0448
+    }
+
+    *Option: Polish
+    {
+        *Name: "  "
+        *OptionID: 0x0415
+    }
+
+    *Option: Portuguese_Brazil
+    {
+        *Name: "  "
+        *OptionID: 0x0416
+    }
+
+    *Option: Portuguese_Standard
+    {
+        *Name: "  "
+        *OptionID: 0x0816
+    }
+
+    *Option: Punjabi
+    {
+        *Name: "  "
+        *OptionID: 0x0446
+    }
+
+    *Option: Romanian
+    {
+        *Name: "  "
+        *OptionID: 0x0418
+    }
+
+    *Option: Russian
+    {
+        *Name: "  "
+        *OptionID: 0x0419
+    }
+
+    *Option: Sanskrit
+    {
+        *Name: "  "
+        *OptionID: 0x044f
+    }
+
+    *Option: Serbian_Cyrillic
+    {
+        *Name: "  "
+        *OptionID: 0x0c1a
+    }
+
+    *Option: Serbian_Latin
+    {
+        *Name: "  "
+        *OptionID: 0x081a
+    }
+
+    *Option: Sindhi
+    {
+        *Name: "  "
+        *OptionID: 0x0459
+    }
+
+    *Option: Slovak
+    {
+        *Name: "  "
+        *OptionID: 0x041b
+    }
+
+    *Option: Slovenian
+    {
+        *Name: "  "
+        *OptionID: 0x0424
+    }
+
+    *Option: Spanish_Traditional_Sort
+    {
+        *Name: "  "
+        *OptionID: 0x040a
+    }
+
+    *Option: Spanish_Mexican
+    {
+        *Name: "  "
+        *OptionID: 0x080a
+    }
+
+    *Option: Spanish_Modern_Sort
+    {
+        *Name: "  "
+        *OptionID: 0x0c0a
+    }
+
+    *Option: Spanish_Guatemala
+    {
+        *Name: "  "
+        *OptionID: 0x100a
+    }
+
+    *Option: Spanish_Costa_Rica
+    {
+        *Name: "  "
+        *OptionID: 0x140a
+    }
+
+    *Option: Spanish_Panama
+    {
+        *Name: "  "
+        *OptionID: 0x180a
+    }
+
+    *Option: Spanish_Dominican_Republic
+    {
+        *Name: "  "
+        *OptionID: 0x1c0a
+    }
+
+    *Option: Spanish_Venezuela
+    {
+        *Name: "  "
+        *OptionID: 0x200a
+    }
+
+    *Option: Spanish_Colombia
+    {
+        *Name: "  "
+        *OptionID: 0x240a
+    }
+
+    *Option: Spanish_Peru
+    {
+        *Name: "  "
+        *OptionID: 0x280a
+    }
+
+    *Option: Spanish_Argentina
+    {
+        *Name: "  "
+        *OptionID: 0x2c0a
+    }
+
+    *Option: Spanish_Ecuador
+    {
+        *Name: "  "
+        *OptionID: 0x300a
+    }
+
+    *Option: Spanish_Chile
+    {
+        *Name: "  "
+        *OptionID: 0x340a
+    }
+
+    *Option: Spanish_Uruguay
+    {
+        *Name: "  "
+        *OptionID: 0x380a
+    }
+
+    *Option: Spanish_Paraguay
+    {
+        *Name: "  "
+        *OptionID: 0x3c0a
+    }
+
+    *Option: Spanish_Bolivia
+    {
+        *Name: "  "
+        *OptionID: 0x400a
+    }
+
+    *Option: Spanish_El_Salvador
+    {
+        *Name: "  "
+        *OptionID: 0x440a
+    }
+
+    *Option: Spanish_Honduras
+    {
+        *Name: "  "
+        *OptionID: 0x480a
+    }
+
+    *Option: Spanish_Nicaragua
+    {
+        *Name: "  "
+        *OptionID: 0x4c0a
+    }
+
+    *Option: Spanish_Puerto_Rico
+    {
+        *Name: "  "
+        *OptionID: 0x500a
+    }
+
+    *Option: Sutu
+    {
+        *Name: "  "
+        *OptionID: 0x0430
+    }
+
+    *Option: Swahili_Kenya
+    {
+        *Name: "  "
+        *OptionID: 0x0441
+    }
+
+    *Option: Swedish
+    {
+        *Name: "  "
+        *OptionID: 0x041d
+    }
+
+    *Option: Swedish_Finland
+    {
+        *Name: "  "
+        *OptionID: 0x081d
+    }
+
+    *Option: Tamil
+    {
+        *Name: "  "
+        *OptionID: 0x0449
+    }
+
+    *Option: Tatar_Tatarstan
+    {
+        *Name: "  "
+        *OptionID: 0x0444
+    }
+
+    *Option: Telugu
+    {
+        *Name: "  "
+        *OptionID: 0x044a
+    }
+
+    *Option: Turkish
+    {
+        *Name: "  "
+        *OptionID: 0x041f
+    }
+
+    *Option: Ukrainian
+    {
+        *Name: "  "
+        *OptionID: 0x0422
+    }
+
+    *Option: Urdu_Pakistan
+    {
+        *Name: "  "
+        *OptionID: 0x0420
+    }
+
+    *Option: Urdu_India
+    {
+        *Name: "  "
+        *OptionID: 0x0820
+    }
+
+    *Option: Uzbek_Latin
+    {
+        *Name: "  "
+        *OptionID: 0x0443
+    }
+
+    *Option: Uzbek_Cyrilli
+    {
+        *Name: "  "
+        *OptionID: 0x0843
+    }
+
+    *Option: Vietnamese
+    {
+        *Name: "  "
+        *OptionID: 0x042a
+    }
+
+}
+
+*Personality: "PCLXL"
+*Macros: PJLCommand
+{
+    PJL_STARTJOB:        "<1B>%%-12345X@PJL JOB<0A>"
+    PJL_COMMENT:         "@PJL COMMENT MS PCLXL NT Driver<0A>"
+
+    PJL_PAGEPROTECT_ON:  "@PJL SET PAGEPROTECT=ON<0A>"
+    PJL_PAGEPROTECT_OFF: "@PJL SET PAGEPROTECT=OFF<0A>"
+
+    PJL_TIMEOUT_90:      "@PJL SET TIMEOUT=90<0A>"
+  
+    PJL_COLLATE_ON:      "@PJL SET QTY=" %d{NumOfCopies}"<0A>"
+    PJL_COLLATE_OFF:     "@PJL SET QTY=1<0A>"
+
+    PJL_ECONOMODE_ON:    "@PJL SET ECONOMODE=ON<0A>"
+    PJL_ECONOMODE_OFF:   "@PJL SET ECONOMODE=OFF<0A>"
+
+    PJL_RET_LIGHT:       "@PJL SET RET=LIGHT<0A>"
+    PJL_RET_MEDIUM:      "@PJL SET RET=MEDIUM<0A>"
+    PJL_RET_DARK:        "@PJL SET RET=DARK<0A>"
+    PJL_RET_OFF:         "@PJL SET RET=OFF<0A>"
+    PJL_RESOLUTION_300:  "@PJL SET RESOLUTION=300<0A>"
+    PJL_RESOLUTION_600:  "@PJL SET RESOLUTION=600<0A>"
+    PJL_RESOLUTION_1200: "@PJL SET RESOLUTION=1200<0A>"
+
+    PJL_BITSPERPIXEL_1:  "@PJL SET BITSPERPIXEL=1<0A>"
+    PJL_BITSPERPIXEL_2:  "@PJL SET BITSPERPIXEL=2<0A>"
+
+    PJL_ENTER_PCLXL:     "@PJL ENTER LANGUAGE=PCLXL<0A>"
+
+    PJL_ENDJOB:          "<1B>%%-12345X@PJL EOJ<0A><1B>%%-12345X"
+}
+
+*Feature: RESDLL
+{
+	*Name: "resource dll files"
+	*ConcealFromUI?: TRUE
+
+	*Option: PCL5ResDLL
+	{
+		*Name: "pcl5eres.dll"
+	}
+
+	*Option: PCLXLResDLL
+	{
+		*Name: "pclxl.dll"
+	}
+}
+
+*Macros: StdModelNames
+{
+	HP_LJ_4L_DISPLAY:						RESDLL.PCL5ResDLL.1
+	HP_LJ_4ML_DISPLAY:						RESDLL.PCL5ResDLL.2
+	HP_LJ_4_DISPLAY:						RESDLL.PCL5ResDLL.3
+	HP_LJ_4M_DISPLAY:						RESDLL.PCL5ResDLL.4
+	HP_LJ_4SI_DISPLAY:						RESDLL.PCL5ResDLL.5
+	HP_LJ_4SI_MX_DISPLAY:					RESDLL.PCL5ResDLL.6
+	HP_LJ_4_PLUS_DISPLAY:					RESDLL.PCL5ResDLL.7
+	HP_LJ_4V_DISPLAY:						RESDLL.PCL5ResDLL.8
+	HP_LJ_4MV_DISPLAY:						RESDLL.PCL5ResDLL.9
+	HP_LJ_4M_PLUS_DISPLAY:					RESDLL.PCL5ResDLL.10
+	HP_LJ_4P_DISPLAY:						RESDLL.PCL5ResDLL.11
+	HP_LJ_4MP_DISPLAY:						RESDLL.PCL5ResDLL.12
+	HP_LJ_5_DISPLAY:						RESDLL.PCL5ResDLL.13
+	HP_LJ_5M_DISPLAY:						RESDLL.PCL5ResDLL.14
+	HP_LJ_5N_DISPLAY:						RESDLL.PCL5ResDLL.15
+	HP_LJ_5L_DISPLAY:						RESDLL.PCL5ResDLL.16
+	HP_LJ_5P_DISPLAY:						RESDLL.PCL5ResDLL.17
+	HP_LJ_5MP_DISPLAY:						RESDLL.PCL5ResDLL.18
+	HP_LJ_5SI_DISPLAY:						RESDLL.PCL5ResDLL.19
+	HP_LJ_5SI_MX_DISPLAY:					RESDLL.PCL5ResDLL.20
+
+	HP_DJ_1600C_MS_DISPLAY:					RESDLL.PCL5ResDLL.21
+	HP_DJ_1600C_DISPLAY:					RESDLL.PCL5ResDLL.22
+	HP_DJ_1200C_MS_DISPLAY:					RESDLL.PCL5ResDLL.23
+	HP_DJ_1200C_DISPLAY:					RESDLL.PCL5ResDLL.24
+
+	HP_CJ_DISPLAY:							RESDLL.PCL5ResDLL.25
+
+	HP_CLJ_MS_DISPLAY:						RESDLL.PCL5ResDLL.26
+	HP_CLJ_DISPLAY:							RESDLL.PCL5ResDLL.27
+	HP_CLJ_5_MS_DISPLAY:					RESDLL.PCL5ResDLL.28
+	HP_CLJ_5_DISPLAY:						RESDLL.PCL5ResDLL.29
+	HP_CLJ_5M_MS_DISPLAY:					RESDLL.PCL5ResDLL.30
+	HP_CLJ_5M_DISPLAY:						RESDLL.PCL5ResDLL.31
+
+	BR_HL10H_DISPLAY:						RESDLL.PCL5ResDLL.32
+	BR_HL660_DISPLAY:						RESDLL.PCL5ResDLL.33
+	BR_HL760_DISPLAY:						RESDLL.PCL5ResDLL.34
+	BR_HL1060_DISPLAY:						RESDLL.PCL5ResDLL.35
+	BR_HL1260_DISPLAY:						RESDLL.PCL5ResDLL.36
+	BR_HL1260_1660_DISPLAY:					RESDLL.PCL5ResDLL.37
+
+	CN_LBP_860_DISPLAY:						RESDLL.PCL5ResDLL.38
+	CN_LBP_1260_DISPLAY:					RESDLL.PCL5ResDLL.39
+	CN_LBP_1260_PLUS_DISPLAY:				RESDLL.PCL5ResDLL.40
+
+	DG_DEC_5100_PCL_DISPLAY:				RESDLL.PCL5ResDLL.41
+
+	EP_AL_1600_DISPLAY:						RESDLL.PCL5ResDLL.42
+	EP_EPL_3000_DISPLAY:					RESDLL.PCL5ResDLL.43
+	EP_EPL_5200_DISPLAY:					RESDLL.PCL5ResDLL.44
+	EP_EPL_5500_DISPLAY:					RESDLL.PCL5ResDLL.45
+	EP_EPL_5600_DISPLAY:					RESDLL.PCL5ResDLL.46
+	EP_EPL_9000_DISPLAY:					RESDLL.PCL5ResDLL.47
+
+	IBM_4039_LP_PLUS_DISPLAY:				RESDLL.PCL5ResDLL.48
+
+	LX_4039_LP_PLUS_DISPLAY:				RESDLL.PCL5ResDLL.49
+
+	MAN_TALLY_T9008_DISPLAY:				RESDLL.PCL5ResDLL.50
+
+	OK_OL_810EX_810E_DISPLAY:				RESDLL.PCL5ResDLL.51
+	OK_OL_610EX_610E_DISPLAY:				RESDLL.PCL5ResDLL.52
+	OK_OL_1200EX_1200_DISPLAY:				RESDLL.PCL5ResDLL.53
+	OKIPAGE_16N_DISPLAY:					RESDLL.PCL5ResDLL.54
+}
+
+*Macros: StdPaperSizeNames
+{
+	LEDGER_DISPLAY:							RESDLL.PCL5ResDLL.259
+	A6_105X148_DISPLAY:						RESDLL.PCL5ResDLL.260
+	DBL_JAPANESE_POSTCARD_DISPLAY:			RESDLL.PCL5ResDLL.261
+	MAX_117_177_DISPLAY:					RESDLL.PCL5ResDLL.262
+	B5_DISPLAY:								RESDLL.PCL5ResDLL.263
+	B6_DISPLAY:								RESDLL.PCL5ResDLL.264
+	ENV_OTHER_DISPLAY:						RESDLL.PCL5ResDLL.348
+	ENV_A2_DISPLAY:							RESDLL.PCL5ResDLL.356
+	A6_JIS_DISPLAY:							RESDLL.PCL5ResDLL.357
+	US_INDEX_4X6_DISPLAY:					RESDLL.PCL5ResDLL.358
+	US_INDEX_5X8_DISPLAY:					RESDLL.PCL5ResDLL.359
+	A3_PLUS_DISPLAY:						RESDLL.PCL5ResDLL.372
+	ENV_OTHER_DISPLAY:						RESDLL.PCL5ResDLL.381
+	A5_TRANSVERSE_DISPLAY:					RESDLL.PCL5ResDLL.461
+	B4_DISPLAY:								RESDLL.PCL5ResDLL.468
+	A5_DISPLAY:								RESDLL.PCL5ResDLL.473
+	FOLIO_DISPLAY:							RESDLL.PCL5ResDLL.474
+	SP_FOLIO_DISPLAY:						RESDLL.PCL5ResDLL.491
+	INVOICE_DISPLAY:						RESDLL.PCL5ResDLL.492
+	INCH_8X10_DISPLAY:						RESDLL.PCL5ResDLL.493
+	LEGAL_DISPLAY:							RESDLL.PCL5ResDLL.497
+	A6_125X176_DISPLAY:						RESDLL.PCL5ResDLL.498
+	COM_10_ENV_DISPLAY:						RESDLL.PCL5ResDLL.499
+	CMO_9_ENV_DISPLAY:						RESDLL.PCL5ResDLL.500
+	UNIVERSAL_1169X17_DISPLAY:				RESDLL.PCL5ResDLL.615
+	ENV_UNIVERSAL_85X964_DISPLAY:			RESDLL.PCL5ResDLL.616
+	EXECTUTIVE_JIS_DISPLAY:					RESDLL.PCL5ResDLL.671
+	INCH_5X7_DISPLAY:						RESDLL.PCL5ResDLL.676
+	INCH_8X10_DISPLAY:						RESDLL.PCL5ResDLL.677
+	MM_215X315_DISPLAY:						RESDLL.PCL5ResDLL.678
+	MM_220X330_DISPLAY:						RESDLL.PCL5ResDLL.679
+	POSTCARD_DISPLAY:						RESDLL.PCL5ResDLL.680
+	MM_267X388_DISPLAY:						RESDLL.PCL5ResDLL.681
+	LEGAL_85X13_DISPLAY:					RESDLL.PCL5ResDLL.497
+	LEGAL13_85X13_DISPLAY:					RESDLL.PCL5ResDLL.593
+	UNIVERSAL_1299X20_DISPLAY:				RESDLL.PCL5ResDLL.542
+	ENV_UNIVERSAL_1299X20_DISPLAY:			RESDLL.PCL5ResDLL.543
+	B5_ISO_DISPLAY:							RESDLL.PCL5ResDLL.600
+	BANNER_SHEET_DISPLAY:					RESDLL.PCL5ResDLL.664
+
+	MYMAX_DISPLAY:							RESDLL.PCLXLResDLL.42
+}
+
+*Macros: StdInputBinNames
+{
+	FIRST_AVAILABLE_TRAY_DISPLAY:			RESDLL.PCL5ResDLL.272
+	REAR_TRAY_UNIT_DISPLAY:					RESDLL.PCL5ResDLL.273
+	MP_TRAY_DISPLAY:						RESDLL.PCL5ResDLL.274
+	FEEDER2_DISPLAY:						RESDLL.PCL5ResDLL.275
+	TRAY1_DISPLAY:							RESDLL.PCL5ResDLL.276
+	TRAY2_DISPLAY:							RESDLL.PCL5ResDLL.277
+	FEEDER1_DISPLAY:						RESDLL.PCL5ResDLL.278
+	MIDDLE_TRAY_DISPLAY:					RESDLL.PCL5ResDLL.360
+	FRONT_TRAY_DISPLAY:						RESDLL.PCL5ResDLL.387
+	LOWER_TRAY1_DISPLAY:					RESDLL.PCL5ResDLL.388
+	LOWER_TRAY2_DISPLAY:					RESDLL.PCL5ResDLL.389
+	ENVELOPE_FEEDER_DISPLAY:				RESDLL.PCL5ResDLL.390
+	BIN1_DISPLAY:							RESDLL.PCL5ResDLL.393
+	BIN2_DISPLAY:							RESDLL.PCL5ResDLL.394
+	BIN3_DISPLAY:							RESDLL.PCL5ResDLL.395
+	BIN4_DISPLAY:							RESDLL.PCL5ResDLL.396
+	BIN5_DISPLAY:							RESDLL.PCL5ResDLL.397
+	BIN6_DISPLAY:							RESDLL.PCL5ResDLL.398
+	BIN7_DISPLAY:							RESDLL.PCL5ResDLL.399
+	BIN8_DISPLAY:							RESDLL.PCL5ResDLL.400
+	BIN9_DISPLAY:							RESDLL.PCL5ResDLL.401
+	BIN10_DISPLAY:							RESDLL.PCL5ResDLL.402
+	AUX_TRAY_DISPLAY:						RESDLL.PCL5ResDLL.406
+	TRAY3_DISPLAY:							RESDLL.PCL5ResDLL.410
+	EIGHT_BIN_MULTIBIN_MAILBOX_DISPLAY:		RESDLL.PCL5ResDLL.424
+	FIVE_BIN_MAILBOX_STAPLER_DISPLAY:		RESDLL.PCL5ResDLL.425
+	LEFT_FACEUP_TRAY_DISPLAY:				RESDLL.PCL5ResDLL.426
+	TWO_K_SHEET_INPUT_TRAY4_DISPLAY:		RESDLL.PCL5ResDLL.427
+	TRAY4_DISPLAY:							RESDLL.PCL5ResDLL.428
+	ENV_MANUAL_FEED_DISPLAY:				RESDLL.PCL5ResDLL.447
+	MANUAL_MULTIPURPOSE_DISPLAY:			RESDLL.PCL5ResDLL.448
+	MANUAL_MFB_DISPLAY:						RESDLL.PCL5ResDLL.449
+	LARGE_CAPACITY_DISPLAY:					RESDLL.PCL5ResDLL.450
+	TRAY5_DISPLAY:							RESDLL.PCL5ResDLL.467
+	HIGH_CAPACITY_DISPLAY:					RESDLL.PCL5ResDLL.470
+	ENVELOPE_TRAY_DISPLAY:					RESDLL.PCL5ResDLL.471
+	FACE_DOWN_BIN_DISPLAY:					RESDLL.PCL5ResDLL.479
+	FACE_UP_BIN_DISPLAY:					RESDLL.PCL5ResDLL.480
+	MAILBOX1_DISPLAY:						RESDLL.PCL5ResDLL.481
+	MAILBOX2_DISPLAY:						RESDLL.PCL5ResDLL.482
+	MAILBOX3_DISPLAY:						RESDLL.PCL5ResDLL.483
+	MAILBOX4_DISPLAY:						RESDLL.PCL5ResDLL.484
+	MAILBOX5_DISPLAY:						RESDLL.PCL5ResDLL.485
+	MAILBOX6_DISPLAY:						RESDLL.PCL5ResDLL.486
+	MAILBOX7_DISPLAY:						RESDLL.PCL5ResDLL.487
+	MAILBOX8_DISPLAY:						RESDLL.PCL5ResDLL.488
+	MAILBOX9_DISPLAY:						RESDLL.PCL5ResDLL.489
+	MAILBOX10_DISPLAY:						RESDLL.PCL5ResDLL.490
+	MANUAL_FEED_TRAY1_DISPLAY:				RESDLL.PCL5ResDLL.494
+	MULTI_FEEDER_DISPLAY:					RESDLL.PCL5ResDLL.496
+	TRAY1_16_DISPLAY:						RESDLL.PCL5ResDLL.501
+	TRAY1_18_DISPLAY:						RESDLL.PCL5ResDLL.502
+	TRAY1_20_DISPLAY:						RESDLL.PCL5ResDLL.503
+	TRAY1_24_DISPLAY:						RESDLL.PCL5ResDLL.504
+	TRAY1_28_DISPLAY:						RESDLL.PCL5ResDLL.505
+	MANUAL_FEED_16_DISPLAY:					RESDLL.PCL5ResDLL.506
+	MANUAL_FEED_18_DISPLAY:					RESDLL.PCL5ResDLL.507
+	MANUAL_FEED_20_DISPLAY:					RESDLL.PCL5ResDLL.508
+	MANUAL_FEED_24_DISPLAY:					RESDLL.PCL5ResDLL.509
+	MANUAL_FEED_28_DISPLAY:					RESDLL.PCL5ResDLL.510
+	MULTI_FEEDER_16_DISPLAY:				RESDLL.PCL5ResDLL.511
+	MULTI_FEEDER_18_DISPLAY:				RESDLL.PCL5ResDLL.512
+	MULTI_FEEDER_20_DISPLAY:				RESDLL.PCL5ResDLL.513
+	MULTI_FEEDER_24_DISPLAY:				RESDLL.PCL5ResDLL.514
+	MULTI_FEEDER_28_DISPLAY:				RESDLL.PCL5ResDLL.515
+	TRAY2_16_DISPLAY:						RESDLL.PCL5ResDLL.516
+	TRAY2_18_DISPLAY:						RESDLL.PCL5ResDLL.517
+	TRAY2_20_DISPLAY:						RESDLL.PCL5ResDLL.518
+	TRAY2_24_DISPLAY:						RESDLL.PCL5ResDLL.519
+	TRAY2_28_DISPLAY:						RESDLL.PCL5ResDLL.520
+	TRAY3_16_DISPLAY:						RESDLL.PCL5ResDLL.521
+	TRAY3_18_DISPLAY:						RESDLL.PCL5ResDLL.522
+	TRAY3_20_DISPLAY:						RESDLL.PCL5ResDLL.523
+	TRAY3_24_DISPLAY:						RESDLL.PCL5ResDLL.524
+	TRAY3_28_DISPLAY:						RESDLL.PCL5ResDLL.525
+	TWO_K_SHEET_INPUT_TRAY_DISPLAY:			RESDLL.PCL5ResDLL.531
+	MANUAL_ENV_FEED_DISPLAY:				RESDLL.PCL5ResDLL.541
+	MULTI_BYPASS_FEEDER_DISPLAY:			RESDLL.PCL5ResDLL.555
+	HIGH_CAPACITY_FEEDER_DISPLAY:			RESDLL.PCL5ResDLL.556
+	MANUAL_BYPASS_FEEDER_DISPLAY:			RESDLL.PCL5ResDLL.576
+	STANDARD_BIN_DISPLAY:					RESDLL.PCL5ResDLL.578
+	OFFSET_BIN_DISPLAY:						RESDLL.PCL5ResDLL.579
+	EIGHT_BIN_MAILBOX_DISPLAY:				RESDLL.PCL5ResDLL.583
+	OPT_INPUT_TRAY_DISPLAY:					RESDLL.PCL5ResDLL.585
+	TWO_500_SHEET_INPUT_TRAY_DISPLAY:		RESDLL.PCL5ResDLL.586
+	SEVEN_BIN_MAILBOX_DISPLAY:				RESDLL.PCL5ResDLL.587
+	FINISHER_TOP_FD_DISPLAY:				RESDLL.PCL5ResDLL.603
+	FINISHER_MID_FD_DISPLAY:				RESDLL.PCL5ResDLL.604
+	FINISHER_BOT_FD_DISPLAY:				RESDLL.PCL5ResDLL.605
+	FINISHER_TOP_FU_DISPLAY:				RESDLL.PCL5ResDLL.606
+	FINISHER_MID_FU_DISPLAY:				RESDLL.PCL5ResDLL.607
+	FINISHER_BOT_FU_DISPLAY:				RESDLL.PCL5ResDLL.608
+	FINISHER_ANY_FD_DISPLAY:				RESDLL.PCL5ResDLL.609
+	FINISHER_1_DISPLAY:						RESDLL.PCL5ResDLL.610
+	FINISHER_2_DISPLAY:						RESDLL.PCL5ResDLL.611
+	FINISHER_3_DISPLAY:						RESDLL.PCL5ResDLL.612
+	FINISHER_ANY_DISPLAY:					RESDLL.PCL5ResDLL.613
+	FINISHER_2000_SHEET_DISPLAY:			RESDLL.PCL5ResDLL.619
+	INPUT_2000_SHEET_DISPLAY:				RESDLL.PCL5ResDLL.620
+	PAPER_INPUT_BIN_DISPLAY:				RESDLL.PCL5ResDLL.638
+	TRAY6_HIGH_CAP_DISPLAY:					RESDLL.PCL5ResDLL.640
+	TOP_TRAY_DISPLAY:						RESDLL.PCL5ResDLL.658
+	SIDE_TRAY_DISPLAY:						RESDLL.PCL5ResDLL.659
+}
+
+*Macros: StdMediaTypes
+{
+	PLAIN_PAPER_DISPLAY:					RESDLL.PCL5ResDLL.268
+	BOND_DISPLAY:							RESDLL.PCL5ResDLL.269
+	SPECIAL_PAPER_DISPLAY:					RESDLL.PCL5ResDLL.270
+	PLAIN_DISPLAY:							RESDLL.PCL5ResDLL.435
+	PREPRINTED_DISPLAY:						RESDLL.PCL5ResDLL.436
+	LETTERHEAD_DISPLAY:						RESDLL.PCL5ResDLL.437
+	PREPUNCHED_DISPLAY:						RESDLL.PCL5ResDLL.438
+	LABELS_DISPLAY:							RESDLL.PCL5ResDLL.439
+	RECYCLED_DISPLAY:						RESDLL.PCL5ResDLL.440
+	COLOR_DISPLAY:							RESDLL.PCL5ResDLL.441
+	CARDSTOCK_DISPLAY:						RESDLL.PCL5ResDLL.442
+	TRANSPARENCY_PAPER_DISPLAY:				RESDLL.PCL5ResDLL.476
+	ROUGH_DISPLAY:							RESDLL.PCL5ResDLL.495
+}
+				
+*Macros: StdTextQualityNames
+{
+	ECONOMODE_DEFAULT_DISPLAY:				RESDLL.PCL5ResDLL.265
+	ECONOMODE_OFF_DISPLAY:					RESDLL.PCL5ResDLL.266
+	ECONOMODE_ON_DISPLAY:					RESDLL.PCL5ResDLL.267
+	NORMAL_MODE_DISPLAY:					RESDLL.PCL5ResDLL.317
+	ECONOFAST_MODE_DISPLAY:					RESDLL.PCL5ResDLL.318
+	PRESENTATION_MODE_DISPLAY:				RESDLL.PCL5ResDLL.319
+	ECONOMODE_DISPLAY:						RESDLL.PCL5ResDLL.377
+	RES_ENHANCE_DEFAULT_DISPLAY:			RESDLL.PCL5ResDLL.312
+	RES_ENHANCE_LIGHT_DISPLAY:				RESDLL.PCL5ResDLL.313
+	RES_ENHANCE_MEDIUM_DISPLAY:				RESDLL.PCL5ResDLL.314
+	RES_ENHANCE_DARK_DISPLAY:				RESDLL.PCL5ResDLL.315
+	RES_ENHANCE_OFF_DISPLAY:				RESDLL.PCL5ResDLL.316
+	TRUERES_DEFAULT_DISPLAY:				RESDLL.PCL5ResDLL.382
+	TRUERES_ON_DISPLAY:						RESDLL.PCL5ResDLL.383
+	TRUERES_OFF_DISPLAY:					RESDLL.PCL5ResDLL.384
+	TRUERES_SETTINGS_DISPLAY:				RESDLL.PCL5ResDLL.385
+	ECONO_DISPLAY:							RESDLL.PCL5ResDLL.408
+	REFINE_DISPLAY:							RESDLL.PCL5ResDLL.409
+	GET_SETTINGS_DISPLAY:					RESDLL.PCL5ResDLL.462
+	GET_LIGHT_DISPLAY:						RESDLL.PCL5ResDLL.463
+	GET_MEDIUM_DISPLAY:						RESDLL.PCL5ResDLL.464
+	GET_DARK_DISPLAY:						RESDLL.PCL5ResDLL.465
+	GET_OFF_DISPLAY:						RESDLL.PCL5ResDLL.466
+	DRAFT_MODE_OFF_DISPLAY:					RESDLL.PCL5ResDLL.477
+	DRAFT_MODE_ON_DISPLAY:					RESDLL.PCL5ResDLL.478
+	LIGHT_DENSITY_DISPLAY:					RESDLL.PCL5ResDLL.526
+	MEDIUM_LIGHT_DENSITY_DISPLAY:			RESDLL.PCL5ResDLL.527
+	MEDIUM_DENSITY_DISPLAY:					RESDLL.PCL5ResDLL.528
+	MEDIUM_HEAVY_DENSITY_DISPLAY:			RESDLL.PCL5ResDLL.529
+	HEAVY_DENSITY_DISPLAY:					RESDLL.PCL5ResDLL.530
+	DRAFT_MODE_DISPLAY:						RESDLL.PCL5ResDLL.629
+
+	DITHER_QUALITY_DISPLAY:					RESDLL.PCLXLResDLL.15
+	DITHER_QUALITY_HIGH_DISPLAY:				RESDLL.PCLXLResDLL.16
+	DITHER_QUALITY_LOW_DISPLAY:				RESDLL.PCLXLResDLL.17
+}
+
+*Macros: OtherStdNames
+{
+	DPI_DISPLAY:							RESDLL.PCL5ResDLL.257
+	DPI_MONO_DISPLAY:						RESDLL.PCL5ResDLL.258
+	AUTO_SELECT_DISPLAY:					RESDLL.PCL5ResDLL.271
+	PRINDER_DEFAULT_DISPLAY:				RESDLL.PCL5ResDLL.279
+	UPPER_DISPLAY:							RESDLL.PCL5ResDLL.280
+	LOWER_DISPLAY:							RESDLL.PCL5ResDLL.281
+	TOP_FD_DISPLAY:							RESDLL.PCL5ResDLL.282
+	LEFT_FU_DISPLAY:						RESDLL.PCL5ResDLL.283
+	HCO_FU_DISPLAY:							RESDLL.PCL5ResDLL.284
+	HCO1_FD_DISPLAY:						RESDLL.PCL5ResDLL.285
+	HCO2_FD_DISPLAY:						RESDLL.PCL5ResDLL.286
+	HCO3_FD_DISPLAY:						RESDLL.PCL5ResDLL.287
+	HCO4_FD_DISPLAY:						RESDLL.PCL5ResDLL.288
+	HCO5_FD_DISPLAY:						RESDLL.PCL5ResDLL.289
+	HCO6_FD_DISPLAY:						RESDLL.PCL5ResDLL.290
+	HCO7_FD_DISPLAY:						RESDLL.PCL5ResDLL.291
+	HCO8_FD_DISPLAY:						RESDLL.PCL5ResDLL.292
+	RET_DEFAULT_DISPLAY:					RESDLL.PCL5ResDLL.293
+	AIR_OFF_DISPLAY:						RESDLL.PCL5ResDLL.294
+	AIR_ON_DISPLAY:							RESDLL.PCL5ResDLL.295
+	RET_ON_DISPLAY:							RESDLL.PCL5ResDLL.296
+	RET_LIGHT_DISPLAY:						RESDLL.PCL5ResDLL.297
+	RET_MEDIUM_DISPLAY:						RESDLL.PCL5ResDLL.298
+	RET_DARK_DISPLAY:						RESDLL.PCL5ResDLL.299
+	RET_OFF_DISPLAY:						RESDLL.PCL5ResDLL.300
+	RITECH_DEFAULT_DISPLAY:					RESDLL.PCL5ResDLL.301
+	RITECH_LIGHT_DISPLAY:					RESDLL.PCL5ResDLL.302
+	RITECH_MEDIUM_DISPLAY:					RESDLL.PCL5ResDLL.303
+	RITECH_DARK_DISPLAY:					RESDLL.PCL5ResDLL.304
+	RITECH_OFF_DISPLAY:						RESDLL.PCL5ResDLL.305
+	PQET_ON_DISPLAY:						RESDLL.PCL5ResDLL.306
+	PQET_OFF_DISPLAY:						RESDLL.PCL5ResDLL.307
+	HRC_OFF_DISPLAY:						RESDLL.PCL5ResDLL.308
+	HRC_LIGHT_DISPLAY:						RESDLL.PCL5ResDLL.309
+	HRC_MEDIUM_DISPLAY:						RESDLL.PCL5ResDLL.310
+	HRC_DARK_DISPLAY:						RESDLL.PCL5ResDLL.311
+	OST_ON_DISPLAY:							RESDLL.PCL5ResDLL.320
+	OST_OFF_DISPLAY:						RESDLL.PCL5ResDLL.321
+	HP_MS_DISPLAY:							RESDLL.PCL5ResDLL.322
+	HP_PROCOLLECTION_DISPLAY:				RESDLL.PCL5ResDLL.323
+	HP_GLOBALTEXT_DISPLAY:					RESDLL.PCL5ResDLL.324
+	HP_GREATSTART_DISPLAY:					RESDLL.PCL5ResDLL.325
+	HP_TEXTEQUATIONS_DISPLAY:				RESDLL.PCL5ResDLL.326
+	HP_POLISHEDWORKSHEETS_DISPLAY:			RESDLL.PCL5ResDLL.327
+	HP_PERSUASIVEPRESENTATIONS_DISPLAY:		RESDLL.PCL5ResDLL.328
+	HP_FORMSETC_DISPLAY:					RESDLL.PCL5ResDLL.329
+	HP_BARCODESMORE_DISPLAY:				RESDLL.PCL5ResDLL.330
+	HP_WORDPERFECT_DISPLAY:					RESDLL.PCL5ResDLL.331
+	DISTINCTDOC1_COMPPUB1_DISPLAY:			RESDLL.PCL5ResDLL.332
+	BRILLPRES1_COMPPUB2_DISPLAY:			RESDLL.PCL5ResDLL.333
+	SPECIAL_DOCS_DISPLAY:					RESDLL.PCL5ResDLL.334
+	DAZZLING_PRES_DISPLAY:					RESDLL.PCL5ResDLL.335
+	EPSON_51_FONTCARD_DISPLAY:				RESDLL.PCL5ResDLL.336
+	IMAGEADAPT_AUTO_DISPLAY:				RESDLL.PCL5ResDLL.337
+	IMAGEADAPT_ON_DISPLAY:					RESDLL.PCL5ResDLL.338
+	IMAGEADAPT_OFF_DISPLAY:					RESDLL.PCL5ResDLL.339
+	ONE_DISPLAY:							RESDLL.PCL5ResDLL.340
+	TWO_DISPLAY:							RESDLL.PCL5ResDLL.341
+	THREE_DISPLAY:							RESDLL.PCL5ResDLL.342
+	FOUR_DISPLAY:							RESDLL.PCL5ResDLL.343
+	FIVE_DISPLAY:							RESDLL.PCL5ResDLL.344
+	LIGHT_DISPLAY:							RESDLL.PCL5ResDLL.345
+	MEDIUM_DISPLAY:							RESDLL.PCL5ResDLL.346
+	DARK_DISPLAY:							RESDLL.PCL5ResDLL.347
+	HCO_DISPLAY:							RESDLL.PCL5ResDLL.349
+	STANDARD_DISPLAY:						RESDLL.PCL5ResDLL.350
+	IET_ON_DISPLAY:							RESDLL.PCL5ResDLL.351
+	IET_OFF_DISPLAY:						RESDLL.PCL5ResDLL.352
+	TONERSAVER_OFF_DISPLAY:					RESDLL.PCL5ResDLL.353
+	TONERSAVER_ON_DISPLAY:					RESDLL.PCL5ResDLL.354
+	INTERCONRX_DISPLAY:						RESDLL.PCL5ResDLL.355
+	LCS_DISPLAY:							RESDLL.PCL5ResDLL.361
+	FACEUP_DISPLAY:							RESDLL.PCL5ResDLL.362
+	FACEDOWN_DISPLAY:						RESDLL.PCL5ResDLL.363
+	STACKER_MODE_DISPLAY:					RESDLL.PCL5ResDLL.364
+	SORTER_MODE_DISPLAY:					RESDLL.PCL5ResDLL.365
+	COLLATOR_MODE_DISPLAY:					RESDLL.PCL5ResDLL.366
+	FAST_MODE_DISPLAY:						RESDLL.PCL5ResDLL.367
+	KIR_OFF_DISPLAY:						RESDLL.PCL5ResDLL.368
+	KIR_LIGHT_DISPLAY:						RESDLL.PCL5ResDLL.369
+	KIR_MEDIUM_DISPLAY:						RESDLL.PCL5ResDLL.370
+	KIR_DARK_DISPLAY:						RESDLL.PCL5ResDLL.371
+	HIGH_CAP_INPUT_DISPLAY:					RESDLL.PCL5ResDLL.373
+	LC1_DISPLAY:							RESDLL.PCL5ResDLL.374
+	LC2_DISPLAY:							RESDLL.PCL5ResDLL.375
+	HCO_FACEDOWN_DISPLAY:					RESDLL.PCL5ResDLL.376
+	RET_DISPLAY:							RESDLL.PCL5ResDLL.378
+	PQET_DISPLAY:							RESDLL.PCL5ResDLL.379
+	HRC_DISPLAY:							RESDLL.PCL5ResDLL.380
+	MAIN_DISPLAY:							RESDLL.PCL5ResDLL.386
+	OCT_DISPLAY:							RESDLL.PCL5ResDLL.391
+	COLLATOR_DISPLAY:						RESDLL.PCL5ResDLL.392
+	RITECH_SETTINGS_DISPLAY:				RESDLL.PCL5ResDLL.403
+	HIGH_DISPLAY:							RESDLL.PCL5ResDLL.404
+	LOW_DISLPAY:							RESDLL.PCL5ResDLL.405
+	NORMAL_DISPLAY:							RESDLL.PCL5ResDLL.407
+	OFFSET_DISPLAY:							RESDLL.PCL5ResDLL.411
+	MAILBOX1_DISPLAY:						RESDLL.PCL5ResDLL.412
+	MAILBOX2_DISPLAY:						RESDLL.PCL5ResDLL.413
+	MAILBOX3_DISPLAY:						RESDLL.PCL5ResDLL.414
+	MAILBOX4_DISPLAY:						RESDLL.PCL5ResDLL.415
+	MAILBOX5_DISPLAY:						RESDLL.PCL5ResDLL.416
+	MAILBOX6_DISPLAY:						RESDLL.PCL5ResDLL.417
+	MAILBOX7_DISPLAY:						RESDLL.PCL5ResDLL.418
+	MAILBOX8_DISPLAY:						RESDLL.PCL5ResDLL.419
+	MAILBOX9_DISPLAY:						RESDLL.PCL5ResDLL.420
+	MAILBOX10_DISPLAY:						RESDLL.PCL5ResDLL.421
+	MAILBOX_DISPLAY:						RESDLL.PCL5ResDLL.422
+	MAILBOX_MODE_DISPLAY:					RESDLL.PCL5ResDLL.423
+	DUPLEX_UNIT_DISPLAY:					RESDLL.PCL5ResDLL.429
+	PRINTER_HARDDISK_DISPLAY:				RESDLL.PCL5ResDLL.430
+	STACKER_DISPLAY:						RESDLL.PCL5ResDLL.431
+	JOB_SEPARATOR_DISPLAY:					RESDLL.PCL5ResDLL.432
+	STAPLER_DISPLAY:						RESDLL.PCL5ResDLL.433
+	MEDIA_TYPE_DISPLAY:						RESDLL.PCL5ResDLL.434
+	INSTALLED_DISPLAY:						RESDLL.PCL5ResDLL.443
+	NOT_INSTALLED_DISPLAY:					RESDLL.PCL5ResDLL.444
+	MIDDLE_DISPLAY:							RESDLL.PCL5ResDLL.445
+	LARGE_CAP_DISPLAY:						RESDLL.PCL5ResDLL.446
+	MAILBOX1_FD_DISPLAY:					RESDLL.PCL5ResDLL.451
+	MAILBOX2_FD_DISPLAY:					RESDLL.PCL5ResDLL.452
+	MAILBOX3_FD_DISPLAY:					RESDLL.PCL5ResDLL.453
+	MAILBOX4_FD_DISPLAY:					RESDLL.PCL5ResDLL.454
+	MAILBOX5_FD_DISPLAY:					RESDLL.PCL5ResDLL.455
+	MAILBOX6_FD_DISPLAY:					RESDLL.PCL5ResDLL.456
+	MAILBOX7_FD_DISPLAY:					RESDLL.PCL5ResDLL.457
+	MAILBOX8_FD_DISPLAY:					RESDLL.PCL5ResDLL.458
+	MAILBOX9_FD_DISPLAY:					RESDLL.PCL5ResDLL.459
+	MAILBOX10_FD_DISPLAY:					RESDLL.PCL5ResDLL.460
+	EDIT_NAMES_DISPLAY:						RESDLL.PCL5ResDLL.469
+	MANUAL_DISPLAY:							RESDLL.PCL5ResDLL.472
+	MBF_DISPLAY:							RESDLL.PCL5ResDLL.475
+	FINISHER_DISPLAY:						RESDLL.PCL5ResDLL.532
+	STAPLE_DISPLAY:							RESDLL.PCL5ResDLL.533
+	NO_STAPLING_DISPLAY:					RESDLL.PCL5ResDLL.534
+	PORTRAIT1_DISPLAY:						RESDLL.PCL5ResDLL.535
+	LANDSCAPE1_DISPLAY:						RESDLL.PCL5ResDLL.536
+	TWO_STAPLES_DISPLAY:					RESDLL.PCL5ResDLL.537
+	JOG_OUTPUT_DISPLAY:						RESDLL.PCL5ResDLL.538
+	YES_DISPLAY:							RESDLL.PCL5ResDLL.539
+	NO_DISPLAY:								RESDLL.PCL5ResDLL.540
+	STATEMENT_DISPLAY:						RESDLL.PCL5ResDLL.544
+	MAIL_BOX_DISPLAY:						RESDLL.PCL5ResDLL.557
+	FINISHER_MODULE_DISPLAY:				RESDLL.PCL5ResDLL.558
+	STAPLER_MODULE_DISPLAY:					RESDLL.PCL5ResDLL.559
+	FRONT_DISPLAY:							RESDLL.PCL5ResDLL.560
+	REAR_DISPLAY:							RESDLL.PCL5ResDLL.561
+	DUAL_DISPLAY:							RESDLL.PCL5ResDLL.562
+	COLOR_SETTINGS_DISPLAY:					RESDLL.PCL5ResDLL.563
+	INTELLIGENT_COLOR_DISPLAY:				RESDLL.PCL5ResDLL.564
+	VIVID_COLOR_DISPLAY:					RESDLL.PCL5ResDLL.565
+	PHOTO_MODE_DISPLAY:						RESDLL.PCL5ResDLL.566
+	GRAYSCALE_DISPLAY:						RESDLL.PCL5ResDLL.567
+	SAVE_TONER_DISPLAY:						RESDLL.PCL5ResDLL.568
+	UNADJUSTED_DISPLAY:						RESDLL.PCL5ResDLL.569
+	DOC_HALFTONE_DISPLAY:					RESDLL.PCL5ResDLL.570
+	QUAD_DOT_DISPLAY:						RESDLL.PCL5ResDLL.571
+	SMOOTH_SCREEN_DISPLAY:					RESDLL.PCL5ResDLL.572
+	EDGE_SMOOTHING_DISPLAY:					RESDLL.PCL5ResDLL.573
+	ENHANCED_ALIGNMENT_DISPLAY:				RESDLL.PCL5ResDLL.574
+	ENVELOPES_LABELS_DISPLAY:				RESDLL.PCL5ResDLL.575
+	AUTOMATIC_DISPLAY:						RESDLL.PCL5ResDLL.577
+	EDGE_TO_EDGE_DISPLAY:					RESDLL.PCL5ResDLL.580
+	DUPLEX_MODULE_DISPLAY:					RESDLL.PCL5ResDLL.581
+	ACC_OUTPUT_BIN_DISPLAY:					RESDLL.PCL5ResDLL.582
+	MOPIER_ENABLED_DISPLAY:					RESDLL.PCL5ResDLL.584
+	DEST_FEATURES_DISPLAY:					RESDLL.PCL5ResDLL.588
+	JOB_RETENTION_DISPLAY:					RESDLL.PCL5ResDLL.589
+	OPTIONS_DISPLAY:						RESDLL.PCL5ResDLL.590
+	PRINTER_AUTOCONF_DISPLAY:				RESDLL.PCL5ResDLL.591
+	UPDATE_NOW_DISPLAY:						RESDLL.PCL5ResDLL.592
+	QUICK_COPY_DISPLAY:						RESDLL.PCL5ResDLL.594
+	PROOF_HOLD_DISPLAY:						RESDLL.PCL5ResDLL.595
+	STORE_JOB_DISPLAY:						RESDLL.PCL5ResDLL.596
+	JOB_RETENTION_USERID_DISPLAY:			RESDLL.PCL5ResDLL.597
+	HP3000_STAPLER_STACKER_DISPLAY:			RESDLL.PCL5ResDLL.598
+	HP3000_STACKER_DISPLAY:					RESDLL.PCL5ResDLL.599
+	ENVELOPE_CASSETTE_DISPLAY:				RESDLL.PCL5ResDLL.601
+	JPOSTD_DISPLAY:							RESDLL.PCL5ResDLL.602
+	HAGAKI_DISPLAY:							RESDLL.PCL5ResDLL.614
+	PORTRAIT2_DISPLAY:						RESDLL.PCL5ResDLL.617
+	LANDSCAPE2_DISPLAY:						RESDLL.PCL5ResDLL.618
+	XIE_ON_DISPLAY:							RESDLL.PCL5ResDLL.621
+	XIE_DRAFTMODE_ON_DISPLAY:				RESDLL.PCL5ResDLL.622
+	SORTER_DISPLAY:							RESDLL.PCL5ResDLL.623
+	UNDEFINED_TYPE1_DISPLAY:				RESDLL.PCL5ResDLL.624
+	UNDEFINED_TYPE2_DISPLAY:				RESDLL.PCL5ResDLL.625
+	UNDEFINED_TYPE3_DISPLAY:				RESDLL.PCL5ResDLL.626
+	UNDEFINED_TYPE4_DISPLAY:				RESDLL.PCL5ResDLL.627
+	UNDEFINED_TYPE5_DISPLAY:				RESDLL.PCL5ResDLL.628
+	ONE_STAPLE_DISPLAY:						RESDLL.PCL5ResDLL.630
+	ONE_STAPLE_ANGLED_DISPLAY:				RESDLL.PCL5ResDLL.631
+	TWO_STAPLES_DISPLAY:					RESDLL.PCL5ResDLL.632
+	THREE_STAPLES_DISPLAY:					RESDLL.PCL5ResDLL.633
+	SIX_STAPLES_DISPLAY:					RESDLL.PCL5ResDLL.634
+	STACKER_STAPLED_DISPLAY:				RESDLL.PCL5ResDLL.635
+	CUSTOM_DISPLAY:							RESDLL.PCL5ResDLL.636
+	PAPER_CASSETTE_DISPLAY:					RESDLL.PCL5ResDLL.637
+	BYPASS_MANUAL_FEED_DISPLAY: 			RESDLL.PCL5ResDLL.639
+	STANDARD_DISPLAY:						RESDLL.PCL5ResDLL.641
+	DRILLED_DISPLAY:						RESDLL.PCL5ResDLL.642
+	HEAVYWEIGHT_DISPLAY:					RESDLL.PCL5ResDLL.643
+	TAB_STOCK_DISPLAY:						RESDLL.PCL5ResDLL.644
+	OTHER_DISPLAY:							RESDLL.PCL5ResDLL.645
+	MEDIA_COLOR_DISPLAY:					RESDLL.PCL5ResDLL.646
+	WHITE_DISPLAY:							RESDLL.PCL5ResDLL.647
+	YELLOW_DISPLAY:							RESDLL.PCL5ResDLL.648
+	GREEN_DISPLAY:							RESDLL.PCL5ResDLL.649
+	BUFF_DISPLAY:							RESDLL.PCL5ResDLL.650
+	RED_DISPLAY:							RESDLL.PCL5ResDLL.651
+	IVORY_DISPLAY:							RESDLL.PCL5ResDLL.652
+	GREY_DISPLAY:							RESDLL.PCL5ResDLL.653
+	CLEAR_DISPLAY:							RESDLL.PCL5ResDLL.654
+	GOLDENROD_DISPLAY:						RESDLL.PCL5ResDLL.655
+	ORANGE_DISPLAY:							RESDLL.PCL5ResDLL.656
+	BLUE_DISPLAY:							RESDLL.PCL5ResDLL.657
+	TWO_SIDED_PRINTING_DUPLEX_DISPLAY:		RESDLL.PCL5ResDLL.660
+	STAPLING_DISPLAY:						RESDLL.PCL5ResDLL.661
+	STAPLE_OFF_DISPLAY:						RESDLL.PCL5ResDLL.662
+	STAPLE_ON_DISPLAY:						RESDLL.PCL5ResDLL.663
+	ENABLED_DISPLAY:						RESDLL.PCL5ResDLL.665
+	DISABLED_DISPLAY:						RESDLL.PCL5ResDLL.666
+	CONSERVE_DRY_INK_DISPLAY:				RESDLL.PCL5ResDLL.667
+	JOB_RETENTION_USERPIN_DISPLAY:			RESDLL.PCL5ResDLL.668
+	PRIVATE_JOB_DISPLAY:					RESDLL.PCL5ResDLL.669
+	SIXTEEN_K_DISPLAY:						RESDLL.PCL5ResDLL.670
+	EIGHT_K_DISPLAY:						RESDLL.PCL5ResDLL.672
+	PREPRINTED_DISPLAY:						RESDLL.PCL5ResDLL.673
+	TRANSPARENCIES_DISPLAY:					RESDLL.PCL5ResDLL.674
+	TRAY5_BYPASS_DISPLAY:					RESDLL.PCL5ResDLL.675
+	PRINTER_DEFAULT_DISPLAY:				RESDLL.PCL5ResDLL.682
+	PUNCHED_DISPLAY:						RESDLL.PCL5ResDLL.683
+	CUSTOM1_DISPLAY:						RESDLL.PCL5ResDLL.684
+	CUSTOM2_DISPLAY:						RESDLL.PCL5ResDLL.685
+	CUSTOM3_DISPLAY:						RESDLL.PCL5ResDLL.686
+	CUSTOM4_DISPLAY:						RESDLL.PCL5ResDLL.687
+	CUSTOM5_DISPLAY:						RESDLL.PCL5ResDLL.688
+	CUSTOM6_DISPLAY:						RESDLL.PCL5ResDLL.689
+	CUSTOM7_DISPLAY:						RESDLL.PCL5ResDLL.690
+	ANY_COLOR_DISPLAY:						RESDLL.PCL5ResDLL.691
+	OUTPUT_DESTINATION_DISPLAY:				RESDLL.PCL5ResDLL.692
+	REQUEST_SET_OFFSET_DISPLAY:				RESDLL.PCL5ResDLL.693
+	OFFSET_EACH_SET_DISPLAY:				RESDLL.PCL5ResDLL.694
+	NO_OFFSET_DISPLAY:						RESDLL.PCL5ResDLL.695
+	NO_STAPLE_DISPLAY:						RESDLL.PCL5ResDLL.696
+	ONE_STAPLE_DISPLAY:						RESDLL.PCL5ResDLL.697
+	LIGHTEN3_DISPLAY:						RESDLL.PCL5ResDLL.698
+	LIGHTEN2_DISPLAY:						RESDLL.PCL5ResDLL.699
+	LIGHTEN1_DISPLAY:						RESDLL.PCL5ResDLL.700
+	DARKEN1_DISPLAY:						RESDLL.PCL5ResDLL.701
+	DARKEN2_DISPLAY:						RESDLL.PCL5ResDLL.702
+	DARKEN3_DISPLAY:						RESDLL.PCL5ResDLL.703
+	OFFSET_CATCH_TRAY_DISPLAY:				RESDLL.PCL5ResDLL.704
+	IMAGE_QUALITY_DISPLAY:					RESDLL.PCL5ResDLL.705
+	PINK_DISPLAY:							RESDLL.PCL5ResDLL.706
+	POSITION1_DISPLAY:						RESDLL.PCL5ResDLL.707
+	POSITION2_DISPLAY:						RESDLL.PCL5ResDLL.708
+}
+
+*Macros: MoveMeSomeWhereElse
+{
+	PERSONALITY_PCLXL_DISPLAY:				RESDLL.PCL5ResDLL.42
+	PRINT_QUALITY:							RESDLL.PCLXLResDLL.1
+	PRINT_QUALITY_DEFAULT:					RESDLL.PCLXLResDLL.2
+	PRINT_QUALITY_LIGHT:					RESDLL.PCLXLResDLL.3
+	PRINT_QUALITY_MEDIUM:					RESDLL.PCLXLResDLL.4
+	PRINT_QUALITY_DARK:						RESDLL.PCLXLResDLL.5
+	PRINT_QUALITY_OFF:						RESDLL.PCLXLResDLL.6
+	COLLATE:								RESDLL.PCLXLResDLL.7
+
+}
+
+*Macros: TrueTypeFontFormat
+{
+	TRUETYPE_FORMAT:						RESDLL.PCLXLResDLL.25
+	TRUETYPE_OUTLINE:						RESDLL.PCLXLResDLL.26
+	TRUETYPE_BITMAP:						RESDLL.PCLXLResDLL.27
+	TRUETYPE_GRAPHICS:						RESDLL.PCLXLResDLL.28
+}
+
+
+*Macros: DeviceFontIDs
+{
+    RC_FONT_ALBERTR:    1
+    RC_FONT_ALBERTX:    2
+    RC_FONT_AOLIVEB:    3
+    RC_FONT_AOLIVEI:    4
+    RC_FONT_AOLIVER:    5
+    RC_FONT_ARIALB:     6
+    RC_FONT_ARIALI:     7
+    RC_FONT_ARIALJ:     8
+    RC_FONT_ARIALR:     9
+    RC_FONT_BENGUATB:  10  
+    RC_FONT_BENGUATI:  11  
+    RC_FONT_BENGUATJ:  12  
+    RC_FONT_BENGUATR:  13  
+    RC_FONT_BOOKMANB:  14  
+    RC_FONT_BOOKMANI:  15  
+    RC_FONT_BOOKMANJ:  16  
+    RC_FONT_BOOKMANR:  17  
+    RC_FONT_BROGHAMB:  18  
+    RC_FONT_BROGHAMI:  19  
+    RC_FONT_BROGHAMJ:  20  
+    RC_FONT_BROGHAMR:  21  
+    RC_FONT_CGOMEGAB:  22  
+    RC_FONT_CGOMEGAI:  23  
+    RC_FONT_CGOMEGAJ:  24  
+    RC_FONT_CGOMEGAR:  25  
+    RC_FONT_CGTIMESB:  26  
+    RC_FONT_CGTIMESI:  27  
+    RC_FONT_CGTIMESJ:  28  
+    RC_FONT_CGTIMESR:  29  
+    RC_FONT_CLARCD:    30
+    RC_FONT_CORONETR:  31  
+    RC_FONT_COURIERB:  32  
+    RC_FONT_COURIERI:  33  
+    RC_FONT_COURIERJ:  34  
+    RC_FONT_COURIERR:  35  
+    RC_FONT_GARMONDB:  36  
+    RC_FONT_GARMONDI:  37  
+    RC_FONT_GARMONDJ:  38  
+    RC_FONT_GARMONDR:  39  
+    RC_FONT_LETGOTHB:  40  
+    RC_FONT_LETGOTHI:  41  
+    RC_FONT_LETGOTHR:  42  
+    RC_FONT_MARGOLDR:  43  
+    RC_FONT_TIMESNRB:  44  
+    RC_FONT_TIMESNRI:  45  
+    RC_FONT_TIMESNRJ:  46  
+    RC_FONT_TIMESNRR:  47  
+    RC_FONT_UNIVERCB:  48  
+    RC_FONT_UNIVERCI:  49  
+    RC_FONT_UNIVERCJ:  50  
+    RC_FONT_UNIVERCR:  51  
+    RC_FONT_UNIVERSA:  52  
+    RC_FONT_UNIVERSB:  53  
+    RC_FONT_UNIVERSC:  54  
+    RC_FONT_UNIVERSD:  55  
+    RC_FONT_UNIVERSE:  56  
+    RC_FONT_UNIVERSI:  57  
+    RC_FONT_UNIVERSJ:  58  
+    RC_FONT_UNIVERSR:  59  
+    RC_FONT_WDINGBAT:  60  
+    RC_FONT_WINGDINGS: 61  
+    RC_FONT_SYMBOL:    62
+}
+
+*Macros: DeviceFontSet
+{
+	AlbertusFont: LIST(=RC_FONT_ALBERTR, =RC_FONT_ALBERTX)
+	AntiqueOliveFont: LIST(=RC_FONT_AOLIVER, =RC_FONT_AOLIVEI, =RC_FONT_AOLIVEB)
+	ArialFont: LIST(=RC_FONT_ARIALJ, =RC_FONT_ARIALI, =RC_FONT_ARIALB, =RC_FONT_ARIALR)
+	ITCBenguiatFont: LIST(=RC_FONT_BENGUATJ, =RC_FONT_BENGUATI, =RC_FONT_BENGUATB, =RC_FONT_BENGUATR)
+	ITCBookmanLightFont: LIST(=RC_FONT_BOOKMANJ, =RC_FONT_BOOKMANI, =RC_FONT_BOOKMANB, =RC_FONT_BOOKMANR)
+	BroughamFont: LIST(=RC_FONT_BROGHAMJ, =RC_FONT_BROGHAMI, =RC_FONT_BROGHAMB, =RC_FONT_BROGHAMR)
+	CGOmegaFont: LIST(=RC_FONT_CGOMEGAJ, =RC_FONT_CGOMEGAI, =RC_FONT_CGOMEGAB, =RC_FONT_CGOMEGAR)
+	CGTimesFont: LIST(=RC_FONT_CGTIMESJ, =RC_FONT_CGTIMESI, =RC_FONT_CGTIMESB, =RC_FONT_CGTIMESR)
+	ClaredonFont: LIST(=RC_FONT_CLARCD)
+	CornetFont: LIST(=RC_FONT_CORONETR)
+	CourierFont: LIST(=RC_FONT_COURIERJ, =RC_FONT_COURIERI, =RC_FONT_COURIERB, =RC_FONT_COURIERR)
+	GaramondFont: LIST(=RC_FONT_GARMONDJ, =RC_FONT_GARMONDI, =RC_FONT_GARMONDB, =RC_FONT_GARMONDR)
+	LetterGothicFont: LIST(=RC_FONT_LETGOTHI, =RC_FONT_LETGOTHB, =RC_FONT_LETGOTHR)
+	MarigoldFont: LIST(=RC_FONT_MARGOLDR)
+	SymbolFont: LIST(=RC_FONT_SYMBOL)
+	TimesNewRomanFont: LIST(=RC_FONT_TIMESNRJ, =RC_FONT_TIMESNRI, =RC_FONT_TIMESNRB, =RC_FONT_TIMESNRR)
+	UniversCondensedFont: LIST(=RC_FONT_UNIVERCJ, =RC_FONT_UNIVERCI, =RC_FONT_UNIVERCB, =RC_FONT_UNIVERCR)
+	UniverseFont: LIST()
+	WDingbatsFont: LIST(=RC_FONT_WDINGBAT)
+	WingDingsFont: LIST(=RC_FONT_WINGDINGS)
+}
+
+*%%
+*%% Macro definition for standard PCLXL commands
+*%%
+
+*%% Attribute tags
+
+*Macros: AttributeTag
+{
+    PaletteDepth:         "<02>"
+    ColorSpace:           "<03>"
+    NullBrush:            "<04>"
+    NullPen:              "<05>"
+    PaletteData:          "<06>"
+    PatternSelectID:      "<08>"
+    GrayLevel:            "<09>"
+    RGBColor:             "<0b>"
+    PatternOrigin:        "<0c>"
+    NewDestinationSize:   "<0d>"
+    DeviceMatrix:         "<21>"
+    DitherMatrixDataType: "<22>"
+    DitherOrigin:         "<23>"
+    MediaDestination:     "<24>"
+    MediaSize:            "<2525>"
+    MediaSource:          "<26>"
+    MediaType:            "<27>"
+    Orientation:          "<28>"
+    PageAngle:            "<29>"
+    PageOrigin:           "<2a>"
+    PageScale:            "<2b>"
+    ROP3:                 "<2c>"
+    TxMode:               "<2d>"
+    CustomMediaSize:      "<2f>"
+    CustomMediaSizeUnits: "<30>"
+    PageCopies:           "<31>"
+    DitherMatrixSize:     "<32>"
+    DitherMatrixDepth:    "<33>"
+    SimplexPageMode:      "<34>"
+    DuplexPageMode:       "<35>"
+    DuplexPageSize:       "<36>"
+    ArgDirection:         "<41>"
+    BoundingBox:          "<42>"
+    DashOffset:           "<43>"
+    EllipseDimension:     "<44>"
+    EndPoint:             "<45>"
+    FillMode:             "<46>"
+    LineCapStyle:         "<47>"
+    LineJointStyle:       "<48>"
+    MiterLength:          "<49>"
+    PenDashStyle:         "<4a>"
+    PenWidth:             "<4b>"
+    Point:                "<4c>"
+    NumberOfPoints:       "<4d>"
+    SolidLine:            "<4e>"
+    StartPoint:           "<4f>"
+    PointType:            "<50>"
+    ControlPoint1:        "<51>"
+    ControlPoint2:        "<52>"
+    ClipRegion:           "<53>"
+    ClipMode:             "<54>"
+    ColorDepth:           "<62>"
+    BlockHeight:          "<63>"
+    ColorMapping:         "<64>"
+    CompressMode:         "<65>"
+    DestinationBox:       "<66>"
+    DestinationSize:      "<67>"
+    PatternPersistence:   "<68>"
+    PatternDefineID:      "<69>"
+    SourceHeight:         "<6b>"
+    SourceWidth:          "<6c>"
+    StartLine:            "<6d>"
+    XPairType:            "<6e>"
+    NumberOfXPairs:       "<6f>"
+    XStart:               "<70>"
+    XEnd:                 "<71>"
+    NumberOfScanLines:    "<72>"
+    CommentData:          "<81>"
+    DataOrg:              "<82>"
+    Measure:              "<86>"
+    SourceType:           "<88>"
+    UnitsPerMeasure:      "<89>"
+    StreamName:           "<8b>"
+    StreamDataLength:     "<8c>"
+    ErrorReport:          "<8f>"
+    CharAngle:            "<a1>"
+    CharCode:             "<a2>"
+    CharDataSize:         "<a3>"
+    CharScale:            "<a4>"
+    CharShear:            "<a5>"
+    CharSize:             "<a6>"
+    FontHeaderLength:     "<a7>"
+    FontName:             "<a8>"
+    FontFormat:           "<a9>"
+    SymbolSet:            "<aa>"
+    TextData:             "<ab>"
+    CharSubModeArray:     "<ac>"
+    XSpacingData:         "<af>"
+    YSpacingData:         "<b0>"
+    CharBoldValue:        "<b1>"
+}
+
+*%% Attribute Enumeration
+
+*Macros: AttributeEnum
+{
+*%% ArcDirection
+    eClockWise: "<00>" 
+    eCounterClockWise: "<01>" 
+
+*%% CharSubModeArray
+    eNoSubstitution: "<00>" 
+    eVerticalSubstitution: "<01>" 
+
+*%% ClipMode
+*%%    see FillMode Enumeration
+
+*%% ClipRegion
+    eInterior: "<00>" 
+    eExterior: "<01>" 
+
+*%% ColorDepth
+    e1Bit: "<00>" 
+    e4Bit: "<01>" 
+    e8Bit: "<02>" 
+
+*%% ColorimetricColorSpace
+    eCRGB: 5 
+
+*%% ColorMapping
+    eDirectPixel: "<00>" 
+    eIndexedPixel: "<01>" 
+
+*%% ColorSpace
+    eGray: "<01>" 
+    eRGB: "<02>" 
+    eSRGB: "<06>" 
+
+*%% CompressMode
+    eNoCompression: "<00>" 
+    eRLECompression: "<01>" 
+    eJPEGCompression: "<02>" 
+
+*%% DataOrg
+    eBinaryHighByteFirst: "<00>" 
+    eBinaryLowByteFirst: "<01>" 
+
+*%% DataSource
+    eDefault: "<00>" 
+
+*%% DataType
+    eUByte: "<00>" 
+    eSByte: "<01>" 
+    eUint16: "<02>" 
+    eSint16: "<03>" 
+
+*%% DitherMatrix
+    eDeviceBest: "<00>" 
+
+*%% DuplexPageMode
+    eDuplexHorizontalBinding: "<00>" 
+    eDuplexVerticalBinding: "<01>" 
+
+*%% DuplexPageSide
+    eFrontMediaSide: "<00>" 
+    eBackMediaSide: "<01>" 
+
+*%% ErrorReport
+    
+    eBackChannel: "<01>" 
+    eErrorPage: "<02>" 
+    eBackChAndErrPage: "<03>" 
+    eNWBackChannel: "<04>" 
+    eNWErrorPage: "<05>"
+    eNWBackChAndErrPage: "<06>" 
+
+*%% FillMode
+    eNonZeroWinding: "<00>" 
+    eEvenOdd: "<01>" 
+
+*%% LineCap
+    eButtCap: "<00>" 
+    eRoundCap: "<01>" 
+    eSquareCap: "<02>" 
+    eTriangleCap: "<03>" 
+
+*%% LineJoin
+    eMiterJoin: "<00>" 
+    eRoundJoin: "<01>" 
+    eBevelJoin: "<02>" 
+    eNoJoin: "<03>" 
+
+*%% Measure
+    eInch: "<00>" 
+    eMillimeter: "<01>" 
+    eTenthsOfAMillimeter: "<02>" 
+
+*%% MediaSize Enumerations
+    eLetterPaper: "<00>"
+    eLegalPaper: "<01>"
+    eA4Paper: "<02>"
+    eExecPaper: "<03>"
+    eLedgerPaper: "<04>"
+    eA3Paper: "<05>"
+    eCOM10Envelope: "<06>"
+    eMonarchEnvelope: "<07>"
+    eC5Envelope: "<08>"
+    eDLEnvelope: "<09>"
+    eJB4Paper: "<0a>"
+    eJB5Paper: "<0b>"
+    eB5Envelope: "<0c>"
+    eJPostcard: "<0e>"
+    eJDoublePostcard: "<0d>"
+    eA5Paper: "<10>"
+    eA6Paper: "<11>"
+    eJB6Paper: "<12>"
+
+*%% MediaSource
+    eDefaultSource: "<00>" 
+    eAutoSelect: "<01>" 
+    eManualFeed: "<02>" 
+    eMultiPurposeTray: "<03>" 
+    eUpperCassette: "<04>" 
+    eLowerCassette: "<05>"
+    eEnvelopeTray: "<06>"
+    eThirdCassette: "<07>"
+
+*%% MediaType
+    ePlain: "Plain"
+    ePreprinted: "Preprinted"
+    eLetterhead: "Letterhead"
+    eTransparency: "Transparency"
+    ePrepunched: "Prepunched"
+    eLabels: "Labels"
+    eBond: "Bond"
+    eRecycled: "Recycled"
+    eColor: "Color"
+    eCardstock: "Card Stock"
+    eRough: "Rough"
+    eVellum: "Vellum"
+
+*%% External Trays
+*%%     1-248 8-255 
+
+*%% MediaDestination
+    eDefaultDestination: "<00>" 
+    eFaceDownBin: "<01>" 
+    eFaceUpBin: "<02>" 
+    eJobOffsetBin: "<03>"
+*%% External Bins 1-251 5-255
+
+*%% Orientation
+    ePortraitOrientation: "<00>" 
+    eLandscapeOrientation: "<01>" 
+    eReversePortrait: "<02>" 
+    eReverseLandscape: "<03>" 
+
+*%% PatternPersistence
+    eTempPattern: "<00>" 
+    ePagePattern: "<01>" 
+    eSessionPattern: "<02>" 
+
+*%% SymbolSet
+*%%  
+
+*%% SimplexPageMode
+    eSimplexFrontSide: "<00>" 
+
+*%% TxMode
+    eOpaque: "<00>" 
+    eTransparent: "<01>" 
+
+*%% WritingMode
+    eHorizontal: "<00>" 
+    eVertical: "<01>"
+}
+
+*%% Data Tags
+
+*Macros: DataTag
+{
+    ubyte:          "<c0>"
+    uint16:         "<c1>"
+    uint32:         "<c2>"
+    sint16:         "<c3>"
+    sint32:         "<c4>"
+    real32:         "<c5>"
+    ubyte_array:    "<c8>"
+    uint16_array:   "<c9>"
+    uint32_array:   "<ca>"
+    sint16_array:   "<cb>"
+    sint32_array:   "<cc>"
+    real32_array:   "<cd>"
+    ubyte_xy:       "<d0>"
+    uint16_xy:      "<d1>"
+    uint32_xy:      "<d2>"
+    sint16_xy:      "<d3>"
+    sint32_xy:      "<d4>"
+    real32_xy:      "<d5>"
+    ubyte_box:      "<e0>"
+    uint16_box:     "<e1>"
+    uint32_box:     "<e2>"
+    sint16_box:     "<e3>"
+    sint32_box:     "<e4>"
+    real32_box:     "<e5>"
+    attr_ubyte:     "<f8>"
+    attr_uint16:    "<f9>"
+    dataLength:     "<fa>"
+    dataLengthByte: "<fb>"
+}
+
+*%% Operator Tag
+
+*Macros: OperatorTag
+{
+    HT: "<09>"
+    LF: "<0a>"
+    VT: "<0b>"
+    FF: "<0c>"
+    CR: "<0d>"
+    BeginSession: "<41>"
+    EndSession: "<42>"
+    BeginPage: "<43>"
+    EndPage: "<44>"
+    Comment: "<47>"
+    OpenDataSource: "<48>"
+    CloseDataSource: "<49>"
+    BeginFontHeader: "<4f>"
+    ReadFontHeader: "<50>"
+    EndFontHeader: "<51>"
+    BeginChar: "<52>"
+    ReadChar: "<53>"
+    EndChar: "<54>"
+    RemoveFont: "<55>"
+    BeginStream: "<5b>"
+    ReadStream: "<5c>"
+    EndStream: "<5d>"
+    ExecStream: "<5e>"
+    PopGS: "<60>"
+    PushGS: "<61>"
+    SetClipReplace: "<62>"
+    SetBrushSource: "<63>"
+    SetCharAngle: "<64>"
+    SetCharScale: "<65>"
+    SetCharShear: "<66>"
+    SetClipIntersect: "<67>"
+    SetClipRectangle: "<68>"
+    SetClipToPage: "<69>"
+    SetColorSpace: "<6a>"
+    SetCursor: "<6b>"
+    SetCursorRel: "<6c>"
+    SetHalftoneMethod: "<6d>"
+    SetFillMode: "<6e>"
+    SetFont: "<6f>"
+    SetLineDash: "<70>"
+    SetLineCap: "<71>"
+    SetLineJoin: "<72>"
+    SetMiterLimit: "<73>"
+    SetPageDefaultCTM: "<74>"
+    SetPageOrigin: "<75>"
+    SetPageRotation: "<76>"
+    SetPageScale: "<77>"
+    SetPatternTxMode: "<78>"
+    SetPenSource: "<79>"
+    SetPenWidth: "<7a>"
+    SetROP: "<7b>"
+    SetSourceTxMode: "<7c>"
+    SetCharBoldValue: "<7d>"
+    SetClipMode: "<7f>"
+    SetPathToClip: "<80>"
+    SetCharSubMode: "<81>"
+    CloseSubPath: "<84>"
+    NewPath: "<85>"
+    PaintPath: "<86>"
+    ArcPath: "<91>"
+    BezierPath: "<93>"
+    BezierRelPath: "<95>"
+    Chord: "<96>"
+    ChordPath: "<97>"
+    Ellipse: "<98>"
+    EllipsePath: "<99>"
+    LinePath: "<9b>"
+    LineRelPath: "<9d>"
+    Pie: "<9e>"
+    PiePath: "<9f>"
+    Rectangle: "<a0>"
+    RectanglePath: "<a1>"
+    RoundRectangle: "<a2>"
+    RoundRectanglePath: "<a3>"
+    Text: "<a8>"
+    TextPath: "<a9>"
+    BeginImage: "<b0>"
+    ReadImage: "<b1>"
+    EndImage: "<b2>"
+    BeginRestPattern: "<b3>"
+    ReadRastPattern: "<b4>"
+    EndRastPattern: "<b5>"
+    BeginScan: "<b6>"
+    EndScan: "<b8>"
+    ScanLineRel: "<b9>"
+}
+
+
+*Macros: MediaSizeStrings
+{
+    sLetterPaper: =ubyte "<06>" "LETTER"
+    sLegalPaper: =ubyte "<05>" "LEGAL"
+    sA4Paper: =ubyte "<02>" "A4"
+    sExecPaper: =ubyte "<04>" "EXEC"
+    sLedgerPaper: =ubyte "<06>" "LEDGER"
+    sA3Paper: =ubyte "<02>" "A3"
+    sCOM10Envelope: =ubyte "<05>" "COM10"
+    sMonarchEnvelope: =ubyte "<07>" "MONARCH"
+    sC5Envelope: =ubyte "<02>" "C5"
+    sDLEnvelope: =ubyte "<02>" "DL"
+    sJB4Paper: =ubyte "<06>" "JIS B4"
+    sJB5Paper: =ubyte "<06>" "JIS B5"
+    sB5Envelope: =ubyte "<06>" "B5 ENV"
+    sJPostcard: =ubyte "<05>" "JPOST"
+    sJDoublePostcard: =ubyte "<06>" "JPOSTD"
+    sA5Paper: =ubyte "<02>" "A5"
+    sA6Paper: =ubyte "<02>" "A6"
+    sJB6Paper: =ubyte "<06>" "JIS B6"
+}
+
+
+*%==============================================================================*%
+*%                         Auto configuration specific                          *%
+*%==============================================================================*%
+*Ifdef: GDL_ENABLED
+
+*%=================================================================*%
+*%             Copyright (c) Monotype Imaging Inc.                 *%
+*%                    All rights reserved.                         *%
+*%                                                                 *%
+*%                 Bidi Autoconfiguration File                     *%
+*%   Generated from a UPDF specification using the UPDF Tool.      *%
+*%=================================================================*%
+
+
+*%=================================================================*%
+*%======================   Version 3.0   ==========================*%
+*%=================================================================*%
+
+*%=================================================================*%
+*%     OptionalTray2
+*%=================================================================*%
+
+*Feature: InstallableTray2 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: InstallableTray2 {
+        *QueryString: "\Printer.Layout.InputBins.Tray002:Installed"
+    } 
+
+    *BidiResponse: InstallableTray2 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (InstallableTray2)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+
+*%=================================================================*%
+*%     OptionalTray3
+*%=================================================================*%
+
+*Feature: OptionalTray3 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalTray3 {
+        *QueryString: "\Printer.Layout.InputBins.Tray003:Installed"
+    } 
+
+    *BidiResponse: OptionalTray3 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalTray3)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     OptionalTray4
+*%=================================================================*%
+
+*Feature: OptionalTray4 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalTray4 {
+        *QueryString: "\Printer.Layout.InputBins.Tray005:Installed"
+    } 
+
+    *BidiResponse: OptionalTray4 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalTray4)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     OptionalTray5
+*%=================================================================*%
+
+*Feature: OptionalTray5 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalTray5 {
+        *QueryString: "\Printer.Layout.InputBins.Tray006:Installed"
+    } 
+
+    *BidiResponse: OptionalTray5 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalTray5)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     OptionalTray6
+*%=================================================================*%
+
+*Feature: OptionalTray6 {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalTray6 {
+        *QueryString: "\Printer.Layout.InputBins.Tray007:Installed"
+    } 
+
+    *BidiResponse: OptionalTray6 {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalTray6)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     OptionalEnvFeeder
+*%=================================================================*%
+
+*Feature: OptionalEnvFeeder {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: OptionalEnvFeeder {
+        *QueryString: "\Printer.Layout.InputBins.Tray004:Installed"
+    } 
+
+    *BidiResponse: OptionalEnvFeeder {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (OptionalEnvFeeder)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%=================================================================*%
+*%     DuplexUnit
+*%=================================================================*%
+
+*Feature: DuplexUnit {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: DuplexUnit {
+        *QueryString: "\Printer.Configuration.DuplexUnit:Installed"
+    } 
+
+    *BidiResponse: DuplexUnit {
+        *ResponseType: BIDI_BOOL
+        *ResponseData: ENUM_OPTION (DuplexUnit)
+    }
+    *Option: NotInstalled {
+        *BidiValue: BOOL(FALSE)
+    }
+    *Option: Installed {
+        *BidiValue: BOOL(TRUE)
+    }
+
+}
+
+*%******************************************************************************
+*%                            PhotoTray unit
+*%******************************************************************************
+
+*Feature: PhotoTrayUnit
+{
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: PhotoTrayUnit
+    {
+         *QueryString: "\Printer.Layout.InputBins.PhotoTrayUnit002:Installed"
+    }
+
+    *BidiResponse: PhotoTrayUnit
+    {
+         *ResponseType: BIDI_BOOL
+         *ResponseData: ENUM_OPTION(PhotoTrayUnit)
+    }
+
+    *Option: FALSE
+    {
+         *BidiValue: BOOL(FALSE)
+    }
+
+    *Option: TRUE
+    {
+         *BidiValue: BOOL(TRUE)
+    }
+}
+
+
+*%=================================================================*%
+*%     AccessoryOutputBin
+*%=================================================================*%
+*Feature: AccessoryOutputBin {
+
+    *FeatureType: PRINTER_PROPERTY
+    *BidiQuery: AccessoryOutputBin {
+        *QueryString: "\Printer.Finishing:ConvertMode"
+    }
+    *BidiResponse: AccessoryOutputBin {
+    
+        *ResponseType: BIDI_STRING
+        *ResponseData: ENUM_OPTION (AccessoryOutputBin)
+    }
+    
+    *Option: HP500SheetStaplerStackerF2G72A {
+        *BidiValue: STRING("HP LaserJet 500-Sheet Stapler/Stacker F2G72A")
+    }
+
+    *Option: HP500SheetStackerF2G71A {
+        *BidiValue: STRING("HP LaserJet 500-Sheet Stacker F2G71A")
+    }
+
+    *Option: HP5BinMailboxF2G81A {
+        *BidiValue: STRING("HP LaserJet 500-Sheet 5-Bin Mailbox F2G81A")
+    }
+
+    *Option: HP5BinStackerF2G81A {
+        *BidiValue: STRING("HP LaserJet 500-Sheet 5-Bin Stacker F2G81A")
+    }
+
+    *Option: HP5BinJobSeperatorF2G81A {
+        *BidiValue: STRING("HP LaserJet 500-Sheet 5-Bin Job Separator F2G81A")
+    }
+
+    *Option: HP5BinCollatorF2G81A {
+        *BidiValue: STRING("HP LaserJet 500-Sheet 5-Bin Collator F2G81A")
+    }
+
+}
+
+*Endif: GDL_ENABLED
+*Ifdef: WINNT_60
+*BidiQueryFile: "hpgid32v4cfg.gdl"
+*Endif: WINNT_60
+
+*ModelName: "HP LaserJet M207-M212 PCLm-S"
+*MasterUnits: PAIR(1200, 1200)
+
+*%==============================================================================*%
+*%                                Engine Speed                                  *%
+*%==============================================================================*%
+*PrintRate: 
+*PrintRateUnit: PPM
+*PrintRatePPM: 
+
+*%==============================================================================*%
+*%                                Printer Type.                                 *%
+*%==============================================================================*%
+*PrinterType: PAGE
+
+*%==============================================================================*%
+*%                               Maximum Copies                                 *%
+*%==============================================================================*%
+*MaxCopies: 9999
+*PrintRate: 
+*PrintRateUnit: PPM
+*PrintRatePPM: 
+*HardwareCopies: OFF
+*IsXPSDriver?: TRUE
+*PrintSchemaPrivateNamespaceURI: "http://schemas.hp.com/ptpc/2006/1"
+
+*%==============================================================================*%
+*%                             Used resource DLLs.                              *%
+*%==============================================================================*%
+*Feature: RESDLL
+{
+	*Name: "resource dll files"
+	*ConcealFromUI?: TRUE
+	*Option: UniresDLL
+	{
+		*Name: "unires.dll"
+	}
+	*Option: mtresDLL
+	{
+		*Name: "hpygidres32.dll"
+	}
+}
+
+*%-------------------------------------------------------------------------
+*%                                      Driver Version
+*%-------------------------------------------------------------------------
+*Feature: V4Driver
+{
+    *Name: "V4Driver"
+    *Option: V4
+    {
+        *Name: ""
+    }
+}
+
+*%==============================================================================*%
+*%                                  Includes.                                   *%
+*%==============================================================================*%
+*%%% Copyright (c) 2009  Hewlett-Packard Development Companies
+*%%% value macros for HPVPL DLL resources
+
+*Macros: MtiGUIStrings
+{
+    IDS_AUTO_SELECT:                        10
+    IDS_REAL_LIFE_TECHNOLOGIES:             11
+    IDS_OFF:                                12
+    IDS_ON:                                 13
+	IDS_PS_DEFINITION:						23
+	IDS_PS_BORDERLESS:                      28
+	IDS_PS_GENERAL_EVERYDAY:				31
+	IDS_PS_PHOTO_BORDERLESS:				32
+	IDS_PS_PHOTO_WHITEBORDER:				33
+	IDS_PS_DUPLEX:							34
+	IDS_PS_FAST_ECONOMIC:					35
+	IDS_PS_FACTORY_DEFAULTS:				36
+	IDS_PS_MSG_MAXLIMIT:					37
+	IDS_DIALOG_CAPTION:                     48
+	IDS_MANUAL_INSTRUCT:                    49
+	IDS_CONTINUE:                           52
+	IDS_PHOTO:                              44
+	IDS_ECONOMODE:                          45
+	IDS_ECONOMODE_PS:                       61
+    IDS_PHOTO_PS:                           62
+    IDS_LETTER:                             100
+    IDS_MSIZE_4X6_IN_TAB:                   101
+    IDS_MSIZE_4X6_IN:                       102
+    IDS_HP_5X7:                             103 *% required by K1 otherwise whenever overwritten by K2 it will break
+    IDS_MSIZE_A4_210x297_MM:                104
+    IDS_MSIZE_A5_148X210_MM:                105
+    IDS_MSIZE_B5_ISO_176X250_MM:            106
+    IDS_MSIZE_B5_JIS_182X257_MM:            107
+    IDS_MSIZE_8X10_IN:                      108
+    IDS_MSIZE_MUTSUGIRI_IN:                 109
+    IDS_MSIZE_HAGAKI_100X148_MM:            110
+    IDS_MSIZE_EXECUTIVE_7X10_IN:            111
+    IDS_MSIZE_10X15_CM:                     112
+    IDS_MSIZE_A6_105X148_MM:                113
+    IDS_MSIZE_CABINET_MM:                   114
+    IDS_MSIZE_2L_MM:                        115
+    IDS_MSIZE_13X18_CM:                     116
+    IDS_MSIZE_OFUKU_HAGAKI_200X148_MM:      117
+    IDS_MSIZE_ENVELOPE10_4X9_IN:            118
+    IDS_MSIZE_ENVELOPE_DL_110X220_MM:       119
+    IDS_MSIZE_ENV_CARD_4X6_IN:              120
+    IDS_MSIZE_ENVELOPE_C5_162X229_MM:       121
+    IDS_MSIZE_ENVELOPE_C6_114X162_MM:       122
+    IDS_MSIZE_JIS_CHOU3_120X235_MM:         123
+    IDS_MSIZE_INDEX_CARD_4X6_IN:            124
+    IDS_MSIZE_INDEX_CARD_5X8_IN:            125
+    IDS_MSIZE_10X15_CM_TAB:                 126
+    IDS_MSIZE_STATEMENT_5_5X8_5_IN:         127
+    IDS_MSIZE_6_X_8_IN:                     128
+    IDS_MSIZE_JIS_CHOU2_119x277_MM:         129
+    IDS_MSIZE_8_5X13_IN:                    130
+    IDS_MSIZE_LETTER:                       131
+    IDS_MSIZE_INDEX_CARD_3X5_IN:            132
+    IDS_MSIZE_L:                            133
+    IDS_MSIZE_3_5X5_IN:                     134
+    IDS_MSIZE_HV:                           135
+    IDS_MSIZE_5X7:                          136
+    IDS_MSIZE_LEGAL:                        137
+    IDS_MSIZE_11X14:                        138
+    IDS_MSIZE_12X12:                        139
+    IDS_MSIZE_B4_JIS:                       140
+    IDS_MSIZE_TABLOID:                      141
+    IDS_MSIZE_SUPER_B:                      142
+    IDS_MSIZE_A3:                           143
+    IDS_MSIZE_A3_PLUS:                      144
+    IDS_MSIZE_SMMARG_11X14:                 145
+    IDS_MSIZE_SMMARG_12X12:                 146
+    IDS_MSIZE_SMMARG_B4_JIS:                147
+    IDS_MSIZE_SMMARG_TABLOID:               148
+    IDS_MSIZE_SMMARG_SUPER_B:               149
+    IDS_MSIZE_SMMARG_A3:                    150
+    IDS_MSIZE_SMMARG_A3_PLUS:               151
+    IDS_MSIZE_ENV_NO_6_3_4:                 152
+    IDS_MSIZE_ENV_MONARCH:                  153
+    IDS_MSIZE_ENV_NO_10:                    154
+    IDS_MSIZE_ENV_C6:                       155
+    IDS_MSIZE_ENV_A2:                       156
+    IDS_MSIZE_JIS_CHOU3:                    157
+    IDS_MSIZE_JIS_CHOU4:                    158
+    IDS_MSIZE_ENV_KAKU_2:                   159
+    IDS_MSIZE_3X5_IN:                       160
+    IDS_MSIZE_INDEX_CARD_LETTER:            161
+    IDS_MSIZE_INDEX_CARD_A4:                162
+    IDS_MSIZE_EDGETOEDGE_LETTER:            163
+    IDS_MSIZE_EDGETOEDGE_A4:                164
+	IDS_MSIZE_ARCH_A_9x12_IN:               165
+    IDS_MSIZE_ARCH_B_12x18_IN:              166
+    IDS_MSIZE_SMMARG_ARCH_A:                167
+    IDS_MSIZE_SMMARG_ARCH_B:                168
+	IDS_MSIZE_EDGETOEDGE_TABLOID:           169
+    IDS_MSIZE_EDGETOEDGE_A3:                170
+    IDS_MSIZE_BGMARG_TABLOID:  		        171
+    IDS_MSIZE_BGMARG_B4_JIS:		        172
+    IDS_MSIZE_BGMARG_11x14_IN:   	        173
+    IDS_MSIZE_BGMARG_A3:      		        174
+    IDS_MSIZE_BGMARG_12x12_IN:              175  		
+    IDS_MSIZE_BGMARG_A3_PLUS:        	    176
+    IDS_MSIZE_BGMARG_SUPER_B:               177	
+    IDS_MSIZE_PLAIN_11X14_IN:				178
+    IDS_MSIZE_PLAIN_B4_JIS:				    179
+    IDS_MSIZE_PLAIN_TABLOID:				180
+    IDS_MSIZE_PLAIN_A3:						181
+    IDS_MSIZE_BRCHRE_11X14_IN:				182
+    IDS_MSIZE_BRCHRE_B4_JIS:				183
+    IDS_MSIZE_BRCHRE_TABLOID:				184
+    IDS_MSIZE_BRCHRE_A3:  					185
+	IDS_MSIZE_B:							186
+	IDS_MSIZE_B_PLUS:						187
+	IDS_MSIZE_CABINET:						188
+	IDS_MSIZE_SUPER_B_SMMARG_13x19:			189
+	IDS_MSIZE_SMMARG_TABLOID_11x17:			190
+	IDS_MSIZE_SMMARG_A3_297x420_MM:			191
+	IDS_MSIZE_A3_PLUS_330x483_MM:			192
+	IDS_MSIZE_SMMARG_A3_PLUS_330x483_MM:	193
+	IDS_MSIZE_OFICIO_8_5X13_IN:             196
+    IDS_5X8_IN:                             805
+    IDS_MAX_DPI:                            201
+    IDS_ENABLE:                             202
+    IDS_DISABLE:                            203
+    IDS_PRINT_IN_GRAYSCALE_WITHOUT_HK:      204
+    IDS_BLACK_INK_ONLY_WITHOUT_HK:          205
+    IDS_HIGH_QUALITY_NO_HK:                 206
+    IDS_PAGES_TO_PRINT:                     210
+    IDS_PRINT_ALL_PAGES:                    211
+    IDS_PRINT_ODD_PAGES_ONLY:               212
+    IDS_PRINT_EVEN_PAGES_ONLY:              213
+    IDS_PLAIN_PAPER_NORMAL_QUALITY:         214
+    IDS_PLAIN_PAPER_FASTDRASFT_QUALITY:     215
+    IDS_PLAIN_PAPER_BEST_QUALITY:           216
+    IDS_SPECIALTY_PAPER_BEST_QUALITY:       217
+    IDS_PHOTO_PAPER_BEST_QUALITY:           218
+    IDS_YES:                                219
+    IDS_NO:                                 220
+    IDS_INPUTBIN_MAINTRAY:                  221
+    IDS_PRESERVE_LAYOUT:                    222
+    IDS_BW_SETTINGS:                        223
+    IDS_BW_AUTOMATIC:                       224
+    IDS_BW_HIGH_QUALITY_GRAY:               225
+    IDS_DPI_MODE_LABEL:                     226
+    IDS_LABEL_CONTINUATION:                 227
+    IDS_DISCLAIMER_1:                       228
+    IDS_DISCLAIMER_2:                       229
+    IDS_DRAFT_MODE:                         230
+    IDS_NORMAL_MODE:                        231
+    IDS_PLAIN_BEST_MODE:                    232
+    IDS_PHOTO_BEST_MODE:                    233
+    IDS_MAX_DPI_MODE:                       234
+    IDS_INPUT_3X3_DPI:                      235
+    IDS_INPUT_6X3_DPI:                      236
+    IDS_INPUT_6X6_DPI:                      237
+    IDS_INPUT_12X12_DPI:                    238
+    IDS_OUTPUT_AUTOMATIC_ALL:               239
+    IDS_OUTPUT_AUTOB_48X12C_DPI:            240
+    IDS_OUTPUT_6X12B_AUTOC_DPI:             241
+    IDS_DPIDISP_NORMAL_MODE:                242
+    IDS_DPIDISP_BLANK_ENTRY:                243
+    IDS_OUTPUT_AUTOB_96X24C_DPI:            244	
+	IDS_BRCHRE_BEST_MODE:					245
+	IDS_INPUT_3X3_DPI1:						246
+	IDS_INPUT_6X6_DPI1:						247
+	IDS_OUTPUT_AUTOMATIC_ALL1:				248
+	IDS_OUTPUT_AUTOMATIC_BLACK:				249
+	IDS_2UP:								250
+	IDS_4UP:								251
+	IDS_6UP:								252
+	IDS_9UP:								253
+	IDS_16UP:								254
+	IDS_16MB:								255
+	IDS_32MB:								256
+	IDS_UPDATE_NOW:                         258
+	IDS_AUTO_CONFIG:                        259
+    IDS_INPUTBIN:                           400
+    IDS_INPUTBIN_TRAY_1:                    401
+    IDS_INPUTBIN_PHOTO_TRAY:                402
+    IDS_INPUTBIN_PRINTERAUTOSELECT:         403
+    IDS_INPUTBIN_TRAY_2:                    404
+	IDS_INPUTBIN_MANUALFEED:				405
+    IDS_MTYPE_AUTOMATIC:                    500
+    IDS_MTYPE_PLAIN_PAPER:                  501
+    IDS_MTYPE_HP_BRIGHT_WHITE_PAPER:        502
+    IDS_MTYPE_HP_PREMIUM_PAPER:             503
+    IDS_MTYPE_HP_COLOR_INKJET_PAPER:        504
+    IDS_MTYPE_HP_PREMIUM_PRESENTATION:      505
+    IDS_MTYPE_OTHER_INKJET_PAPERS:          506
+    IDS_MTYPE_HP_PREMIUM_PLUS_PHOTO:        507
+    IDS_MTYPE_HP_PREMIUM_PHOTO_PAPERS:      508
+    IDS_MTYPE_HP_ADVANCED_PHOTO_PAPERS:     509
+    IDS_MTYPE_HP_EVERYDAY_PHOTO_SEMIGLOSS:  510
+    IDS_MTYPE_HP_EVERYDAY_PHOTO_MATTE:      511
+    IDS_MTYPE_OTHER_PHOTO_PAPERS:           512
+    IDS_MTYPE_HP_PREM_INKJET_TRANSP_FILM:   513
+    IDS_MTYPE_OTHER_TRANSPARENCY_FILMS:     514
+    IDS_MTYPE_HP_IRON_ON_TRANS:             515
+    IDS_MTYPE_HP_IRON_ON_TRANS_WHITE:       516
+    IDS_MTYPE_HP_IRON_ON_TRANS_DARK:        517
+    IDS_MTYPE_OTHER_SPECIALTY_PAPERS:       518
+    IDS_MTYPE_MATTE_GREETING_CARD:          519
+    IDS_MTYPE_GLOSSY_GREETING_CARD:         520
+    IDS_MTYPE_HP_PHOTO_GREETING_CARD:       521
+    IDS_MTYPE_HP_BROCHURE_FLYER_GLOSSY:     522
+    IDS_MTYPE_HP_BROCHURE_FLYER_MATTE:      523
+    IDS_MTYPE_HP_PREMIUM_PRES_120G_GLOSSY:  524
+    IDS_MTYPE_HP_BROCHURE_180G_GLOSSY:      525
+    IDS_MTYPE_HP_TRIFOLD_BROCHURE_GLOSSY:   526
+    IDS_MTYPE_HP_TRIFOLD_BROCHURE_MATTE:    527
+    IDS_MTYPE_OTHER_GLOSSY_BROCHURE:        528
+    IDS_MTYPE_OTHER_MATTE_BROCHURE:         529
+    IDS_MTYPE_HAGAKI_PLAIN:                 530
+    IDS_MTYPE_HAGAKI_INKJET:                531
+    IDS_MTYPE_HAGAKI_PHOTO:                 532
+    IDS_MTYPE_INKJET_SCRAPBOOK_PHOTO:       533
+    IDS_MTYPE_INKJET_SCRAPBOOK_MATTE:       534
+    IDS_MTYPE_THICK_PLAIN_PAPER:            535
+    IDS_MTYPE_HP_PREMIUM_INKJET_PAPER:      536
+    IDS_MTYPE_OTHER_GREETING_CARDS:         537
+    IDS_MTYPE_HP_BROCHURE_GLOSSY:           538
+    IDS_MTYPE_OTHER_BROCHURE_PAPERS:        539
+    IDS_MTYPE_CARD_STOCK:                   540
+    IDS_MTYPE_HP_PREMIUM_PRES_MATTE:        541
+	IDS_MTYPE_TRANSPARENCY_FILM:            542
+    IDS_MTYPE_HP_EVERYDAY_PHOTO_GLOSSY:     543
+    IDS_MTYPE_PLAIN_PAPER_1:		    544
+    IDS_MTYPE_OTHER_INKJET_PAPERS_1:	    545
+    IDS_MTYPE_OTHER_PHOTO_PAPERS_1:	    546
+	IDS_MTYPE_LJ_HP_COLORLASER_BROCHURE_GLOSSY_200:			547
+	IDS_MTYPE_LJ_HP_COLORLASER_BROCHURE_GLOSSY_FASTER_200:		548
+	IDS_MTYPE_LJ_HP_COLORLASER_BROCHURE_GLOSSY_HIGHER_200:		549
+	IDS_MTYPE_LIGHT_60_74:									550
+	IDS_TYPE_VELLUM:										551
+	IDS_MTYPE_MONOCHROME_TRANSPARENCY_FILM:					552
+	IDS_MTYPE_PLAIN:										553
+	IDS_MTYPE_HP_MATTE_BROCHURE_PAPER:						554
+	IDS_MTYPE_HP_GLOSSY_BROCHURE_PAPER:						555
+	IDS_MTYPE_HP_OTHER_MATTE_SPECIALITY_PAPER:				556
+	IDS_MTYPE_HP_OTHER_GLOSSY_SPECIALITY_PAPER:				557
+	IDS_MTYPE_HP_PHOTO_PAPER:								558
+	IDS_MTYPE_OTHER_SPECIALTY_PAPER:						559
+	IDS_MTYPE_HP_GLOSSY_SPEC_PPR:							564
+	IDS_MTYPE_HP_MATTE_SPEC_PPR:							565
+	IDS_MTYPE_HP_PHOTO_PAPERS:								568
+	IDS_MTYPE_MATTE_PRESENTATION_PAPER:						567
+	IDS_MTYPE_OTHER_GLOSSY_INKJET_PAPERS:					569
+	IDS_MTYPE_OTHER_MATTE_INKJET_PAPERS:					570
+	IDS_MTYPE_OTHER_PHOTO_INKJET_PAPERS:					571
+	IDS_MTYPE_HP_GLOSSY_BROCHURE_OR_PROF_PPR:				572
+	IDS_MTYPE_HP_MATTE_BROCHURE_OR_PROF_PPR:				573
+	IDS_OUTPUTQUALITY:                      600
+    IDS_OUTPUTQUALITY_AUTOMATIC:            601
+    IDS_OUTPUTQUALITY_FASTDRAFT:            602
+    IDS_OUTPUTQUALITY_NORMAL:               603
+    IDS_OUTPUTQUALITY_BEST:                 604
+    IDS_OUTPUTQUALITY_MAXDPI:               605
+    IDS_OUTPUTQUALITY_WITHRES_DRAFT:        606
+    IDS_OUTPUTQUALITY_WITHRES_NORMAL:       607
+    IDS_OUTPUTQUALITY_WITHRES_BEST:         608
+    IDS_OUTPUTQUALITY_WITHRES_MAXDPI:       609
+	IDS_OUTPUTQUALITY_DRAFT:                610
+	IDS_OUTPUTQUALITY_BETTER:		905
+    IDS_HPRLT:                              700
+    IDS_HPRLT_OFF:                          701
+    IDS_HPRLT_ON:                           702
+    IDS_BORDERLESSPRINTING:                 703
+    IDS_BORDERLESSPRINTING_WITH_BORDER:     704
+    IDS_BORDERLESSPRINTING_BORDERLESS:      705
+    IDS_PRINTTEXTBLACK:                     706
+    IDS_PRINTTEXTBLACK_DISABLE:             707
+    IDS_PRINTTEXTBLACK_ENABLE:              708
+    IDS_GRAYSCALE:                          709
+    IDS_GRAYSCALE_OFF:                      710
+    IDS_GRAYSCALE_HIGH_QUALITY:             711
+    IDS_GRAYSCALE_BLACK_INK_ONLY:           712
+    IDS_AUTODUPLEXUNIT:                     713
+    IDS_AUTODUPLEXUNIT_NOT_INSTALLED:       714
+    IDS_AUTODUPLEXUNIT_INSTALLED:           715
+    IDS_PRESERVELAYOUT:                     716
+    IDS_PRESERVELAYOUT_NO:                  717
+    IDS_PRESERVELAYOUT_YES:                 718
+    IDS_COLOR_MANAGEMENT:                   719
+	IDS_COLOR_THEMES:						611
+    IDS_CSPACE_sRGB:                        720
+    IDS_CSPACE_ADOBE_RGB:                   721
+    IDS_PRINTTEXTASBLACK:                   722
+		
+	IDS_UNSPECIFIED:								723
+	IDS_MTYPE_LJ_HP_LASERJET_90_G:					724
+	IDS_MTYPE_LJ_HP_COLORLASERMATTE_105:			725
+	IDS_MTYPE_LJ_HP_COLORLASER_BROCHURE_MATTE_160:	726
+	IDS_MTYPE_HP_PREM_PRES_MATTE_120:		        727 
+	IDS_MTYPE_HP_PROFESSIONAL_LASER_GLOSS_130:		728
+	IDS_MTYPE_HP_PRESENTATION_GLOSSY_130:		    729 
+	IDS_MTYPE_LJ_INTERMEDIATE_85_95:		        730
+	IDS_MTYPE_LJ_HP_PREMIUM_CHOICE_MATTE_120:		731
+	IDS_MTYPE_HP_MATTE_160:			                732
+	IDS_MTYPE_HP_COVER_MATTE_200:		            733
+	IDS_MTYPE_HP_MATTE_PHOTO_200G:		            734
+	IDS_MTYPE_LJ_HP_COLORLASER_BROUCHUREGLOSSY_160: 735
+	IDS_MTYPE_LJ_HP_SUPERIOR_LASER_GLOSSY_160:		736
+	IDS_MTYPE_HP_TRIFOLD_COLOR_LASER_160:		    737 
+	IDS_MTYPE_LJ_HP_COLOR_LASER_PHOTO_GLOSSY220:	738
+	IDS_MTYPE_LJ_HP_MID_WEIGHT_96_110:		        739 
+	IDS_MTYPE_HEAVY_111_130:	                    740
+	IDS_MTYPE_EXTRAHEAVY_131_175:		            741 
+	IDS_MTYPE_HEAVYGLOSSY_111_130:		            742  
+	IDS_MTYPE_OPAQUE_FILM:		                    743
+	IDS_MTYPE_EXTRAHEAVY_GLOOSY_131_175:	        744
+	IDS_MTYPE_LJ_CARD_GLOSSY_176_220:		        745
+	IDS_MTYPE_LJ_COLORLASER_TRANSPARENCY:		    746 
+	IDS_LABELS_TYPE:	                            747 
+	IDS_LETTERHEAD_TYPE:	                        748  
+	ENVELOPE_DISPLAY:		                        749
+	IDS_MTYPE_LJ_HEAVY_ENVELOPE:	                750
+	IDS_PREPRINTED_TYPE:							751
+	IDS_PREPUNCHED_TYPE:	                        752
+	IDS_MTYPE_COLORED:		                        753
+	IDS_BOND_TYPE:									754
+	IDS_RECYCLED_TYPE:								755	
+	IDS_ROUGH_TYPE:									756
+	IDS_MTYPE_HEAVY_ROUGH:							757
+	IDS_MTYPE_LJ_HP_TOUGH_PAPER:					758
+	IDS_HP_ECOSMART_LITE_CSL:						759
+
+	IDS_MSIZE_8K_270X390_MM:						762
+	IDS_MSIZE_16k_195_X_270:						763
+	IDS_MSIZE_16k_184_X_206:						765
+	IDS_MSIZE_16K_197X273:							767
+    
+	IDS_MSIZE_JAPANESE_POSTCARD:					868
+	IDS_MSIZE_JAPANESE_POSTCARD_ROTATED:			869
+	IDS_MTYPE_LJ_HP_MID_WEIGHT_GLOSSY_96_110:       870
+	IDS_CSPACE_sRGB_DEFAULT:                        871         
+	IDS_CSPACE_VIVID_RGB:							872		
+	IDS_CSPACE_PHOTO_ADOBE_RGB:                     873      
+	IDS_CSPACE_PHOTO_RGB:							874		
+	IDS_CSPACE_sRGB_NONE:							875	
+	IDS_GRAYSCALE_BLACK_CARTRIDGE_ONLY:				876
+	IDS_MTYPE_LJ_HP_OFFICIO_216_340:				877
+
+	IDS_HPBOOKLET_NONE:								768    
+	IDS_HPBOOKLET:									769
+	IDS_HPBOOKLET_LEFTBIND:							770
+	IDS_HPBOOKLET_RIGHTBIND:						771
+
+	IDS_COLLATE:					        772
+	IDS_COLLATED:							773
+	IDS_UNCOLLATED:							774
+	IDS_NUP:								775
+	IDS_1UP:								776
+	IDS_MTYPE_LJ_HP_COLORLASER_BROCHURE_MATTE_150:			777
+	IDS_MTYPE_HP_BROCHURE_150G_GLOSSY:						778
+	IDS_MTYPE_HP_PREMIUM_PROFESSIONAL_GLOSSY_120:			779
+	IDS_PS_FEATURE:										780
+	IDS_PAGEBORDERS:									781
+	IDS_PAGESPERSHEET_LAYOUT:							782
+	IDS_RIGHT_DOWN:										783
+	IDS_DOWN_RIGHT:										784
+	IDS_LEFT_DOWN:										785
+	IDS_DOWN_LEFT:										786
+	IDS_MTYPE_OTHER_MATTE_SPECIALITY:					787
+	IDS_MTYPE_HP_MATTE_BROCHURE:						788
+	IDS_MTYPE_HP_GLOSSY_BROCHURE:						789
+	IDS_MTYPE_OTHER_GLOSSY_SPECIALITY:					790
+	IDS_MTYPE_PHOTO_PPR_OR_OTHER_PHOTO:					791	
+	IDS_MTYPE_MATTE_BRCHRE_OR_SPCLTY:					792	
+	IDS_MTYPE_IRON_ON_OR_OTHR_SPCLTY:					793
+	IDS_MSIZE_B5_ISO_176X250_MM_1:						794		
+	IDS_MSIZE_B5_JIS_182X257_MM_1:						795
+	IDS_MSIZE_OFUKU_HAGAKI_200X148_MM_1:				796
+	IDS_MSIZE_ENV_MONARCH_3X6_IN:						797
+	IDS_MSIZE_ENV_CARD_4X6_IN_1:						798
+	IDS_MSIZE_ENV_NO_6_3_4_3X6_IN:						799
+	IDS_MSIZE_ENV_A2_111X146_MM:						800
+	IDS_MSIZE_2L_127x178_MM:							801
+	IDS_MSIZE_MUTSUGIRI_8X10_MM:						802
+	IDS_MSIZE_8_5X13_IN_1:								803
+	IDS_MSIZE_L_89X127_MM:								804
+	IDS_MSIZE_4X5_IN_10X13_CM:                          819
+	IDS_DUPLEX_MANUAL: 									22
+	IDS_DUPLEX_MANUAL_ADV:								50
+	IDS_QUALITY_NORMAL:                    				43
+    IDS_MTYPE_HP_MATTE_PROF_PPR: 						562
+	IDS_MTYPE_HP_GLOSSY_PROF_PPR:						563
+	IDS_PS_FLIP_LONGEDGE:								806
+	IDS_PS_FLIP_SHORTEDGE:								807
+	IDS_TRI_FOLD_BROCHURER_GLOSSY:						900
+	IDS_WM_DELETE_ENTRY_TEXT:                           924
+	IDS_MSIZE_INDX_CARD_A4_8_27x11:				901
+	IDS_MSIZE_INDX_CARD_LETTER_8_5x11:				902
+	IDS_MSIZE_EDGETOEDGE_A4_210x297:				903
+	IDS_MSIZE_EDGETOEDGE_LETTER_8_5x11:				904
+	IDS_MSIZE_ENVELOPE_6_3_4:						574
+	IDS_MSIZE_A4:									575
+	IDS_MSIZE_A5:									576
+	IDS_MSIZE_A6:									577
+	IDS_MSIZE_ENV_10:								578
+	IDS_MSIZE_ENV_C5:								579
+	IDS_MSIZE_ENVELOPE_C6:								580
+	IDS_MSIZE_ENV_DL:								581
+	IDS_MSIZE_ENVELOPE_MONARCH:						582
+	IDS_MSIZE_EXECUTIVE:							583
+	IDS_MSIZE_JENV_CHOU3:							584
+	IDS_MSIZE_JENV_CHOU4:							585
+	IDS_MSIZE_LEGAL_1:								586
+	IDS_MSIZE_STATEMENT:							587
+	IDS_PS_PAPER_SIZE:								52
+	IDS_MTYPE_OTHER_PHOTO_INK_JET_PAPERS:			588	
+	IDS_MTYPE_OTHER_MATTE_INK_JET_PAPERS:			589
+	IDS_MTYPE_OTHER_GLOSSY_INK_JET_PAPERS:			590
+	IDS_MTYPE_INKJET_HAGAKI:						591
+	IDS_MTYPE_PHOTO_HAGAKI:							592
+	IDS_MTYPE_THICK_PLAINPAPER:						593
+	IDS_MSIZE_EDGETOEDGE_A3_297x420_MM:				594
+	IDS_MSIZE_EDGETOEDGE_TABLOID_11x17_IN:			595
+	IDS_MSIZE_PLAIN_TABLOID_11x17_IN:				596
+	IDS_MSIZE_SMALLMARGIN_B4_JIS:					597
+	IDS_MSIZE_BROCHURE_11X14_IN:					598
+	IDS_MSIZE_SMALLMARGIN_11X14_IN:					599
+	IDS_MSIZE_BROCHURE_B4_JIS_257X364_MM:			810
+	IDS_MSIZE_PLAIN_B4_JIS_257X364_MM:				811
+	IDS_MSIZE_PLAINPAPER_11X14_IN:					812
+	IDS_MSIZE_10X15_CM_4X6_IN:						813
+	IDS_MSIZE_4X6_IN_10X15_CM:						814
+	IDS_MSIZE_5X7_IN_13X18_CM:						815
+	IDS_MSIZE_3_5X5_IN_L_89X127_MM:					816
+	IDS_ABOUT_HP_COPYRIGHT1:						817
+	IDS_ABOUT_HP_COPYRIGHT2:						818
+	IDS_PAPERMEDIAPAGETAB_NAME:						827
+	IDS_TAB_NAME_ADVACED:							831
+	IDS_OK:											833
+	IDS_ABT_VERSION:								834
+	IDS_PAPER_TYPE_COL_HK:							835
+	IDS_PAPER_SOURCE_COL_HK:						836
+	IDS_CANCEL:										837
+	IDS_FACTORY_DEFAULTS:							839
+	IDS_REVERSE_PAGE_ORDER:							840
+	IDS_PAGE_SIZE_COL_HK:							841
+	IDS_PRINT_QUALITY:								842
+	IDS_PRINTING_SHORTCUTS:							847
+	IDS_GB_PAPER_OPTIONS:							848
+	IDS_ABOUT_BTN:									849
+	IDS_SAVE_AS_HK:									853
+	IDS_RESET_HK:									854
+	IDS_CHK_DUPLEX_MANUAL:							860
+	IDS_CHK_FLIP_UP_SUI:							861
+	IDS_BOOKLET_PRINTING_SUI:						862
+	IDS_YES_FLIP_OVER:								864
+	IDS_FLIP_UP:									865
+	IDS_CHK_DUPLEX:									866
+	IDS_BOOKLET_PRINTING_LEFT_EDGE:					907
+	IDS_BOOKLET_PRINTING_RIGHT_EDGE:				908
+	IDS_PAGES_PER_SHEET_HK:							909
+	IDS_SHORTCUT_ALREADY_EXIST_POPUP:				913
+	IDS_SHORTCUT_ALREADY_EXIST_ANOTHER_NAME_POPUP:	914
+	IDS_PLEASE_TYPE_A_NAME_FOR_THE_NEW_PRINTING_SHORTCUT: 916
+	IDS_PRINT_SETTINGS:								917
+	IDS_LAYOUT:										918
+	IDS_ORIENTATION_COL_HK:							919
+	IDS_PRINT_QUALITY_COL_HK:						920
+	IDS_DOC_OPTIONS:								923
+	IDS_SELECTION_CONFLICTS:						925
+	IDS_SELECTION_CONFLICTS_TITLE:					926
+	IDS_MAXDPI:										927
+	IDS_SELECT_THE_PRINTING_SHORTCUT:				928
+	IDS_PS_PRTSHTCUT:								30
+	IDS_PS_DELETE:									25
+	IDS_JAPAN_POSTCARD:								929
+	IDS_ABOUTTAB_NAME:								930
+	IDS_MSIZE_JIS_B5:								931
+	IDS_PS_ECOSMART_SETTINGS:                       942
+	IDS_DUPLEX_AUTO:								21
+	IDS_MTYPE_LIGHT_WEIGHT_PLAIN_RECYCLED:			932
+	IDS_PS_PRINT_QUALITY:                            29
+	IDS_SAVE:										933
+	IDS_CUSTOM_SIZE:								949
+	IDS_WM_NEW:										950
+	IDS_WM_EDIT:									951
+	IDS_WM_DELETE:									952
+	IDS_NAME:										953
+	IDS_CS_DIMENSION:								954
+	IDS_WIDTH_HK:									955
+	IDS_LENGTH_HK:									956
+	IDS_INCHES:										957
+	IDS_UNITS:										958
+	IDS_MM:											959
+	IDS_ADD_CUSTOM_SIZE:							960
+	IDS_CUSTOM_PAPER_SIZE:							961	
+	IDS_INCHES_HK:									962
+	IDS_MM_HK:										963
+	IDS_HP_RECOMMENDS_COLOR_LOK:					934
+	IDS_COPIES_HK:									935
+	IDS_MSIZE_B4JIS:								195
+	IDS_MSIZE_TABLOID_1:                            194
+	IDS_PS_SNAPPHOTOS:                              941
+	IDS_PS_LABLES:                                  939
+	IDS_PS_ENVELOPE:                                936
+	IDS_PS_CARDSTOCK:                               937
+	IDS_PS_GLOSSY:                                  938
+	IDS_PS_TRANSPARIES:                             940
+	IDS_MSIZE_B6JIS:                                943
+	IDS_HP_ECOFFICIENT:                             944
+	IDS_MSIZE_4X6:                                  945
+	IDS_MSIZE_5X8:                                  946
+	IDS_RES600:                                     55
+	IDS_RES1200:									56
+	IDS_ECONOMODE_PS:                               61
+	IDS_INPUTBIN_MANUALFEED_1:                      947
+	IDS_MSIZE_ENVELOPE_B5_176X250_MM:               948
+	IDS_PS_FLIP_SHORT_EDGE:							964			
+	IDS_MTYPE_PLAIN_75_89:				966
+	IDS_MTYPE_LIGHT_65_74:							967
+	IDS_MTYPE_HEAVY_90_120:							968	
+	IDS_PS_SAVE_NOTIFY:							979
+	IDS_HLP_PS_Shortcut:								980
+	IDS_HLP_PS_Borderless:							981
+	IDS_HLP_PS_Papertype:							982
+	IDS_HLP_PS_PrintonBothsides:						983
+	IDS_HLP_PS_PagesPerSheet:						984
+	IDS_HLP_PS_PrintQuality:							985
+	IDS_HLP_PS_PrintInGrayscale:						986
+	IDS_HLP_PS_About:								987
+	IDS_HLP_PS_SaveAs:								988
+	IDS_HLP_PS_Delete:								989
+	IDS_HLP_PS_Reset:								990
+	PreviewImage:									991
+	IDS_HLP_PQ_PaperSize:							992
+	IDS_HLP_PQ_Custom:								993
+	IDS_HLP_PQ_PaperSource:							994
+	IDS_HLP_PQ_Papertype:							995
+	IDS_HLP_PQ_BorderlessPrinting:					996
+	IDS_HLP_PQ_PrintQuality:							997
+	IDS_HLP_PQ_PrintInGrayscale:						998
+	IDS_HLP_PQ_About:								999
+	IDS_HLP_LT_PrintOnBothManually:					1000
+	IDS_HLP_LT_FlipOnShortEdge:						1001
+	IDS_HLP_LT_BookletLayout:						1002
+	IDS_HLP_LT_PagesperSheet:						1003
+	IDS_HLP_LT_PageBorders:							1004
+	IDS_HLP_LT_PagesperSheetLayout:					1005
+	IDS_HLP_LT_Orientation:							1006
+	IDS_HLP_LT_About:								1007
+	IDS_HLP_AD_RealLifeTech:							1008
+	IDS_HLP_AD_ReversePageOrder:						1009
+	IDS_HLP_AD_PrintInMaxDPI:						1010
+	IDS_HLP_AD_PagesToPrint:							1011
+	IDS_HLP_AD_About:								1012
+	IDS_MTYPE_PLAIN_70_89:							1013
+	IDS_MTYPE_LIGHT_60_69:							1014
+	IDS_MTYPE_EXTRA_HEAVY_121_163:					1015
+}  
+*% ", Subfolders, Find Results 2, Entire Solution, " not found in macros
+*% "displayname" not found in macros
+*% "IDS_PRINTING_SHORTCUTS_COL" not found in macros
+*% "GUI_STR_COLOR_OPTIONS" not found in macros
+*% "GUI_STR_COLOR_THEMES" not found in macros
+*% "displayname" not found in macros
+*% "IDS_UTF_INVALID_ENTRY " not found in macros
+*% "GB_ADJUST" not found in macros
+*% "IDS_SUMMARY_REVERSE" not found in macros
+*% "IDS_SUMMARY_SCALING" not found in macros
+*% "IDS_SUMMARY_BOOKLET" not found in macros
+*% "IDS_SUMMARY_SHORT_EDGE" not found in macros
+*% "IDS_SUMMARY_LONG_EDGE" not found in macros
+*% "displayname" not found in macros
+*% "displayname" not found in macros
+*% "displayname" not found in macros
+*% "IDS_SCALING" not found in macros
+*% "IDS_PAPGE_SIZE_COL_HK" not found in macros
+*% "IDS_PAPGE_SIZE_COL_HK" not found in macros
+*% "IDS_COPIES" not found in macros
+*% "IDS_NEW" not found in macros
+*% "RB_WM_FIRST" not found in macros
+*% "IDS_SCALING" not found in macros
+*% ") + " not found in macros
+*Feature: StringsCluster0 {
+  *ConcealFromUI?: TRUE
+  *Name: "Strings"
+  *Option: IDS_PS_SNAPPHOTOS{ *rcNameID: =IDS_PS_SNAPPHOTOS }
+  *Option: IDS_PS_FLIP_LONGEDGE{ *rcNameID: =IDS_PS_FLIP_LONGEDGE }
+  *Option: IDS_PS_FLIP_SHORTEDGE{ *rcNameID: =IDS_PS_FLIP_SHORTEDGE }
+   *Option: IDS_PS_FLIP_SHORT_EDGE{ *rcNameID: =IDS_PS_FLIP_SHORT_EDGE }
+  *Option: IDS_PS_LABLES{ *rcNameID: =IDS_PS_LABLES }
+  *Option: IDS_PS_ENVELOPE{ *rcNameID: =IDS_PS_ENVELOPE }
+  *Option: IDS_PS_CARDSTOCK{ *rcNameID: =IDS_PS_CARDSTOCK }
+  *Option: IDS_PS_GLOSSY{ *rcNameID: =IDS_PS_GLOSSY }
+  *Option: IDS_PS_TRANSPARIES{ *rcNameID: =IDS_PS_TRANSPARIES }
+  *Option: IDS_PS_PAPER_SIZE{ *rcNameID: =IDS_PS_PAPER_SIZE }
+  *Option: IDS_MTYPE_LIGHT_WEIGHT_PLAIN_RECYCLED{ *rcNameID: =IDS_MTYPE_LIGHT_WEIGHT_PLAIN_RECYCLED }
+  *Option: IDS_DUPLEX_AUTO{ *rcNameID: =IDS_DUPLEX_AUTO }
+  *Option: IDS_PS_PRINT_QUALITY{ *rcNameID: =IDS_PS_PRINT_QUALITY }
+  *Option: IDS_MSIZE_JIS_B5{ *rcNameID: =IDS_MSIZE_JIS_B5 }
+  *Option: IDS_PS_MSG_MAXLIMIT{ *rcNameID: =IDS_PS_MSG_MAXLIMIT }
+  *Option: IDS_JAPAN_POSTCARD{ *rcNameID: =IDS_JAPAN_POSTCARD }
+  *Option: IDS_DIALOG_CAPTION{ *rcNameID: =IDS_DIALOG_CAPTION }
+  *Option: IDS_MANUAL_INSTRUCT{ *rcNameID: =IDS_MANUAL_INSTRUCT }
+  *Option: IDS_COLLATE{ *rcNameID: =IDS_COLLATE }
+  *Option: IDS_DUPLEX_MANUAL{ *rcNameID: =IDS_DUPLEX_MANUAL }
+  *Option: IDS_CONTINUE{ *rcNameID: =IDS_CONTINUE }
+  *Option: IDS_MSIZE_LEGAL_1{ *rcNameID: =IDS_MSIZE_LEGAL_1 }
+  *Option: IDS_MSIZE_ENVELOPE_C6{ *rcNameID: =IDS_MSIZE_ENVELOPE_C6 }
+  *Option: IDS_MSIZE_4X5_IN_10X13_CM{ *rcNameID: =IDS_MSIZE_4X5_IN_10X13_CM }
+  *Option: IDS_PS_DUPLEX{ *rcNameID: =IDS_PS_DUPLEX }
+  *Option: IDS_OK{ *rcNameID: =IDS_OK }
+  *Option: IDS_ABT_VERSION{ *rcNameID: =IDS_ABT_VERSION }
+  *Option: IDS_PAPER_TYPE_COL_HK{ *rcNameID: =IDS_PAPER_TYPE_COL_HK }
+  *Option: IDS_PAPER_SOURCE_COL_HK{ *rcNameID: =IDS_PAPER_SOURCE_COL_HK }
+  *Option: IDS_CANCEL{ *rcNameID: =IDS_CANCEL }
+  *Option: IDS_FACTORY_DEFAULTS{ *rcNameID: =IDS_FACTORY_DEFAULTS }
+  *Option: IDS_REVERSE_PAGE_ORDER{ *rcNameID: =IDS_REVERSE_PAGE_ORDER }
+  *Option: IDS_PAGE_SIZE_COL_HK{ *rcNameID: =IDS_PAGE_SIZE_COL_HK }
+  *Option: IDS_PRINT_QUALITY{ *rcNameID: =IDS_PRINT_QUALITY }
+  *Option: IDS_PS_BORDERLESS{ *rcNameID: =IDS_PS_BORDERLESS }
+  *Option: IDS_OUTPUTQUALITY_DRAFT{ *rcNameID: =IDS_OUTPUTQUALITY_DRAFT }
+  *Option: IDS_OUTPUTQUALITY_NORMAL{ *rcNameID: =IDS_OUTPUTQUALITY_NORMAL }
+  *Option: IDS_OUTPUTQUALITY_BEST{ *rcNameID: =IDS_OUTPUTQUALITY_BEST }
+  *Option: IDS_MTYPE_HP_PHOTO_PAPERS{ *rcNameID: =IDS_MTYPE_HP_PHOTO_PAPERS }
+  *Option: IDS_MTYPE_OTHER_PHOTO_INKJET_PAPERS{ *rcNameID: =IDS_MTYPE_OTHER_PHOTO_INKJET_PAPERS }
+  *Option: IDS_PRINT_IN_GRAYSCALE_WITHOUT_HK{ *rcNameID: =IDS_PRINT_IN_GRAYSCALE_WITHOUT_HK }
+  *Option: IDS_OFF{ *rcNameID: =IDS_OFF }
+  *Option: IDS_BLACK_INK_ONLY_WITHOUT_HK{ *rcNameID: =IDS_BLACK_INK_ONLY_WITHOUT_HK }
+  *Option: IDS_GRAYSCALE_HIGH_QUALITY{ *rcNameID: =IDS_GRAYSCALE_HIGH_QUALITY }
+  *Option: IDS_ON{ *rcNameID: =IDS_ON }
+  *Option: IDS_COLOR_THEMES{ *rcNameID: =IDS_COLOR_THEMES }
+  *Option: IDS_PRINTING_SHORTCUTS{ *rcNameID: =IDS_PRINTING_SHORTCUTS }
+  *Option: IDS_PAPERMEDIAPAGETAB_NAME{ *rcNameID: =IDS_PAPERMEDIAPAGETAB_NAME }
+  *Option: IDS_TAB_NAME_ADVACED{ *rcNameID: =IDS_TAB_NAME_ADVACED }
+  *Option: IDS_GB_PAPER_OPTIONS{ *rcNameID: =IDS_GB_PAPER_OPTIONS }
+  *Option: IDS_MSIZE_10X15_CM{ *rcNameID: =IDS_MSIZE_10X15_CM }
+  *Option: IDS_MSIZE_13X18_CM{ *rcNameID: =IDS_MSIZE_13X18_CM }
+  *Option: IDS_MSIZE_2L_127x178_MM{ *rcNameID: =IDS_MSIZE_2L_127x178_MM }
+  *Option: IDS_MSIZE_4X6_IN{ *rcNameID: =IDS_MSIZE_4X6_IN }
+  *Option: IDS_MSIZE_3X5_IN{ *rcNameID: =IDS_MSIZE_3X5_IN }
+  *Option: IDS_MSIZE_5X7{ *rcNameID: =IDS_MSIZE_5X7 }
+  *Option: IDS_MSIZE_8X10_IN{ *rcNameID: =IDS_MSIZE_8X10_IN }
+  *Option: IDS_MSIZE_INDEX_CARD_3X5_IN{ *rcNameID: =IDS_MSIZE_INDEX_CARD_3X5_IN }
+  *Option: IDS_MSIZE_INDEX_CARD_4X6_IN{ *rcNameID: =IDS_MSIZE_INDEX_CARD_4X6_IN }
+  *Option: IDS_MSIZE_INDX_CARD_LETTER_8_5x11{ *rcNameID: =IDS_MSIZE_INDX_CARD_LETTER_8_5x11 }
+  *Option: IDS_MSIZE_INDX_CARD_A4_8_27x11{ *rcNameID: =IDS_MSIZE_INDX_CARD_A4_8_27x11 }
+  *Option: IDS_MSIZE_L_89X127_MM{ *rcNameID: =IDS_MSIZE_L_89X127_MM }
+  *Option: IDS_MSIZE_OFUKU_HAGAKI_200X148_MM_1{ *rcNameID: =IDS_MSIZE_OFUKU_HAGAKI_200X148_MM_1 }
+  *Option: IDS_ABOUT_BTN{ *rcNameID: =IDS_ABOUT_BTN }
+  *Option: IDS_SAVE_AS_HK{ *rcNameID: =IDS_SAVE_AS_HK }
+  *Option: IDS_RESET_HK{ *rcNameID: =IDS_RESET_HK }
+  *Option: IDS_CHK_DUPLEX_MANUAL{ *rcNameID: =IDS_CHK_DUPLEX_MANUAL }
+  *Option: IDS_CHK_FLIP_UP_SUI{ *rcNameID: =IDS_CHK_FLIP_UP_SUI }
+  *Option: IDS_BOOKLET_PRINTING_SUI{ *rcNameID: =IDS_BOOKLET_PRINTING_SUI }
+  *Option: IDS_NO{ *rcNameID: =IDS_NO }
+  *Option: IDS_YES_FLIP_OVER{ *rcNameID: =IDS_YES_FLIP_OVER }
+  *Option: IDS_FLIP_UP{ *rcNameID: =IDS_FLIP_UP }
+  *Option: IDS_CHK_DUPLEX{ *rcNameID: =IDS_CHK_DUPLEX }
+  *Option: IDS_BOOKLET_PRINTING_LEFT_EDGE{ *rcNameID: =IDS_BOOKLET_PRINTING_LEFT_EDGE }
+  *Option: IDS_BOOKLET_PRINTING_RIGHT_EDGE{ *rcNameID: =IDS_BOOKLET_PRINTING_RIGHT_EDGE }
+  *Option: IDS_PAGES_PER_SHEET_HK{ *rcNameID: =IDS_PAGES_PER_SHEET_HK }
+  *Option: IDS_SHORTCUT_ALREADY_EXIST_POPUP{ *rcNameID: =IDS_SHORTCUT_ALREADY_EXIST_POPUP }
+  *Option: IDS_SHORTCUT_ALREADY_EXIST_ANOTHER_NAME_POPUP{ *rcNameID: =IDS_SHORTCUT_ALREADY_EXIST_ANOTHER_NAME_POPUP }
+  *Option: IDS_PLEASE_TYPE_A_NAME_FOR_THE_NEW_PRINTING_SHORTCUT{ *rcNameID: =IDS_PLEASE_TYPE_A_NAME_FOR_THE_NEW_PRINTING_SHORTCUT }
+  *Option: IDS_PRINT_SETTINGS{ *rcNameID: =IDS_PRINT_SETTINGS }
+  *Option: IDS_LAYOUT{ *rcNameID: =IDS_LAYOUT }
+  *Option: IDS_ORIENTATION_COL_HK{ *rcNameID: =IDS_ORIENTATION_COL_HK }
+  *Option: IDS_PRINT_QUALITY_COL_HK{ *rcNameID: =IDS_PRINT_QUALITY_COL_HK }
+  *Option: IDS_PS_DEFINITION{ *rcNameID: =IDS_PS_DEFINITION }
+  *Option: IDS_BORDERLESSPRINTING{ *rcNameID: =IDS_BORDERLESSPRINTING }
+  *Option: IDS_PAGES_TO_PRINT{ *rcNameID: =IDS_PAGES_TO_PRINT }
+  *Option: IDS_DOC_OPTIONS{ *rcNameID: =IDS_DOC_OPTIONS  }
+  *Option: IDS_HPRLT{ *rcNameID: =IDS_HPRLT  }
+  *Option: IDS_PRESERVE_LAYOUT{ *rcNameID: =IDS_PRESERVE_LAYOUT }
+  *Option: IDS_PAGESPERSHEET_LAYOUT{ *rcNameID: =IDS_PAGESPERSHEET_LAYOUT }
+  *Option: IDS_GRAYSCALE{ *rcNameID: =IDS_GRAYSCALE }
+  *Option: IDS_SELECTION_CONFLICTS{ *rcNameID: =IDS_SELECTION_CONFLICTS }
+  *Option: IDS_SELECTION_CONFLICTS_TITLE{ *rcNameID: =IDS_SELECTION_CONFLICTS_TITLE }
+  *Option: IDS_NUP{ *rcNameID: =IDS_NUP }
+  *Option: IDS_HPBOOKLET{ *rcNameID: =IDS_HPBOOKLET }
+  *Option: IDS_PAGEBORDERS{ *rcNameID: =IDS_PAGEBORDERS }
+  *Option: IDS_MAXDPI{ *rcNameID: =IDS_MAXDPI }
+  *Option: IDS_RIGHT_DOWN{ *rcNameID: =IDS_RIGHT_DOWN }
+  *Option: IDS_LEFT_DOWN{ *rcNameID: =IDS_LEFT_DOWN }
+  *Option: IDS_PS_PRTSHTCUT{ *rcNameID: =IDS_PS_PRTSHTCUT }
+  *Option: IDS_PS_DELETE{ *rcNameID: =IDS_PS_DELETE }
+  *Option: IDS_WM_DELETE_ENTRY_TEXT{ *rcNameID: =IDS_WM_DELETE_ENTRY_TEXT }
+  *Option: IDS_ABOUTTAB_NAME{ *rcNameID: =IDS_ABOUTTAB_NAME }
+  *Option: IDS_SAVE{ *rcNameID: =IDS_SAVE }
+  *Option: IDS_HP_RECOMMENDS_COLOR_LOK{ *rcNameID: =IDS_HP_RECOMMENDS_COLOR_LOK }
+  *Option: IDS_COPIES_HK{ *rcNameID: =IDS_COPIES_HK } 
+  *Option: IDS_MSIZE_8_5X13_IN{ *rcNameID: =IDS_MSIZE_8_5X13_IN } 
+  *Option: IDS_MSIZE_ENVELOPE_6_3_4{ *rcNameID: =IDS_MSIZE_ENVELOPE_6_3_4 } 
+  *Option: IDS_MSIZE_ENV_A2_111X146_MM{ *rcNameID: =IDS_MSIZE_ENV_A2_111X146_MM } 
+  *Option: IDS_MSIZE_B4JIS{*rcNameID: =IDS_MSIZE_B4JIS}
+  *Option: IDS_MSIZE_A3{ *rcNameID: =IDS_MSIZE_A3 }
+  *Option: IDS_MSIZE_TABLOID_1{ *rcNameID: =IDS_MSIZE_TABLOID_1 }
+  *Option: IDS_MSIZE_11X14{ *rcNameID: =IDS_MSIZE_11X14 }
+  *Option: IDS_MSIZE_SMALLMARGIN_11X14_IN{ *rcNameID: =IDS_MSIZE_SMALLMARGIN_11X14_IN }
+  *Option: IDS_MSIZE_SMMARG_12X12{ *rcNameID: =IDS_MSIZE_SMMARG_12X12 }
+  *Option: IDS_MSIZE_SMMARG_A3_297x420_MM{ *rcNameID: =IDS_MSIZE_SMMARG_A3_297x420_MM }
+  *Option: IDS_MSIZE_SMMARG_A3_PLUS_330x483_MM{ *rcNameID: =IDS_MSIZE_SMMARG_A3_PLUS_330x483_MM }
+  *Option: IDS_MSIZE_SMALLMARGIN_B4_JIS{ *rcNameID: =IDS_MSIZE_SMALLMARGIN_B4_JIS }
+  *Option: IDS_MSIZE_SUPER_B_SMMARG_13x19{ *rcNameID: =IDS_MSIZE_SUPER_B_SMMARG_13x19 }
+  *Option: IDS_MSIZE_SMMARG_TABLOID_11x17{ *rcNameID: =IDS_MSIZE_SMMARG_TABLOID_11x17 }
+  *Option: IDS_MSIZE_BROCHURE_11X14_IN{ *rcNameID: =IDS_MSIZE_BROCHURE_11X14_IN }
+  *Option: IDS_MSIZE_PLAINPAPER_11X14_IN{ *rcNameID: =IDS_MSIZE_PLAINPAPER_11X14_IN }
+  *Option: IDS_MSIZE_BRCHRE_A3{ *rcNameID: =IDS_MSIZE_BRCHRE_A3 }
+  *Option: IDS_MSIZE_PLAIN_A3{ *rcNameID: =IDS_MSIZE_PLAIN_A3 }
+  *Option: IDS_MSIZE_BROCHURE_B4_JIS_257X364_MM{ *rcNameID: =IDS_MSIZE_BROCHURE_B4_JIS_257X364_MM }
+  *Option: IDS_MSIZE_PLAIN_B4_JIS_257X364_MM{ *rcNameID: =IDS_MSIZE_PLAIN_B4_JIS_257X364_MM }
+  *Option: IDS_MSIZE_BRCHRE_TABLOID{ *rcNameID: =IDS_MSIZE_BRCHRE_TABLOID }
+  *Option: IDS_MSIZE_PLAIN_TABLOID_11x17_IN{ *rcNameID: =IDS_MSIZE_PLAIN_TABLOID_11x17_IN }
+  *Option: IDS_MSIZE_EDGETOEDGE_A3_297x420_MM{ *rcNameID: =IDS_MSIZE_EDGETOEDGE_A3_297x420_MM }
+  *Option: IDS_MSIZE_EDGETOEDGE_A4_210x297{ *rcNameID: =IDS_MSIZE_EDGETOEDGE_A4_210x297 }
+  *Option: IDS_MSIZE_EDGETOEDGE_LETTER_8_5x11{ *rcNameID: =IDS_MSIZE_EDGETOEDGE_LETTER_8_5x11 }
+  *Option: IDS_MSIZE_EDGETOEDGE_TABLOID_11x17_IN{ *rcNameID: =IDS_MSIZE_EDGETOEDGE_TABLOID_11x17_IN }
+  *Option: IDS_MSIZE_B6JIS{ *rcNameID: =IDS_MSIZE_B6JIS }
+  *Option: IDS_HP_ECOFFICIENT{ *rcNameID: =IDS_HP_ECOFFICIENT }
+  *Option: IDS_MSIZE_OFICIO_8_5X13_IN{ *rcNameID: =IDS_MSIZE_OFICIO_8_5X13_IN }
+  *Option: IDS_PS_ECOSMART_SETTINGS{ *rcNameID: =IDS_PS_ECOSMART_SETTINGS }
+  *Option: IDS_MSIZE_4X6{ *rcNameID: =IDS_MSIZE_4X6 }
+  *Option: IDS_MSIZE_5X8{ *rcNameID: =IDS_MSIZE_5X8 }
+  *Option: IDS_UNSPECIFIED{ *rcNameID: =IDS_UNSPECIFIED }
+  *Option: IDS_MTYPE_PLAIN{ *rcNameID: =IDS_MTYPE_PLAIN }
+  *Option: IDS_PREPRINTED_TYPE{ *rcNameID: =IDS_PREPRINTED_TYPE }
+  *Option: IDS_LETTERHEAD_TYPE{ *rcNameID: =IDS_LETTERHEAD_TYPE }
+  *Option: IDS_PREPUNCHED_TYPE{ *rcNameID: =IDS_PREPUNCHED_TYPE }
+  *Option: IDS_BOND_TYPE{ *rcNameID: =IDS_BOND_TYPE }
+  *Option: IDS_RECYCLED_TYPE{ *rcNameID: =IDS_RECYCLED_TYPE }
+  *Option: IDS_MTYPE_COLORED{ *rcNameID: =IDS_MTYPE_COLORED }
+  *Option: IDS_MTYPE_LIGHT_60_74{ *rcNameID: =IDS_MTYPE_LIGHT_60_74 }
+  *Option: IDS_MTYPE_LJ_HP_MID_WEIGHT_96_110{ *rcNameID: =IDS_MTYPE_LJ_HP_MID_WEIGHT_96_110 }
+  *Option: IDS_MTYPE_HEAVY_111_130{ *rcNameID: =IDS_MTYPE_HEAVY_111_130 }
+  *Option: IDS_MTYPE_EXTRAHEAVY_131_175{ *rcNameID: =IDS_MTYPE_EXTRAHEAVY_131_175 }
+  *Option: ENVELOPE_DISPLAY{ *rcNameID: =ENVELOPE_DISPLAY }
+  *Option: IDS_ROUGH_TYPE{ *rcNameID: =IDS_ROUGH_TYPE }
+  *Option: IDS_TYPE_VELLUM{ *rcNameID: =IDS_TYPE_VELLUM }
+  *Option: IDS_MTYPE_LJ_INTERMEDIATE_85_95{ *rcNameID: =IDS_MTYPE_LJ_INTERMEDIATE_85_95 }
+  *Option: IDS_RES600{ *rcNameID: =IDS_RES600 }
+  *Option: IDS_RES1200{ *rcNameID: =IDS_RES1200 }
+  *Option: IDS_ECONOMODE_PS{ *rcNameID: =IDS_ECONOMODE_PS }
+  *Option: IDS_MSIZE_ENVELOPE_B5_176X250_MM{ *rcNameID: =IDS_MSIZE_ENVELOPE_B5_176X250_MM }
+  *Option: IDS_MTYPE_LJ_HP_OFFICIO_216_340{ *rcNameID: =IDS_MTYPE_LJ_HP_OFFICIO_216_340 }
+  *Option: IDS_MSIZE_16k_195_X_270{ *rcNameID: =IDS_MSIZE_16k_195_X_270 }
+  *Option: IDS_MSIZE_16k_184_X_206{ *rcNameID: =IDS_MSIZE_16k_184_X_206 }
+  *Option: IDS_MSIZE_16K_197X273{ *rcNameID: =IDS_MSIZE_16K_197X273 }
+  *Option: IDS_CUSTOM_SIZE{ *rcNameID: =IDS_CUSTOM_SIZE }
+  *Option: IDS_WM_NEW{ *rcNameID: =IDS_WM_NEW }
+  *Option: IDS_WM_EDIT{ *rcNameID: =IDS_WM_EDIT }
+  *Option: IDS_WM_DELETE{ *rcNameID: =IDS_WM_DELETE }
+  *Option: IDS_NAME{ *rcNameID: =IDS_NAME }
+  *Option: IDS_CS_DIMENSION{ *rcNameID: =IDS_CS_DIMENSION }
+  *Option: IDS_ADD_CUSTOM_SIZE{ *rcNameID: =IDS_ADD_CUSTOM_SIZE }
+  *Option: IDS_CUSTOM_PAPER_SIZE{ *rcNameID: =IDS_CUSTOM_PAPER_SIZE }
+  *Option: IDS_WIDTH_HK{ *rcNameID: =IDS_WIDTH_HK }
+  *Option: IDS_LENGTH_HK{ *rcNameID: =IDS_LENGTH_HK }
+  *Option: IDS_INCHES{ *rcNameID: =IDS_INCHES }
+  *Option: IDS_UNITS{ *rcNameID: =IDS_UNITS }
+  *Option: IDS_MM{ *rcNameID: =IDS_MM }
+  *Option: IDS_MM_HK{ *rcNameID: =IDS_MM_HK } 
+  *Option: IDS_INCHES_HK{ *rcNameID: =IDS_INCHES_HK }
+  *Option: IDS_MTYPE_PLAIN_75_89{ *rcNameID: =IDS_MTYPE_PLAIN_75_89 }
+  *Option: IDS_MTYPE_LIGHT_65_74{ *rcNameID: =IDS_MTYPE_LIGHT_65_74 }
+  *Option: IDS_MTYPE_PLAIN_70_89{ *rcNameID: =IDS_MTYPE_PLAIN_70_89 }
+  *Option: IDS_MTYPE_LIGHT_60_69{ *rcNameID: =IDS_MTYPE_LIGHT_60_69 }
+  *Option: IDS_MTYPE_HEAVY_90_120{ *rcNameID: =IDS_MTYPE_HEAVY_90_120 }
+  *Option: IDS_MTYPE_EXTRA_HEAVY_121_163{ *rcNameID: =IDS_MTYPE_EXTRA_HEAVY_121_163 }
+}
+*Feature: StringsCluster1 {
+  *ConcealFromUI?: TRUE
+  *Name: "Strings"
+  *Option: IDS_ABOUT_HP_COPYRIGHT1{ *rcNameID: =IDS_ABOUT_HP_COPYRIGHT1 }
+  *Option: IDS_ABOUT_HP_COPYRIGHT2{ *rcNameID: =IDS_ABOUT_HP_COPYRIGHT2 }
+  *Option: IDS_FACTORY_DEFAULTS{ *rcNameID: =IDS_PS_FACTORY_DEFAULTS }
+  *Option: IDS_GENERAL_EVERYDAY_PRINTING{ *rcNameID: =IDS_PS_GENERAL_EVERYDAY }
+  *Option: IDS_PS_PHOTO_BORDERLESS{ *rcNameID: =IDS_PS_PHOTO_BORDERLESS }
+  *Option: IDS_PS_PHOTO_WHITEBORDER{ *rcNameID: =IDS_PS_PHOTO_WHITEBORDER }
+  *Option: IDS_PS_FAST_ECONOMIC{ *rcNameID: =IDS_PS_FAST_ECONOMIC }
+  *Option: IDS_MTYPE_ENVELOPE{ *rcNameID: =IDS_MTYPE_LJ_HEAVY_ENVELOPE }
+  *Option: IDS_CARDSTOCK_HEAVY_PRINTING{ *rcNameID: =IDS_MTYPE_CARD_STOCK }
+  *Option: IDS_LABELS_TYPE{ *rcNameID: =IDS_LABELS_TYPE }
+  *Option: IDS_ECOSMART_SETTINGS_CSL{ *rcNameID: =IDS_HP_ECOSMART_LITE_CSL }
+  *Option: IDS_BOOKLET_PRINTING_NOHK{ *rcNameID: =IDS_HPBOOKLET }
+  *Option: IDS_MSIZE_LETTER{ *rcNameID: =IDS_MSIZE_LETTER }
+  *Option: IDS_MSIZE_LEGAL{ *rcNameID: =IDS_MSIZE_LEGAL }
+  *Option: IDS_MSIZE_EXECUTIVE{ *rcNameID: =IDS_MSIZE_EXECUTIVE }
+  *Option: IDS_MSIZE_STATEMENT{ *rcNameID: =IDS_MSIZE_STATEMENT }
+  *Option: IDS_PSIZE_4_X_6{ *rcNameID: =IDS_MSIZE_4X6_IN }
+  *Option: IDS_MSIZE_A4{ *rcNameID: =IDS_MSIZE_A4 }
+  *Option: IDS_MSIZE_A5{ *rcNameID: =IDS_MSIZE_A5 }
+  *Option: IDS_MSIZE_A6{ *rcNameID: =IDS_MSIZE_A6 }
+  *Option: IDS_MSIZE_B5_JIS_182X257_MM{ *rcNameID: =IDS_MSIZE_B5_JIS_182X257_MM }
+  *Option: IDS_MSIZE_JAPANESE_POSTCARD{ *rcNameID: =IDS_MSIZE_JAPANESE_POSTCARD }
+  *Option: IDS_MSIZE_JAPANESE_POSTCARD_ROTATED{ *rcNameID: =IDS_MSIZE_JAPANESE_POSTCARD_ROTATED }
+  *Option: IDS_MSIZE_ENV_10{ *rcNameID: =IDS_MSIZE_ENV_10 }
+  *Option: IDS_MSIZE_ENV_MONARCH{ *rcNameID: =IDS_MSIZE_ENVELOPE_MONARCH }
+  *Option: IDS_MSIZE_ENV_DL{ *rcNameID: =IDS_MSIZE_ENV_DL }
+  *Option: IDS_MSIZE_ENV_C5{ *rcNameID: =IDS_MSIZE_ENV_C5 }
+  *Option: IDS_MSIZE_ENV_C6{ *rcNameID: =IDS_MSIZE_ENV_C6 }
+  *Option: IDS_MSIZE_JENV_CHOU3{ *rcNameID: =IDS_MSIZE_JENV_CHOU3 }
+  *Option: IDS_MSIZE_JENV_CHOU4{ *rcNameID: =IDS_MSIZE_JENV_CHOU4 }
+  *Option: IDS_MTYPE_HP_MATTE_BROCHURE_OR_PROF_PPR{ *rcNameID: =IDS_MTYPE_HP_MATTE_BROCHURE_OR_PROF_PPR }
+  *Option: IDS_MTYPE_MATTE_PRESENTATION_PAPER{ *rcNameID: =IDS_MTYPE_MATTE_PRESENTATION_PAPER }
+  *Option: IDS_MTYPE_HP_GLOSSY_BROCHURE_OR_PROF_PPR{ *rcNameID: =IDS_MTYPE_HP_GLOSSY_BROCHURE_OR_PROF_PPR }
+  *Option: IDS_MTYPE_OTHER_PHOTO_INK_JET_PAPERS{ *rcNameID: =IDS_MTYPE_OTHER_PHOTO_INK_JET_PAPERS }
+  *Option: IDS_MTYPE_OTHER_MATTE_INK_JET_PAPERS{ *rcNameID: =IDS_MTYPE_OTHER_MATTE_INK_JET_PAPERS }
+  *Option: IDS_MTYPE_OTHER_GLOSSY_INK_JET_PAPERS{ *rcNameID: =IDS_MTYPE_OTHER_GLOSSY_INK_JET_PAPERS }
+  *Option: IDS_MSIZE_10X15_CM_4X6_IN{ *rcNameID: =IDS_MSIZE_10X15_CM_4X6_IN }
+  *Option: IDS_MSIZE_5X7_IN_13X18_CM{ *rcNameID: =IDS_MSIZE_5X7_IN_13X18_CM }
+  *Option: IDS_MSIZE_3_5X5_IN_L_89X127_MM{ *rcNameID: =IDS_MSIZE_3_5X5_IN_L_89X127_MM }
+  *Option: IDS_MSIZE_INDEX_CARD_5X8_IN{ *rcNameID: =IDS_MSIZE_INDEX_CARD_5X8_IN }
+  *Option: IDS_HPBOOKLET_NONE{ *rcNameID: =IDS_HPBOOKLET_NONE }
+  *Option: IDS_MSIZE_4X6_IN_10X15_CM{ *rcNameID: =IDS_MSIZE_4X6_IN_10X15_CM }
+  *Option: IDS_MTYPE_INKJET_HAGAKI{ *rcNameID: =IDS_MTYPE_INKJET_HAGAKI }
+  *Option: IDS_MTYPE_THICK_PLAINPAPER{ *rcNameID: =IDS_MTYPE_THICK_PLAINPAPER }
+  *Option: IDS_MSIZE_B5_ISO_176X250_MM_1{ *rcNameID: =IDS_MSIZE_B5_ISO_176X250_MM_1 }
+  *Option: IDS_1UP{ *rcNameID: =IDS_1UP }
+  *Option: IDS_2UP{ *rcNameID: =IDS_2UP }
+  *Option: IDS_4UP{ *rcNameID: =IDS_4UP }
+  *Option: IDS_6UP{ *rcNameID: =IDS_6UP }
+  *Option: IDS_9UP{ *rcNameID: =IDS_9UP }
+  *Option: IDS_16UP{ *rcNameID: =IDS_16UP }
+  *Option: IDS_MTYPE_PLAIN_PAPER{ *rcNameID: =IDS_MTYPE_PLAIN_PAPER }
+  *Option: IDS_PS_SAVE_NOTIFY{ *rcNameID: =IDS_PS_SAVE_NOTIFY }
+  *Option: IDS_HLP_PS_Shortcut{ *rcNameID: =IDS_HLP_PS_Shortcut }
+  *Option: IDS_HLP_PS_Borderless{ *rcNameID: =IDS_HLP_PS_Borderless }
+  *Option: IDS_HLP_PS_Papertype{ *rcNameID: =IDS_HLP_PS_Papertype }
+  *Option: IDS_HLP_PS_PrintonBothsides{ *rcNameID: =IDS_HLP_PS_PrintonBothsides }
+  *Option: IDS_HLP_PS_PagesPerSheet{ *rcNameID: =IDS_HLP_PS_PagesPerSheet }
+  *Option: IDS_HLP_PS_PrintQuality{ *rcNameID: =IDS_HLP_PS_PrintQuality }
+  *Option: IDS_HLP_PS_PrintInGrayscale{ *rcNameID: =IDS_HLP_PS_PrintInGrayscale }
+  *Option: IDS_HLP_PS_About{ *rcNameID: =IDS_HLP_PS_About }
+  *Option: IDS_HLP_PS_SaveAs{ *rcNameID: =IDS_HLP_PS_SaveAs }
+  *Option: IDS_HLP_PS_Delete{ *rcNameID: =IDS_HLP_PS_Delete }
+  *Option: IDS_HLP_PS_Reset{ *rcNameID: =IDS_HLP_PS_Reset }
+  *Option: PreviewImage{ *rcNameID: =PreviewImage }
+  *Option: IDS_HLP_PQ_PaperSize{ *rcNameID: =IDS_HLP_PQ_PaperSize }
+  *Option: IDS_HLP_PQ_Custom{ *rcNameID: =IDS_HLP_PQ_Custom }
+  *Option: IDS_HLP_PQ_PaperSource{ *rcNameID: =IDS_HLP_PQ_PaperSource }
+  *Option: IDS_HLP_PQ_Papertype{ *rcNameID: =IDS_HLP_PQ_Papertype }
+  *Option: IDS_HLP_PQ_BorderlessPrinting{ *rcNameID: =IDS_HLP_PQ_BorderlessPrinting }
+  *Option: IDS_HLP_PQ_PrintQuality{ *rcNameID: =IDS_HLP_PQ_PrintQuality }
+  *Option: IDS_HLP_PQ_PrintInGrayscale{ *rcNameID: =IDS_HLP_PQ_PrintInGrayscale }
+  *Option: IDS_HLP_PQ_About{ *rcNameID: =IDS_HLP_PQ_About }
+  *Option: IDS_HLP_LT_PrintOnBothManually{ *rcNameID: =IDS_HLP_LT_PrintOnBothManually }
+  *Option: IDS_HLP_LT_FlipOnShortEdge{ *rcNameID: =IDS_HLP_LT_FlipOnShortEdge }
+  *Option: IDS_HLP_LT_BookletLayout{ *rcNameID: =IDS_HLP_LT_BookletLayout }
+  *Option: IDS_HLP_LT_PagesperSheet{ *rcNameID: =IDS_HLP_LT_PagesperSheet }
+  *Option: IDS_HLP_LT_PageBorders{ *rcNameID: =IDS_HLP_LT_PageBorders }
+  *Option: IDS_HLP_LT_PagesperSheetLayout{ *rcNameID: =IDS_HLP_LT_PagesperSheetLayout }
+  *Option: IDS_HLP_LT_Orientation{ *rcNameID: =IDS_HLP_LT_Orientation }
+  *Option: IDS_HLP_LT_About{ *rcNameID: =IDS_HLP_LT_About }
+  *Option: IDS_HLP_AD_RealLifeTech{ *rcNameID: =IDS_HLP_AD_RealLifeTech }
+  *Option: IDS_HLP_AD_ReversePageOrder{ *rcNameID: =IDS_HLP_AD_ReversePageOrder }
+  *Option: IDS_HLP_AD_PrintInMaxDPI{ *rcNameID: =IDS_HLP_AD_PrintInMaxDPI }
+  *Option: IDS_HLP_AD_PagesToPrint{ *rcNameID: =IDS_HLP_AD_PagesToPrint }
+  *Option: IDS_HLP_AD_About{ *rcNameID: =IDS_HLP_AD_About }
+
+}
+
+
+
+
+
+*ResourceDLL: "hpygidres32.dll"
+
+*%==============================================================================*%
+*%    Required commands. Must be present or the printer install will fail.      *%
+*%==============================================================================*%
+*Command: CmdCR
+{
+	*Cmd: "<00>"
+}
+
+*Command: CmdLF
+{
+	*Cmd: "<00>"
+}
+
+*Command: CmdFF
+{
+	*Cmd: "<00>"
+}
+
+*Command: CmdSendBlockData
+{
+	*Cmd: "<00>"
+}
+
+*Command: CmdStartJob
+{
+	*Order: JOB_SETUP.1
+	*Cmd: =PJL_STARTJOB
+}
+
+
+*%==============================================================================*%
+*%                        HP XPS Filter Configuration                          *%
+*%==============================================================================*%
+*Ifdef: MonotypeImagingReserved
+*XpsFilterConfiguration: 
+{
+	*General: 
+	{
+		*Features: 
+		{
+			*PageOrderEnable: TRUE
+			*DocCollateEnable: TRUE
+			*JobCollateEnable: TRUE
+			*JobCopyCountEnable: TRUE
+			*DocCopyCountEnable: TRUE
+			*PageCopyCountEnable: TRUE
+			*NUpEnable: TRUE
+			*WatermarksEnable: TRUE
+			*MtiCoversEnable: TRUE
+			*BookletEnable: TRUE
+			*OverlaysEnable: TRUE
+			*InterleavesEnable: TRUE
+			*PosterEnable: TRUE
+			*ScalingEnable: TRUE
+			*ExceptionsEnable: TRUE
+			*PageRangesEnable: TRUE
+			*BindingShiftEnable: TRUE
+            		*MirrorImageEnable: TRUE
+					*BookletOverrideNupEnable: TRUE
+        }
+        *Options:
+        {
+            *DefaultPaperOffsetsLeft: 300
+            *DefaultPaperOffsetsTop: 300
+            *DefaultPaperOffsetsRight: 300
+            *DefaultPaperOffsetsBottom: 300
+            *DocumentRelationSearchDistance: 7
+            *CollectInsetsEnable: FALSE
+            *ObeyDiscardsEnable: TRUE
+            *CheckZipIntegrityEnable: TRUE
+            *NUpMismatchRotateEnable: TRUE
+            *NUpMismatchRotateAngle: 270
+            *NUpEjectOnNewSizeEnable: FALSE
+            *NUpScaleMediaEnable: FALSE
+            *WmZoomEnable: TRUE
+            *WmZoomClipEnable: TRUE
+            *ErrorPagesEnable: FALSE
+        }
+		*Memory: 
+		{
+			*Scheme: 
+			{
+				*Physical: 0
+				*ManagedArena: 524288
+				*ResourcePool: 80
+				*LanguagePool: 80
+				*GenericPool: 80
+				*Band: 1024
+				*TexturePool: 4096
+				*TextureNodes: 0
+				*ColorNodes: 4096
+				*Input: 4096
+				*Output: 4096
+			}
+			*Scheme: 
+			{
+			   *Physical: 1572864
+			   *ManagedArena: 1048576
+			   *ResourcePool: 80
+			   *LanguagePool: 80
+			   *GenericPool: 80
+			   *Band: 1024
+			   *TexturePool: 4096
+			   *TextureNodes: 0
+			   *ColorNodes: 4096
+			   *Input: 4096
+			   *Output: 4096
+			}
+			*Scheme: 
+			{
+			   *Physical: 2621440
+			   *ManagedArena: 2097152
+			   *ResourcePool: 80
+			   *LanguagePool: 80
+			   *GenericPool: 80
+			   *Band: 1024
+			   *TexturePool: 8192
+			   *TextureNodes: 0
+			   *ColorNodes: 4096
+			   *Input: 4096
+			   *Output: 4096
+			}
+		}
+    }
+}
+*Endif: 
+
+*%*************************************************************************************
+*%                            STATIC FEATURES
+*%*************************************************************************************
+
+*%******************************************************************************
+*%                           HP Generic Ink Driver
+*%******************************************************************************
+*Feature: HPInkDriverType
+{
+	*Name: "HPInkDriverType"
+	*Option: HPStandardInkDriver
+	{
+		*Name: ""
+	}
+}
+
+*%******************************************************************************
+*%                            HP DeviceLanguage
+*%******************************************************************************
+*Feature: DeviceLanguage
+{
+    *Name: "DeviceLanguage"
+	*PrintSchemaKeywordMap: "JobDeviceLanguage"
+    *Option: PCLmS
+    {
+        *Name: "PCLmS"
+    }
+}
+
+*%******************************************************************************
+*%                            HP ModelName
+*%******************************************************************************
+*Feature: ModelName
+{
+    *Name: "ModelName"
+    *Option: Stars
+    {
+        *Name: "Stars"
+    }
+}
+
+*%******************************************************************************************
+*%                          Gutter Value for booklet (calculated as shown below:-
+*%	Gutter value = (Top margin for Mimas platform in inches * 2) in microns
+*%					= .167*2 *25400 = 8484 microns
+*%******************************************************************************************
+*Feature: HPBookletGutter
+{
+    *Name: "HPBookletGutter"
+    *Option: 8636
+     {
+     *Name: "" 
+     }
+}
+
+*%******************************************************************************
+*%                            HP FeedType
+*%******************************************************************************
+
+*Feature: HPFeedType
+{
+    *Name: "HPFeedType"
+    *Option: HPCFeed
+    {
+        *Name: ""
+    }
+}
+*%******************************************************************************************
+*%     feature added so that Manual Duplex with multiple copies and collate 
+*%												
+*%******************************************************************************************
+*Feature: ManualDuplex
+{
+  *Name: "ManualDuplex"
+  *MergeCopies?: TRUE
+  *Option: Manual
+  {
+    *Name: ""
+  }
+}
+
+*%******************************************************************************
+*%                            Dynamic Print Compression(uncomment for use)
+*%******************************************************************************
+*Feature: DPC
+{
+    *Name: "DPC"
+	*ConcealFromUI?: TRUE
+	*DefaultOption: FLATEONLY
+	*Option: FLATEONLY
+    {
+        *Name: ""
+    }
+    *Option: Auto
+    {
+        *Name: ""
+    }   
+}
+
+*%******************************************************************************
+*%             JPEG Quality Factor for DCT compression(uncomment for use)
+*%******************************************************************************
+*Feature: QF
+{
+    *Name: "QF"
+    *ConcealFromUI?: TRUE
+    *Option: 80
+    {
+        *Name: ""
+    }
+}
+
+*%******************************************************************************
+*%                            Grayscale printing
+*%******************************************************************************
+*Feature: ColorMode
+{
+       *rcNameID: =IDS_GRAYSCALE
+       *PrintSchemaKeywordMap: "PageOutputColor"
+       *DefaultOption: Off
+       *Option: Off
+       {
+              *rcNameID: =IDS_GRAYSCALE_OFF
+              *PrintSchemaKeywordMap: "Grayscale"
+			  *Color?: FALSE
+       }       
+}
+
+*%******************************************************************************
+*%                           Page order
+*%******************************************************************************
+*Feature: JobPageOrder
+{
+	*rcNameID: =IDS_REVERSE_PAGE_ORDER	
+	*PrintSchemaKeywordMap: "JobPageOrder"
+	*DefaultOption: Standard
+	*Option: Standard
+	{
+		*Name: "Front to Back"
+		*PrintSchemaKeywordMap: "Standard"
+	}	
+	*Option: Reverse
+	{
+		*Name: "Back to Front"
+		*PrintSchemaKeywordMap: "Reverse"
+	}
+}
+
+*%******************************************************************************
+*%                            Print Quality
+*%******************************************************************************
+*Feature: UserResolution
+{
+	*rcNameID: =IDS_OUTPUTQUALITY
+	*PrintSchemaKeywordMap: "PageOutputQuality"
+	*DefaultOption: Normal
+	*Option: Normal
+	{
+		*rcNameID: =IDS_OUTPUTQUALITY_NORMAL	
+		*PrintSchemaKeywordMap: "Normal"
+	}
+	*Option: Draft
+	{
+		*rcNameID: =IDS_ECONOMODE_PS	
+		**PrintSchemaKeywordMap: "Draft"
+	}
+}
+
+*%******************************************************************************
+*%                            Pages per sheet
+*%******************************************************************************
+*Feature: DocumentNUp
+{
+	*rcNameID: =IDS_NUP
+	*PrintSchemaKeywordMap: "DocumentNUp"
+	*DefaultOption: 1
+	*Option: 1
+	{
+		*rcNameID: =IDS_1UP	
+	}
+	*Option: 2
+	{
+		*rcNameID: =IDS_2UP
+	}
+	*Option: 4
+	{
+		*rcNameID: =IDS_4UP
+	}
+	*Option: 6
+	{
+		*rcNameID: =IDS_6UP	
+	}
+	*Option: 9
+	{
+		*rcNameID: =IDS_9UP	
+	}
+	*Option: 16
+	{
+		*rcNameID: =IDS_16UP	
+	}
+}
+
+*%******************************************************************************
+*%                            Booklet
+*%******************************************************************************
+*Feature: DocumentBinding
+{
+    *rcNameID: =IDS_HPBOOKLET
+    *PrintSchemaKeywordMap: "DocumentBinding"
+    *DefaultOption: None
+
+    *Option: None
+    {
+        *rcNameID: =IDS_HPBOOKLET_NONE
+	    *PrintSchemaKeywordMap: "None"
+    }
+
+    *Option: Booklet
+    {
+        *rcNameID: =IDS_HPBOOKLET_LEFTBIND
+	    *PrintSchemaKeywordMap: "Booklet"
+    }
+
+    *Option: JapaneseBooklet
+    {
+	    *rcNameID: =IDS_HPBOOKLET_RIGHTBIND
+    }
+}
+
+*%******************************************************************************
+*%                            Pages per sheet Layout
+*%******************************************************************************
+*Feature: PresentationDirection
+{
+    *rcNameID: =IDS_PAGESPERSHEET_LAYOUT
+	*DefaultOption: RightBottom
+	*Option: RightBottom
+       {
+              *rcNameID: =IDS_RIGHT_DOWN
+       }
+	*Option: BottomRight
+       {
+              *rcNameID: =IDS_DOWN_RIGHT
+       }
+	*Option: LeftBottom
+       {
+              *rcNameID: =IDS_LEFT_DOWN
+       }
+	*Option: BottomLeft
+       {
+              *rcNameID: =IDS_DOWN_LEFT
+       }
+}
+
+*%******************************************************************************
+*%                            Duplex
+*%******************************************************************************
+*Feature: Duplex
+{
+    *rcNameID: =TWO_SIDED_PRINTING_DISPLAY
+    *DefaultOption: VERTICAL
+    *Option: NONE
+    {
+        *rcNameID: =IDS_HPBOOKLET_NONE
+    }
+    *Option: VERTICAL
+    {
+        *rcNameID: =IDS_PS_FLIP_LONGEDGE
+    }
+    *Option: HORIZONTAL
+    {
+        *rcNameID: =IDS_PS_FLIP_SHORTEDGE
+    }
+}
+
+*%-------------------------------------------------------------------------
+*%                            BigData
+*%-------------------------------------------------------------------------
+*Feature: BigData
+{
+    *Name: "BigData"
+	*ConcealFromUI?: TRUE
+	*DefaultOption: ON
+	*Option: ON
+    {
+        *Name: ""
+    }
+    *Option: OFF
+    {
+        *Name: ""
+    }   
+}
+
+*%******************************************************************************
+*%                            PageMediaSize - Paper Size
+*%******************************************************************************
+*Feature: PaperSize
+{
+    *rcNameID: =PAPER_SIZE_DISPLAY
+    *DefaultOption: LETTER
+		
+	*Option: LETTER
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(10200, 13200)
+		*PrintableArea: PAIR(9800, 12800)
+		*PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(10000, 200)
+            }
+        }
+	}
+	
+	*Option: LEGAL
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(10200, 16800)
+        *PrintableArea: PAIR(9800, 16400)
+        *PrintableOrigin: PAIR(200, 200)
+		
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(10000, 200)
+            }
+        }
+    }
+	
+	*Option: EXECUTIVE
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(8700, 12600)
+		*PrintableArea: PAIR(8300, 12200)
+		*PrintableOrigin: PAIR(200, 200)
+		*switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(8500, 200)
+            }
+        }        
+    }
+	
+	*Option: HP_8_5X13_IN
+    {
+        *rcNameID: =IDS_MSIZE_OFICIO_8_5X13_IN
+		*PageDimensions: PAIR(10200, 15600)
+        *PrintableArea: PAIR(9800, 15200)
+        *PrintableOrigin: PAIR(200,200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(10000, 200)
+            }
+        }       
+    }
+	
+	*Option: HP_4X6_IN
+    {
+        *rcNameID: =IDS_MSIZE_4X6_IN
+        *PageDimensions: PAIR(4800, 7200)
+		*PrintableArea: PAIR(4400, 6800)
+		*PrintableOrigin: PAIR(200, 200)
+
+				*switch: Orientation
+				{
+					*case: PORTRAIT
+					{
+						*CursorOrigin: PAIR(200, 200)
+					}
+					*case: LANDSCAPE_CC270
+					{
+						*CursorOrigin: PAIR(4600, 200)
+					}
+				}			
+    }
+	
+	*Option: HP_5X7_IN
+    {
+        *rcNameID: =IDS_MSIZE_5X7
+        *PageDimensions: PAIR(6000, 8400)
+		*PrintableArea: PAIR(5600, 8000)
+		*PrintableOrigin: PAIR(200, 200)
+						
+				*switch: Orientation
+				{
+					*case: PORTRAIT
+					{
+						*CursorOrigin: PAIR(200, 200)
+					}
+					*case: LANDSCAPE_CC270
+					{
+						*CursorOrigin: PAIR(5800, 200)
+					}
+				}		
+    }
+	
+	*Option: A4
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(9920, 14028)
+		*PrintableArea: PAIR(9520, 13624)
+		*PrintableOrigin: PAIR(200, 204)
+		*switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(9720, 200)
+            }
+        }		     
+    }
+	
+	*Option: A5
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(6992, 9920)
+        *PrintableArea: PAIR(6592, 9520)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(6792, 200)
+            }
+        }        
+    }
+	
+	*Option: A6
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(4960, 6992)
+        *PrintableArea: PAIR(4560, 6592)
+        *PrintableOrigin: PAIR(200, 200)
+				
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4760, 200)
+            }
+        }
+    }
+	
+	*Option: B5
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(8598, 12140)
+		*PrintableArea: PAIR(8198, 11740)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(8398, 200)
+            }
+        }
+    }
+	
+	*Option: JISB6
+    {
+        *rcNameID: =IDS_MSIZE_B6JIS
+		*PageDimensions: PAIR(6048, 8604)
+		*PrintableArea: PAIR(5648, 8204)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5848, 200)
+            }
+        }
+    }
+	
+	*Option: HP_10X15_CM
+    {
+        *rcNameID: =IDS_MSIZE_10X15_CM
+        *PageDimensions: PAIR(4800, 7200)
+		*PrintableArea: PAIR(4400, 6800)
+		*PrintableOrigin: PAIR(200, 200)
+
+				*switch: Orientation
+				{
+					*case: PORTRAIT
+					{
+						*CursorOrigin: PAIR(200, 200)
+					}
+					*case: LANDSCAPE_CC270
+					{
+						*CursorOrigin: PAIR(4600, 200)
+					}
+				}			
+    }
+	
+	*Option: HP_OFFICIO_216x340_MM
+	{
+        *rcNameID: =IDS_MTYPE_LJ_HP_OFFICIO_216_340
+		*PageDimensions: PAIR(10200, 16062)
+        *PrintableArea: PAIR(9800, 15662)
+        *PrintableOrigin: PAIR(200,200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(10000, 200)
+            }
+        }       
+    }
+
+	*Option: HP_16K_184x260_MM
+	{
+        *rcNameID: =IDS_MSIZE_16k_184_X_206
+		*PageDimensions: PAIR(8693, 12283)
+        *PrintableArea: PAIR(8293, 11883)
+        *PrintableOrigin: PAIR(200,200)
+		
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(8493, 200)
+            }
+        }       
+    }
+	
+	*Option: HP_16K_195x270_MM
+	{
+        *rcNameID: =IDS_MSIZE_16k_195_X_270
+		*PageDimensions: PAIR(9213, 12756)
+        *PrintableArea: PAIR(8813, 12356)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(9013, 200)
+            }
+        }       
+    }
+	
+	*Option: HP_16K_197x273_MM
+	{
+        *rcNameID: =IDS_MSIZE_16K_197X273
+		*PageDimensions: PAIR(9300, 12900)
+        *PrintableArea: PAIR(8900, 12500)
+        *PrintableOrigin: PAIR(200,200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(9100, 200)
+            }
+        }       
+    }
+	
+	*Option: JAPANESE_POSTCARD
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(4724, 6992)
+        *PrintableArea: PAIR(4324, 6592)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4524, 200)
+            }
+        }
+    }
+	
+	*Option: DBL_JAPANESE_POSTCARD_ROTATED
+    {
+        *rcNameID: =IDS_MSIZE_JAPANESE_POSTCARD_ROTATED
+        *PageDimensions: PAIR(6992, 9448)
+        *PrintableArea: PAIR(6592, 9048)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(6792, 200)
+            }
+        }
+    }
+	
+	*Option: ENV_10
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(4948, 11400)
+		*PrintableArea: PAIR(4548, 11000)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4748, 200)
+            }
+        }
+    }
+	
+	*Option: ENV_B5
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(8314, 11810)
+        *PrintableArea: PAIR(7914, 11410)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(8114, 200)
+            }
+        }
+    }
+	
+	*Option: ENV_C5
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(7652, 10818)
+        *PrintableArea: PAIR(7252, 10414)
+        *PrintableOrigin: PAIR(200, 204)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(7452, 200)
+            }
+        }
+    }
+	
+	*Option: ENV_C6
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(5385, 7653)
+		*PrintableArea: PAIR(4985, 7253)
+  		*PrintableOrigin: PAIR(200,200)
+		*switch: Orientation
+		{
+			*case: PORTRAIT
+			{
+				*CursorOrigin: PAIR(200, 200)
+			}
+			*case: LANDSCAPE_CC270
+			{
+				*CursorOrigin: PAIR(5185, 200)
+			}
+		}
+	}
+	
+	*Option: ENV_DL
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(5196, 10392)
+        *PrintableArea: PAIR(4796, 9992)
+        *PrintableOrigin: PAIR(200, 200)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(200, 200)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4996, 200)
+            }
+        }
+    }
+	
+	*Option: JENV_CHOU3
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(5669, 11102)
+		*PrintableArea: PAIR(5269,10702)
+  		*PrintableOrigin: PAIR(200, 200)
+		*switch: Orientation
+		{
+			*case: PORTRAIT
+			{
+				*CursorOrigin: PAIR(200, 200)
+			}
+			*case: LANDSCAPE_CC270
+			{
+				*CursorOrigin: PAIR(5469,200)
+			}
+		}
+	}
+	
+	*Option: JENV_CHOU4
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(4251,9685)
+		*PrintableArea: PAIR(3851,9285)
+  		*PrintableOrigin: PAIR(200, 200)
+		*switch: Orientation
+		{
+			*case: PORTRAIT
+			{
+				*CursorOrigin: PAIR(200, 200)
+			}
+			*case: LANDSCAPE_CC270
+			{
+				*CursorOrigin: PAIR(4051,200)
+			}
+		}
+	}
+	
+	*Option: CUSTOMSIZE
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *MinSize: PAIR(4248, 6996)
+    	*MaxSize: PAIR(10200, 16800)
+    	*MaxPrintableWidth: 10200
+    	*CenterPrintable?: TRUE
+    	*CustPrintableOriginX:  %d{200}
+		*CustPrintableOriginY:  %d{200}
+		*CustPrintableSizeX:   %d{PhysPaperWidth-400}
+		*CustPrintableSizeY:  %d{PhysPaperLength-400}
+
+    	*switch: Orientation
+		{
+			*case: PORTRAIT
+			{
+			*CustCursorOriginX:  %d{200}
+			*CustCursorOriginY:   %d{200}
+			}
+			*case: LANDSCAPE_CC270
+			{
+			*CustCursorOriginX:  %d{PhysPaperWidth-200}
+			*CustCursorOriginY:   %d{200}
+			}
+		}        
+    }
+}
+	
+ *%******************************************************************************
+*%                             PageOrientation
+*%******************************************************************************
+*Feature: Orientation
+{
+    *rcNameID: =ORIENTATION_DISPLAY
+    *DefaultOption: PORTRAIT
+
+    *Option: PORTRAIT
+    {
+        *rcNameID: =PORTRAIT_DISPLAY
+    }
+
+    *Option: LANDSCAPE_CC270
+    {
+        *rcNameID: =LANDSCAPE_DISPLAY
+    }
+}
+
+
+*%******************************************************************************
+*%                              Resolution
+*%******************************************************************************
+*Feature: Resolution
+{
+    *rcNameID: =RESOLUTION_DISPLAY
+    *DefaultOption: 600x600    
+
+    *Option: 600x600
+    {
+        *Name: "600 x 600 " =DOTS_PER_INCH
+        *DPI: PAIR(600, 600)
+        *TextDPI: PAIR(600, 600)
+        *SpotDiameter: 100
+        *Command: CmdBeginRaster { *Cmd : "<1B>*v7S<1B>*r1A" }
+        *Command: CmdEndRaster { *Cmd : "<1B>*rC" }
+        *Command: CmdSendBlockData { *Cmd : "<1B>*b" %d{NumOfDataBytes}"W" }
+    }	
+}
+*%******************************************************************************
+*%                             Media Type
+*%******************************************************************************
+*Feature: MediaType
+{
+    *rcNameID: =MEDIA_TYPE_DISPLAY
+   
+    *DefaultOption: UNSPECIFIED
+    
+	*Option: BOND
+    {
+        *rcNameID: =IDS_BOND_TYPE		
+    }
+	
+    *Option: PLAIN_70_89
+    {
+        *rcNameID: =IDS_MTYPE_PLAIN_70_89      
+    }
+	
+	*Option: LIGHT_60_69
+    {
+        *rcNameID: =IDS_MTYPE_LIGHT_60_69  
+    }
+	
+    *Option: HEAVY_90_120
+    {
+        *rcNameID: =IDS_MTYPE_HEAVY_90_120  
+    }
+	
+	*Option: EXTRA_HEAVY_121_163
+    {
+        *rcNameID: =IDS_MTYPE_EXTRA_HEAVY_121_163
+    }
+	
+	*Option: LABELS
+    {
+        *rcNameID: =IDS_LABELS_TYPE       
+    }
+	
+	*Option: ENVELOPE
+    {
+        *rcNameID: =ENVELOPE_DISPLAY 
+    }
+	
+	*Option: UNSPECIFIED
+    {
+        *rcNameID: =IDS_UNSPECIFIED
+    }
+	
+	*Option: PREPRINTED
+    {
+        *rcNameID: =IDS_PREPRINTED_TYPE
+    }
+    
+}
+
+*%******************************************************************************
+*%                            InputBin
+*%******************************************************************************
+*Feature: InputBin
+{
+    *rcNameID: =IDS_INPUTBIN
+    *DefaultOption: 19
+	*Option: 19
+    {
+        *rcNameID: =IDS_INPUTBIN_TRAY_1
+    }
+	*Option: 8
+	{
+		*rcNameID: =IDS_INPUTBIN_MANUALFEED_1
+	}
+}
+
+*%******************************************************************************
+*%                             Draw borders
+*%******************************************************************************
+*Feature: NUpBorders
+{
+    *rcNameID: =IDS_PAGEBORDERS
+    *DefaultOption: Off
+    *Option: Off
+    {
+        *rcNameID: =IDS_OFF
+    }
+    *Option: On
+    {
+        *rcNameID: =IDS_ON
+    }
+}
+
+*%==============================================================================*%
+*%                          DuplexUnit (Installable)                            *%
+*%==============================================================================*%
+*Feature: DuplexUnit
+{
+	*ConflictPriority: 3
+	*rcNameID: =IDS_AUTODUPLEXUNIT
+	*DefaultOption: Installed
+	*FeatureType: PRINTER_PROPERTY
+	*Option: NotInstalled
+	{
+		*rcNameID: =IDS_AUTODUPLEXUNIT_NOT_INSTALLED
+	}
+	*Option: Installed
+	{
+		*rcNameID: =IDS_AUTODUPLEXUNIT_INSTALLED
+	}
+}
+
+*%******************************************************************************
+*%                             HPPrintOnBothSidesManually
+*%******************************************************************************
+*Feature: HPPrintOnBothSidesManually
+{
+    *rcNameID: =IDS_DUPLEX_MANUAL_ADV
+    *DefaultOption: OFF
+    *Option: OFF
+    {
+        *rcNameID: =IDS_OFF
+    }
+    *Option: ON
+    {
+        *rcNameID: =IDS_ON
+    }
+}
+
+*%******************************************************************************
+*%                            General Everyday Printing settings
+*%******************************************************************************
+*Feature: _GeneralEveryday
+{
+    *Name: "_GeneralEveryday"
+    *DefaultOption: MediaType
+    *Option: MediaType
+    {
+        *Name: "IDS_BOND_TYPE;IDS_MTYPE_PLAIN_70_89;IDS_MTYPE_LIGHT_60_69;IDS_MTYPE_HEAVY_90_120;IDS_MTYPE_EXTRA_HEAVY_121_163;IDS_LABELS_TYPE;ENVELOPE_DISPLAY;IDS_UNSPECIFIED;IDS_PREPRINTED_TYPE"
+    }
+	*Option: DocumentNUp
+    {
+        *Name: "IDS_1UP;IDS_2UP;IDS_4UP;IDS_6UP;IDS_9UP;IDS_16UP"
+    }
+    *Option: Duplex
+    {
+        *Name: "IDS_HPBOOKLET_NONE;IDS_PS_FLIP_LONGEDGE;IDS_PS_FLIP_SHORTEDGE"
+    }
+}
+*%******************************************************************************
+*%                           Enevelope Shortcut
+*%******************************************************************************
+*Feature: _envelope_48
+{
+    *Name: "_envelope_48"
+    *DefaultOption: MediaType
+    *Option: MediaType
+    {
+        *Name: "ENVELOPE_DISPLAY;IDS_BOND_TYPE;IDS_MTYPE_PLAIN_70_89;IDS_MTYPE_LIGHT_60_69;IDS_MTYPE_HEAVY_90_120;IDS_MTYPE_EXTRA_HEAVY_121_163;IDS_LABELS_TYPE;IDS_UNSPECIFIED;IDS_PREPRINTED_TYPE"
+    }
+	*Option: DocumentNUp
+    {
+        *Name: "IDS_1UP"
+    }
+    *Option: Duplex
+    {
+        *Name: "IDS_HPBOOKLET_NONE"
+    }
+}
+*%******************************************************************************
+*%                            Labels
+*%******************************************************************************
+*Feature: _labels
+{
+    *Name: "_labels"
+    *DefaultOption: MediaType
+    *Option: MediaType
+    {
+        *Name: "IDS_LABELS_TYPE;IDS_BOND_TYPE;IDS_MTYPE_PLAIN_70_89;IDS_MTYPE_LIGHT_60_69;IDS_MTYPE_HEAVY_90_120;IDS_MTYPE_EXTRA_HEAVY_121_163;ENVELOPE_DISPLAY;IDS_UNSPECIFIED;IDS_PREPRINTED_TYPE"
+    }
+	*Option: DocumentNUp
+    {
+        *Name: "IDS_1UP"
+    }
+    *Option: Duplex
+    {
+        *Name: "IDS_HPBOOKLET_NONE"
+    }
+}
+*%******************************************************************************
+*%                            Factory default settings
+*%******************************************************************************
+*Feature: _FactoryDefaults
+{
+    *Name: "_FactoryDefaults"
+    *DefaultOption: MediaType
+    *Option: MediaType			*%*****   FeatureName:StaticText ResourceID ********
+    {
+        *Name: "IDS_BOND_TYPE;IDS_MTYPE_PLAIN_70_89;IDS_MTYPE_LIGHT_60_69;IDS_MTYPE_HEAVY_90_120;IDS_MTYPE_EXTRA_HEAVY_121_163;IDS_LABELS_TYPE;ENVELOPE_DISPLAY;IDS_UNSPECIFIED;IDS_PREPRINTED_TYPE"
+    }
+	*Option: DocumentNUp
+    {
+       *Name: "IDS_1UP;IDS_2UP;IDS_4UP;IDS_6UP;IDS_9UP;IDS_16UP"
+    }
+    *Option: Duplex
+    {
+        *Name: "IDS_HPBOOKLET_NONE;IDS_PS_FLIP_LONGEDGE;IDS_PS_FLIP_SHORTEDGE"
+    }
+}
+*%******************************************************************************
+*%                            Eco Smart Settings
+*%******************************************************************************
+*Feature: PS_ECOSMART_SETTINGS
+{
+    *Name: "_FastEco"
+    *DefaultOption: MediaType
+    *Option: MediaType
+    {
+        *Name: "IDS_BOND_TYPE;IDS_MTYPE_PLAIN_70_89;IDS_MTYPE_LIGHT_60_69;IDS_MTYPE_HEAVY_90_120;IDS_MTYPE_EXTRA_HEAVY_121_163;IDS_LABELS_TYPE;ENVELOPE_DISPLAY;IDS_UNSPECIFIED;IDS_PREPRINTED_TYPE"
+    }
+	*Option: PagesPerSheet
+    {
+        *Name: "IDS_1UP;IDS_2UP;IDS_4UP;IDS_6UP;IDS_9UP;IDS_16UP"
+    }
+	*Option: Duplex:21
+    {
+        *Name: "IDS_HPBOOKLET_NONE;IDS_PS_FLIP_LONGEDGE;IDS_PS_FLIP_SHORTEDGE"
+    }
+}
+
+*%******************************************************************************
+*%                            Printer Memory
+*%******************************************************************************
+*Feature: Memory
+{
+    *rcNameID: =PRINTER_MEMORY_DISPLAY
+    *DefaultOption: 32768KB
+    *Option: 16384KB
+    {
+        *rcNameID: =IDS_16MB
+        *MemoryConfigKB: PAIR(16384, 13950)
+    }
+    *Option: 32768KB
+    {
+        *rcNameID: =IDS_32MB
+        *MemoryConfigKB: PAIR(32768, 28350)
+    }
+}
+*%******************************************************************************
+*%                            Collate
+*%******************************************************************************
+*Feature: Collate
+{
+    *Name: "Collate"
+    *DefaultOption: ON
+    *PrintSchemaKeywordMap: "DocumentCollate"
+
+    *Option: ON
+    {
+        *Name: "ON"
+        *PrintSchemaKeywordMap: "Collated"
+    }
+    *Option: OFF
+    {
+        *Name: "OFF"
+        *PrintSchemaKeywordMap: "Uncollated"
+    }
+}
+*%******************************************************************************
+*%                         Cursor Commands
+*%******************************************************************************
+*Command: CmdCR { *Cmd : "<0D>" }
+*Command: CmdLF { *Cmd : "<0A>" }
+*Command: CmdFF { *Cmd : "<0C>" }
+
+*%==============================================================================*%
+*%                                Duplex with papersize						*%
+*%==============================================================================*%
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.EXECUTIVE)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.EXECUTIVE)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_8_5X13_IN)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_8_5X13_IN)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_4X6_IN)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_4X6_IN)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_5X7_IN)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_5X7_IN)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.A5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.A5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.A6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.A6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.B5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.B5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JISB6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JISB6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_10X15_CM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_10X15_CM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_OFFICIO_216x340_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_OFFICIO_216x340_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_184x260_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_184x260_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_195x270_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_195x270_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_197x273_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_197x273_MM)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JAPANESE_POSTCARD)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JAPANESE_POSTCARD)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.DBL_JAPANESE_POSTCARD_ROTATED)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.DBL_JAPANESE_POSTCARD_ROTATED)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.ENV_10)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.ENV_10)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,PaperSize.ENV_10)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,PaperSize.ENV_10)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.ENV_B5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.ENV_B5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,PaperSize.ENV_B5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,PaperSize.ENV_B5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.ENV_C5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.ENV_C5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,PaperSize.ENV_C5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,PaperSize.ENV_C5)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.ENV_C6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.ENV_C6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,PaperSize.ENV_C6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,PaperSize.ENV_C6)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.ENV_DL)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.ENV_DL)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,PaperSize.ENV_DL)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,PaperSize.ENV_DL)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JENV_CHOU3)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JENV_CHOU3)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,PaperSize.JENV_CHOU3)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,PaperSize.JENV_CHOU3)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JENV_CHOU4)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JENV_CHOU4)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,PaperSize.JENV_CHOU4)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,PaperSize.JENV_CHOU4)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.CUSTOMSIZE)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.CUSTOMSIZE)
+			
+
+*%==============================================================================*%
+*%                                DocumentBinding with papersize						*%
+*%==============================================================================*%
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.EXECUTIVE)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.EXECUTIVE)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.EXECUTIVE)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.EXECUTIVE)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_8_5X13_IN)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_8_5X13_IN)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_8_5X13_IN)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_8_5X13_IN)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_4X6_IN)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_4X6_IN)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_4X6_IN)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_4X6_IN)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_5X7_IN)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_5X7_IN)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_5X7_IN)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_5X7_IN)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.A5)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.A5)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.A5)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.A5)	
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.A6)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.A6)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.A6)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.A6)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.B5)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.B5)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.B5)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.B5)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JISB6)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JISB6)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JISB6)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JISB6)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_10X15_CM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_10X15_CM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_10X15_CM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_10X15_CM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_OFFICIO_216x340_MM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_OFFICIO_216x340_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_OFFICIO_216x340_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_OFFICIO_216x340_MM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_184x260_MM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_184x260_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_184x260_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_184x260_MM)											
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_195x270_MM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_195x270_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_195x270_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_195x270_MM)	
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_197x273_MM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_197x273_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.HP_16K_197x273_MM)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.HP_16K_197x273_MM)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JAPANESE_POSTCARD)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JAPANESE_POSTCARD)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.JAPANESE_POSTCARD)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.JAPANESE_POSTCARD)	
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.DBL_JAPANESE_POSTCARD_ROTATED)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.DBL_JAPANESE_POSTCARD_ROTATED)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.DBL_JAPANESE_POSTCARD_ROTATED)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.DBL_JAPANESE_POSTCARD_ROTATED)
+*InvalidCombination: LIST(DocumentBinding.Booklet,PaperSize.ENV_10)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,PaperSize.ENV_10)
+*InvalidCombination: LIST(DocumentBinding.Booklet,PaperSize.ENV_B5)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,PaperSize.ENV_B5)
+*InvalidCombination: LIST(DocumentBinding.Booklet,PaperSize.ENV_C5)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,PaperSize.ENV_C5)
+*InvalidCombination: LIST(DocumentBinding.Booklet,PaperSize.ENV_C6)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,PaperSize.ENV_C6)
+*InvalidCombination: LIST(DocumentBinding.Booklet,PaperSize.ENV_DL)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,PaperSize.ENV_DL)
+*InvalidCombination: LIST(DocumentBinding.Booklet,PaperSize.JENV_CHOU3)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,PaperSize.JENV_CHOU3)
+*InvalidCombination: LIST(DocumentBinding.Booklet,PaperSize.JENV_CHOU4)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,PaperSize.JENV_CHOU4)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.CUSTOMSIZE)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.CUSTOMSIZE)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,PaperSize.CUSTOMSIZE)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,PaperSize.CUSTOMSIZE)	
+
+*%==============================================================================*%
+*%                                Duplex with MediaType						*%
+*%==============================================================================*%
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.EXTRA_HEAVY_121_163)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.EXTRA_HEAVY_121_163)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.PREPRINTED)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.PREPRINTED)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.LABELS)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.LABELS)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,MediaType.LABELS)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,MediaType.LABELS)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.ENVELOPE)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.ENVELOPE)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.VERTICAL,MediaType.ENVELOPE)
+*InvalidCombination: LIST(HPPrintOnBothSidesManually.ON, Duplex.HORIZONTAL,MediaType.ENVELOPE)
+
+
+*%==============================================================================*%
+*%                                DocumentBinding with MediaType				*%
+*%==============================================================================*%
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.EXTRA_HEAVY_121_163)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.EXTRA_HEAVY_121_163)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.EXTRA_HEAVY_121_163)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.EXTRA_HEAVY_121_163)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.PREPRINTED)
+*InvalidCombination: LIST(DocumentBinding.Booklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.PREPRINTED)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.VERTICAL,MediaType.PREPRINTED)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet, HPPrintOnBothSidesManually.OFF, Duplex.HORIZONTAL,MediaType.PREPRINTED)
+*InvalidCombination: LIST(DocumentBinding.Booklet,MediaType.LABELS)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,MediaType.LABELS)
+*InvalidCombination: LIST(DocumentBinding.Booklet,MediaType.ENVELOPE)
+*InvalidCombination: LIST(DocumentBinding.JapaneseBooklet,MediaType.ENVELOPE)

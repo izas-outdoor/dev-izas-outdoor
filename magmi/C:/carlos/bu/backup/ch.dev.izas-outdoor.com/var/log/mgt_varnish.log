@@ -1,0 +1,2833 @@
+[2022-11-09 12:40:41] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 12:41:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 12:46:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 12:46:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:01:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:02:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:05:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:06:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:06:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:06:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:07:48] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:08:31] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:09:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:10:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:14:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:14:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:16:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:16:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:17:07] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:17:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:19:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:20:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:21:27] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:22:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:29:39] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:30:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:32:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:33:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:43:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:44:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:47:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-09 13:48:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:19:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:20:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:25:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:26:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:28:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:28:57] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:30:48] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:31:31] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:33:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:33:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:40:41] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:41:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:45:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:45:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:51:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 06:52:36] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:02:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:02:42] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:20:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:21:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:22:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:22:35] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:23:04] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78277
+)
+ [] []
+[2022-11-10 07:55:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 07:55:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 08:01:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 08:01:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 08:24:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 08:25:10] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 08:26:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 08:26:35] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 14:29:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-10 14:32:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-10 14:32:23] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_86
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-10 14:32:34] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_87
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-10 14:32:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 14:33:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 14:35:25] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-10 14:50:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 14:50:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 14:52:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 14:52:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:02:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:02:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:07:31] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:07:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:08:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_2
+)
+ [] []
+[2022-11-10 15:09:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_2
+)
+ [] []
+[2022-11-10 15:10:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:10:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:12:55] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_2
+)
+ [] []
+[2022-11-10 15:13:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:13:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:13:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_2
+)
+ [] []
+[2022-11-10 15:13:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:14:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:16:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78278
+)
+ [] []
+[2022-11-10 15:25:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:25:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:26:57] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:27:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:31:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:31:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:41:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-11-10 15:43:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-11-10 15:47:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-10 15:47:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 06:31:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 06:32:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 06:40:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 06:40:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:27:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:28:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:37:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:38:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:39:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:39:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:44:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:44:42] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:48:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 07:49:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:16:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:17:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:19:35] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:20:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:21:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:22:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:24:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:25:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:29:14] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:30:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:39:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:39:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:45:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:45:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:46:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:47:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:54:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:54:53] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:57:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 08:57:48] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 09:08:24] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 09:09:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 09:12:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 09:12:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 10:43:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 10:44:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:07:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:07:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:16:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:17:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:18:07] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:18:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:32:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78279
+)
+ [] []
+[2022-11-11 11:34:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78280
+)
+ [] []
+[2022-11-11 11:36:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:37:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:38:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:38:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:44:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:44:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:47:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 11:47:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 12:26:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 12:26:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 12:33:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 12:34:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 12:35:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 12:35:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-11 12:35:56] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_18442
+    [1] => cat_p_18447
+)
+ [] []
+[2022-11-11 12:36:07] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78281
+)
+ [] []
+[2022-11-11 12:37:13] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_18442
+    [1] => cat_p_18447
+)
+ [] []
+[2022-11-11 12:39:55] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78282
+)
+ [] []
+[2022-11-11 12:45:21] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78283
+)
+ [] []
+[2022-11-11 15:51:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78284
+)
+ [] []
+[2022-11-11 16:18:44] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78285
+)
+ [] []
+[2022-11-11 18:32:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78286
+)
+ [] []
+[2022-11-14 06:53:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 06:54:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 06:56:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78287
+)
+ [] []
+[2022-11-14 07:01:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78288
+)
+ [] []
+[2022-11-14 07:04:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 07:04:35] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 07:11:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78289
+)
+ [] []
+[2022-11-14 07:32:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78290
+)
+ [] []
+[2022-11-14 07:35:21] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78291
+)
+ [] []
+[2022-11-14 07:47:15] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_2
+)
+ [] []
+[2022-11-14 07:48:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 08:07:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 08:14:56] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-14 08:14:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 08:15:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 08:25:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 08:25:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 09:21:44] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 09:21:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 09:22:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 09:23:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 09:41:23] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 09:41:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 09:42:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 09:42:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 10:22:04] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 10:22:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 10:29:07] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 10:29:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 10:29:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 10:58:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-14 10:59:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-14 11:01:32] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-14 11:01:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-14 11:03:02] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-11-14 11:03:33] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-11-14 11:06:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 11:06:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 11:24:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 11:24:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 11:24:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 11:30:36] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 11:30:41] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 11:30:48] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 11:42:28] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 11:50:55] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_b_40
+    [1] => cms_b_home_products
+)
+ [] []
+[2022-11-14 12:35:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 12:35:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 13:24:32] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 13:26:07] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 13:26:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 13:35:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 13:35:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:06:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78292
+)
+ [] []
+[2022-11-14 14:13:24] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:13:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:15:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-14 14:15:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:15:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:23:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:23:24] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:37:42] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:37:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-14 14:44:20] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78293
+)
+ [] []
+[2022-11-15 06:25:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-15 06:32:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:32:27] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:41:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-15 06:42:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:42:36] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:44:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-15 06:46:10] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:46:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:50:38] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-15 06:56:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:56:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:58:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 06:58:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 07:42:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 07:44:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 07:49:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 07:49:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 07:51:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-11-15 07:51:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-11-15 07:58:14] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 07:59:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 08:03:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 08:03:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 08:12:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 08:12:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 08:18:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 08:18:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 08:33:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78294
+)
+ [] []
+[2022-11-15 09:25:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-15 09:39:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-15 09:39:42] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-15 09:40:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 09:40:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 09:47:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-15 09:48:34] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-11-15 09:49:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-11-15 09:51:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 09:51:34] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 10:02:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 10:02:34] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 10:04:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-15 10:04:57] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-15 10:06:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-11-15 10:07:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-11-15 10:09:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 10:09:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 10:10:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-15 10:13:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-11-15 10:13:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-11-15 10:19:41] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 10:19:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 12:51:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 12:51:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 13:05:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 13:05:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 13:14:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 13:15:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 13:17:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 13:18:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 13:56:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-15 14:16:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-15 14:48:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-15 14:48:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 09:49:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-16 09:53:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 09:53:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:03:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-16 10:04:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:04:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:08:14] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-16 10:10:41] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:10:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:14:28] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-16 10:27:36] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:27:42] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:32:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 10:32:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:00:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:00:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:03:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:03:07] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:05:45] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-16 11:07:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:08:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:12:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:12:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:22:47] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-16 11:23:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:23:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:41:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 11:41:10] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 12:46:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 12:46:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 13:11:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 13:11:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 13:19:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 13:19:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:17:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-16 14:17:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:17:53] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:24:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:24:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:27:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:28:35] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:28:42] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:31:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-16 14:31:34] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:31:39] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-16 14:59:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-17 09:18:23] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78295
+)
+ [] []
+[2022-11-17 09:19:48] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 09:20:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 09:28:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 09:28:48] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 09:40:27] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78296
+)
+ [] []
+[2022-11-17 09:58:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78297
+)
+ [] []
+[2022-11-17 10:15:13] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 10:20:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 10:28:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 10:28:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 10:43:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 10:44:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 10:44:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 10:45:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 10:53:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 10:53:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 11:00:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 11:02:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-17 11:11:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 11:13:38] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 11:14:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 11:21:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-17 11:32:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-11-18 06:11:19] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-11-18 06:13:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-11-18 06:13:31] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-11-18 06:27:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-18 06:27:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-18 09:02:02] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-11-18 09:02:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-18 09:02:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-21 06:33:07] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78298
+)
+ [] []
+[2022-11-21 07:24:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78299
+)
+ [] []
+[2022-11-21 07:25:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78300
+)
+ [] []
+[2022-11-21 07:38:19] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78301
+)
+ [] []
+[2022-11-21 13:06:06] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78302
+)
+ [] []
+[2022-11-22 06:20:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-22 06:21:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-22 07:35:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-22 07:36:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-22 07:43:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-22 07:43:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 06:20:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78303
+)
+ [] []
+[2022-11-23 07:56:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78304
+)
+ [] []
+[2022-11-23 07:57:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 07:57:57] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:03:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:03:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:03:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78305
+)
+ [] []
+[2022-11-23 08:05:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78306
+)
+ [] []
+[2022-11-23 08:05:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:06:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:20:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:20:14] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:21:16] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78307
+)
+ [] []
+[2022-11-23 08:36:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:36:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:38:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:38:24] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:38:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 08:39:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 09:13:16] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78308
+)
+ [] []
+[2022-11-23 09:33:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 09:33:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 09:35:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78309
+)
+ [] []
+[2022-11-23 09:52:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 09:52:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 09:57:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 09:57:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 10:27:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 10:27:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:30:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:30:27] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:39:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:39:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:41:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:41:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:43:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:43:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:46:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:46:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:50:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:50:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:52:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:52:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:53:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:54:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:57:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-23 11:57:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-24 10:58:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78310
+)
+ [] []
+[2022-11-24 11:24:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78311
+)
+ [] []
+[2022-11-24 14:14:53] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78312
+)
+ [] []
+[2022-11-25 06:58:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 06:59:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 07:02:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 07:02:52] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 07:03:42] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78313
+)
+ [] []
+[2022-11-25 09:55:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78314
+)
+ [] []
+[2022-11-25 09:57:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 09:58:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:03:53] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:04:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:06:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:06:39] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:07:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:08:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:17:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:17:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:18:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:19:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:33:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:33:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:33:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:34:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:40:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:40:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 10:53:25] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78315
+)
+ [] []
+[2022-11-25 11:32:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78316
+)
+ [] []
+[2022-11-25 12:19:39] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 12:19:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 12:23:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 12:23:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 12:24:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 12:24:53] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 12:27:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-25 12:27:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 06:31:12] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78317
+)
+ [] []
+[2022-11-28 06:54:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 06:54:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 08:35:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 08:35:14] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 08:51:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78318
+)
+ [] []
+[2022-11-28 08:52:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 08:53:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:01:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:01:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:11:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:12:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:26:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:26:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:50:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78319
+)
+ [] []
+[2022-11-28 09:58:48] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 09:59:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:08:57] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78320
+)
+ [] []
+[2022-11-28 10:10:45] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78321
+)
+ [] []
+[2022-11-28 10:34:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:35:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:40:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:40:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:41:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:42:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:48:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:48:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:49:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:50:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:56:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 10:56:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-28 11:56:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78322
+)
+ [] []
+[2022-11-29 21:57:38] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78323
+)
+ [] []
+[2022-11-30 11:51:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-11-30 11:52:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 01:12:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78324
+)
+ [] []
+[2022-12-12 11:19:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:20:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:25:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:26:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:47:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:48:36] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:53:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:53:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 11:55:15] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+    [1] => cat_c_p_272
+)
+ [] []
+[2022-12-12 11:56:13] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+    [1] => cat_c_p_272
+)
+ [] []
+[2022-12-12 11:57:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-12 11:57:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-12 11:59:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+    [1] => cat_c_p_273
+    [2] => cat_c_p_279
+    [3] => cat_c_p_280
+    [4] => cat_c_p_284
+)
+ [] []
+[2022-12-12 11:59:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 12:00:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 13:19:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-12 13:20:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-12 13:56:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-12 13:59:23] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-12 14:23:36] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-12 14:24:06] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-12 14:29:31] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 14:29:39] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-12 14:56:56] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78325
+)
+ [] []
+[2022-12-12 14:58:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-12 15:00:42] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-12 15:01:13] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-13 06:31:27] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-13 06:33:02] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-13 07:43:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 07:44:07] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 07:46:10] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 07:46:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 07:51:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 07:52:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 07:56:14] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 07:56:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:07:10] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:07:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:09:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:10:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:45:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:46:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:53:39] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:53:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:54:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:55:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:55:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:56:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:59:14] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 08:59:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:01:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:02:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:03:53] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:04:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:10:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:10:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:13:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-13 09:13:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-13 09:16:24] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:16:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:18:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:18:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:18:36] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:19:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:26:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:26:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:41:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:42:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:47:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:48:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:50:00] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87312
+    [1] => cat_c_p_272
+    [2] => cat_c_p_273
+    [3] => cat_c_p_274
+    [4] => cat_c_p_279
+    [5] => cat_c_p_290
+)
+ [] []
+[2022-12-13 09:50:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87312
+)
+ [] []
+[2022-12-13 09:51:45] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-13 09:52:16] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-13 09:56:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:56:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 09:58:00] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87312
+    [1] => cat_c_p_272
+    [2] => cat_c_p_273
+    [3] => cat_c_p_274
+    [4] => cat_c_p_279
+    [5] => cat_c_p_290
+)
+ [] []
+[2022-12-13 09:59:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-13 09:59:56] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-13 10:03:19] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87312
+)
+ [] []
+[2022-12-13 10:04:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-13 10:05:28] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-13 10:07:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78326
+)
+ [] []
+[2022-12-13 10:13:27] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 10:13:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-13 10:44:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87311
+)
+ [] []
+[2022-12-13 10:55:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78327
+)
+ [] []
+[2022-12-13 11:08:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78328
+)
+ [] []
+[2022-12-14 08:50:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87312
+)
+ [] []
+[2022-12-14 08:53:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78329
+)
+ [] []
+[2022-12-14 09:00:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_559
+    [1] => cat_c_p_559
+    [2] => cat_c_p_1
+    [3] => cat_c_p_2
+    [4] => cat_c
+)
+ [] []
+[2022-12-14 09:00:08] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87312
+    [1] => cat_c_p_559
+)
+ [] []
+[2022-12-14 09:27:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87312
+)
+ [] []
+[2022-12-14 09:28:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87313
+    [1] => cat_c_p_2
+    [2] => cat_c_p_559
+)
+ [] []
+[2022-12-14 09:29:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87313
+    [1] => cat_c_p_453
+)
+ [] []
+[2022-12-14 10:56:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78330
+)
+ [] []
+[2022-12-14 11:00:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 03:44:33] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78331
+)
+ [] []
+[2022-12-15 04:05:07] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 04:15:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 04:18:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 04:19:34] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 04:20:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 04:23:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 04:52:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 05:04:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 09:11:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78332
+)
+ [] []
+[2022-12-15 09:14:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 09:38:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 09:40:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 09:42:15] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-12-15 09:42:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 09:43:32] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78333
+)
+ [] []
+[2022-12-15 10:07:19] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-12-15 10:08:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-12-15 10:14:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:25:47] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87314
+)
+ [] []
+[2022-12-15 10:28:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:36:41] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:39:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:41:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:44:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:46:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:49:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:50:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:52:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 10:53:36] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 11:02:56] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78334
+)
+ [] []
+[2022-12-15 11:06:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87314
+    [1] => cat_c_p_2
+    [2] => cat_c_p_272
+)
+ [] []
+[2022-12-15 11:12:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 11:14:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 11:17:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 11:19:58] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 11:28:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 11:50:42] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:10:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:14:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:16:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:16:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:34:28] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:36:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:39:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:42:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:42:53] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 12:46:34] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 13:03:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 13:08:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-15 13:09:14] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-15 13:11:35] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-15 13:15:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78335
+)
+ [] []
+[2022-12-15 13:19:57] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78336
+)
+ [] []
+[2022-12-15 14:23:53] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cms_p_9
+)
+ [] []
+[2022-12-16 03:51:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 04:14:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78337
+)
+ [] []
+[2022-12-16 05:14:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 05:15:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 05:17:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78338
+)
+ [] []
+[2022-12-16 05:20:27] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78339
+)
+ [] []
+[2022-12-16 05:27:08] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78340
+)
+ [] []
+[2022-12-16 05:34:27] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 05:36:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78341
+)
+ [] []
+[2022-12-16 05:38:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78342
+)
+ [] []
+[2022-12-16 05:57:45] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87314
+)
+ [] []
+[2022-12-16 05:58:20] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87314
+    [1] => cat_c_p_2
+    [2] => cat_c_p_272
+)
+ [] []
+[2022-12-16 05:58:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 06:02:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87315
+)
+ [] []
+[2022-12-16 06:06:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_87315
+)
+ [] []
+[2022-12-16 06:08:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 06:09:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78343
+)
+ [] []
+[2022-12-16 06:16:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 06:19:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 06:36:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-16 06:37:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78344
+)
+ [] []
+[2022-12-16 06:40:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-18 12:37:08] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78345
+)
+ [] []
+[2022-12-19 06:34:15] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78346
+)
+ [] []
+[2022-12-19 06:58:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 06:58:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 07:01:08] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-19 07:01:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-19 07:19:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 07:19:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 07:24:12] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 07:25:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 08:12:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78347
+)
+ [] []
+[2022-12-19 08:27:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 08:27:35] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 08:59:27] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78348
+)
+ [] []
+[2022-12-19 09:14:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78349
+)
+ [] []
+[2022-12-19 10:38:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78350
+)
+ [] []
+[2022-12-19 11:06:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 11:07:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 11:22:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 11:22:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-19 11:24:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78351
+)
+ [] []
+[2022-12-19 11:44:21] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78352
+)
+ [] []
+[2022-12-19 12:00:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78353
+)
+ [] []
+[2022-12-19 12:06:31] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78354
+)
+ [] []
+[2022-12-19 12:09:06] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78355
+)
+ [] []
+[2022-12-19 12:21:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78356
+)
+ [] []
+[2022-12-19 12:26:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78357
+)
+ [] []
+[2022-12-19 12:59:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78358
+)
+ [] []
+[2022-12-19 13:31:34] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78359
+)
+ [] []
+[2022-12-19 14:18:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78360
+)
+ [] []
+[2022-12-19 14:31:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78361
+)
+ [] []
+[2022-12-19 14:36:36] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78362
+)
+ [] []
+[2022-12-19 14:52:16] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78363
+)
+ [] []
+[2022-12-19 14:56:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78364
+)
+ [] []
+[2022-12-19 15:01:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78365
+)
+ [] []
+[2022-12-19 15:14:25] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78366
+)
+ [] []
+[2022-12-19 15:16:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78367
+)
+ [] []
+[2022-12-19 15:20:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78368
+)
+ [] []
+[2022-12-19 15:25:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78369
+)
+ [] []
+[2022-12-19 15:30:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78370
+)
+ [] []
+[2022-12-19 15:52:21] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78371
+)
+ [] []
+[2022-12-20 07:02:32] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78372
+)
+ [] []
+[2022-12-20 07:16:41] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78373
+)
+ [] []
+[2022-12-20 07:57:06] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78374
+)
+ [] []
+[2022-12-20 08:07:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78375
+)
+ [] []
+[2022-12-20 08:12:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78376
+)
+ [] []
+[2022-12-20 08:16:04] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78377
+)
+ [] []
+[2022-12-20 08:37:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78378
+)
+ [] []
+[2022-12-20 08:40:44] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78379
+)
+ [] []
+[2022-12-20 08:48:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78380
+)
+ [] []
+[2022-12-20 08:51:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78381
+)
+ [] []
+[2022-12-20 08:58:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78382
+)
+ [] []
+[2022-12-20 09:07:04] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78383
+)
+ [] []
+[2022-12-20 11:11:08] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78384
+)
+ [] []
+[2022-12-20 11:22:42] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78385
+)
+ [] []
+[2022-12-20 11:32:31] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78386
+)
+ [] []
+[2022-12-20 11:33:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78387
+)
+ [] []
+[2022-12-20 13:22:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78388
+)
+ [] []
+[2022-12-20 15:09:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78389
+)
+ [] []
+[2022-12-20 15:13:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78390
+)
+ [] []
+[2022-12-20 15:16:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78391
+)
+ [] []
+[2022-12-20 15:19:20] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78392
+)
+ [] []
+[2022-12-20 15:21:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78393
+)
+ [] []
+[2022-12-20 15:26:37] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78394
+)
+ [] []
+[2022-12-20 15:30:12] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78395
+)
+ [] []
+[2022-12-20 15:33:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78396
+)
+ [] []
+[2022-12-20 15:36:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78397
+)
+ [] []
+[2022-12-20 15:39:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78398
+)
+ [] []
+[2022-12-20 15:51:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78399
+)
+ [] []
+[2022-12-20 15:54:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78400
+)
+ [] []
+[2022-12-20 15:58:25] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78401
+)
+ [] []
+[2022-12-20 16:00:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78402
+)
+ [] []
+[2022-12-21 07:18:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78403
+)
+ [] []
+[2022-12-21 07:26:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78404
+)
+ [] []
+[2022-12-21 07:29:28] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78405
+)
+ [] []
+[2022-12-21 07:33:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78406
+)
+ [] []
+[2022-12-21 07:36:16] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78407
+)
+ [] []
+[2022-12-21 07:50:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78408
+)
+ [] []
+[2022-12-21 07:53:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78409
+)
+ [] []
+[2022-12-21 07:58:13] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 07:59:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 08:02:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78410
+)
+ [] []
+[2022-12-21 08:11:27] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78411
+)
+ [] []
+[2022-12-21 08:17:37] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78412
+)
+ [] []
+[2022-12-21 09:48:41] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78413
+)
+ [] []
+[2022-12-21 10:13:12] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78414
+)
+ [] []
+[2022-12-21 10:19:17] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78415
+)
+ [] []
+[2022-12-21 10:23:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78416
+)
+ [] []
+[2022-12-21 10:45:32] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 10:46:27] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 10:52:49] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 10:53:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 11:02:21] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 11:03:09] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 11:05:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78417
+)
+ [] []
+[2022-12-21 11:06:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78418
+)
+ [] []
+[2022-12-21 11:17:41] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78419
+)
+ [] []
+[2022-12-21 11:28:04] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78420
+)
+ [] []
+[2022-12-21 11:32:14] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78421
+)
+ [] []
+[2022-12-21 11:36:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78422
+)
+ [] []
+[2022-12-21 11:42:13] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78423
+)
+ [] []
+[2022-12-21 11:51:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78424
+)
+ [] []
+[2022-12-21 11:58:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78425
+)
+ [] []
+[2022-12-21 12:06:33] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78426
+)
+ [] []
+[2022-12-21 12:08:19] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78427
+)
+ [] []
+[2022-12-21 12:09:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78428
+)
+ [] []
+[2022-12-21 12:29:07] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78429
+)
+ [] []
+[2022-12-21 12:31:27] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78430
+)
+ [] []
+[2022-12-21 12:33:15] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78431
+)
+ [] []
+[2022-12-21 13:29:14] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78432
+)
+ [] []
+[2022-12-21 13:37:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78433
+)
+ [] []
+[2022-12-21 13:40:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 13:41:47] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 13:45:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78434
+)
+ [] []
+[2022-12-21 13:48:27] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78435
+)
+ [] []
+[2022-12-21 14:00:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78436
+)
+ [] []
+[2022-12-21 14:10:36] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78437
+)
+ [] []
+[2022-12-21 14:14:58] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78438
+)
+ [] []
+[2022-12-21 14:17:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 14:18:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 14:30:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78439
+)
+ [] []
+[2022-12-21 15:17:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78440
+)
+ [] []
+[2022-12-21 15:24:41] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 15:25:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-21 15:28:26] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78441
+)
+ [] []
+[2022-12-22 07:19:55] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78442
+)
+ [] []
+[2022-12-22 07:35:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78443
+)
+ [] []
+[2022-12-22 07:43:44] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78444
+)
+ [] []
+[2022-12-22 07:49:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78445
+)
+ [] []
+[2022-12-22 08:14:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78446
+)
+ [] []
+[2022-12-22 09:05:31] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 09:06:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 09:08:32] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78447
+)
+ [] []
+[2022-12-22 11:22:10] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 11:23:01] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 11:30:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78448
+)
+ [] []
+[2022-12-22 11:57:34] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78449
+)
+ [] []
+[2022-12-22 12:14:56] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 12:23:31] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78450
+)
+ [] []
+[2022-12-22 12:29:12] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78451
+)
+ [] []
+[2022-12-22 12:31:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78452
+)
+ [] []
+[2022-12-22 12:58:53] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78453
+)
+ [] []
+[2022-12-22 13:27:24] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 13:28:11] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 13:31:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78454
+)
+ [] []
+[2022-12-22 13:36:12] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78455
+)
+ [] []
+[2022-12-22 13:38:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78456
+)
+ [] []
+[2022-12-22 13:44:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78457
+)
+ [] []
+[2022-12-22 13:45:39] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 13:46:25] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 13:49:25] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78458
+)
+ [] []
+[2022-12-22 13:53:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78459
+)
+ [] []
+[2022-12-22 14:20:14] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 14:21:00] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-22 14:23:36] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78460
+)
+ [] []
+[2022-12-22 14:28:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78461
+)
+ [] []
+[2022-12-22 14:31:20] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78462
+)
+ [] []
+[2022-12-22 14:36:19] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78463
+)
+ [] []
+[2022-12-22 14:40:50] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78464
+)
+ [] []
+[2022-12-22 14:57:00] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78465
+)
+ [] []
+[2022-12-22 15:09:06] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78466
+)
+ [] []
+[2022-12-22 15:10:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78467
+)
+ [] []
+[2022-12-22 15:18:28] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78468
+)
+ [] []
+[2022-12-22 15:26:53] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78469
+)
+ [] []
+[2022-12-22 15:36:57] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78470
+)
+ [] []
+[2022-12-22 15:40:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78471
+)
+ [] []
+[2022-12-22 15:44:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78472
+)
+ [] []
+[2022-12-22 15:52:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78473
+)
+ [] []
+[2022-12-22 15:54:55] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78474
+)
+ [] []
+[2022-12-23 06:45:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78475
+)
+ [] []
+[2022-12-23 06:54:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78476
+)
+ [] []
+[2022-12-23 07:03:43] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78477
+)
+ [] []
+[2022-12-23 07:04:02] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78478
+)
+ [] []
+[2022-12-23 07:05:34] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 07:06:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 07:08:20] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78479
+)
+ [] []
+[2022-12-23 07:12:04] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78480
+)
+ [] []
+[2022-12-23 07:14:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78481
+)
+ [] []
+[2022-12-23 07:18:06] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78482
+)
+ [] []
+[2022-12-23 07:21:41] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78483
+)
+ [] []
+[2022-12-23 07:33:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78484
+)
+ [] []
+[2022-12-23 07:34:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 07:35:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 07:37:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78485
+)
+ [] []
+[2022-12-23 07:42:18] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78486
+)
+ [] []
+[2022-12-23 07:46:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78487
+)
+ [] []
+[2022-12-23 07:51:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78488
+)
+ [] []
+[2022-12-23 07:54:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 07:55:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 07:58:16] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78489
+)
+ [] []
+[2022-12-23 08:02:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:03:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:08:55] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:09:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:10:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78490
+)
+ [] []
+[2022-12-23 08:12:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78491
+)
+ [] []
+[2022-12-23 08:16:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78492
+)
+ [] []
+[2022-12-23 08:25:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:26:46] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:29:42] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78493
+)
+ [] []
+[2022-12-23 08:43:04] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78494
+)
+ [] []
+[2022-12-23 08:49:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:50:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 08:55:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78495
+)
+ [] []
+[2022-12-23 08:59:37] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 09:00:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-23 09:04:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78496
+)
+ [] []
+[2022-12-23 09:09:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78497
+)
+ [] []
+[2022-12-23 09:12:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78498
+)
+ [] []
+[2022-12-27 08:03:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78499
+)
+ [] []
+[2022-12-27 08:18:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78500
+)
+ [] []
+[2022-12-27 08:27:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78501
+)
+ [] []
+[2022-12-27 14:22:53] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78502
+)
+ [] []
+[2022-12-27 14:39:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78503
+)
+ [] []
+[2022-12-27 15:14:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78504
+)
+ [] []
+[2022-12-27 15:23:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78505
+)
+ [] []
+[2022-12-27 15:32:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78506
+)
+ [] []
+[2022-12-29 07:45:29] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 07:46:20] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 08:20:45] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 08:21:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 09:07:53] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 09:08:38] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 09:35:40] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 09:36:30] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 09:43:52] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 09:44:03] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 10:03:23] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_90
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-12-29 10:03:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_89
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-12-29 10:05:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_90
+    [1] => contentmanager_contenttype_2
+)
+ [] []
+[2022-12-29 10:06:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 10:07:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 10:11:57] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 10:12:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 11:43:41] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:49:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:51:54] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 11:52:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 11:54:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:55:33] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 11:57:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:57:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:58:28] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:58:37] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:58:47] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:59:11] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 11:59:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 12:04:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:04:50] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 12:07:13] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-29 12:08:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-29 12:18:49] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:21:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+    [2] => BLOCK_HTML
+)
+ [] []
+[2022-12-29 12:21:19] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 12:23:16] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:24:20] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:25:30] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:26:28] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:26:51] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+    [2] => BLOCK_HTML
+)
+ [] []
+[2022-12-29 12:27:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:27:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+    [2] => BLOCK_HTML
+)
+ [] []
+[2022-12-29 12:28:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:28:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+    [2] => BLOCK_HTML
+)
+ [] []
+[2022-12-29 12:28:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 12:30:24] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => price
+)
+ [] []
+[2022-12-29 12:30:37] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+    [2] => BLOCK_HTML
+)
+ [] []
+[2022-12-29 12:30:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 14:28:44] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 14:28:57] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-29 14:31:42] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78507
+)
+ [] []
+[2022-12-29 15:34:13] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-29 15:36:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-29 15:43:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-29 15:47:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-29 15:48:57] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-29 16:01:14] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-29 16:01:42] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_506
+)
+ [] []
+[2022-12-29 16:01:45] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-30 06:50:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-30 06:51:25] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_45
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 06:53:14] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_45
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 06:53:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_45
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 06:53:48] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_45
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:04:05] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-30 07:05:29] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_480
+    [1] => cat_c_p_480
+    [2] => cat_c_p_1
+    [3] => cat_c_p_2
+    [4] => cat_c
+)
+ [] []
+[2022-12-30 07:07:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_37
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:08:31] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_6
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:09:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_480
+    [1] => cat_c_p_480
+)
+ [] []
+[2022-12-30 07:12:25] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-30 07:12:52] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_480
+    [1] => cat_p_506
+)
+ [] []
+[2022-12-30 07:12:55] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-30 07:17:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_6
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:18:41] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-30 07:19:07] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_480
+    [1] => cat_p_506
+)
+ [] []
+[2022-12-30 07:19:10] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-30 07:26:01] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_481
+    [1] => cat_c_p_481
+    [2] => cat_c_p_1
+    [3] => cat_c_p_2
+    [4] => cat_c_p_480
+)
+ [] []
+[2022-12-30 07:28:54] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_45
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:30:22] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_480
+    [1] => cat_c_p_480
+    [2] => cat_c_p_1
+    [3] => cat_c_p_2
+)
+ [] []
+[2022-12-30 07:30:34] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_480
+    [1] => cat_c_p_480
+    [2] => cat_c
+)
+ [] []
+[2022-12-30 07:30:46] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_481
+    [1] => cat_c_p_481
+    [2] => cat_c_p_1
+    [3] => cat_c_p_2
+    [4] => cat_c_p_480
+)
+ [] []
+[2022-12-30 07:33:55] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_37
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:34:39] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c_506
+    [1] => cat_c_p_506
+)
+ [] []
+[2022-12-30 07:35:40] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_6
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:36:03] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_45
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:36:09] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_c
+    [1] => cat_p
+)
+ [] []
+[2022-12-30 07:36:15] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => contentmanager_content_45
+    [1] => contentmanager_contenttype_1
+)
+ [] []
+[2022-12-30 07:36:35] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => cat_p_506
+)
+ [] []
+[2022-12-30 07:36:38] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => BLOCK_HTML
+)
+ [] []
+[2022-12-30 09:33:04] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-30 09:33:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2022-12-30 09:35:59] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-04 10:30:59] mgt-varnish-logger.DEBUG: Varnish Cache purged by following tags: Array
+(
+    [0] => wishlist_78508
+)
+ [] []
+[2023-01-05 06:54:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 06:55:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 06:57:23] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 06:58:05] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:00:51] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:01:34] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:20:43] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:21:26] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:31:17] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:32:02] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:43:15] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 07:44:06] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 11:32:16] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 11:33:22] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 12:23:18] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []
+[2023-01-05 12:24:08] mgt-varnish-logger.DEBUG: The whole Varnish Cache has been purged [] []

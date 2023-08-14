@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompatReport xmlns="http://www.microsoft.com/ApplicationExperience/UpgradeAdvisor/01012009" MigXmlFile="ICYta9OhN0uxNY3X.4.2.2.3.6.8.0.0_APPRAISER_Migration.xml"><System X64Capable="True" X64Running="True"/><Hardware><HardwareItem HardwareType="Setup_BitlockerNoTargetSupport"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_TargetIsNonStagedBuild"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_LanguagePackDetected"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_LicenseActivation"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_FeaturesOnDemandDetected"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_FlightSigningEnabled"><CompatibilityInfo BlockingType="None"/></HardwareItem><HardwareItem HardwareType="Setup_SecureBoot"><CompatibilityInfo BlockingType="None"/></HardwareItem></Hardware><SystemInfo UplevelEdition="Windows 11" OSMajorVersion="10" OSMinorVersion="0"/>
+	<Devices/>
+	<DriverPackages>
+		<DriverPackage Inf="oem78.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem67.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem27.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem74.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem88.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem126.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem103.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem117.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem116.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem100.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem76.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem81.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem132.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem10.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem14.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem2.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem125.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem109.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem69.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem137.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem108.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem1.inf" BlockMigration="True" HasSignedBinaries="False"/>
+		<DriverPackage Inf="oem0.inf" BlockMigration="True" HasSignedBinaries="False"/>
+		<DriverPackage Inf="oem15.inf" BlockMigration="False" HasSignedBinaries="True"/>
+		<DriverPackage Inf="oem107.inf" BlockMigration="False" HasSignedBinaries="True"/>
+	</DriverPackages>
+	<Programs/>
+</CompatReport>

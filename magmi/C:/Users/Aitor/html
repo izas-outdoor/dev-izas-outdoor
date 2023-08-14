@@ -1,0 +1,265 @@
+<div class="hidden-lg-up">
+  <p>{{block class="Wetrust\ContentManager\Block\Content\Banner" name="wt_banner"}}</p>
+</div>
+<div class="midsection banner categories second-banner hidden-md-down">
+  <div class="banner-slider second-banner ">
+    <div class="col-12 col-lg vertical categories ">
+      <div class="category-block">
+        <div class="image-container">
+          <a tabindex="0" href="https://www.izas-outdoor.com/nueva-coleccion.html">
+            <!-- <img class="video  hidden-md-down" title="Ropa de montaña: colección skiwear de IZAS" src="{{media url='contentmanager/content/BANNER-PRINCIPAL-NUEVA-COLECCION-1920X850_1.jpg'}}" alt="Ropa de montaña: colección skiwear de IZAS">-->
+            <video class="video hidden-md-down" autoplay="autoplay" loop="loop" muted="" width="100%" height="100%">
+              <source src="https://www.izas-outdoor.com/media/principal-nueva-coleccion-video.mp4" type="video/mp4">
+            </video>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="homepage-container">
+  <div class="midsection banner categories second-banner hidden-md-down">
+    <div class="banner-slider sub-banner second-banner ">
+      <div class="col-12 col-lg vertical categories ">
+        <div class="category-block">
+          <div class="image-container hidden-md-down">
+            <!--<a tabindex="0" href="https://www.izas-outdoor.com/nueva-coleccion.html">-->
+            <img class="" title="Izas Outdoor colección Segundas Capas" src="{{media url='wysiwyg/banners/SEGUNDAS-CAPAS-CAMISETAS-NL-BANNER-2.jpg'}}" alt="Izas Outdoor colección Segundas Capas">
+            <div class="izas-container">
+              <div class="izas-row">
+                <div class="izas-col">
+                  <div class="izas-title">SEGUNDA CAPA</div>
+                  <div class="izas-col-container">
+                    <div class="izas-button">
+                      <a href="https://www.izas-outdoor.com/hombre/camisetas-capas-intermedias.html">HOMBRE</a>
+                    </div>
+                    <div class="izas-button">
+                      <a href="https://www.izas-outdoor.com/mujer/camisetas-capas-intermedias.html">MUJER</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="izas-col">
+                  <div class="izas-title">CAMISETAS</div>
+                  <div class="izas-col-container">
+                    <div class="izas-button">
+                      <a href="https://www.izas-outdoor.com/hombre/camisetas-capas-intermedias/camisetas-polos.html">HOMBRE</a>
+                    </div>
+                    <div class="izas-button">
+                      <a href="https://www.izas-outdoor.com/mujer/camisetas-capas-intermedias/camisetas-polos.html">MUJER</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="izas-col" style="/* visibility: hidden;">
+                  <div style="visibility: hidden;">
+                    <div class="izas-title">DESMONTABLES</div>
+                    <div class="izas-col-container">
+                      <div class="izas-button">
+                        <a tabindex="0" href="https://www.izas-outdoor.com/hombre/pantalones/pantalones-desmontables.html">HOMBRE</a>
+                      </div>
+                      <div class="izas-button">
+                        <a tabindex="0" href="https://www.izas-outdoor.com/mujer/pantalones/pantalones-desmontables.html">MUJER</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </a>-->
+      <!-- <a class="title bannerFridayChaquetas hidden-md-up" href="https://www.izas-outdoor.com/?query=ski">-->
+      <!-- </a> -->
+      <!--<div class="text-container bannerFridayFibra hidden-md-down"><a class="title bannerFridayChaquetas" href="https://www.izas-outdoor.com/hombre/camisetas-capas-intermedias.html">PARA EL</a></div><div class="text-container bannerFridayPluma hidden-md-down"><a class="title bannerFridayChaquetas" href="https://www.izas-outdoor.com/mujer/camisetas-capas-intermedias.html">PARA ELLA</a></div>-->
+      <!--<div class="text-container bannerFridayFibra hidden-md-down" style="bottom: 50% !important; right: unset !important; left: 70px;"><a class="title bannerFridayChaquetas" style="padding: 0 !important; padding-top: 19px !important;" href="https://www.izas-outdoor.com/outlet-ropa-montana.html">DESCUBRE LOS DESCUENTOS</a></div>-->
+    </div>
+  </div>
+</div>
+<div class="midsection banner sub-banner categories">
+  <img class="hidden-md-up" style="object-fit: cover; margin-left: unset; width: 100%;" title="Ropa de montaña: colección skiwear de IZAS" src="{{media url='wysiwyg/banners/SEGUNDAS-CAPAS-BANNER-2-MOB.jpg'}}" alt="Izas Outdoor colección Segundas Capas">
+</div>
+<div class="text-container bannerFridayFibra hidden-md-up">
+  <a class="title bannerFridayChaquetas" href="https://www.izas-outdoor.com/hombre/camisetas-capas-intermedias.html">PARA EL</a>
+</div>
+<div class="text-container bannerFridayPluma hidden-md-up">
+  <a class="title bannerFridayChaquetas" href="href=">PARA ELLA</a>
+</div>
+<!--<div class="text-container bannerFridayFibra  hidden-md-up"><a class="title bannerFridayChaquetas" style="white-space: nowrap;" href="https://www.izas-outdoor.com/outlet-ropa-montana.html">DÉSCUBRE LOS DESCUENTOS</a></div><div class="text-container bannerFridayFibra  hidden-md-up"><a class="title bannerFridayChaquetas" style="white-space: nowrap;" href="https://www.izas-outdoor.com/outlet-ropa-montana.html">DÉSCUBRE LOS DESCUENTOS</a></div><div class="text-container bannerFridayFibra  hidden-md-up"><a class="title bannerFridayChaquetas" style="white-space: nowrap;" href="https://www.izas-outdoor.com/outlet-ropa-montana.html">DÉSCUBRE LOS DESCUENTOS</a></div>-->
+<p>&nbsp;</p>
+<h3 class="hidden-md-up" style="text-align: center;">¿Para quién es la compra?</h3>
+<div class="homepage-container">
+  <div class="midsection banner sub-banner categories">
+    <a href="https://www.izas-outdoor.com/hombre.html">
+      <img class="hidden-md-up" title="Ropa, calzado y accesorios de montaña para hombre" src="{{media url='wysiwyg/banner-categorias-ropa-montana-mob-hombre.jpg'}}" alt="Ropa, calzado y accesorios de montaña para hombre">
+    </a>
+    <a href="https://www.izas-outdoor.com/mujer.html">
+      <img class="hidden-md-up" title="Ropa, calzado y accesorios de montaña para mujer" src="{{media url='wysiwyg/banner-categorias-ropa-montana-mob-mujer.jpg'}}" alt="Ropa, calzado y accesorios de montaña para mujer">
+    </a>
+    <a href="https://www.izas-outdoor.com/ninos.html">
+      <img class="hidden-md-up" title="Ropa, calzado y accesorios de montaña para niño" src="{{media url='wysiwyg/banner-categorias-ropa-montana-mob-niño.jpg'}}" alt="Ropa, calzado y accesorios de montaña para niño">
+    </a>
+  </div>
+</div>
+<h1 style="text-align: center;">Selección de descuentos en ropa de montaña:</h1>
+<div class="homepage-container">{{block class="Magento\Cms\Block\Block" block_id="home_products"}}
+  <div class="homepage-container">
+    <div class="midsection banner categories">
+      <div class="container row">
+        <div class="col-12 col-lg vertical categories">
+          <div class="category-block">
+            <div class="image-container">
+              <img class="hidden-md-down" title="Ropa de montaña: rainwear de IZAS" src="{{media url='wysiwyg/banners/DESMONTABLES.jpg'}}" alt="Desmontables">
+              <img class="hidden-md-up" title="Ropa de montaña: chaquetas de fibra IZAS" src="{{media url="wysiwyg/banners/Camino-de-santiago-3.jpg"}}" alt="Ropa de montaña: chaquetas de fibra IZAS">
+            </div>
+            <div class="text-container navidadesFlashBastones hidden-md-up">
+              <a class="title coleccionHombreTitle" href="https://www.izas-outdoor.com/hombre/chaquetas-y-chalecos.html">HOMBRE</a>
+            </div>
+            <div class="text-container navidadesFlashCalzado hidden-md-up">
+              <a class="title coleccionMujerTitle" href="https://www.izas-outdoor.com/mujer/chaquetas-y-chalecos.html">MUJER</a>
+            </div>
+            <div class="text-container coleccionHombre hidden-md-down">
+              <a class="title coleccionHombreTitle" style="left: 14% !important;" href="https://www.izas-outdoor.com/hombre/pantalones/pantalones-desmontables.html">HOMBRE</a>
+            </div>
+            <div class="text-container coleccionMujer hidden-md-down">
+              <a class="title coleccionMujerRainwearTitle" href="https://www.izas-outdoor.com/mujer/pantalones/pantalones-desmontables.html">MUJER</a>
+            </div>
+            <div class="title rainwear hidden-md-down izas-title">
+              <a>DESMONTABLES</a>
+            </div>
+            <!--<div class="title hombre chaquetasfibra hidden-md-up"><a>PARA LOS DÍAS FRÍOS</a></div>-->
+            <div class="title hombre hidden-md-up">
+              <a title="Ropa de montaña : colección Duero" href="https://www.izas-outdoor.com/?query=rodhes">COLECCIÓN RODHES</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg vertical categories">
+          <div class="category-block">
+            <!--<div class="title chaquetasfibra hidden-md-down"><a>PARA LOS DÍAS FRÍOS</a></div>-->
+            <div class="image-container">
+              <img class="hidden-md-down" title="Ropa de montaña: chaquetas de fibra IZAS" src="{{media url="wysiwyg/banners/Camino-de-santiago-3.jpg"}}" alt="Ropa de montaña: chaquetas de fibra IZAS">
+              <img class="hidden-md-up" title="Ropa de montaña: Rainwear" src="{{media url="wysiwyg/banners/DESMONTABLES.jpg"}}" alt="Ropa de montaña: Rainwear">
+            </div>
+            <div class="text-container navidadesFlashBastones hidden-md-down">
+              <a class="title coleccionHombreTitle" href="https://www.izas-outdoor.com/hombre.html">HOMBRE</a>
+            </div>
+            <div class="text-container navidadesFlashCalzado hidden-md-down">
+              <a class="title coleccionMujerTitle" href="https://www.izas-outdoor.com/mujer.html">MUJER</a>
+            </div>
+            <div class="text-container hombre">
+              <div class="text-container coleccionHombre hidden-md-up">
+                <a class="title coleccionHombreTitle" style="left: 14% !important;" href="https://www.izas-outdoor.com/hombre/pantalones/pantalones-desmontables.html">HOMBRE</a>
+              </div>
+              <div class="text-container coleccionMujer hidden-md-up">
+                <a class="title coleccionMujerRainwearTitle" href="https://www.izas-outdoor.com/mujer/pantalones/pantalones-desmontables.html">MUJER</a>
+              </div>
+              <div class="title hombre rainwear  hidden-md-up">
+                <a>DESMONTABLES</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>
+    <br>
+    <br>
+  </p>
+  <p class="hidden-md-up">
+    <strong>Lo más buscado</strong>
+  </p>
+  <h4 class="busqueda-home hidden-md-up">
+    <a href="https://www.izas-outdoor.com/?query=sudadera">sudadera</a>
+  </h4>
+  <div class="linea hidden-md-up">&nbsp;</div>
+  <h4 class="busqueda-home hidden-md-up">
+    <a href="https://www.izas-outdoor.com/?query=accesorios">accesorios</a>
+  </h4>
+  <div class="linea hidden-md-up">&nbsp;</div>
+  <h4 class="busqueda-home hidden-md-up">
+    <a href="https://www.izas-outdoor.com/?query=pantalones%20trekking">pantalones trekking</a>
+  </h4>
+  <div class="linea hidden-md-up">&nbsp;</div>
+  <h4 class="busqueda-home hidden-md-up">
+    <a href="https://www.izas-outdoor.com/?query=calzado">calzado</a>
+  </h4>
+  <div class="linea hidden-md-up">&nbsp;</div>
+  <div class="homepage-container imagenFooter">
+    <div class="midsection banner categories second-banner">
+      <div class="banner-slider second-banner ">
+        <div class="col-12 col-lg vertical categories ">
+          <div class="category-block">
+            <div class="image-container">
+              <a>
+                <img class="hidden-md-down" title="IZAS: ropa, calzado y accesorios de montaña." src="{{media url="wysiwyg/footer-1-izas-ropa-calzado-accesorios-montana.jpg"}}" alt="IZAS: ropa, calzado y accesorios de montaña.">
+              </a>
+              <p class="tituloFooter hidden-md-down">Bienvenido a Izas</p>
+              <p class="textoFooter hidden-md-down">Los amantes de la montaña y los excursionistas en general suelen decir que no existe el mal tiempo, sino una indumentaria inapropiada. En Izas, te ofrecemos la mejor ropa de montaña para tus aventuras. Todos nuestros productos son de la más alta calidad y están diseñados para favorecer el máximo confort del usuario para que disfrute de sus actividades al aire libre con la mejor ropa deportiva.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="html-output">
+                <div style="text-align: justify;">
+                  <div>
+                    <p class="accordion">
+                      <strong>Nuestra marca de ropa de montaña</strong>
+                    </p>
+                    <div class="panelFooter">
+                      <p>Nuestra <strong>marca de ropa de montaña</strong> se ajusta a las necesidades de los deportistas más exigentes: </p>
+                      <p>
+                        <strong>Absorción</strong>: Importante en cualquier prenda que toque la piel. Esta es la capacidad de una tela para alejar la humedad (sudor) y moverla a la superficie exterior de la tela, donde se puede secar rápidamente. Eso te permite sudar un poco sin sentirte húmedo o frío.
+                      </p>
+                      <p>
+                        <strong>Aislamiento:</strong> Una propiedad básica en las capas intermedias que y te permite mantenerte abrigado. La ropa, en realidad, no genera calor, pero si es eficiente para aislar. Nuestros productos te ayudan a mantener tu propio calor corporal.
+                      </p>
+                      <p>
+                        <strong>Impermeabilidad y resistencia al viento:</strong> Dos propiedades de nuestras prendas exteriores que evitan que los elementos saturen tu ropa con lluvia o le enfríen cuando el viento reduce el calor que produce tu cuerpo.
+                      </p>
+                      <p>
+                        <strong>Transpirabilidad:</strong> Importante en todas las capas. Ayuda a que las capas absorbentes se sequen más rápidamente. Nuestros materiales más avanzados ofrecen una combinación perfecta de cobertura y transpirabilidad cuando los niveles de humedad y de esfuerzo son altos.
+                      </p>
+                      <p>
+                        <strong>Protección solar:</strong> Ciertas prendas de ropa de deporte tienen un factor de protección ultravioleta (UPF) que ayudará a proteger la piel contra los dañinos rayos ultravioleta del sol.
+                      </p>
+                      <p>Materiales de primera calidad</p>
+                      <p>Nuestra <strong>ropa deportiva y de montaña</strong> está confeccionada con materiales de gran calidad, como el poliéster o el nailon. Se trata de tejidos sintéticos se destacan en la evacuación del sudor y el secado rápido. Hoy en día, se incorporan materiales reciclados. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="html-output">
+                <p class="accordion" style="text-align: justify;">
+                  <strong>¿No sabes qué ropa de trekking elegir?</strong>
+                </p>
+                <div class="panelFooter">
+                  <p>Cuando se trata de elegir <strong>ropa de trekking</strong>, hay muchos factores que no se tienen en cuenta si se es un iniciado. Pues bien, a continuación, vamos a repasar contigo algunos aspectos básicos: </p>
+                  <p>
+                    <strong>Usa capas:</strong> Es una estrategia de eficacia probada. Cada capa de ropa tiene una función única, de forma que puedes combinarlas para hacer frente a la climatología del momento.
+                  </p>
+                  <p>
+                    <strong>Anticípate a las condiciones:</strong> Tu salud depende por completo de tu equipo. Prepárate siempre para lo peor.
+                  </p>
+                  <p>
+                    <strong>Piensa en la comodidad (sin descuidar la estética):</strong> Los expertos senderistas y montañeros siempre anteponen la comodidad a los criterios estéticos.
+                  </p>
+                  <p>Para terminar, te recordamos que estamos a tu disposición para ayudarte a elegir tu <strong>ropa de montaña</strong>. No lo dudes y ponte en contacto con nosotros para preguntar cualquier cosa o explora nuestro catálogo a tus anchas para saber más sobre las referencias de esta categoría. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

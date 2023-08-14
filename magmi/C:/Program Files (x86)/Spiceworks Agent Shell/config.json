@@ -1,0 +1,50 @@
+{
+  "Key": null,
+  "Guid": "00000000-0000-0000-0000-000000000000",
+  "AddModules": [
+    "Inventory Module",
+    "Cloud Inventory Module",
+    "Remoting Module",
+    "Surface Scan Module",
+    "Connectivity Module"
+  ],
+  "BaseUrl": "https://api.spiceworks.com/agent-registrar/",
+  "ConfigurationVersion": 0,
+  "Data": {
+    "cloud_inventory_module": {
+      "scan_timeout": 1200000,
+      "has_sent_data": true,
+      "scan_schedule_hours": 24,
+      "full_payload_endpoint": "api/agent/cloud_inventory/reset",
+      "diff_payload_endpoint": "api/agent/cloud_inventory/diff"
+    },
+    "surface_scan_module": {
+      "scan_speed": "extreme",
+      "surface_scan_url": "https://apps.spiceworks.com/tools/device-inventory",
+      "current_scan_id": -1,
+      "scan_timeout": 300000
+    }
+  },
+  "Disabled": false,
+  "EnableDebug": false,
+  "EnabledModules": [
+    "Inventory Module",
+    "Cloud Inventory Module",
+    "Remoting Module",
+    "Surface Scan Module",
+    "Connectivity Module"
+  ],
+  "GuidFailureCount": 0,
+  "HeartbeatPeriod": 90000,
+  "HttpTimeout": 5000,
+  "InstallModules": [],
+  "ModuleConfigurations": null,
+  "RemoveModules": [],
+  "ReportedFailure": false,
+  "RestartCount": 0,
+  "UpdateAttempts": 0,
+  "UpdateAttemptTimestamp": "0001-01-01 00:00:00",
+  "Version": "2.1.0",
+  "LogAllHeartbeats": false,
+  "LogAllScans": false
+}

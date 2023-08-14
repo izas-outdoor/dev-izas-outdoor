@@ -1,0 +1,1058 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ActionList xmlns="urn:schemas-microsoft-com:os-update-actionlist" SessionId="2023-01-18T12:58:35" Revision="1" SessionData="DesktopUpgrade" BuildInfo="ni_release.22621.1.220506-1250" CorrelationVector="S8YDhrOJkk2z1GWz.1.5.1" Operation="DesktopUpgrade">
+    <Downloads>
+        <Package Id="amd64_Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="QqSfmhPULf4QP/zx2TH8zoWkVX37jDVdvOpSz1HCMfg=" DownloadSize="3511261" SourceName="Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-OneCore-DirectX-Database-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="BSud1mdZ9ndJrI5Zcgq9Y8+/CRDEI5Ehy19pvb3tHwU=" DownloadSize="523630" SourceName="Microsoft-OneCore-DirectX-Database-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-OneCore-Graphics-Tools-Package" Reason="OnDemand" FeatureId="Tools.Graphics.DirectX~~1.0" CapabilityId="Tools.Graphics.DirectX~~~~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="O74w1JboYazmJ4smvA6M0nFml+43bTBT/3dEtH9L95g=" DownloadSize="18315311" SourceName="Microsoft-OneCore-Graphics-Tools-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Client-Desktop-Required-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="k5pS/3AUIhDd3VPEt08drnr9RhAJkDvs/eoIqpVR8YI=" DownloadSize="765102680" SourceName="Microsoft-Windows-Client-Desktop-Required-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Client-Desktop-Required-WOW64-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="d+GIz7F9IJ4mG/f/UlwM/CmgEjevhfrQZPR6piZV/kI=" DownloadSize="203790888" SourceName="Microsoft-Windows-Client-Desktop-Required-WOW64-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Client-Features-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="XDBrCszjPXUPEB6LxW4ubG3r6IvAHsoslGFRLO7rH0A=" DownloadSize="295764870" SourceName="Microsoft-Windows-Client-Features-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Client-Features-WOW64-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="Ctg46tSN9Dn+S/oFAO+G+eYYm6Ji2SsMNmpXebbYOW0=" DownloadSize="86416288" SourceName="Microsoft-Windows-Client-Features-WOW64-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-EditionPack-Professional-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="4/rfANVI4qwy2aWJSYWcRGNoCf0XkHjU9he9Lv23zcs=" DownloadSize="159028088" SourceName="Microsoft-Windows-EditionPack-Professional-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-EditionPack-Professional-WOW64-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="Bo78WjNiLhIA9V0LWdUCVyJT6UzbgKRs/+EWlM71Xrk=" DownloadSize="7271726" SourceName="Microsoft-Windows-EditionPack-Professional-WOW64-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-EditionSpecific-Professional-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="YGYZjnbYofu1ClkB506coJXUGXxfNtW4MH/YZKdIpLc=" DownloadSize="51443487" SourceName="Microsoft-Windows-EditionSpecific-Professional-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-EditionSpecific-Professional-WOW64-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="yjclX9ATtt4LVIz+adwDr4OlUMmYAWUoyeDMeaUECWc=" DownloadSize="284949" SourceName="Microsoft-Windows-EditionSpecific-Professional-WOW64-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Intel-E1i68x64-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="GQZdRu5RYDBGIOVVPK2P1S9dRhPevut3WzDiCRrMhKY=" DownloadSize="286466" SourceName="Microsoft-Windows-Ethernet-Client-Intel-E1i68x64-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Intel-E2f68-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="l63Ubm17+jvYK5IdWqR0rx0Bo2j9AT2L33Kxh3WCuSQ=" DownloadSize="238067" SourceName="Microsoft-Windows-Ethernet-Client-Intel-E2f68-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Realtek-Rtcx21x64-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="wHZixUx2osuQGaDA/3lIbq+FtvxP9LCeNrKuwgFShT4=" DownloadSize="248531" SourceName="Microsoft-Windows-Ethernet-Client-Realtek-Rtcx21x64-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Vmware-Vmxnet3-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="AlSGGiBcLL15/gf/oOLo4Gs6MfdFn/oPguqgzjSaDHg=" DownloadSize="70537" SourceName="Microsoft-Windows-Ethernet-Client-Vmware-Vmxnet3-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-FoDMetadata-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="+vYwbEhWGRPxAPEyPgBw0rs8b2XkoMdo6XtFDgTXYf4=" DownloadSize="484730" SourceName="Microsoft-Windows-FoDMetadata-Package.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Foundation-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="Al7SV2QHFGslIzRherGBmGICaibYK5mMEQmHjok+UW0=" DownloadSize="24038" SourceName="Microsoft-Windows-Foundation-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Hello-Face-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="oP4Ov2KW+q++ZfirNRh5q/Bqihy70EDTK2bNZFX2Rqk=" DownloadSize="70147277" SourceName="Microsoft-Windows-Hello-Face-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Kernel-LA57-FoD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="/w6JKo5YdeyYFl3ZmTSSmNZpwGlxzagFy/pX2E+s2Ag=" DownloadSize="5107201" SourceName="Microsoft-Windows-Kernel-LA57-FoD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-Basic-en-us-Package" Reason="OnDemand" FeatureId="Language.Basic~en-us~1.0" CapabilityId="Language.Basic~~~en-us~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="w0bqrts9x6mowWq6hGrx+rD0x+zyIYp56nrXdMgEPVM=" DownloadSize="22374958" SourceName="Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-Basic-es-es-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="x9WGDa/ttokH3IM+lDI4zLB47sKjohfiCHmePygdQ1E=" DownloadSize="16493503" SourceName="Microsoft-Windows-LanguageFeatures-Basic-es-es-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-Handwriting-es-es-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="+imUt8VbnvCZheRaR3Iol8hKk+2GJz6PzOeI1Q6+koU=" DownloadSize="4969093" SourceName="Microsoft-Windows-LanguageFeatures-Handwriting-es-es-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-OCR-en-us-Package" Reason="OnDemand" FeatureId="Language.OCR~en-us~1.0" CapabilityId="Language.OCR~~~en-us~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="Odr5gOu9v7YsqniWNuw3upeRIwwhYdFYfNXpvGcvAnk=" DownloadSize="157838" SourceName="Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-OCR-es-es-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="FlZ4J0iyNZjb/FrY4qsWtUzaEk3LN9O31A0YlB7eyrk=" DownloadSize="162248" SourceName="Microsoft-Windows-LanguageFeatures-OCR-es-es-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-Speech-es-es-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="3TJ+XLZ1kcV6AppDB3jVgpXGIsvrGxd7ope9VEpNu4Y=" DownloadSize="41425544" SourceName="Microsoft-Windows-LanguageFeatures-Speech-es-es-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-TextToSpeech-es-es-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="tR4GS0scbwpccNB3kTtRjBEP1MFuEvFvoMRNnc4va/k=" DownloadSize="40111829" SourceName="Microsoft-Windows-LanguageFeatures-TextToSpeech-es-es-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Not-Supported-On-LTSB-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="TV+m76ikQd9qkX5vKvarcw4Amo6c+zEL85WZPNiiRP8=" DownloadSize="46343713" SourceName="Microsoft-Windows-Not-Supported-On-LTSB-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Not-Supported-On-LTSB-WOW64-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="FgQQEEP/+WjJo3pFWsqK95Ctu6E6jb8huxrR8JM1eug=" DownloadSize="22521" SourceName="Microsoft-Windows-Not-Supported-On-LTSB-WOW64-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-RegulatedPackages-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="nEi6wky8Lsd29eixJvEdXMdV9SpdxpqKpSwSgVsn5cg=" DownloadSize="40350783" SourceName="Microsoft-Windows-RegulatedPackages-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-RegulatedPackages-WOW64-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="bbF0b6rPpE7tecR2NsYdsxUuZuEqGCohawoEvaUUeu0=" DownloadSize="20927677" SourceName="Microsoft-Windows-RegulatedPackages-WOW64-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Required-ShellExperiences-Desktop-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="ihQgfc93VsOGO9SOzWZyz5AaXOyRThj3rSlwdNV1Q/U=" DownloadSize="8869058" SourceName="Microsoft-Windows-Required-ShellExperiences-Desktop-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Required-ShellExperiences-Desktop-WOW64-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="2ZeDf8KrTtq2SZZsVCMLtrkGKx6JBXJ69CSyi5YuCxE=" DownloadSize="1639460" SourceName="Microsoft-Windows-Required-ShellExperiences-Desktop-WOW64-Package.ESD" SourcePath="UUP\Desktop\editionPackages\neutral"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-TabletPCMath-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="vP/ORyCg4CPwULmJpaobKbGSnGh4wwTJq7RlQZ7jZQw=" DownloadSize="5903019" SourceName="Microsoft-Windows-TabletPCMath-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wallpaper-Content-Extended-FoD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="Xyrmiq/bW0S55M+uguXSO5aWwFhj0OjoQSPA3T6fRis=" DownloadSize="24834" SourceName="Microsoft-Windows-Wallpaper-Content-Extended-FoD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Broadcom-Bcmpciedhd63-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="vAEulpzrqX2vzXEKoO4KF+V73/VTdbtSB3fKsz+6rnc=" DownloadSize="1043981" SourceName="Microsoft-Windows-Wifi-Client-Broadcom-Bcmpciedhd63-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63a-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="f4L+PgvjmJygJFc5I7QdnsmnxH2Ht1JNfyBgMaOJD68=" DownloadSize="2078586" SourceName="Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63a-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63al-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="J+0sU4eSuKbYzE/joGGNWW0mwhNNc6gH/13zMKJB3HY=" DownloadSize="1210059" SourceName="Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63al-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwbw02-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="EbgNXjUaJrojsj2sgIrsuV/dS1dXOVDS3PiwiP9Htuo=" DownloadSize="1809119" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwbw02-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwew00-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="r31gqLnNllUkDG/POvd/kEUL39F3a4/0QEiGqhi8UdY=" DownloadSize="2278451" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwew00-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwew01-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="AxVOxGlJzHaBxuikZs7lQGNwRLsIGfkzEQAx/N2C11U=" DownloadSize="2285671" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwew01-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwlv64-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="TziqskO3ha7YjbEXzVCUaDn9h8UFhLaleeT7586c+SA=" DownloadSize="1855156" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwlv64-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwns64-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="uy+YxDGbWpci+jB7c1u9ahg26yHzKU8epA4qmG3t3Gc=" DownloadSize="2001522" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwns64-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwsw00-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="4i4kJuzg41eH4GEM/IABVMYtKgMV7ALPDfjpoI97+34=" DownloadSize="2343354" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwsw00-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw02-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="jxBZng/xot+sEY1wuxMk7dr89EXLoFyCLMbRiHNBSh0=" DownloadSize="3212711" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwtw02-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw04-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="QXWzwD5YlHwRR+9qUvHVt48TqhIEiCeQq3BhBX826N0=" DownloadSize="2560354" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwtw04-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw06-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="1C/J8sRvld+/kb1DTAiSVNzco0+fx/dQjZvSo2x802c=" DownloadSize="2695268" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwtw06-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw08-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="a2w2Hu75pKnA+aaW7YxH3kJO25Zsc0teHhI2bMhc9k4=" DownloadSize="2911710" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwtw08-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw10-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="7eZ1OqjvwhZ96GzYCnxYg5XD9WCCyYnCO6W1yahMVzo=" DownloadSize="3463988" SourceName="Microsoft-Windows-Wifi-Client-Intel-Netwtw10-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Marvel-Mrvlpcie8897-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="kgFQC7oaIheWUuZg5jQXQQVbC/SOZHMhwi/NBE23pCw=" DownloadSize="620992" SourceName="Microsoft-Windows-Wifi-Client-Marvel-Mrvlpcie8897-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Qualcomm-Athw8x-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="gaGopawspsuNrr3M2k6/3p1dDbkS8ga/WgephsPJOYI=" DownloadSize="1030428" SourceName="Microsoft-Windows-Wifi-Client-Qualcomm-Athw8x-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Qualcomm-Athwnx-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="r5+5ccEHN2SRw2Ozien45F+sIN3t5J/kE5vTvPTAhnw=" DownloadSize="1042842" SourceName="Microsoft-Windows-Wifi-Client-Qualcomm-Athwnx-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Qualcomm-Qcamain10x64-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="74vZGaUrnh/ouBYCCzb7xbs180nXd0U9TCxF7RMps1E=" DownloadSize="1705119" SourceName="Microsoft-Windows-Wifi-Client-Qualcomm-Qcamain10x64-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Ralink-Netr28x-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="4gG8D4I8d5g8i4fygppA6eEiL3OOIPYEQA6FOuQKPcg=" DownloadSize="1148227" SourceName="Microsoft-Windows-Wifi-Client-Ralink-Netr28x-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl8187se-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="DVxYzNpC6uuzjFwlD9wpQXclqPQMLngznJivk4Z5LXo=" DownloadSize="235273" SourceName="Microsoft-Windows-Wifi-Client-Realtek-Rtl8187se-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl8192se-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="mWj8kqrDKToEMr+nf1XcSKbPk75eRLT8Z2AN5NVYPDc=" DownloadSize="520721" SourceName="Microsoft-Windows-Wifi-Client-Realtek-Rtl8192se-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl819xp-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="1ETQ/j2ov44GhMM82IQitGOT0aMWRuQEjMqNyRdxReA=" DownloadSize="294710" SourceName="Microsoft-Windows-Wifi-Client-Realtek-Rtl819xp-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl85n64-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="aPhLWkT6peXb//J+rx4KY0KGKxLz3VOXmrsu6dnfoUI=" DownloadSize="588236" SourceName="Microsoft-Windows-Wifi-Client-Realtek-Rtl85n64-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtwlane-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="+kXi3NTAkPcE/ISzUYB1G17s0Ac2m1dNZqH1drZiYzo=" DownloadSize="2636827" SourceName="Microsoft-Windows-Wifi-Client-Realtek-Rtwlane-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtwlane01-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="uZcpOZbFQARiHizZove9jWMzR/+cHkET0iJM0EwP+uA=" DownloadSize="2084793" SourceName="Microsoft-Windows-Wifi-Client-Realtek-Rtwlane01-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtwlane13-FOD-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="8S7508r9zmwSd89QK1fFnTQK4yiamIF6s5jM2GfVapo=" DownloadSize="1212082" SourceName="Microsoft-Windows-Wifi-Client-Realtek-Rtwlane13-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="amd64_OpenSSH-Client-Package" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="MWXFv49AkhuD0Q7ykj1J5Gukxyhtz9sqar8i6F9Jj/s=" DownloadSize="1532607" SourceName="OpenSSH-Client-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Clipchamp.Clipchamp_2.2.8.0_neutral_~_yxz26nhyzhsrt" Reason="MSIXBundle" FeatureId="Clipchamp.Clipchamp_yxz26nhyzhsrt">
+            <Payload PayloadType="Canonical" Hash="Ou3hYRI6+6on8ydJc+itxl3DIYT2QSRPya2ztL+i3yw=" DownloadSize="6863933" SourceName="Clipchamp.Clipchamp_yxz26nhyzhsrt.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\Clipchamp"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Client-LanguagePack-Package_en-us~31bf3856ad364e35~amd64~en-us~" Reason="LangPack" FeatureId="Language.UI.Client~en-us" CapabilityId="Language.UI.Client~~~en-us~">
+            <Payload PayloadType="Canonical" Hash="JURvs2uUA8CKUkG1r6ICUf5zkgjiw6043qWCTnkuvd0=" DownloadSize="18928551" SourceName="Microsoft-Windows-Client-LanguagePack-Package_en-us~31bf3856ad364e35~amd64~en-us~.esd" SourcePath="UUP\Desktop\editionpackages\en-us\client"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Client-LanguagePack-Package_es-es~31bf3856ad364e35~amd64~es-es~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="m+scniXWNSPAIU7lzcgtoIyR/BcqUQz9/cF8UZlxeDM=" DownloadSize="24015988" SourceName="Microsoft-Windows-Client-LanguagePack-Package_es-es~31bf3856ad364e35~amd64~es-es~.esd" SourcePath="UUP\Desktop\editionpackages\es-es\client"/>
+        </Package>
+        <Package Id="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~en-us~" Reason="Satellite" FeatureId="Browser.InternetExplorer~~11.0" CapabilityId="Browser.InternetExplorer~~~en-US~0.0.11.0">
+            <Payload PayloadType="Canonical" Hash="ffdRxZiTiNZs3Y7fIUvKKdZkajBUyvYgA9XCIdJlTJ4=" DownloadSize="30893" SourceName="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~es-es~" Reason="Satellite" FeatureId="Browser.InternetExplorer~~11.0" CapabilityId="Browser.InternetExplorer~~~es-ES~0.0.11.0">
+            <Payload PayloadType="Canonical" Hash="fSE4pB/NeQ5jjI8lg8S+BBcqUhaFLV1Y1hSkRz6uSNA=" DownloadSize="30431" SourceName="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="w2x7QCKwAEi7sDrqg9bS7rB5PVKaq4BHlpZ7TtnMzms=" DownloadSize="306301" SourceName="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~en-us~" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~en-US~0.0.12.0">
+            <Payload PayloadType="Canonical" Hash="znaZjEJ8BhkzulaUuLCo+bcLILWIdA+ws0dFj4oEl44=" DownloadSize="158174" SourceName="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~es-es~" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~es-ES~0.0.12.0">
+            <Payload PayloadType="Canonical" Hash="NXAes9sXC6zoF3Cxs9S4yptAEDTaEIL8Ermw8kXfP+E=" DownloadSize="166826" SourceName="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="E3Zs9/AmA21EiYeuRhmNqnSQ4q/ZKF4cJ0kg4tg/8WY=" DownloadSize="10116507" SourceName="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~en-us~" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~en-US~0.0.12.0">
+            <Payload PayloadType="Canonical" Hash="4RgTeEfKChIUIoF6ulovLU0lkXbBLfkYJyHzUDVLGk4=" DownloadSize="56880" SourceName="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~es-es~" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~es-ES~0.0.12.0">
+            <Payload PayloadType="Canonical" Hash="HSzQPo50f/w/ulsbN9uyWInaMnYU41Acp4NZUa+4koE=" DownloadSize="51802" SourceName="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="cGCCg457yAKfEeHca2OBAWAaY8hCmwOAsBLQhCrdBJA=" DownloadSize="4577743" SourceName="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="hmYLBy4MVw49ED8WY63Oo/2HK40GbwYWbfOL4zfdlkU=" DownloadSize="213141" SourceName="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~wow64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="4aVGzAQrVVsbY3ZVx1yQy6E1ia3E19kWyv5IhLRbrBw=" DownloadSize="198742" SourceName="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~wow64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~en-us~" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="nCPQmhxF7O35QBLBKA1bnJa7MUEga0mJrwthXN6enWc=" DownloadSize="305127" SourceName="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~es-es~" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="YSoRS1BilmmEBPGuY6jNBF6nSguuEfNLmkL8/RnMdko=" DownloadSize="307387" SourceName="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="iklWJGckM2rNaxqX/JPJOLU5M+tFTf4bso2rgBwlNkc=" DownloadSize="1114942" SourceName="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~en-us~" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="dzWUb4mYbzIkrnKlFZVhJX08j/u+qbV1GAwKzrQQJBI=" DownloadSize="38242" SourceName="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~es-es~" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="lhzNvAbJXxOIDrZ+8Ko7+Lzi9Udrf9Ez46HbQGkJHm0=" DownloadSize="38390" SourceName="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="/JXb9eW3/rHnvZ2NJA1XOHiUbGKqwQxZG6Fu1F1SLqI=" DownloadSize="114545" SourceName="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~en-us~" Reason="Satellite" FeatureId="Print.Management.Console~~1.0" CapabilityId="Print.Management.Console~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="k21jk4JkB6Xx2V4ftnCtSsZlrOhP+WeC+fuEga/lgj8=" DownloadSize="48843" SourceName="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~es-es~" Reason="Satellite" FeatureId="Print.Management.Console~~1.0" CapabilityId="Print.Management.Console~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="HLFwqc7sDYTPsRX5soznIwlF4GnTWOwU4bW5s9raK5E=" DownloadSize="49499" SourceName="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="STDMkvIOCD6u9Ui26VZLLnmZ+g5ezsF+youNLzQ8NDA=" DownloadSize="404036" SourceName="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~en-us~" Reason="Satellite" FeatureId="Print.Fax.Scan~~1.0" CapabilityId="Print.Fax.Scan~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="Dm/SMKiBGKF/Ao9hMJjQP7zmvRM3yvWI2w5GnxtsUeE=" DownloadSize="140534" SourceName="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~es-es~" Reason="Satellite" FeatureId="Print.Fax.Scan~~1.0" CapabilityId="Print.Fax.Scan~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="VEz52iyURqM9IaAyZj9p0RzTTJghFhFhK4L0B1hfiN8=" DownloadSize="151790" SourceName="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~~" Reason="OnDemand" FeatureId="Print.Fax.Scan~~1.0" CapabilityId="Print.Fax.Scan~~~~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="ZDwcjIovT+/fY7vZvEKc5fYyzH2TB199h1boIV3KwS4=" DownloadSize="3463630" SourceName="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~en-us~" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="JMlzam33QIAL/TBRG+XTm3PmVFZA6w1/4MkhwgIIUqw=" DownloadSize="22427" SourceName="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~es-es~" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="4mb7I8pHiBMMBPeeQ8ZgM1B4hPGFRPa6ycSJO0lbeco=" DownloadSize="22657" SourceName="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="2ImpBOuUSdp+KUpB9JIJAbCYkCUDb1lp3fAjMrweDPg=" DownloadSize="189667" SourceName="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~en-us~" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="ZcMHfbQ8wTYs/IiygRVSzggIfg1/8rX5CAOdrK2YY+s=" DownloadSize="18430" SourceName="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~es-es~" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="E6p7xhTZeALXGoiJ7JAUjFIaSlhzQ//+96rjPMGPYzc=" DownloadSize="18454" SourceName="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="GEVcWJux6E6a3jSXU6rV9Wmyeeq59BgH+Beoe0A+rWA=" DownloadSize="112988" SourceName="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="Advj1fBGZtLRYg9W+RgmXNmeq7T4b54+o3KTAcpShlk=" DownloadSize="318921" SourceName="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~wow64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="NaSWeQxlaQDHvRp6enLF5yV3KcAY+IMsaJWK9HdyOHs=" DownloadSize="312413" SourceName="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~wow64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~en-us~" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="2PFBdTW/KBVtBtvHq51ulLmBQSO6NjdBdgpObjegnKs=" DownloadSize="29393" SourceName="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~es-es~" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="/cLG/kF6qjRc0CtZsitdyEimP1tSPkXDA5TqGLvgFtI=" DownloadSize="34631" SourceName="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="yR04IGPcW9RwdGp3mqA0Nrt+Abjr8etJU9Ocf5OSyWo=" DownloadSize="903673" SourceName="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~en-us~" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~en-US~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="3bx78D8O8p3WtNLQO3rFTcFj37EYrU41fJWm7HChdcg=" DownloadSize="29445" SourceName="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~en-us~.cab" SourcePath="FeaturesOnDemand\en-us\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~es-es~" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~es-ES~0.0.1.0">
+            <Payload PayloadType="Canonical" Hash="KcVo86kpXXgV2Gmpo/qDbKhesqVb4Z6ce2SB0vVER3s=" DownloadSize="34625" SourceName="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~es-es~.cab" SourcePath="FeaturesOnDemand\es-es\cabs"/>
+        </Package>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~~" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="Y/TgFTtPqXB17sWBnepOdHJHZC+2CiJWmqAz9OUHPMo=" DownloadSize="852065" SourceName="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~~.cab" SourcePath="FeaturesOnDemand\neutral\cabs"/>
+        </Package>
+        <Package Id="Microsoft.BingNews_1.0.1.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="zZhKIppin8l7CuvUBLRWjH9OGzKWITqoETTMQL625CM=" DownloadSize="10157" SourceName="NewsStub_1.0.1.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\BingNews\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.BingNews_1.0.1.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="WdfILDWrPQr93FOQyTWScbCWYLmUmTqB2NycU704FKI=" DownloadSize="35869" SourceName="NewsStub_1.0.1.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\BingNews\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.BingNews_1.0.1.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="VKnUddCIjYB6qzMfGeMnivTYCjecJcIYApy8aWlBkFU=" DownloadSize="43157" SourceName="NewsStub_1.0.1.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\BingNews\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.BingNews_1.0.1.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="YdAYjLk/Ownva2qTe0vZrcNzNYEN94gZrW+r6ChYIc4=" DownloadSize="48376" SourceName="NewsStub_1.0.1.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\BingNews\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.BingNews_1.0.1.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="II/GX+SXRqO4BvKVO6SRmeoc0ZHstJohcNSDd2GmYzI=" DownloadSize="140027" SourceName="NewsStub_1.0.1.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\BingNews\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.BingNews_1.0.1.0_x64__8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="bAYdjJjGdg9Q+UEyCU1hDC2/6opLVaC+bORu4m06ocA=" DownloadSize="396002" SourceName="NewsStub_1.0.1.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\BingNews\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.BingNews_2022.507.446.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="7WIPvfl9KPHfEz01SMopAtPBo5JhekKp0vgx+gdgW4o=" DownloadSize="12141" SourceName="Microsoft.BingNews_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\BingNews"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2022.507.447.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="TcZwgAU1tFaW+TzPVPPcxOVkl7adCyk67DTKGSy8UHU=" DownloadSize="9593" SourceName="Microsoft.GamingApp_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\Xbox"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="ezNHJVE2Y5oZSjLnJzqC9GxaOtDepRiz3hdROAqLVp8=" DownloadSize="10255" SourceName="XboxStub_2105.900.24.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="WdzIp/8KvUcOuZTgkI3cJ1Ep9Wz0BmWblmr7+UXNOYc=" DownloadSize="142864" SourceName="XboxStub_2105.900.24.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="GmfEKErMaiycPythniT2xPDptmoTJLSV1CC7qWvSo/Y=" DownloadSize="187398" SourceName="XboxStub_2105.900.24.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="uqIGcp/JexMFasaTyB4i0R/G1L/vJjeUR8p9wfz8zoc=" DownloadSize="235805" SourceName="XboxStub_2105.900.24.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-250_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="YEkVqw0J7JgygM5sdswpTAW8l4hynrhafhEhpyOE6/0=" DownloadSize="122894" SourceName="XboxStub_2105.900.24.0_scale-250.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-300_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="MmAiOmOvYGW4bnBRY0MREjKNq0YNV00tzEo5hKZ5mtg=" DownloadSize="161259" SourceName="XboxStub_2105.900.24.0_scale-300.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="PZX39DuXOLtS7vi3TM/gXPbRF3skXaF4D1ELCbKty40=" DownloadSize="913365" SourceName="XboxStub_2105.900.24.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.GamingApp_2105.900.24.0_x64__8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="oKPJ/s9LmvMpaa2/n0e1AcTogVGJ176lqipovYXGelY=" DownloadSize="559237" SourceName="XboxStub_2105.900.24.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\Xbox\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.NET.Native.Runtime.1.7_1.7.25531.0_x64__8wekyb3d8bbwe" Reason="MSIXFramework" FeatureId="Microsoft.NET.Native.Runtime.1.7_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="8eOwrkv2vMb7RQFTSQkX5DKNzmMy4FI2vrDiVaX5uVs=" DownloadSize="248701" SourceName="Microsoft.NET.Native.Runtime.x64.1.7.appx" SourcePath="UUP\Desktop\Apps\IPA\PowerBI"/>
+        </Package>
+        <Package Id="Microsoft.Paint_11.2201.22.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="xA3FhSoy1sKq98g4V/2Zoub/EEYhhtTsk69T9K+94Oo=" DownloadSize="17820" SourceName="Paint_11.2201.22.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\Paint"/>
+        </Package>
+        <Package Id="Microsoft.Paint_11.2201.22.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="mLvdisvb5lb9SQyggTKYkhCNnFePLWkugOUfZ7FiuDI=" DownloadSize="30968" SourceName="Paint_11.2201.22.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\Paint"/>
+        </Package>
+        <Package Id="Microsoft.Paint_11.2201.22.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="aFg9CBcDSYeYVxo9ahzFefL0e+wU8UAmKo4SvR7SaMg=" DownloadSize="27200" SourceName="Paint_11.2201.22.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\Paint"/>
+        </Package>
+        <Package Id="Microsoft.Paint_11.2201.22.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="Eeh5yNhPGblmDp1Gz5guTXb1eZX7wmD9gy9hDreL1Ss=" DownloadSize="45063" SourceName="Paint_11.2201.22.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\Paint"/>
+        </Package>
+        <Package Id="Microsoft.Paint_11.2201.22.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="+gIResds7Eybn8Xcj8j1XTJv5PLcDeBxEtUDDfHOEAc=" DownloadSize="122411" SourceName="Paint_11.2201.22.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\Paint"/>
+        </Package>
+        <Package Id="Microsoft.Paint_11.2201.22.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="6hfznUzpBtJwxW+F6dyE2c1C6BRbgsFVleXsSZiZ1qg=" DownloadSize="3174782" SourceName="Paint_11.2201.22.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\Paint"/>
+        </Package>
+        <Package Id="Microsoft.Paint_2022.507.446.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="d4lIPVSySsarHVdpiM5I0d8sIPFo8viCXaqKwhGHx3g=" DownloadSize="9320" SourceName="Microsoft.Paint_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\Paint"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="13KAXWf5l8YBOD6++VvN+2PHnQAp3POaCtqXJ4NaAVc=" DownloadSize="12105" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="dyeC7eT+6j2nx+QPz4qF8KF8E1DLBVMPdDE0n4pqOlY=" DownloadSize="74997" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="8s2wp9IcfCYyOVla7x/C2y5wrevyLDMKjkjxr6gcDP8=" DownloadSize="94327" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-140_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="sO6v5s2vyLsYo5/cPMxF5m0gN304wS1uK6WdxHqwXbw=" DownloadSize="27875" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-140.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="zkv7MGhkGAJSKigo30VlTi7ev5S37eocIcHugBGSHV4=" DownloadSize="112220" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-180_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="wWm5VGR79i5gA1V4Fd4AUghkk7Ji1fCzqx6pnld3BzI=" DownloadSize="35244" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-180.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-250_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="96wZuh0Ln2AKlHzfOqICBynuhHoUlP7XCx/sAM0Hn+A=" DownloadSize="67126" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-250.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-300_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="QzS47PvBlNg1qruJZI03VXuoaDoPBJLyAc5jlEhbiN8=" DownloadSize="85315" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-300.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="+0uGA3HXCQtatR6f94Z8v38cri1mwO2fsItpeuFaAbI=" DownloadSize="479295" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_1.0.219.0_x64__8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="GXCxLsWP0JKr6y4nlOfGTFPAGxCEouxmdx0upEqZ1/M=" DownloadSize="531195" SourceName="PowerAutomateDesktopStubPackage_1.0.219.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.PowerAutomateDesktop_2022.507.446.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="bvjs9X00VnIfW1VfH7VRwHaPypFk2EjKbn1GbHa4PgI=" DownloadSize="9148" SourceName="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\PowerAutomateDesktop"/>
+        </Package>
+        <Package Id="Microsoft.RawImageExtension_2.1.30391.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.RawImageExtension_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="ioHBye/8q6qQLD4PV6ud+/+Wpcl10y3GYaikvHfvXHc=" DownloadSize="1050032" SourceName="codecpacks.rawimage_2.1.30391.0_x64.appx" SourcePath="UUP\Desktop\Apps\IPA\RawImageExtension"/>
+        </Package>
+        <Package Id="Microsoft.RawImageExtension_2022.507.446.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.RawImageExtension_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="VowFLv9S/X4HuVU/nY0GZbSbmoLsCyy5fS32zBEyIW8=" DownloadSize="8077" SourceName="Microsoft.RawImageExtension_8wekyb3d8bbwe.appxbundle" SourcePath="UUP\Desktop\Apps\IPA\RawImageExtension"/>
+        </Package>
+        <Package Id="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="zFfSDHBD3L0Qh0CoE3SdQlCRG2HhHt4PKKAKvL+L8AY=" DownloadSize="14239" SourceName="ScreenSketch_11.2201.12.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\ScreenSketch"/>
+        </Package>
+        <Package Id="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="2QTLixHkJIsbWz1BYeIkYANBvXuT/ENfJ58FNk1aviM=" DownloadSize="44651" SourceName="ScreenSketch_11.2201.12.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\ScreenSketch"/>
+        </Package>
+        <Package Id="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="ZcuSnYg5h/lIRMu7Dzc29EB30VgWahLM/MLA6D5vLRo=" DownloadSize="52669" SourceName="ScreenSketch_11.2201.12.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\ScreenSketch"/>
+        </Package>
+        <Package Id="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="xO/SOG1v96Okvj6NqFPXGcP8P9STRBMLAn4hExIjTy4=" DownloadSize="67493" SourceName="ScreenSketch_11.2201.12.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\ScreenSketch"/>
+        </Package>
+        <Package Id="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="WF+EX98Xa8GbxEl6oJpPr2q9BVuWFl2vTVIzyUkNb38=" DownloadSize="221125" SourceName="ScreenSketch_11.2201.12.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\ScreenSketch"/>
+        </Package>
+        <Package Id="Microsoft.ScreenSketch_11.2201.12.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="bZku2wo9wIUidU8FViY1XDnY2ZcBHSfUsGwy8e4NBj0=" DownloadSize="1455482" SourceName="ScreenSketch_11.2201.12.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\ScreenSketch"/>
+        </Package>
+        <Package Id="Microsoft.ScreenSketch_2022.507.447.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="CANM8jCza5oWFD0MDvylIsily1MCq/2XqR/eH+N3qls=" DownloadSize="8993" SourceName="Microsoft.ScreenSketch_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\ScreenSketch"/>
+        </Package>
+        <Package Id="Microsoft.SecHealthUI_1000.22621.1.0_x64__8wekyb3d8bbwe" Reason="MSIX" FeatureId="Microsoft.SecHealthUI_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="NLBH3uY8yHqryInWGCzwREKDH8ZYw0BPFAqGTlfL+Gg=" DownloadSize="8637201" SourceName="Microsoft.SecHealthUI_8wekyb3d8bbwe.appx" SourcePath="UUP\Desktop\Apps\IPA\WindowsSecurity"/>
+        </Package>
+        <Package Id="Microsoft.Todos_0.54.42772.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="BfvYHrn4fg5s3DNOMyumW02hr+uWgi/DqV8Ulp0j65E=" DownloadSize="10363" SourceName="ToDoStub_0.54.42772.0_language-es.appx" SourcePath="UUP\Desktop\Apps\IPA\Todos\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.Todos_0.54.42772.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="5RKoMN9oES5idSLN9jRXdvJTG0EaejT+frAF96/BhOU=" DownloadSize="65508" SourceName="ToDoStub_0.54.42772.0_scale-100.appx" SourcePath="UUP\Desktop\Apps\IPA\Todos\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.Todos_0.54.42772.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="m4BV1C6A2Eyk/blu8MtJ2VW21vUk+xrxi/KMqzC850I=" DownloadSize="82810" SourceName="ToDoStub_0.54.42772.0_scale-125.appx" SourcePath="UUP\Desktop\Apps\IPA\Todos\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.Todos_0.54.42772.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="dPSNW34sLuRbzN9f//c6m9lDsKcK8zoQ/UmbYg7wxZM=" DownloadSize="98919" SourceName="ToDoStub_0.54.42772.0_scale-150.appx" SourcePath="UUP\Desktop\Apps\IPA\Todos\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.Todos_0.54.42772.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="1c50J5f566j/ykuNCPa7rwv/u21VtM+azBymIB6Wnvc=" DownloadSize="359821" SourceName="ToDoStub_0.54.42772.0_scale-400.appx" SourcePath="UUP\Desktop\Apps\IPA\Todos\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.Todos_0.54.42772.0_x64__8wekyb3d8bbwe" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="dKZP/9hnh2TZVIrr+JKbNg4m2M7RWvtdtwR5YJMlB9E=" DownloadSize="409585" SourceName="ToDoStub_0.54.42772.0_x64.appx" SourcePath="UUP\Desktop\Apps\IPA\Todos\AppxMetadata\Stub"/>
+        </Package>
+        <Package Id="Microsoft.Todos_2022.507.447.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="oVTyPN8n5l+JXgpU/vCfzao0m6cRY/1SQ8HYULC8hwI=" DownloadSize="10221" SourceName="Microsoft.Todos_8wekyb3d8bbwe.appxbundle" SourcePath="UUP\Desktop\Apps\IPA\Todos"/>
+        </Package>
+        <Package Id="Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe" Reason="MSIXFramework" FeatureId="Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="WZvW5dj1cVO3nht2GxQgF7NAoekX5cwv4y5JokLjiCM=" DownloadSize="5069743" SourceName="Microsoft.UI.Xaml.x64.2.7.appx" SourcePath="UUP\Desktop\Apps\IPA\WinStore"/>
+        </Package>
+        <Package Id="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="X7Kx8iqAkcaH41uxId5yRwBJhT+Sww/HLufu5re6RxA=" DownloadSize="22567" SourceName="CameraApp_2022.2201.4.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\Camera"/>
+        </Package>
+        <Package Id="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="wQnAdiDXLLJ7EvXNPtJjd+uz7bHJqrdyXe6d+bFNvHk=" DownloadSize="69198" SourceName="CameraApp_2022.2201.4.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\Camera"/>
+        </Package>
+        <Package Id="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="FEgHKsJuPJgPTOuNc8uNzWtccd6jXMdEQguK2rtlhFI=" DownloadSize="85555" SourceName="CameraApp_2022.2201.4.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\Camera"/>
+        </Package>
+        <Package Id="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="wfnc9vU5dtgBBZEUQNLPct8n5I31jEWT/8f1vN4At3Q=" DownloadSize="99570" SourceName="CameraApp_2022.2201.4.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\Camera"/>
+        </Package>
+        <Package Id="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="qiFNEHuwEQUPzJLVT6GNvbEeP4GfqU5WXqRA65gJqkY=" DownloadSize="311273" SourceName="CameraApp_2022.2201.4.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\Camera"/>
+        </Package>
+        <Package Id="Microsoft.WindowsCamera_2022.2201.4.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="j0gcSQxPRoAvW30vX/Q9zhMe+LUrVPT7r/Gwu/lSMXw=" DownloadSize="3549288" SourceName="CameraApp_2022.2201.4.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\Camera"/>
+        </Package>
+        <Package Id="Microsoft.WindowsCamera_2022.507.447.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="kT+pTy2fVQDknPOrXNnDOQBoLJYEFMjjfutX07MbyCU=" DownloadSize="9160" SourceName="Microsoft.WindowsCamera_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\Camera"/>
+        </Package>
+        <Package Id="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="ITNqcu06YgAq8GVx6y9MyTJIHaEJsW9uvjIE4Ic3RuE=" DownloadSize="15263" SourceName="NotepadApp_11.2112.32.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\Notepad"/>
+        </Package>
+        <Package Id="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="6IP1XUMuHg+06mo1xyXG8fqF/54JYZHPNC9kqlsxKcs=" DownloadSize="29895" SourceName="NotepadApp_11.2112.32.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\Notepad"/>
+        </Package>
+        <Package Id="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="Fa/db5ghRXOaQIk+sDOR4q7EB+1wvGDNrs7vJeAN5WA=" DownloadSize="35627" SourceName="NotepadApp_11.2112.32.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\Notepad"/>
+        </Package>
+        <Package Id="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="kdim9WRjFi2zjqC0+7s6XUWRuPyZgQGkK2U6SPbBZ+Y=" DownloadSize="39983" SourceName="NotepadApp_11.2112.32.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\Notepad"/>
+        </Package>
+        <Package Id="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="vRwtTsFIL33Qx3GLJLPyxeXxu29OXIVYCiItZyM3cxQ=" DownloadSize="100702" SourceName="NotepadApp_11.2112.32.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\Notepad"/>
+        </Package>
+        <Package Id="Microsoft.WindowsNotepad_11.2112.32.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="v2PpZ1bztpsyIRlyuzzft97fAE/FdQ2e3nUiWEcw27U=" DownloadSize="3805633" SourceName="NotepadApp_11.2112.32.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\Notepad"/>
+        </Package>
+        <Package Id="Microsoft.WindowsNotepad_2022.507.446.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="cWBSW1jrCBVJ2GcDyZRk+umeJndrEQapelPjQ4y4iuI=" DownloadSize="9319" SourceName="Microsoft.WindowsNotepad_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\Notepad"/>
+        </Package>
+        <Package Id="Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsTerminal_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="J4YXDBX4JTiCHd3Q4mV9pqN1p6mdjVh/9m5SpXkAqHY=" DownloadSize="6340038" SourceName="CascadiaPackage_1.12.10983.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\WindowsTerminal"/>
+        </Package>
+        <Package Id="Microsoft.WindowsTerminal_2022.507.446.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.WindowsTerminal_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="nPA0SzYvJppxtW4MLDaRVk/UvBHbgaGmf1WYC2w8VQk=" DownloadSize="8563" SourceName="Microsoft.WindowsTerminal_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\WindowsTerminal"/>
+        </Package>
+        <Package Id="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.language-es_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="E3kqUtcj1fMLT6tN5nebHDZyTTndwB46+JlvUYFETNM=" DownloadSize="21739" SourceName="App_11.2202.46.0_language-es.msix" SourcePath="UUP\Desktop\Apps\IPA\ZuneMusic"/>
+        </Package>
+        <Package Id="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-100_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="VYEm1Le7Ecg7QqyXr33dWDTQhyEiSAw0ghCoolSixWw=" DownloadSize="65615" SourceName="App_11.2202.46.0_scale-100.msix" SourcePath="UUP\Desktop\Apps\IPA\ZuneMusic"/>
+        </Package>
+        <Package Id="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-125_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="Y0x3vvaaSmnZELRucdgy/zz4BzI24EM5vdZTx/cOx08=" DownloadSize="93496" SourceName="App_11.2202.46.0_scale-125.msix" SourcePath="UUP\Desktop\Apps\IPA\ZuneMusic"/>
+        </Package>
+        <Package Id="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-150_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="6QcNu3sXq2v3EzPBnumxRdUKJbK9BDqOyQQ9IjGPkF0=" DownloadSize="101936" SourceName="App_11.2202.46.0_scale-150.msix" SourcePath="UUP\Desktop\Apps\IPA\ZuneMusic"/>
+        </Package>
+        <Package Id="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-400_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="5SiJyWViYNtcTJTtF9CmWgOx94XhR3tvUQ6wj9luAGY=" DownloadSize="323020" SourceName="App_11.2202.46.0_scale-400.msix" SourcePath="UUP\Desktop\Apps\IPA\ZuneMusic"/>
+        </Package>
+        <Package Id="Microsoft.ZuneMusic_11.2202.46.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="3M2STiii9vZSB1ARIwyJWY07Ht0TKC7WnBsRdqKCk18=" DownloadSize="12370649" SourceName="App_11.2202.46.0_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\ZuneMusic"/>
+        </Package>
+        <Package Id="Microsoft.ZuneMusic_2022.507.447.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="e/Vo+Rq/9ArQTZcF651dUcDRRVW5s7OYQFJeDloBYXY=" DownloadSize="9338" SourceName="Microsoft.ZuneMusic_8wekyb3d8bbwe.msixbundle" SourcePath="UUP\Desktop\Apps\IPA\ZuneMusic"/>
+        </Package>
+        <Package Id="MicrosoftCorporationII.QuickAssist_2.0.5.0_x64__8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="EUJF8F3AEera8YK3glYVQZHTpEKecs6tBmW6Cu2PTdo=" DownloadSize="1046906" SourceName="QA_MSIX_x64.msix" SourcePath="UUP\Desktop\Apps\IPA\QuickAssist"/>
+        </Package>
+        <Package Id="MicrosoftCorporationII.QuickAssist_2022.507.446.0_neutral_~_8wekyb3d8bbwe" Reason="MSIXBundle" FeatureId="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe">
+            <Payload PayloadType="Canonical" Hash="wv9xx7w7d1Pn+xI78T6krp9+gNotnj/6eNq1qiSZ/YM=" DownloadSize="8261" SourceName="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.appxbundle" SourcePath="UUP\Desktop\Apps\IPA\QuickAssist"/>
+        </Package>
+        <Package Id="MicrosoftWindows.Client.WebExperience_2022.507.446.0_neutral_~_cw5n1h2txyewy" Reason="MSIXBundle" FeatureId="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy">
+            <Payload PayloadType="Canonical" Hash="4qPE3N+NLBXhVZohLUAG56OfHgWn+GgafyZQw6E+ZKo=" DownloadSize="8574" SourceName="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy.appxbundle" SourcePath="UUP\Desktop\Apps\IPA\WebExperience"/>
+        </Package>
+        <Package Id="MicrosoftWindows.Client.WebExperience_421.20070.195.0_x64__cw5n1h2txyewy" Reason="MSIXBundle" FeatureId="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy">
+            <Payload PayloadType="Canonical" Hash="3fgWs8EMggqL+1DfCXn0bQ7UbFFicH8fivipd9aQEko=" DownloadSize="15209735" SourceName="MicrosoftWindows.Client.WebExperience_x64.appx" SourcePath="UUP\Desktop\Apps\IPA\WebExperience"/>
+        </Package>
+        <Package Id="Package_for_KB5021041" Reason="SafeOSDU" FeatureId="SafeOSUpdate_KB5021041">
+            <Payload PayloadType="PSFX" Hash="ENsA2NUEQo9z2WK7fBplX8gR3Yv4pBsPUNT+2Iy9FRY=" DownloadSize="566762" SourceName="Windows11.0-KB5021041-x64.cab"/>
+        </Package>
+        <Package Id="Package_for_RollupFix" Reason="CumulativeUpdate" FeatureId="CumulativeUpdate_KB5022303" PackagePath="Package_for_RollupFix~~amd64~~22621.1105.1.5" ExpressPackagePath="metadata\Windows11.0-KB5022303-x64">
+            <Payload PayloadType="Express" Hash="mbcW3/UyK9/KwY6ZVSJuZZKlBhkoOcPVgYsltQ9VDi4=" DownloadSize="117095839" SourceName="Windows11.0-KB5022303-x64.cab" ExpressHash="Ih7+OPNBcT28Eoy5D/j+pvnOxHcrauMznMUE1uhhGQY=" ExpressSourceName="Windows11.0-KB5022303-x64.psf" ExpressTargetName="Windows11.0-KB5022303-x64_psf.rng" CiXPath="Windows11.0-KB5022303-x64\express.psf.cix.xml"/>
+        </Package>
+        <Package Id="Package_for_ServicingStack_898" Reason="ServicingStackUpdate" FeatureId="ServicingStackUpdate_KB5020487">
+            <Payload PayloadType="Canonical" Hash="/VcdrHDkVHhhh33W7X9iEGM2At+sMFbMHc3WO/Zde4E=" DownloadSize="15500341" SourceName="SSU-22621.898-x64.cab"/>
+        </Package>
+        <Package Id="Package_for_SetupDU_KB5021310" Reason="SetupDU" FeatureId="SetupDynamicUpdate_KB5021310">
+            <Payload PayloadType="Canonical" Hash="byXN2yqzNyVJyKRwGSeb8jdc0VWosMghphwMTJdgDRs=" DownloadSize="8451365" SourceName="Windows11.0-KB5021310-x64.cab"/>
+        </Package>
+        <Package Id="professional_es-es_esd" Reason="Media" FeatureId="professional_es-es" FeatureFamilyType="Client">
+            <Payload PayloadType="Canonical" Hash="U2lbCcbqVYWSizuSmGS1TBLYh7nB02xhLB0V5yivEko=" DownloadSize="707857007" SourceName="professional_es-es.esd" SourcePath="MetadataESD"/>
+        </Package>
+        <Package Id="WindowsUpdateBox" Reason="Tool" FeatureId="WindowsUpdateBox">
+            <Payload PayloadType="Canonical" Hash="9iBf9j/WcUVm3vWdKJN5b0gpxfOBilUWxTCcRkEyx0E=" DownloadSize="24198720" SourceName="WindowsUpdateBox.exe" SourcePath="WindowsUpdateBox"/>
+        </Package>
+    </Downloads>
+    <Media Id="professional_es-es" Path="MetadataESD" Name="professional_es-es.esd" FeatureFamilyType="Client" InstalledSize="7755546854">
+        <Package Id="amd64_Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package" PackagePath="Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-OneCore-DirectX-Database-FOD-Package" PackagePath="Microsoft-OneCore-DirectX-Database-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Client-Desktop-Required-Package" PackagePath="Microsoft-Windows-Client-Desktop-Required-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Client-Desktop-Required-WOW64-Package" PackagePath="Microsoft-Windows-Client-Desktop-Required-WOW64-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Client-Features-Package" PackagePath="Microsoft-Windows-Client-Features-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Client-Features-WOW64-Package" PackagePath="Microsoft-Windows-Client-Features-WOW64-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-EditionPack-Professional-Package" PackagePath="Microsoft-Windows-EditionPack-Professional-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-EditionPack-Professional-WOW64-Package" PackagePath="Microsoft-Windows-EditionPack-Professional-WOW64-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-EditionSpecific-Professional-Package" PackagePath="Microsoft-Windows-EditionSpecific-Professional-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-EditionSpecific-Professional-WOW64-Package" PackagePath="Microsoft-Windows-EditionSpecific-Professional-WOW64-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Intel-E1i68x64-FOD-Package" PackagePath="Microsoft-Windows-Ethernet-Client-Intel-E1i68x64-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Intel-E2f68-FOD-Package" PackagePath="Microsoft-Windows-Ethernet-Client-Intel-E2f68-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Realtek-Rtcx21x64-FOD-Package" PackagePath="Microsoft-Windows-Ethernet-Client-Realtek-Rtcx21x64-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Ethernet-Client-Vmware-Vmxnet3-FOD-Package" PackagePath="Microsoft-Windows-Ethernet-Client-Vmware-Vmxnet3-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-FoDMetadata-Package" PackagePath="Microsoft-Windows-FoDMetadata-Package.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Foundation-Package" PackagePath="Microsoft-Windows-Foundation-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Hello-Face-Package" PackagePath="Microsoft-Windows-Hello-Face-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Kernel-LA57-FoD-Package" PackagePath="Microsoft-Windows-Kernel-LA57-FoD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-Basic-es-es-Package" PackagePath="Microsoft-Windows-LanguageFeatures-Basic-es-es-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-Handwriting-es-es-Package" PackagePath="Microsoft-Windows-LanguageFeatures-Handwriting-es-es-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-OCR-es-es-Package" PackagePath="Microsoft-Windows-LanguageFeatures-OCR-es-es-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-Speech-es-es-Package" PackagePath="Microsoft-Windows-LanguageFeatures-Speech-es-es-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-LanguageFeatures-TextToSpeech-es-es-Package" PackagePath="Microsoft-Windows-LanguageFeatures-TextToSpeech-es-es-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Not-Supported-On-LTSB-Package" PackagePath="Microsoft-Windows-Not-Supported-On-LTSB-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Not-Supported-On-LTSB-WOW64-Package" PackagePath="Microsoft-Windows-Not-Supported-On-LTSB-WOW64-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-RegulatedPackages-Package" PackagePath="Microsoft-Windows-RegulatedPackages-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-RegulatedPackages-WOW64-Package" PackagePath="Microsoft-Windows-RegulatedPackages-WOW64-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Required-ShellExperiences-Desktop-Package" PackagePath="Microsoft-Windows-Required-ShellExperiences-Desktop-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Required-ShellExperiences-Desktop-WOW64-Package" PackagePath="Microsoft-Windows-Required-ShellExperiences-Desktop-WOW64-Package.ESD" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-TabletPCMath-Package" PackagePath="Microsoft-Windows-TabletPCMath-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wallpaper-Content-Extended-FoD-Package" PackagePath="Microsoft-Windows-Wallpaper-Content-Extended-FoD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Broadcom-Bcmpciedhd63-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Broadcom-Bcmpciedhd63-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63a-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63a-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63al-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Broadcom-Bcmwl63al-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwbw02-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwbw02-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwew00-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwew00-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwew01-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwew01-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwlv64-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwlv64-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwns64-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwns64-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwsw00-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwsw00-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw02-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwtw02-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw04-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwtw04-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw06-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwtw06-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw08-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwtw08-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Intel-Netwtw10-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Intel-Netwtw10-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Marvel-Mrvlpcie8897-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Marvel-Mrvlpcie8897-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Qualcomm-Athw8x-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Qualcomm-Athw8x-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Qualcomm-Athwnx-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Qualcomm-Athwnx-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Qualcomm-Qcamain10x64-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Qualcomm-Qcamain10x64-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Ralink-Netr28x-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Ralink-Netr28x-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl8187se-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Realtek-Rtl8187se-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl8192se-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Realtek-Rtl8192se-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl819xp-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Realtek-Rtl819xp-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtl85n64-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Realtek-Rtl85n64-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtwlane-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Realtek-Rtwlane-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtwlane01-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Realtek-Rtwlane01-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_Microsoft-Windows-Wifi-Client-Realtek-Rtwlane13-FOD-Package" PackagePath="Microsoft-Windows-Wifi-Client-Realtek-Rtwlane13-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="amd64_OpenSSH-Client-Package" PackagePath="OpenSSH-Client-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-Client-LanguagePack-Package_es-es~31bf3856ad364e35~amd64~es-es~" PackagePath="Microsoft-Windows-Client-LanguagePack-Package_es-es~31bf3856ad364e35~amd64~es-es~.esd" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~~" PackagePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~wow64~~" PackagePath="Microsoft-Windows-Notepad-System-FoD-Package~31bf3856ad364e35~wow64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~~" PackagePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~~" PackagePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~wow64~~" PackagePath="Microsoft-Windows-WMIC-FoD-Package~31bf3856ad364e35~wow64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~~" PackagePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~~.cab" PackageType="Cab"/>
+        <Package Id="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~~" PackagePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~~.cab" PackageType="Cab"/>
+    </Media>
+    <Plan>
+        <InstallFeature Id="App.StepsRecorder~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Browser.InternetExplorer~~11.0" Group="Microsoft"/>
+        <InstallFeature Id="CumulativeUpdate_KB5022303" Group="Microsoft"/>
+        <InstallFeature Id="Language.Basic~en-us~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Language.Basic~es-es~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Language.Handwriting~es-es~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Language.OCR~en-us~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Language.OCR~es-es~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Language.Speech~es-es~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Language.TextToSpeech~es-es~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Language.UI.Client~en-us" Group="Microsoft"/>
+        <InstallFeature Id="Language.UI.Client~es-es" Group="Microsoft"/>
+        <InstallFeature Id="MathRecognizer~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Media.WindowsMediaPlayer~~12.0" Group="Microsoft"/>
+        <InstallFeature Id="Microsoft.Windows.PowerShell.ISE~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Microsoft.Windows.WordPad~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="OneCoreUAP.OneSync~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="OpenSSH.Client~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Print.Fax.Scan~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="Print.Management.Console~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="SafeOSUpdate_KB5021041" Group="Microsoft"/>
+        <InstallFeature Id="ServicingStackUpdate_KB5020487" Group="Microsoft"/>
+        <InstallFeature Id="SetupDynamicUpdate_KB5021310" Group="Microsoft"/>
+        <InstallFeature Id="Tools.Graphics.DirectX~~1.0" Group="Microsoft"/>
+        <InstallFeature Id="WindowsUpdateBox" Group="Microsoft"/>
+        <InstallFeature Id="Clipchamp.Clipchamp_yxz26nhyzhsrt" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.BingNews_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.GamingApp_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.NET.Native.Framework.1.7_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.NET.Native.Runtime.1.7_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.NET.Native.Runtime.2.2_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.Paint_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.RawImageExtension_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.ScreenSketch_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.SecHealthUI_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.Todos_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.UI.Xaml.2.1_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.UI.Xaml.2.3_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.WindowsCamera_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.WindowsTerminal_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="Microsoft.ZuneMusic_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe" Group="PreinstalledApps"/>
+        <InstallFeature Id="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy" Group="PreinstalledApps"/>
+    </Plan>
+    <Actions>
+        <InstallPackage Keyform="amd64_Microsoft-OneCore-Graphics-Tools-Package~~amd64~~10.0.22621.1" InstalledSize="86982254" StagedSize="0" FilePath="Microsoft-OneCore-Graphics-Tools-Package~31bf3856ad364e35~amd64~~.cab" Reason="OnDemand" FeatureId="Tools.Graphics.DirectX~~1.0" CapabilityId="Tools.Graphics.DirectX~~~~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-OneCore-Graphics-Tools-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="amd64_Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~~amd64~~10.0.22621.1" InstalledSize="44408259" StagedSize="0" FilePath="Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~.cab" Reason="OnDemand" FeatureId="Language.Basic~en-us~1.0" CapabilityId="Language.Basic~~~en-us~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="amd64_Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~~amd64~~10.0.22621.1" InstalledSize="232653" StagedSize="0" FilePath="Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~.cab" Reason="OnDemand" FeatureId="Language.OCR~en-us~1.0" CapabilityId="Language.OCR~~~en-us~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Clipchamp.Clipchamp_2.2.8.0_neutral_~~amd64~~2.2.8.0" InstalledSize="0" StagedSize="0" FilePath="Clipchamp.Clipchamp_yxz26nhyzhsrt.msixbundle" Reason="MSIXBundle" FeatureId="Clipchamp.Clipchamp_yxz26nhyzhsrt" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Clipchamp.Clipchamp_yxz26nhyzhsrt.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-Client-LanguagePack-Package_en-us~~amd64~en-US~10.0.22621.1" InstalledSize="159208831" StagedSize="0" FilePath="Microsoft-Windows-Client-LanguagePack-Package_en-us~31bf3856ad364e35~amd64~en-us~.esd" Reason="LangPack" FeatureId="Language.UI.Client~en-us" CapabilityId="Language.UI.Client~~~en-us~" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-Client-LanguagePack-Package_en-us~31bf3856ad364e35~amd64~en-us~.esd" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-InternetExplorer-Optional-Package~~amd64~en-US~10.0.22621.1" InstalledSize="58976" StagedSize="0" FilePath="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~en-us~.cab" Reason="Satellite" FeatureId="Browser.InternetExplorer~~11.0" CapabilityId="Browser.InternetExplorer~~~en-US~0.0.11.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-InternetExplorer-Optional-Package~~amd64~es-ES~10.0.22621.1" InstalledSize="59978" StagedSize="0" FilePath="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~es-es~.cab" Reason="Satellite" FeatureId="Browser.InternetExplorer~~11.0" CapabilityId="Browser.InternetExplorer~~~es-ES~0.0.11.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-MediaPlayer-Package~~amd64~en-US~10.0.22621.1" InstalledSize="860722" StagedSize="0" FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~en-us~.cab" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~en-US~0.0.12.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-MediaPlayer-Package~~amd64~es-ES~10.0.22621.1" InstalledSize="986345" StagedSize="0" FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~es-es~.cab" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~es-ES~0.0.12.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~amd64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-MediaPlayer-Package~~wow64~en-US~10.0.22621.1" InstalledSize="160436" StagedSize="0" FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~en-us~.cab" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~en-US~0.0.12.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-MediaPlayer-Package~~wow64~es-ES~10.0.22621.1" InstalledSize="170063" StagedSize="0" FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~es-es~.cab" Reason="Satellite" FeatureId="Media.WindowsMediaPlayer~~12.0" CapabilityId="Media.WindowsMediaPlayer~~~es-ES~0.0.12.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-MediaPlayer-Package~31bf3856ad364e35~wow64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-PowerShell-ISE-FOD-Package~~amd64~en-US~10.0.22621.1" InstalledSize="869484" StagedSize="0" FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~en-us~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-PowerShell-ISE-FOD-Package~~amd64~es-ES~10.0.22621.1" InstalledSize="875151" StagedSize="0" FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~es-es~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~amd64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-PowerShell-ISE-FOD-Package~~wow64~en-US~10.0.22621.1" InstalledSize="71497" StagedSize="0" FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~en-us~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-PowerShell-ISE-FOD-Package~~wow64~es-ES~10.0.22621.1" InstalledSize="71998" StagedSize="0" FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~es-es~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.PowerShell.ISE~~1.0" CapabilityId="Microsoft.Windows.PowerShell.ISE~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-PowerShell-ISE-FOD-Package~31bf3856ad364e35~wow64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-Printing-PMCPPC-FoD-Package~~amd64~en-US~10.0.22621.1" InstalledSize="222336" StagedSize="0" FilePath="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" Reason="Satellite" FeatureId="Print.Management.Console~~1.0" CapabilityId="Print.Management.Console~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-Printing-PMCPPC-FoD-Package~~amd64~es-ES~10.0.22621.1" InstalledSize="231064" StagedSize="0" FilePath="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" Reason="Satellite" FeatureId="Print.Management.Console~~1.0" CapabilityId="Print.Management.Console~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-Printing-PMCPPC-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-Printing-WFS-FoD-Package~~amd64~en-US~10.0.22621.1" InstalledSize="508071" StagedSize="0" FilePath="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" Reason="Satellite" FeatureId="Print.Fax.Scan~~1.0" CapabilityId="Print.Fax.Scan~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-Printing-WFS-FoD-Package~~amd64~es-ES~10.0.22621.1" InstalledSize="566401" StagedSize="0" FilePath="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" Reason="Satellite" FeatureId="Print.Fax.Scan~~1.0" CapabilityId="Print.Fax.Scan~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-Printing-WFS-FoD-Package~~amd64~~10.0.22621.1" InstalledSize="10469518" StagedSize="0" FilePath="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~~.cab" Reason="OnDemand" FeatureId="Print.Fax.Scan~~1.0" CapabilityId="Print.Fax.Scan~~~~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-Printing-WFS-FoD-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-StepsRecorder-Package~~amd64~en-US~10.0.22621.1" InstalledSize="24345" StagedSize="0" FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~en-us~.cab" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-StepsRecorder-Package~~amd64~es-ES~10.0.22621.1" InstalledSize="25910" StagedSize="0" FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~es-es~.cab" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~amd64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-StepsRecorder-Package~~wow64~en-US~10.0.22621.1" InstalledSize="11931" StagedSize="0" FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~en-us~.cab" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-StepsRecorder-Package~~wow64~es-ES~10.0.22621.1" InstalledSize="11960" StagedSize="0" FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~es-es~.cab" Reason="Satellite" FeatureId="App.StepsRecorder~~1.0" CapabilityId="App.StepsRecorder~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-StepsRecorder-Package~31bf3856ad364e35~wow64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-WordPad-FoD-Package~~amd64~en-US~10.0.22621.1" InstalledSize="63002" StagedSize="0" FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-WordPad-FoD-Package~~amd64~es-ES~10.0.22621.1" InstalledSize="179229" StagedSize="0" FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~amd64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-WordPad-FoD-Package~~wow64~en-US~10.0.22621.1" InstalledSize="63096" StagedSize="0" FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~en-us~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~en-US~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~en-us~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft-Windows-WordPad-FoD-Package~~wow64~es-ES~10.0.22621.1" InstalledSize="179315" StagedSize="0" FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~es-es~.cab" Reason="Satellite" FeatureId="Microsoft.Windows.WordPad~~1.0" CapabilityId="Microsoft.Windows.WordPad~~~es-ES~0.0.1.0" Partition="MainOS" BinaryPartition="false">
+            <Token value="PROVISIONAL"/>
+            <InstallPayload FilePath="Microsoft-Windows-WordPad-FoD-Package~31bf3856ad364e35~wow64~es-es~.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.BingNews_1.0.1.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~1.0.1.0" InstalledSize="0" StagedSize="0" FilePath="NewsStub_1.0.1.0_language-es.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NewsStub_1.0.1.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.BingNews_1.0.1.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~1.0.1.0" InstalledSize="0" StagedSize="0" FilePath="NewsStub_1.0.1.0_scale-100.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NewsStub_1.0.1.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.BingNews_1.0.1.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~1.0.1.0" InstalledSize="0" StagedSize="0" FilePath="NewsStub_1.0.1.0_scale-125.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NewsStub_1.0.1.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.BingNews_1.0.1.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~1.0.1.0" InstalledSize="0" StagedSize="0" FilePath="NewsStub_1.0.1.0_scale-150.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NewsStub_1.0.1.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.BingNews_1.0.1.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~1.0.1.0" InstalledSize="0" StagedSize="0" FilePath="NewsStub_1.0.1.0_scale-400.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NewsStub_1.0.1.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.BingNews_1.0.1.0_x64__8wekyb3d8bbwe~~amd64~~1.0.1.0" InstalledSize="0" StagedSize="0" FilePath="NewsStub_1.0.1.0_x64.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NewsStub_1.0.1.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.BingNews_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.BingNews_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.BingNews_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.BingNews_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2022.507.447.0_neutral_~~amd64~~2022.507.447.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.GamingApp_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.GamingApp_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_language-es.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_scale-100.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_scale-125.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_scale-150.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-250_8wekyb3d8bbwe~~amd64~~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_scale-250.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_scale-250.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-300_8wekyb3d8bbwe~~amd64~~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_scale-300.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_scale-300.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_scale-400.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.GamingApp_2105.900.24.0_x64__8wekyb3d8bbwe~~amd64~~2105.900.24.0" InstalledSize="0" StagedSize="0" FilePath="XboxStub_2105.900.24.0_x64.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.GamingApp_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="XboxStub_2105.900.24.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.NET.Native.Runtime.1.7_1.7.25531.0_x64__8wekyb3d8bbwe~~amd64~~1.7.25531.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.NET.Native.Runtime.x64.1.7.appx" Reason="MSIXFramework" FeatureId="Microsoft.NET.Native.Runtime.1.7_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.NET.Native.Runtime.x64.1.7.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Paint_11.2201.22.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~11.2201.22.0" InstalledSize="0" StagedSize="0" FilePath="Paint_11.2201.22.0_language-es.msix" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Paint_11.2201.22.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Paint_11.2201.22.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~11.2201.22.0" InstalledSize="0" StagedSize="0" FilePath="Paint_11.2201.22.0_scale-100.msix" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Paint_11.2201.22.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Paint_11.2201.22.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~11.2201.22.0" InstalledSize="0" StagedSize="0" FilePath="Paint_11.2201.22.0_scale-125.msix" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Paint_11.2201.22.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Paint_11.2201.22.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~11.2201.22.0" InstalledSize="0" StagedSize="0" FilePath="Paint_11.2201.22.0_scale-150.msix" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Paint_11.2201.22.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Paint_11.2201.22.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~11.2201.22.0" InstalledSize="0" StagedSize="0" FilePath="Paint_11.2201.22.0_scale-400.msix" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Paint_11.2201.22.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Paint_11.2201.22.0_x64__8wekyb3d8bbwe~~amd64~~11.2201.22.0" InstalledSize="0" StagedSize="0" FilePath="Paint_11.2201.22.0_x64.msix" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Paint_11.2201.22.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Paint_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.Paint_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.Paint_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.Paint_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-es~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_language-es.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-100.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-125.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-140_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-140.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-140.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-150.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-180_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-180.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-180.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-250_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-250.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-250.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-300_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-300.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-300.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-400.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_1.0.219.0_x64__8wekyb3d8bbwe~~amd64~~1.0.219.0" InstalledSize="0" StagedSize="0" FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_x64.msix" Reason="StubMSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="PowerAutomateDesktopStubPackage_1.0.219.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.PowerAutomateDesktop_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.RawImageExtension_2.1.30391.0_x64__8wekyb3d8bbwe~~amd64~~2.1.30391.0" InstalledSize="0" StagedSize="0" FilePath="codecpacks.rawimage_2.1.30391.0_x64.appx" Reason="MSIXBundle" FeatureId="Microsoft.RawImageExtension_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="codecpacks.rawimage_2.1.30391.0_x64.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.RawImageExtension_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.RawImageExtension_8wekyb3d8bbwe.appxbundle" Reason="MSIXBundle" FeatureId="Microsoft.RawImageExtension_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.RawImageExtension_8wekyb3d8bbwe.appxbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~11.2201.12.0" InstalledSize="0" StagedSize="0" FilePath="ScreenSketch_11.2201.12.0_language-es.msix" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ScreenSketch_11.2201.12.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~11.2201.12.0" InstalledSize="0" StagedSize="0" FilePath="ScreenSketch_11.2201.12.0_scale-100.msix" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ScreenSketch_11.2201.12.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~11.2201.12.0" InstalledSize="0" StagedSize="0" FilePath="ScreenSketch_11.2201.12.0_scale-125.msix" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ScreenSketch_11.2201.12.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~11.2201.12.0" InstalledSize="0" StagedSize="0" FilePath="ScreenSketch_11.2201.12.0_scale-150.msix" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ScreenSketch_11.2201.12.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ScreenSketch_11.2201.12.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~11.2201.12.0" InstalledSize="0" StagedSize="0" FilePath="ScreenSketch_11.2201.12.0_scale-400.msix" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ScreenSketch_11.2201.12.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ScreenSketch_11.2201.12.0_x64__8wekyb3d8bbwe~~amd64~~11.2201.12.0" InstalledSize="0" StagedSize="0" FilePath="ScreenSketch_11.2201.12.0_x64.msix" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ScreenSketch_11.2201.12.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ScreenSketch_2022.507.447.0_neutral_~~amd64~~2022.507.447.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.ScreenSketch_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.ScreenSketch_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.ScreenSketch_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.SecHealthUI_1000.22621.1.0_x64__8wekyb3d8bbwe~~amd64~~1000.22621.1.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.SecHealthUI_8wekyb3d8bbwe.appx" Reason="MSIX" FeatureId="Microsoft.SecHealthUI_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.SecHealthUI_8wekyb3d8bbwe.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Todos_0.54.42772.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~0.54.42772.0" InstalledSize="0" StagedSize="0" FilePath="ToDoStub_0.54.42772.0_language-es.appx" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ToDoStub_0.54.42772.0_language-es.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Todos_0.54.42772.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~0.54.42772.0" InstalledSize="0" StagedSize="0" FilePath="ToDoStub_0.54.42772.0_scale-100.appx" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ToDoStub_0.54.42772.0_scale-100.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Todos_0.54.42772.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~0.54.42772.0" InstalledSize="0" StagedSize="0" FilePath="ToDoStub_0.54.42772.0_scale-125.appx" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ToDoStub_0.54.42772.0_scale-125.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Todos_0.54.42772.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~0.54.42772.0" InstalledSize="0" StagedSize="0" FilePath="ToDoStub_0.54.42772.0_scale-150.appx" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ToDoStub_0.54.42772.0_scale-150.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Todos_0.54.42772.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~0.54.42772.0" InstalledSize="0" StagedSize="0" FilePath="ToDoStub_0.54.42772.0_scale-400.appx" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ToDoStub_0.54.42772.0_scale-400.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Todos_0.54.42772.0_x64__8wekyb3d8bbwe~~amd64~~0.54.42772.0" InstalledSize="0" StagedSize="0" FilePath="ToDoStub_0.54.42772.0_x64.appx" Reason="StubMSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="ToDoStub_0.54.42772.0_x64.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.Todos_2022.507.447.0_neutral_~~amd64~~2022.507.447.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.Todos_8wekyb3d8bbwe.appxbundle" Reason="MSIXBundle" FeatureId="Microsoft.Todos_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.Todos_8wekyb3d8bbwe.appxbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe~~amd64~~7.2203.17001.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.UI.Xaml.x64.2.7.appx" Reason="MSIXFramework" FeatureId="Microsoft.UI.Xaml.2.7_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.UI.Xaml.x64.2.7.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~2022.2201.4.0" InstalledSize="0" StagedSize="0" FilePath="CameraApp_2022.2201.4.0_language-es.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="CameraApp_2022.2201.4.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~2022.2201.4.0" InstalledSize="0" StagedSize="0" FilePath="CameraApp_2022.2201.4.0_scale-100.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="CameraApp_2022.2201.4.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~2022.2201.4.0" InstalledSize="0" StagedSize="0" FilePath="CameraApp_2022.2201.4.0_scale-125.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="CameraApp_2022.2201.4.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~2022.2201.4.0" InstalledSize="0" StagedSize="0" FilePath="CameraApp_2022.2201.4.0_scale-150.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="CameraApp_2022.2201.4.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsCamera_2022.2201.4.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~2022.2201.4.0" InstalledSize="0" StagedSize="0" FilePath="CameraApp_2022.2201.4.0_scale-400.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="CameraApp_2022.2201.4.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsCamera_2022.2201.4.0_x64__8wekyb3d8bbwe~~amd64~~2022.2201.4.0" InstalledSize="0" StagedSize="0" FilePath="CameraApp_2022.2201.4.0_x64.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="CameraApp_2022.2201.4.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsCamera_2022.507.447.0_neutral_~~amd64~~2022.507.447.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.WindowsCamera_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.WindowsCamera_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.WindowsCamera_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~11.2112.32.0" InstalledSize="0" StagedSize="0" FilePath="NotepadApp_11.2112.32.0_language-es.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NotepadApp_11.2112.32.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~11.2112.32.0" InstalledSize="0" StagedSize="0" FilePath="NotepadApp_11.2112.32.0_scale-100.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NotepadApp_11.2112.32.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~11.2112.32.0" InstalledSize="0" StagedSize="0" FilePath="NotepadApp_11.2112.32.0_scale-125.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NotepadApp_11.2112.32.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~11.2112.32.0" InstalledSize="0" StagedSize="0" FilePath="NotepadApp_11.2112.32.0_scale-150.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NotepadApp_11.2112.32.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsNotepad_11.2112.32.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~11.2112.32.0" InstalledSize="0" StagedSize="0" FilePath="NotepadApp_11.2112.32.0_scale-400.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NotepadApp_11.2112.32.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsNotepad_11.2112.32.0_x64__8wekyb3d8bbwe~~amd64~~11.2112.32.0" InstalledSize="0" StagedSize="0" FilePath="NotepadApp_11.2112.32.0_x64.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="NotepadApp_11.2112.32.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsNotepad_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.WindowsNotepad_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsTerminal_1.12.10983.0_x64__8wekyb3d8bbwe~~amd64~~1.12.10983.0" InstalledSize="0" StagedSize="0" FilePath="CascadiaPackage_1.12.10983.0_x64.msix" Reason="MSIXBundle" FeatureId="Microsoft.WindowsTerminal_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="CascadiaPackage_1.12.10983.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.WindowsTerminal_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.WindowsTerminal_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.WindowsTerminal_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.WindowsTerminal_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.language-es_8wekyb3d8bbwe~~amd64~es-mx~11.2202.46.0" InstalledSize="0" StagedSize="0" FilePath="App_11.2202.46.0_language-es.msix" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="App_11.2202.46.0_language-es.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-100_8wekyb3d8bbwe~~amd64~~11.2202.46.0" InstalledSize="0" StagedSize="0" FilePath="App_11.2202.46.0_scale-100.msix" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="App_11.2202.46.0_scale-100.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-125_8wekyb3d8bbwe~~amd64~~11.2202.46.0" InstalledSize="0" StagedSize="0" FilePath="App_11.2202.46.0_scale-125.msix" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="App_11.2202.46.0_scale-125.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-150_8wekyb3d8bbwe~~amd64~~11.2202.46.0" InstalledSize="0" StagedSize="0" FilePath="App_11.2202.46.0_scale-150.msix" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="App_11.2202.46.0_scale-150.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ZuneMusic_11.2202.46.0_neutral_split.scale-400_8wekyb3d8bbwe~~amd64~~11.2202.46.0" InstalledSize="0" StagedSize="0" FilePath="App_11.2202.46.0_scale-400.msix" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="App_11.2202.46.0_scale-400.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ZuneMusic_11.2202.46.0_x64__8wekyb3d8bbwe~~amd64~~11.2202.46.0" InstalledSize="0" StagedSize="0" FilePath="App_11.2202.46.0_x64.msix" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="App_11.2202.46.0_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Microsoft.ZuneMusic_2022.507.447.0_neutral_~~amd64~~2022.507.447.0" InstalledSize="0" StagedSize="0" FilePath="Microsoft.ZuneMusic_8wekyb3d8bbwe.msixbundle" Reason="MSIXBundle" FeatureId="Microsoft.ZuneMusic_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Microsoft.ZuneMusic_8wekyb3d8bbwe.msixbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="MicrosoftCorporationII.QuickAssist_2.0.5.0_x64__8wekyb3d8bbwe~~amd64~~2.0.5.0" InstalledSize="0" StagedSize="0" FilePath="QA_MSIX_x64.msix" Reason="MSIXBundle" FeatureId="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="QA_MSIX_x64.msix" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="MicrosoftCorporationII.QuickAssist_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.appxbundle" Reason="MSIXBundle" FeatureId="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe.appxbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="MicrosoftWindows.Client.WebExperience_2022.507.446.0_neutral_~~amd64~~2022.507.446.0" InstalledSize="0" StagedSize="0" FilePath="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy.appxbundle" Reason="MSIXBundle" FeatureId="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy.appxbundle" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="MicrosoftWindows.Client.WebExperience_421.20070.195.0_x64__cw5n1h2txyewy~~amd64~~421.20070.195.0" InstalledSize="0" StagedSize="0" FilePath="MicrosoftWindows.Client.WebExperience_x64.appx" Reason="MSIXBundle" FeatureId="MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="MicrosoftWindows.Client.WebExperience_x64.appx" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Package_for_KB5021041~~amd64~~22621.815.1.0" InstalledSize="79293611" StagedSize="0" FilePath="Windows11.0-KB5021041-x64.cab" Reason="SafeOSDU" FeatureId="SafeOSUpdate_KB5021041" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Windows11.0-KB5021041-x64.cab" PayloadType="PSFX"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Package_for_RollupFix~~amd64~~22621.1105.1.5" InstalledSize="6637446154" StagedSize="0" PayloadType="Express" FilePath="Package_for_RollupFix~~amd64~~22621.1105.1.5" ExpressPackagePath="metadata\Windows11.0-KB5022303-x64" Reason="CumulativeUpdate" FeatureId="CumulativeUpdate_KB5022303" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Windows11.0-KB5022303-x64.cab" PayloadType="Express"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Package_for_ServicingStack_898~~amd64~~22621.898.1.1" InstalledSize="56593373" StagedSize="0" FilePath="SSU-22621.898-x64.cab" Reason="ServicingStackUpdate" FeatureId="ServicingStackUpdate_KB5020487" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="SSU-22621.898-x64.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+        <InstallPackage Keyform="Package_for_SetupDU_KB5021310~~amd64~~0.0.0.0" InstalledSize="0" StagedSize="0" FilePath="Windows11.0-KB5021310-x64.cab" Reason="SetupDU" FeatureId="SetupDynamicUpdate_KB5021310" Partition="MainOS" BinaryPartition="false">
+            <InstallPayload FilePath="Windows11.0-KB5021310-x64.cab" PayloadType="Canonical"/>
+        </InstallPackage>
+    </Actions>
+</ActionList>

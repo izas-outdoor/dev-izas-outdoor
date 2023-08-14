@@ -1,0 +1,166 @@
+[Version]
+Signature="$Windows NT$"
+Provider=%HP%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+DriverVer=02/18/2019,20.80.02.7578
+CatalogFile=hpygid20.cat
+[Manufacturer]
+%HP%=HP,NTx86.6.1,NTamd64.6.1,NTx86.6.2,NTamd64.6.2,NTx86.6.3,NTamd64.6.3
+[HP.NTx86.6.1]
+"HP DeskJet 3630 series"=INSTALL_3630,USBPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,WSDPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,MF\DeskJet_3630_series&WSD&IP_PRINT
+[HP.NTamd64.6.1]
+"HP DeskJet 3630 series"=INSTALL_3630,USBPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,WSDPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,MF\DeskJet_3630_series&WSD&IP_PRINT
+[HP.NTx86.6.2]
+"HP DeskJet 3630 series"=INSTALL_3630,USBPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,WSDPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,MF\DeskJet_3630_series&WSD&IP_PRINT
+[HP.NTamd64.6.2]
+"HP DeskJet 3630 series"=INSTALL_3630,USBPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,WSDPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,MF\DeskJet_3630_series&WSD&IP_PRINT
+[HP.NTx86.6.3]
+"HP DeskJet 3630 series"=INSTALL_3630,USBPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,WSDPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,MF\DeskJet_3630_series&WSD&IP_PRINT
+[HP.NTamd64.6.3]
+"HP DeskJet 3630 series"=INSTALL_3630,USBPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,WSDPRINT\HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,HPDeskJet_3630_serie105A
+"HP DeskJet 3630 series"=INSTALL_3630,MF\DeskJet_3630_series&WSD&IP_PRINT
+[INSTALL_3630]
+CopyFiles=@hpdj_3630.gpd,@hpygid20-pipelineconfig.xml,@hpbmtxr20.dll,HP_UNIDRV,XPSRasPCL3,HP_XPS_BINARIES,AUTO_CONFIG,COINST_FILES,LMDRV_FILES,LM_FILES
+DriverFile=mxdwdrv.dll
+ConfigFile=UniDrvUI.dll
+HelpFile=UniDrv.HLP
+DataFile=hpdj_3630.gpd
+FeatureScore=0x06
+CoreDriverSections="{D20EA372-DD35-4950-9ED8-A6335AFE79F0},XPSGPD.OEM","{D20EA372-DD35-4950-9ED8-A6335AFE79F5},XPSDRV.OEM"
+AddReg=BiDiFlag
+CopyINF=HPRestStub.inf,HPWia_DJ3630.inf
+LanguageMonitor="HP E311 Status Monitor,hpinkstsE311LM.dll"
+[HP_UNIDRV]
+UNIDRV.DLL,UNIDRV.DLL,,0x00000020
+UNIRES.DLL,UNIRES.DLL,,0x00000020
+UNIDRVUI.DLL,UNIDRVUI.DLL,,0x00000020
+STDNAMES.GPD,STDNAMES.GPD,,0x00000020 
+STDDTYPE.GDL,STDDTYPE.GDL,,0x00000020
+STDSCHEM.GDL,STDSCHEM.GDL,,0x00000020
+STDSCHMX.GDL,STDSCHMX.GDL,,0x00000020
+UNIDRV.HLP,UNIDRV.HLP,,0x00000020
+LOCALE.GPD,LOCALE.GPD,,0x00000020
+[XPSRasPCL3]
+hpygidMN20.gpd
+hpygiddrv20.dll
+hpygidUI20.dll
+hpygidres20.dll
+hpUIMDDialog20.dll
+hpygid20.ini
+MSXPSINC.GPD
+[HP_XPS_BINARIES]
+xpssvcs.dll
+mxdwdrv.dll
+[AUTO_CONFIG]
+hpygidDataMap.xml
+hpbuio.dll
+hpygidudm.dll
+[BiDiFlag]
+HKLM,%REG_PATH%\%HP_DRIVER_NAME%\%PrinterDriverDataRegPath%,"FirstTimeBiDi",0x00010001,0 
+[SourceDisksFiles]
+hpdj_3630.gpd=100
+hpygid20-pipelineconfig.xml=100
+STDNAMES.GPD=100
+STDDTYPE.GDL=100
+STDSCHEM.GDL=100
+STDSCHMX.GDL=100
+LOCALE.GPD=100
+hpygidMN20.gpd=100
+hpygid20.ini=100
+MSXPSINC.GPD=100
+hpygidDataMap.xml=100
+[SourceDisksFiles.amd64]
+hpbmtxr20.dll=104
+UNIDRV.DLL=102
+UNIRES.DLL=102
+UNIDRVUI.DLL=102
+UNIDRV.HLP=102
+hpygiddrv20.dll=102
+hpygidUI20.dll=102
+hpygidres20.dll=102
+hpUIMDDialog20.dll=102
+xpssvcs.dll=102
+mxdwdrv.dll=102
+hpbuio.dll=106
+hpygidudm.dll=106
+hpinkcoiE311.dll=102
+hpinkstsE311LM.dll=102
+hpinkstsE311.dll=102
+hpinkinsE311.exe=102
+[SourceDisksFiles.x86]
+hpbmtxr20.dll=103
+UNIDRV.DLL=101
+UNIRES.DLL=101
+UNIDRVUI.DLL=101
+UNIDRV.HLP=101
+hpygiddrv20.dll=101
+hpygidUI20.dll=101
+hpygidres20.dll=101
+hpUIMDDialog20.dll=101
+xpssvcs.dll=101
+mxdwdrv.dll=101
+hpbuio.dll=105
+hpygidudm.dll=105
+hpinkcoiE311.dll=101
+hpinkstsE311LM.dll=101
+hpinkstsE311.dll=101
+hpinkinsE311.exe=101
+[SourceDisksNames]
+100=%Location%
+104=%Location%,hpbxpsrender_x64.cab,,amd64
+103=%Location%,hpbxpsrender_x86.cab,,i386
+102=%Location%,,,amd64
+101=%Location%,,,i386
+106=%Location%,hpgidudmio_x64.cab,,amd64
+105=%Location%,hpgidudmio_x86.cab,,i386
+[DestinationDirs]
+DefaultDestDir=66000
+COINST_FILES=11             ; Copy CoInstaller files to system32
+LM_FILES=66002              ; Copy LM files to driver folder for Vista and beyond
+LM_FILES_XP=66002
+[Strings]
+Location="HP XPS PCL3 Driver"
+HP="HP"
+HP_DRIVER_NAME="HP Standard PCL3 Driver"
+PrinterDriverDataRegPath="PrinterDriverData"
+REG_PATH="SYSTEM\CurrentControlSet\Control\Print\Printers"
+[INSTALL_3630.CoInstallers]
+AddReg=hp_CoInstaller_D3630_addReg
+CopyFiles=COINST_FILES
+[INSTALL_3630.Services]
+AddService=,0x2    ; no value for the service name
+[hp_CoInstaller_D3630_addReg]
+HKR,,CoInstallers32,0x00010000,"hpinkcoiE311.dll,CoDeviceInstall"
+HKR,,SoftwareRegPath,,"Software\HP\InstalledProducts\{9967EA13-D6AC-11E3-BE69-005056C00008}"
+HKR,,ModelName,,"HP DeskJet 3630 series"
+[SourceInfo]
+SourceDirectory=%1%
+[LMDRV_FILES]
+hpinkstsE311LM.dll
+hpinkstsE311.dll
+[COINST_FILES]
+hpinkcoiE311.dll
+hpinkinsE311.exe
+[LM_FILES]
+hpinkstsE311LM.dll
+[LM_FILES_XP]
+hpinkstsE311LM.dll
+hpinkstsE311.dll
+[AdditionalDependencies]
+DOT_NET_3_0=Y

@@ -1,0 +1,14 @@
+[Device Install Log]
+     OS Version = 10.0.22621
+     Service Pack = 0.0
+     Suite = 0x0100
+     ProductType = 1
+     Architecture = amd64
+
+[BeginLog]
+     dvi: Waiting for NetSetupSvc to finish installing ROOT\KLTUN\0000
+     dvi: Install finished for ROOT\KLTUN\0000
+     dvi: Waiting for NetSetupSvc to finish installing ROOT\KLTUN\0000
+     dvi: Install finished for ROOT\KLTUN\0000
+     dvi: Waiting for NetSetupSvc to finish installing ROOT\KLTUN\0000
+     dvi: Install finished for ROOT\KLTUN\0000

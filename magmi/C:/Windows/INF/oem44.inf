@@ -1,0 +1,108 @@
+;
+; INF File for Sentinel HASP USB Minidriver
+;---------------------------
+;
+; Copyright (c) SafeNet Inc.
+;
+
+
+[Version]
+signature="$Windows NT$"
+Provider=%Fast%
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+DriverVer=03/29/2019,7.92
+CatalogFile=aksusb.cat
+
+; Table of Contents
+[Manufacturer]
+%FastMfg%=Gemalto,NTamd64
+
+[Gemalto.NTamd64]
+%USB\VID_0529&PID_0001.DeviceDesc%=aksusb, USB\Vid_0529&Pid_0001 ;USB 
+;*****************************************
+; Coinstaller section
+;*****************************************
+[aksusb.nt.CoInstallers]
+AddReg=aksusb.CoInstallers.reg
+CopyFiles=GemaltoCoInstCopyFiles
+
+[aksusb.CoInstallers.reg]
+HKR,,CoInstallers32,0x00010000,"aksusb5.dll,AksUsbCoInstallEntryPoint"
+
+[GemaltoCoInstCopyFiles]
+aksusb5.dll
+
+;===============================================
+;    AKSUSB NT Installation Parameters 
+; ==============================================
+[aksusb.NT]
+CopyFiles=aksusb.CopyList.NT,aksusb.CopyListDll.NT
+CopyInf=akshasp.inf,akshhl.inf
+AddReg=aksusb.AddReg.NT
+
+[aksusb.AddReg.NT]
+;BUGBUG: PropPageProvider stuff not enabled for setupapi yet!
+;HKR,,EnumPropPages32,,"sysclass.dll,USBEnumPropPages"
+
+[aksusb.CopyList.NT]
+aksusb.sys
+aksclass.sys
+akshhl.sys
+akshasp.sys
+
+
+[aksusb.CopyListDll.NT]
+akshhl33.dll
+akshsp53.dll
+
+[aksusb.NT.Services]
+AddService=aksusb,0x02,aksusb.addservices
+
+; ====================================================
+;  service instalation 
+; ===================================================
+[aksusb.addservices]
+DisplayName    = %svcdesc%
+ServiceType    = 1		;SERVICE_KERNEL_DRIVER
+StartType      = 3		;SERVICE_AUTO_START
+ErrorControl   = 1		;SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\aksusb.sys
+LoadOrderGroup = Base
+
+
+; ====================================================
+;   destination directories
+; ====================================================
+[DestinationDirs]
+DefaultDestDir = 12
+GemaltoCoInstCopyFiles = 11
+aksusb.CopyListDll.NT = 11
+
+;;****************************************************************************
+;; Source Files
+;;****************************************************************************
+[sourcedisksnames]
+1=%INSTDISK%,,,""
+
+[SourceDisksFiles]
+aksusb.sys=1
+aksclass.sys=1
+aksusb5.dll=1
+akshhl.sys=1
+akshasp.sys=1
+akshhl33.dll=1
+akshsp53.dll=1
+akshhl.inf=1
+akshasp.inf=1
+
+
+
+[Strings]
+Fast="Gemalto"
+FastMfg="Gemalto"
+svcdesc="Sentinel USB Key"
+INSTDISK="Sentinel Install Disk"
+USB\VID_0529&PID_0001.DeviceDesc="Sentinel USB Key"
+
+

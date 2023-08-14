@@ -1,0 +1,91 @@
+;;;
+;;; INF File for Sentinel HASP HL Function Driver
+;;;
+;;; Copyright (c) SafeNet Inc.
+;;;
+
+[Version]
+signature="$Windows NT$"
+Provider=%Fast%
+Class=USB
+ClassGuid={36fc9e60-c465-11cf-8056-444553540000}
+DriverVer=03/29/2019,7.92
+CatalogFile=akshhl.cat
+
+[Manufacturer]
+%FastMfg%=Gemalto,NTamd64
+
+[Gemalto.NTamd64]
+%AKSCLASS\HaspHL.DeviceDesc%=akshhl, Aladdin\Vid0529&Pid0001&HaspHL ;HASP HL Protection Device
+
+;;
+;; Coinstaller section
+;;
+
+[akshhl.nt.CoInstallers]
+AddReg=akshhl.CoInstallers.reg
+CopyFiles=GemaltoCoInstCopyFiles
+
+[akshhl.CoInstallers.reg]
+HKR,,CoInstallers32,0x00010000,"akshhl33.dll,AksHhlCoInstallEntryPoint"
+
+[GemaltoCoInstCopyFiles]
+akshhl33.dll
+
+;;
+;; AKS HASP HL Device NT Install Section
+;;
+
+[akshhl.NT]
+CopyFiles=akshhl.NT.Copy
+
+[akshhl.NT.Copy]
+akshhl.sys
+
+[akshhl.NT.HW]
+AddReg=akshhl.NT.HW.AddReg
+
+[akshhl.NT.HW.AddReg]
+HKR,,"BeepCount",0x00010003,4
+HKLM,"SOFTWARE\Gemalto Sentinel\Sentinel LDK\raid\blacklist","iaStorA.sys",0x2,"11.5.0.1207"
+HKLM,"SOFTWARE\Gemalto Sentinel\Sentinel LDK\raid\blacklist","iaStorB.sys",0x2,"4.0.0.1040"
+HKLM,"SOFTWARE\Gemalto Sentinel\Sentinel LDK\raid\inclusion","iaStorA.sys",0x2,"13.1.0.1058"
+HKLM,"SOFTWARE\Gemalto Sentinel\Sentinel LDK\raid\inclusion","iaStorB.sys",0x2,"13.1.0.1058"
+HKLM,"SOFTWARE\Gemalto Sentinel\Sentinel LDK\raid\inclusion","iaStorV.sys",0x2,"8.6.2.1014"
+
+
+[akshhl.NT.Services]
+AddService=akshhl,0x02,akshhl.addservices
+
+[akshhl.addservices]
+DisplayName     = %svcdesc%
+ServiceBinary   = %12%\akshhl.sys
+ServiceType     = 1                           ;SERVICE_KERNEL_DRIVER
+StartType       = 3                           ;SERVICE_DEMAND_START
+ErrorControl    = 1                           ;SERVICE_ERROR_NORMAL
+LoadOrderGroup  = ExtendedBase
+
+;;
+;; Source Files
+;;
+
+[sourcedisksnames]
+1=%INSTDISK%,,,""
+
+[SourceDisksFiles]
+akshhl.sys=1
+akshhl33.dll=1
+
+[DestinationDirs]
+akshhl.NT.Copy = 10,system32\drivers
+akshhl.Copy = 10,system32\drivers
+GemaltoCoInstCopyFiles = 11
+
+[Strings]
+Fast                        = "Gemalto"
+FastMfg                     = "Gemalto"
+svcdesc                     = "Sentinel HL Key"
+llmsvcdesc                  = "Sentinel LMS"
+AKSCLASS\HaspHL.DeviceDesc  = "Sentinel HL Key"
+ClassName                   = "Sentinel Software Protection Devices"
+INSTDISK                    = "Sentinel Install Disk"

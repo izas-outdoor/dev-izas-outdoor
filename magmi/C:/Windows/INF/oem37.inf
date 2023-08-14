@@ -1,0 +1,107 @@
+; fl2000.inf
+; Fresco Logic Video Render Devices
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=AVClass
+ClassGuid={E115CBB2-8F23-4BC3-9C78-DF56533EAAFB}
+Provider=%FRESCO%
+DriverVer=11/13/2017,2.1.34054.0
+CatalogFile=fl2000.cat
+
+[ClassInstall32]
+Addreg=AVClassClassReg
+
+[AVClassClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-5
+
+[Manufacturer]
+%FRESCO%=FL2000, NTx86, NTamd64
+
+[FL2000.NTx86]
+%FL2000.DeviceDesc%=FL2000_INSTALL, USB\VID_1D5C&PID_2000   ; FL2000.
+%Lenovo.DeviceDesc%=FL2000_INSTALL, USB\VID_17EF&PID_7209   ; Lenovo.
+%NoBrand.DeviceDesc%=FL2000_INSTALL, USB\VID_1D5C&PID_1FFE  ; no brand
+%Insignia.DeviceDesc%=FL2000_INSTALL, USB\VID_1D5C&PID_1998 ; Insignia
+
+[FL2000.NTAMD64]
+%FL2000.DeviceDesc%=FL2000_INSTALL, USB\VID_1D5C&PID_2000   ; FL2000.
+%Lenovo.DeviceDesc%=FL2000_INSTALL, USB\VID_17EF&PID_7209   ; Lenovo.
+%NoBrand.DeviceDesc%=FL2000_INSTALL, USB\VID_1D5C&PID_1FFE  ; no brand
+%Insignia.DeviceDesc%=FL2000_INSTALL, USB\VID_1D5C&PID_1998 ; Insignia
+
+[FL2000_INSTALL.NT]
+CopyFiles=FL2000_CopyFiles,FLVGA_TRAY_CopyFiles
+
+[FL2000_INSTALL.NT.Services]
+Addservice = fl2000, 0x00000002, FL2000_AddService
+
+[FL2000_AddService]
+DisplayName    = %FL2000.DeviceDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\fl2000.sys
+AddReg         = FL2000_AddReg
+LoadOrderGroup = Base
+
+[FL2000_AddReg]
+HKR,"Parameters","DebugLevel",0x10001,2
+HKR,"Parameters","Render",0x10001,2
+HKR,"Parameters","UsePollingMonitorConnection",0x10001,1
+HKR,"Parameters","DisableHighResolutionTimer", 0x10001,0
+
+[DestinationDirs]
+DefaultDestDir = 12                             ; System32\Drivers\
+FLVGA_TRAY_CopyFiles = 11                       ; System32\
+CoInstaller_CopyFiles = 11
+
+[FL2000_CopyFiles]
+fl2000.sys
+
+[FLVGA_TRAY_CopyFiles]
+flvga_tray.exe
+
+[SourceDisksNames.x86]
+1=%DISK_NAME%,,
+
+[SourceDisksNames.amd64]
+1=%DISK_NAME%,,
+
+[SourceDisksFiles.x86]
+fl2000.sys = 1, x86
+WdfCoInstaller01011.dll = 1, x86
+flvga_tray.exe = 1, x86
+
+[SourceDisksFiles.amd64]
+fl2000.sys = 1, x64
+WdfCoInstaller01011.dll = 1, x64
+flvga_tray.exe = 1, x64
+
+[FL2000_INSTALL.NT.CoInstallers]
+AddReg=CoInstaller_AddReg
+CopyFiles=CoInstaller_CopyFiles
+
+[CoInstaller_CopyFiles]
+WdfCoInstaller01011.dll
+
+[CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000,"WdfCoInstaller01011.dll,WdfCoInstaller"
+
+[FL2000_INSTALL.NT.Wdf]
+KmdfService = fl2000, fl2000_wdfsect
+
+[fl2000_wdfsect]
+KmdfLibraryVersion = 1.11
+
+[Strings]
+FRESCO              = "Fresco Logic"
+DISK_NAME           = "Device Install Disk"
+FL2000.DeviceDesc   = "Fresco Logic FL2000 USB Display Adapter"
+NoBrand.DeviceDesc  = "Thin2000 USB Display Adapter"
+Lenovo.DeviceDesc   = "Lenovo 2000 Series USB Display Adapter"
+Insignia.DeviceDesc = "Insignia USB Display Adapter"
+ClassName           = "USB Video Class Device"
+
+;; eof: fl2000.inx

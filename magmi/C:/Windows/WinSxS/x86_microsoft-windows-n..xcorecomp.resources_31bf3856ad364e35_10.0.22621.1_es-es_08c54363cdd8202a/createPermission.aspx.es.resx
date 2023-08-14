@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddNewAccess" type="System.String">
+    <value>Agregar nueva regla de acceso</value>
+  </data>
+  <data name="Cancel" type="System.String">
+    <value>Cancelar</value>
+  </data>
+  <data name="Instructions" type="System.String">
+    <value>Opcionalmente, puede agregar reglas de acceso para controlar el acceso a todo el sitio Web o a carpetas individuales. Las reglas pueden aplicarse a usuarios y funciones específicas, a todos los usuarios, a usuarios anónimos o a alguna combinación de éstos. Las reglas se aplican a las subcarpetas. </value>
+  </data>
+  <data name="NoRoles" type="System.String">
+    <value>[sin funciones]</value>
+  </data>
+  <data name="OK" type="System.String">
+    <value>Aceptar</value>
+  </data>
+  <data name="RolesDisabled" type="System.String">
+    <value>[funciones deshabilitadas]</value>
+  </data>
+  <data name="SelectDirForRule" type="System.String">
+    <value>Seleccione un directorio para esta regla:</value>
+  </data>
+  <data name="RuleAppliesTo" type="System.String">
+    <value>La regla se aplica a:</value>
+  </data>
+  <data name="Permission" type="System.String">
+    <value>Permiso:</value>
+  </data>
+  <data name="Role" type="System.String">
+    <value>Función</value>
+  </data>
+  <data name="User" type="System.String">
+    <value>usuario</value>
+  </data>
+  <data name="Allow" type="System.String">
+    <value>Permitir</value>
+  </data>
+  <data name="Deny" type="System.String">
+    <value>Denegar</value>
+  </data>
+  <data name="AllUsers" type="System.String">
+    <value>Todos los usuarios</value>
+  </data>
+  <data name="AnonymousUsers" type="System.String">
+    <value>Usuarios anónimos</value>
+  </data>
+  <data name="SearchForUsers" type="System.String">
+    <value>Buscar por usuarios</value>
+  </data>
+</root>

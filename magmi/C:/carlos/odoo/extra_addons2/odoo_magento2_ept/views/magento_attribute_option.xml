@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_magento_attribute_option_tree" model="ir.ui.view">
+        <field name="name">magento.attribute.option.tree</field>
+        <field name="model">magento.attribute.option</field>
+        <field name="arch" type="xml">
+            <tree string="Attribute Options" create="true" edit="true">
+                <field name="magento_attribute_option_name" string="Attribute Options Name"/>
+                <field name="magento_attribute_id" string="Magento Attribute ID"/>
+                <field name="magento_attribute_option_id" string="Magento ID"/>
+                <field name="odoo_attribute_id" />
+                <field name="odoo_option_id" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_magento_attribute_options_form" model="ir.ui.view">
+        <field name="name">magento.attribute.option.form</field>
+        <field name="model">magento.attribute.option</field>
+        <field name="arch" type="xml">
+            <form string="Magento Attribute Option" create="false" edit="true">
+                <sheet>
+                    <group>
+                        <field name="active" invisible="1"/>
+                        <group colspan="4">
+                            <group>
+                                 <field name="instance_id" readonly="0"/>
+                                <field name="magento_attribute_option_name" attrs="{'readonly': [('active', '=', True)]}"/>
+                                <field name="magento_attribute_option_id" attrs="{'readonly': [('active', '=', True)]}"  />
+                            </group>
+                            <group>
+                                <field name="magento_attribute_id"/>
+                                <field name="odoo_attribute_id" />
+                                <field name="odoo_option_id" domain="[('attribute_id','=',odoo_attribute_id)]" context="{'default_attribute_id':odoo_attribute_id}"/>      
+                                <field name="name" />   
+                                <field name="intermiddle_field" invisible="1"/>
+                            </group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!--  create for izas -->
+    <record id="view_magento_attribute_option_group_action_sell_ept" model="ir.actions.act_window">
+        <field name="name">Attribute Options</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">magento.attribute.option</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_magento_attribute_option_tree"/>
+        <field name="help" type="html">
+            <p>
+                    You can't create Attribute directly from Here.
+                <br/>
+                                    Go to
+                <i>Magento <i class="fa fa-angle-double-right" />
+                    Operations <i class="fa fa-angle-double-right" />
+                    Import/ Export Operations</i>
+            <br />
+                                        Select 'Import Attributes' and click on Execute.
+        </p>
+    </field>
+</record>
+<!--  create for izas -->
+<menuitem id="menu_item_magento_attribute_option_ept" name="Attribute Options" parent="odoo_magento2_ept.menu_magento_proucts_parent" sequence="6" action="view_magento_attribute_option_group_action_sell_ept"/>
+</odoo>

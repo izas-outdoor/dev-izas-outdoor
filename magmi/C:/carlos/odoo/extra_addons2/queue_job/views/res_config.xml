@@ -1,0 +1,27 @@
+<odoo>
+	<data>
+		<record id="view_queue_job_config_settings" model="ir.ui.view">
+			<field name="name">Queue Job Config</field>
+			<field name="model">res.config.settings</field>
+			<field name="priority" eval="101"/>
+			<field name="inherit_id" ref="base.res_config_settings_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//div[hasclass('settings')]" position="inside">
+					<div class="app_settings_block" data-string="Queue Job" data-key="queue_job">
+						<h2 style="font-size:25px;background-color:#e9ecef;">Configure Terms and Condition</h2>
+						<div class="row mt16 o_settings_container">
+							<div class="col-12 col-lg-6 o_setting_box" id="print_node_allow_dev">
+                                    <label for="allow_queue_job_dev" string="Allow Queue Job in development mode or staging"/>
+                                    <div class="text-muted">
+                                        Allow Queue Job in development mode or staging
+                                    </div>
+                                    <field name="allow_queue_job_dev"/>
+                            </div>
+						</div>
+					</div>
+				</xpath>
+			</field>
+		</record>
+
+	</data>
+</odoo>

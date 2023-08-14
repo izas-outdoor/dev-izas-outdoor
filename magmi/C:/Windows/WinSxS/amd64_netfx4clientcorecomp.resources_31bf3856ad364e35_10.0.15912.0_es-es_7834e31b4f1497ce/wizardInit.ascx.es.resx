@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Instructions" type="System.String">
+    <value>&lt;b&gt;Éste es el Asistente para la configuración de seguridad&lt;/b&gt;&lt;br&gt;&lt;br&gt;Este asistente le ayuda a configurar la seguridad del sitio Web.&lt;br&gt;&lt;br&gt;Puede configurar usuarios individuales y, de manera opcional, roles o grupos para dichos usuarios. Al crear usuarios y roles, podrá garantizar la seguridad de todo el sitio o de partes del mismo, personalizar el contenido y realizar una traza del uso del sitio.&lt;br&gt;&lt;br&gt;Después de establecer los usuarios y los roles, puede permitir y denegar el acceso a carpetas específicas de la aplicación por el nombre de usuario o por el rol. Asimismo, puede establecer permisos para usuarios que no inician sesión en la aplicación (usuarios anónimos).&lt;br&gt;&lt;br&gt;Una vez completado el Asistente para la configuración de seguridad, puede utilizar la opción de administración de seguridad de la herramienta Administración de sitios Web para realizar cambios en la configuración de la aplicación.&lt;br&gt;&lt;br&gt;Para continuar, haga clic en Siguiente.</value>
+  </data>
+</root>

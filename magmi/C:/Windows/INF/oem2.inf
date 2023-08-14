@@ -1,0 +1,73 @@
+;======================================================================
+; Armoury Crate Control Interface.
+; Copyright(c) all rights reserved.
+;
+; Module Name:
+;     ArmouryCrateControlInterface.inf
+;
+; Abstract:
+;     INF file for installing Asus Armoury Crate bundles.
+;======================================================================
+[Version]
+DriverPackageDisplayName = %DriverDisplayName%
+Signature           = "$Windows NT$"
+Class               = System
+ClassGUID           = {4D36E97D-E325-11CE-BFC1-08002BE10318}
+Provider            = "ASUSTek Computer Inc."
+DriverVer 	    = 11/11/2022,1.0.0.22
+CatalogFile.ntamd64 = ArmouryCrateControlInterface.cat
+
+[DestinationDirs]
+DefaultDestDir          = 11
+ACDS.DriverFiles	= 11,%ACCIFolder%
+
+[SourceDisksNames]
+1 = %MfgName%,,,""
+
+[SourceDisksFiles]
+ArmouryCrateControlInterface.exe = 1
+cpprest141_2_10.dll = 1
+ArmouryCrateKeyControl.exe = 1
+AsCheckASCI.exe = 1
+ACCIMonitor.exe = 1
+
+[Manufacturer]
+%MfgName% = Device,ntamd64
+
+[Device.ntamd64]
+%DeviceDesc1% = ACDS, ACPI\ASUS9001
+
+[ACDS]
+Include = machine.inf
+Needs = NO_DRV
+CopyFiles = ACDS.DriverFiles
+
+[ACDS.DriverFiles]
+%DriverName%.exe
+cpprest141_2_10.dll
+ArmouryCrateKeyControl.exe
+AsCheckASCI.exe
+ACCIMonitor.exe
+
+[ACDS.Services]
+Include = machine.inf
+Needs = NO_DRV.Services
+AddService = %ServiceName%, 0x800, ACDServiceInstall
+
+[ACDServiceInstall]
+DisplayName = %ServiceDisplayName%
+Description = %ServiceDescription%
+ServiceBinary = %11%\%ACCIFolder%\%DriverName%.exe
+ServiceType = 0x10
+StartType   = 0x2
+ErrorControl = 1
+
+[Strings]
+MfgName             = "ASUS"
+DriverName          = "ArmouryCrateControlInterface"
+DriverDisplayName   = "Armoury Crate Control Interface"
+DeviceDesc1         = "Armoury Crate Control Interface"
+ACCIFolder   	    = "ASUSACCI"
+ServiceName         = "ArmouryCrateControlInterface"
+ServiceDisplayName  = "Armoury Crate Control Interface"
+ServiceDescription  = "Armoury Crate Control Interface"

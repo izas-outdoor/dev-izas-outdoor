@@ -1,0 +1,1377 @@
+*%
+*% Copyright (c) 2010 Hewlett Packard
+*%
+*% All rights reserved.
+*%
+*% THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+*% ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+*% THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+*% PARTICULAR PURPOSE.
+*%
+*% File Name:
+*%
+*%    hpbx3w81.gpd
+*%
+*% Abstract:
+*%
+*%    Xps Rasterization Service HP PCL3 driver install file GPD file.
+*%
+
+*GPDFileVersion: "1.0"
+*GPDSpecVersion: "1.0"
+*GPDFileName:    "hpbx3w81.gpd"
+*%%% Copyright (c) 2005  Microsoft Corporation
+
+*IsXPSDriver?: TRUE
+
+
+*%%% Copyright (c) 1997-1999  Microsoft Corporation
+*%%% value macros for standard feature names and standard option names
+*%%% used in older Unidrv's.
+
+*CodePage: 1252      *% Windows 3.1 US (ANSI) code page
+
+*Feature: RESDLL
+{
+    *Name: "resource dll files"
+    *ConcealFromUI?: TRUE
+
+    *Option: UniresDLL
+    {
+        *Name: "unires.dll"
+    }
+}
+
+*Macros: StdFeatureNames
+{
+    ORIENTATION_DISPLAY:                RESDLL.UniresDLL.11100
+    PAPER_SIZE_DISPLAY:                 RESDLL.UniresDLL.11101
+    PAPER_SOURCE_DISPLAY:               RESDLL.UniresDLL.11102
+    RESOLUTION_DISPLAY:                 RESDLL.UniresDLL.11103
+    MEDIA_TYPE_DISPLAY:                 RESDLL.UniresDLL.11104
+    TEXT_QUALITY_DISPLAY:               RESDLL.UniresDLL.11105
+    COLOR_PRINTING_MODE_DISPLAY:        RESDLL.UniresDLL.11106
+    PRINTER_MEMORY_DISPLAY:             RESDLL.UniresDLL.11107
+    TWO_SIDED_PRINTING_DISPLAY:         RESDLL.UniresDLL.11108
+    PAGE_PROTECTION_DISPLAY:            RESDLL.UniresDLL.11109
+    HALFTONING_DISPLAY:                 RESDLL.UniresDLL.11110
+    OUTPUTBIN_DISPLAY:                  RESDLL.UniresDLL.11111
+    IMAGECONTROL_DISPLAY:               RESDLL.UniresDLL.11112
+    PRINTDENSITY_DISPLAY:               RESDLL.UniresDLL.11113
+    GRAPHICSMODE_DISPLAY:               RESDLL.UniresDLL.11114
+    TEXTHALFTONE_DISPLAY:               RESDLL.UniresDLL.11115
+    GRAPHICSHALFTONE_DISPLAY:           RESDLL.UniresDLL.11116
+    PHOTOHALFTONE_DISPLAY:              RESDLL.UniresDLL.11117
+}
+
+*Macros: StdPaperSizeNames
+{
+    RCID_DMPAPER_SYSTEM_NAME:               0x7fffffff
+    LETTER_DISPLAY:                         RESDLL.UniresDLL.10000
+    LETTERSMALL_DISPLAY:                    RESDLL.UniresDLL.10001
+    TABLOID_DISPLAY:                        RESDLL.UniresDLL.10002
+    LEDGER_DISPLAY:                         RESDLL.UniresDLL.10003
+    LEGAL_DISPLAY:                          RESDLL.UniresDLL.10004
+    STATEMENT_DISPLAY:                      RESDLL.UniresDLL.10005
+    EXECUTIVE_DISPLAY:                      RESDLL.UniresDLL.10006
+    A3_DISPLAY:                             RESDLL.UniresDLL.10007
+    A4_DISPLAY:                             RESDLL.UniresDLL.10008
+    A4SMALL_DISPLAY:                        RESDLL.UniresDLL.10009
+    A5_DISPLAY:                             RESDLL.UniresDLL.10010
+    B4_DISPLAY:                             RESDLL.UniresDLL.10011
+    B5_DISPLAY:                             RESDLL.UniresDLL.10012
+    FOLIO_DISPLAY:                          RESDLL.UniresDLL.10013
+    QUARTO:                                 RESDLL.UniresDLL.10014
+    10X14_DISPLAY:                          RESDLL.UniresDLL.10015
+    11X17_DISPLAY:                          RESDLL.UniresDLL.10016
+    NOTE_DISPLAY:                           RESDLL.UniresDLL.10017
+    ENV_9_DISPLAY:                          RESDLL.UniresDLL.10018
+    ENV_10_DISPLAY:                         RESDLL.UniresDLL.10019
+    ENV_11_DISPLAY:                             RESDLL.UniresDLL.10020
+    ENV_12_DISPLAY:                             RESDLL.UniresDLL.10021
+    ENV_14_DISPLAY:                             RESDLL.UniresDLL.10022
+    CSHEET_DISPLAY:                             RESDLL.UniresDLL.10023
+    DSHEET_DISPLAY:                             RESDLL.UniresDLL.10024
+    ESHEET_DISPLAY:                             RESDLL.UniresDLL.10025
+    ENV_DL_DISPLAY:                             RESDLL.UniresDLL.10026
+    ENV_C5_DISPLAY:                             RESDLL.UniresDLL.10027
+    ENV_C3_DISPLAY:                             RESDLL.UniresDLL.10028
+    ENV_C4_DISPLAY:                             RESDLL.UniresDLL.10029
+    ENV_C6_DISPLAY:                             RESDLL.UniresDLL.10030
+    ENV_C65_DISPLAY:                            RESDLL.UniresDLL.10031
+    ENV_B4_DISPLAY:                             RESDLL.UniresDLL.10032
+    ENV_B5_DISPLAY:                             RESDLL.UniresDLL.10033
+    ENV_B6_DISPLAY:                             RESDLL.UniresDLL.10034
+    ENV_ITALY_DISPLAY:                          RESDLL.UniresDLL.10035
+    ENV_MONARCH_DISPLAY:                        RESDLL.UniresDLL.10036
+    ENV_PERSONAL_DISPLAY:                       RESDLL.UniresDLL.10037
+    FANFOLD_US_DISPLAY:                         RESDLL.UniresDLL.10038
+    FANFOLD_STD_GERMAN_DISPLAY:                 RESDLL.UniresDLL.10039
+    FANFOLD_LGL_GERMAN_DISPLAY:                 RESDLL.UniresDLL.10040
+    ISO_B4_DISPLAY:                             RESDLL.UniresDLL.10041
+    JAPANESE_POSTCARD_DISPLAY:                  RESDLL.UniresDLL.10042
+    9X11_DISPLAY:                               RESDLL.UniresDLL.10043
+    10X11_DISPLAY:                              RESDLL.UniresDLL.10044
+    15X11_DISPLAY:                              RESDLL.UniresDLL.10045
+    ENV_INVITE_DISPLAY:                         RESDLL.UniresDLL.10046
+    RESERVED1:                                  RESDLL.UniresDLL.10047
+    RESERVED2:                                  RESDLL.UniresDLL.10048
+    LETTER_EXTRA_DISPLAY:                       RESDLL.UniresDLL.10049
+    LEGAL_EXTRA_DISPLAY:                        RESDLL.UniresDLL.10050
+    TABLOID_EXTRA_DISPLAY:                      RESDLL.UniresDLL.10051
+    A4_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10052
+    LETTER_TRANSVERSE_DISPLAY:                  RESDLL.UniresDLL.10053
+    A4_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10054
+    LETTER_EXTRA_TRANSVERSE_DISPLAY:            RESDLL.UniresDLL.10055
+    A_PLUS_DISPLAY:                             RESDLL.UniresDLL.10056
+    B_PLUS_DISPLAY:                             RESDLL.UniresDLL.10057
+    LETTER_PLUS_DISPLAY:                        RESDLL.UniresDLL.10058
+    A4_PLUS_DISPLAY:                            RESDLL.UniresDLL.10059
+    A5_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10060
+    B5_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10061
+    A3_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10062
+    A5_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10063
+    B5_EXTRA_DISPLAY:                           RESDLL.UniresDLL.10064
+    A2_DISPLAY:                                 RESDLL.UniresDLL.10065
+    A3_TRANSVERSE_DISPLAY:                      RESDLL.UniresDLL.10066
+    A3_EXTRA_TRANSVERSE_DISPLAY:                RESDLL.UniresDLL.10067
+    DBL_JAPANESE_POSTCARD_DISPLAY:              RESDLL.UniresDLL.10068
+    A6_DISPLAY:                                 RESDLL.UniresDLL.10069
+    JENV_KAKU2_DISPLAY:                         RESDLL.UniresDLL.10070
+    JENV_KAKU3_DISPLAY:                         RESDLL.UniresDLL.10071
+    JENV_CHOU3_DISPLAY:                         RESDLL.UniresDLL.10072
+    JENV_CHOU4_DISPLAY:                         RESDLL.UniresDLL.10073
+    LETTER_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10074
+    A3_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10075
+    A4_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10076
+    A5_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10077
+    B4_JIS_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10078
+    B5_JIS_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10079
+    JAPANESE_POSTCARD_ROTATED_DISPLAY:          RESDLL.UniresDLL.10080
+    DBL_JAPANESE_POSTCARD_ROTATED_DISPLAY:      RESDLL.UniresDLL.10081
+    A6_ROTATED_DISPLAY:                         RESDLL.UniresDLL.10082
+    JENV_KAKU2_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10083
+    JENV_KAKU3_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10084
+    JENV_CHOU3_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10085
+    JENV_CHOU4_ROTATED_DISPLAY:                 RESDLL.UniresDLL.10086
+    B6_JIS_DISPLAY:                             RESDLL.UniresDLL.10087
+    B6_JIS_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10088
+    12X11_DISPLAY:                              RESDLL.UniresDLL.10089
+    JENV_YOU4_DISPLAY:                          RESDLL.UniresDLL.10090
+    JENV_YOU4_ROTATED_DISPLAY:                  RESDLL.UniresDLL.10091
+    P16K_DISPLAY:                               RESDLL.UniresDLL.10092
+    P32K_DISPLAY:                               RESDLL.UniresDLL.10093
+    P32KBIG_DISPLAY:                            RESDLL.UniresDLL.10094
+    PENV_1_DISPLAY:                             RESDLL.UniresDLL.10095
+    PENV_2_DISPLAY:                             RESDLL.UniresDLL.10096
+    PENV_3_DISPLAY:                             RESDLL.UniresDLL.10097
+    PENV_4_DISPLAY:                             RESDLL.UniresDLL.10098
+    PENV_5_DISPLAY:                             RESDLL.UniresDLL.10099
+    PENV_6_DISPLAY:                             RESDLL.UniresDLL.10100
+    PENV_7_DISPLAY:                             RESDLL.UniresDLL.10101
+    PENV_8_DISPLAY:                             RESDLL.UniresDLL.10102
+    PENV_9_DISPLAY:                             RESDLL.UniresDLL.10103
+    PENV_10_DISPLAY:                            RESDLL.UniresDLL.10104
+    P16K_ROTATED_DISPLAY:                       RESDLL.UniresDLL.10105
+    P32K_ROTATED_DISPLAY:                       RESDLL.UniresDLL.10106
+    P32KBIG_ROTATED_DISPLAY:                    RESDLL.UniresDLL.10107
+    PENV_1_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10108
+    PENV_2_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10109
+    PENV_3_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10110
+    PENV_4_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10111
+    PENV_5_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10112
+    PENV_6_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10113
+    PENV_7_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10114
+    PENV_8_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10115
+    PENV_9_ROTATED_DISPLAY:                     RESDLL.UniresDLL.10116
+    PENV_10_ROTATED_DISPLAY:                    RESDLL.UniresDLL.10117
+
+    USER_DEFINED_SIZE_DISPLAY:                  RESDLL.UniresDLL.10255
+}
+
+*Macros: StdInputBinNames
+{
+    UPPER_TRAY_DISPLAY:                         RESDLL.UniresDLL.10256
+    LOWER_TRAY_DISPLAY:                         RESDLL.UniresDLL.10257
+    MIDDLE_TRAY_DISPLAY:                        RESDLL.UniresDLL.10258
+    MANUAL_FEED_DISPLAY:                        RESDLL.UniresDLL.10259
+    ENV_FEED_DISPLAY:                           RESDLL.UniresDLL.10260
+    ENV_MANUAL_DISPLAY:                         RESDLL.UniresDLL.10261
+    AUTO_DISPLAY:                               RESDLL.UniresDLL.10262
+    TRACTOR_DISPLAY:                            RESDLL.UniresDLL.10263
+    SMALL_FORMAT_DISPLAY:                       RESDLL.UniresDLL.10264
+    LARGE_FORMAT_DISPLAY:                       RESDLL.UniresDLL.10265
+    LARGE_CAP_DISPLAY:                          RESDLL.UniresDLL.10266
+    CASSETTE_DISPLAY:                           RESDLL.UniresDLL.10267
+}
+
+*Macros: StdMediaTypeNames
+{
+    PLAIN_PAPER_DISPLAY:                        RESDLL.UniresDLL.10512
+    TRANSPARENCY_DISPLAY:                       RESDLL.UniresDLL.10513
+    GLOSSY_PAPER_DISPLAY:                       RESDLL.UniresDLL.10514
+}
+
+*Macros: StdTextQualityNames
+{
+    LETTER_QUALITY_DISPLAY:                     RESDLL.UniresDLL.10768
+    NEAR_LETTER_QUALITY_DISPLAY:                RESDLL.UniresDLL.10769
+    MEMO_QUALITY_DISPLAY:                       RESDLL.UniresDLL.10770
+    DRAFT_QUALITY_DISPLAY:                      RESDLL.UniresDLL.10771
+    TEXT_QUALITY_DISPLAY:                       RESDLL.UniresDLL.10772
+}
+
+*Macros: OtherStdNames
+{
+    PORTRAIT_DISPLAY:                   RESDLL.UniresDLL.11025
+    LANDSCAPE_DISPLAY:                  RESDLL.UniresDLL.11026
+    MONO_DISPLAY:                       RESDLL.UniresDLL.11030
+    COLOR_DISPLAY:                      RESDLL.UniresDLL.11031
+    8BPP_DISPLAY:                       RESDLL.UniresDLL.11032
+    24BPP_DISPLAY:                      RESDLL.UniresDLL.11033
+    NONE_DISPLAY:                       RESDLL.UniresDLL.11040
+    FLIP_ON_LONG_EDGE_DISPLAY:          RESDLL.UniresDLL.11041
+    FLIP_ON_SHORT_EDGE_DISPLAY:         RESDLL.UniresDLL.11042
+    ON_DISPLAY:                         RESDLL.UniresDLL.11090
+    OFF_DISPLAY:                        RESDLL.UniresDLL.11091
+    DOTS_PER_INCH:                      "dots per inch"
+    HT_AUTO_SELECT_DISPLAY:             RESDLL.UniresDLL.11050
+    HT_SUPERCELL_DISPLAY:               RESDLL.UniresDLL.11051
+    HT_DITHER6X6_DISPLAY:               RESDLL.UniresDLL.11052
+    HT_DITHER8X8_DISPLAY:               RESDLL.UniresDLL.11053
+}
+
+*Macros:  StdPersonalities
+{
+    PERSONALITY_LIPS_DISPLAY:       RESDLL.UniresDLL.11500
+    PERSONALITY_ESCP2_DISPLAY:      RESDLL.UniresDLL.11501
+    PERSONALITY_PPDS_DISPLAY:       RESDLL.UniresDLL.11502
+    PERSONALITY_CaPSL_DISPLAY:      RESDLL.UniresDLL.11503
+    PERSONALITY_KPDL_DISPLAY:       RESDLL.UniresDLL.11504
+    PERSONALITY_TextOnly_DISPLAY:   RESDLL.UniresDLL.11505
+    PERSONALITY_201PL_DISPLAY:      RESDLL.UniresDLL.11506
+    PERSONALITY_ART_DISPLAY:        RESDLL.UniresDLL.11507
+    PERSONALITY_ESCPage_DISPLAY:    RESDLL.UniresDLL.11508
+    PERSONALITY_ESCP_DISPLAY:       RESDLL.UniresDLL.11509
+    PERSONALITY_KS_DISPLAY:         RESDLL.UniresDLL.11510
+    PERSONALITY_KSSM_DISPLAY:       RESDLL.UniresDLL.11511
+    PERSONALITY_PAGES_DISPLAY:      RESDLL.UniresDLL.11512
+    PERSONALITY_PCL_DISPLAY:        RESDLL.UniresDLL.11513
+    PERSONALITY_RPDL_DISPLAY:       RESDLL.UniresDLL.11514
+    PERSONALITY_Unknown_DISPLAY:    RESDLL.UniresDLL.11515
+    PERSONALITY_HPGL2_DISPLAY:      RESDLL.UniresDLL.11516
+    PERSONALITY_PCLXL_DISPLAY:      RESDLL.UniresDLL.11517
+
+    PERSONALITY_HPGL2:     "HPGL2"
+    PERSONALITY_PCLXL:     "PCLXL"
+}
+
+*Macros: GraphicModes
+{
+    GRAPHICSMODE_RASTER_DISPLAY:     RESDLL.UniresDLL.11601
+    GRAPHICSMODE_HPGL2_DISPLAY:      =PERSONALITY_HPGL2_DISPLAY
+    GRAPHICSMODE_PCLXL_DISPLAY:      =PERSONALITY_PCLXL_DISPLAY
+}
+
+*Macros: HalftoneSettings
+{
+    DETAIL_HT_DISPLAY:              RESDLL.UniresDLL.11401
+    SMOOTH_HT_DISPLAY:              RESDLL.UniresDLL.11402
+    BASIC_HT_DISPLAY:               RESDLL.UniresDLL.11403
+}
+
+*%%% Copyright (c) 2009  Hewlett-Packard Development Companies
+*%%% value macros for HPVPL DLL resources
+
+
+*Macros: HPMacroNames
+{
+    IDS_AUTO_SELECT:                        10
+    IDS_REAL_LIFE_TECHNOLOGIES:             11
+    IDS_OFF:                                12
+    IDS_ON:                                 13
+    IDS_LETTER:                             100
+    IDS_MSIZE_4X6_IN_TAB:                   101
+    IDS_MSIZE_4X6_IN:                       102
+    IDS_HP_5X7:                             103 *% required by K1 otherwise whenever overwritten by K2 it will break
+    IDS_MSIZE_A4_210x297_MM:                104
+    IDS_MSIZE_A5_148X210_MM:                105
+    IDS_MSIZE_B5_ISO_176X250_MM:            106
+    IDS_MSIZE_B5_JIS_182X257_MM:            107
+    IDS_MSIZE_8X10_IN:                      108
+    IDS_MSIZE_MUTSUGIRI_IN:                 109
+    IDS_MSIZE_HAGAKI_100X148_MM:            110
+    IDS_MSIZE_EXECUTIVE_7X10_IN:            111
+    IDS_MSIZE_10X15_CM:                     112
+    IDS_MSIZE_A6_105X148_MM:                113
+    IDS_MSIZE_CABINET_MM:                   114
+    IDS_MSIZE_2L_MM:                        115
+    IDS_MSIZE_13X18_CM:                     116
+    IDS_MSIZE_OFUKU_HAGAKI_200X148_MM:      117
+    IDS_MSIZE_ENVELOPE10_4X9_IN:            118
+    IDS_MSIZE_ENVELOPE_DL_110X220_MM:       119
+    IDS_MSIZE_ENV_CARD_4X6_IN:              120
+    IDS_MSIZE_ENVELOPE_C5_162X229_MM:       121
+    IDS_MSIZE_ENVELOPE_C6_114X162_MM:       122
+    IDS_MSIZE_JIS_CHOU3_120X235_MM:         123
+    IDS_MSIZE_INDEX_CARD_4X6_IN:            124
+    IDS_MSIZE_INDEX_CARD_5X8_IN:            125
+    IDS_MSIZE_10X15_CM_TAB:                 126
+    IDS_MSIZE_STATEMENT_5_5X8_5_IN:         127
+    IDS_MSIZE_6_X_8_IN:                     128
+    IDS_MSIZE_JIS_CHOU2_119x277_MM:         129
+    IDS_MSIZE_8_5X13_IN:                    130
+    IDS_MSIZE_LETTER:                       131
+    IDS_MSIZE_INDEX_CARD_3X5_IN:            132
+    IDS_MSIZE_L:                            133
+    IDS_MSIZE_3_5X5_IN:                     134
+    IDS_MSIZE_HV:                           135
+    IDS_MSIZE_5X7:                          136
+    IDS_MSIZE_LEGAL:                        137
+    IDS_MSIZE_11X14:                        138
+    IDS_MSIZE_12X12:                        139
+    IDS_MSIZE_B4_JIS:                       140
+    IDS_MSIZE_TABLOID:                      141
+    IDS_MSIZE_SUPER_B:                      142
+    IDS_MSIZE_A3:                           143
+    IDS_MSIZE_A3_PLUS:                      144
+    IDS_MSIZE_SMMARG_11X14:                 145
+    IDS_MSIZE_SMMARG_12X12:                 146
+    IDS_MSIZE_SMMARG_B4_JIS:                147
+    IDS_MSIZE_SMMARG_TABLOID:               148
+    IDS_MSIZE_SMMARG_SUPER_B:               149
+    IDS_MSIZE_SMMARG_A3:                    150
+    IDS_MSIZE_SMMARG_A3_PLUS:               151
+    IDS_MSIZE_ENV_NO_6_3_4:                 152
+    IDS_MSIZE_ENV_MONARCH:                  153
+    IDS_MSIZE_ENV_NO_10:                    154
+    IDS_MSIZE_ENV_C6:                       155
+    IDS_MSIZE_ENV_A2:                       156
+    IDS_MSIZE_JIS_CHOU3:                    157
+    IDS_MSIZE_JIS_CHOU4:                    158
+    IDS_MSIZE_ENV_KAKU_2:                   159
+    IDS_MSIZE_3X5_IN:                       160
+    IDS_MSIZE_INDEX_CARD_LETTER:            161
+    IDS_MSIZE_INDEX_CARD_A4:                162
+    IDS_MSIZE_EDGETOEDGE_LETTER:            163
+    IDS_MSIZE_EDGETOEDGE_A4:                164
+	IDS_MSIZE_ARCH_A_9x12_IN:               165
+    IDS_MSIZE_ARCH_B_12x18_IN:              166
+    IDS_MSIZE_SMMARG_ARCH_A:                167
+    IDS_MSIZE_SMMARG_ARCH_B:                168
+    IDS_MAX_DPI:                            201
+    IDS_ENABLE:                             202
+    IDS_DISABLE:                            203
+    IDS_PRINT_IN_GRAYSCALE_WITHOUT_HK:      204
+    IDS_BLACK_INK_ONLY_WITHOUT_HK:          205
+    IDS_HIGH_QUALITY_NO_HK:                 206
+    IDS_PAGES_TO_PRINT:                     210
+    IDS_PRINT_ALL_PAGES:                    211
+    IDS_PRINT_ODD_PAGES_ONLY:               212
+    IDS_PRINT_EVEN_PAGES_ONLY:              213
+    IDS_PLAIN_PAPER_NORMAL_QUALITY:         214
+    IDS_PLAIN_PAPER_FASTDRASFT_QUALITY:     215
+    IDS_PLAIN_PAPER_BEST_QUALITY:           216
+    IDS_SPECIALTY_PAPER_BEST_QUALITY:       217
+    IDS_PHOTO_PAPER_BEST_QUALITY:           218
+    IDS_YES:                                219
+    IDS_NO:                                 220
+    IDS_INPUTBIN_MAINTRAY:                  221
+    IDS_PRESERVE_LAYOUT:                    222
+    IDS_BW_SETTINGS:                        223
+    IDS_BW_AUTOMATIC:                       224
+    IDS_BW_HIGH_QUALITY_GRAY:               225
+    IDS_DPI_MODE_LABEL:                     226
+    IDS_LABEL_CONTINUATION:                 227
+    IDS_DISCLAIMER_1:                       228
+    IDS_DISCLAIMER_2:                       229
+    IDS_DRAFT_MODE:                         230
+    IDS_NORMAL_MODE:                        231
+    IDS_PLAIN_BEST_MODE:                    232
+    IDS_PHOTO_BEST_MODE:                    233
+    IDS_MAX_DPI_MODE:                       234
+    IDS_INPUT_3X3_DPI:                      235
+    IDS_INPUT_6X3_DPI:                      236
+    IDS_INPUT_6X6_DPI:                      237
+    IDS_INPUT_12X12_DPI:                    238
+    IDS_OUTPUT_AUTOMATIC_ALL:               239
+    IDS_OUTPUT_AUTOB_48X12C_DPI:            240
+    IDS_OUTPUT_6X12B_AUTOC_DPI:             241
+    IDS_DPIDISP_NORMAL_MODE:                242
+    IDS_DPIDISP_BLANK_ENTRY:                243
+    IDS_COLLATE_SETTINGS:					245
+	IDS_COLLATED:							246
+	IDS_UNCOLLATED:							247
+	IDS_NUP:								248
+	IDS_1UP:								249
+	IDS_2UP:								250
+	IDS_4UP:								251
+	IDS_6UP:								252
+	IDS_9UP:								253
+	IDS_16UP:								254
+	IDS_16MB:								255
+	IDS_32MB:								256
+    IDS_INPUTBIN:                           400
+    IDS_INPUTBIN_TRAY_1:                    401
+    IDS_INPUTBIN_PHOTO_TRAY:                402
+    IDS_INPUTBIN_PRINTERAUTOSELECT:         403
+    IDS_INPUTBIN_TRAY_2:                    404
+    IDS_MTYPE_AUTOMATIC:                    500
+    IDS_MTYPE_PLAIN_PAPER:                  501
+    IDS_MTYPE_HP_BRIGHT_WHITE_PAPER:        502
+    IDS_MTYPE_HP_PREMIUM_PAPER:             503
+    IDS_MTYPE_HP_COLOR_INKJET_PAPER:        504
+    IDS_MTYPE_HP_PREMIUM_PRESENTATION:      505
+    IDS_MTYPE_OTHER_INKJET_PAPERS:          506
+    IDS_MTYPE_HP_PREMIUM_PLUS_PHOTO:        507
+    IDS_MTYPE_HP_PREMIUM_PHOTO_PAPERS:      508
+    IDS_MTYPE_HP_ADVANCED_PHOTO_PAPERS:     509
+    IDS_MTYPE_HP_EVERYDAY_PHOTO_SEMIGLOSS:  510
+    IDS_MTYPE_HP_EVERYDAY_PHOTO_MATTE:      511
+    IDS_MTYPE_OTHER_PHOTO_PAPERS:           512
+    IDS_MTYPE_HP_PREM_INKJET_TRANSP_FILM:   513
+    IDS_MTYPE_OTHER_TRANSPARENCY_FILMS:     514
+    IDS_MTYPE_HP_IRON_ON_TRANS:             515
+    IDS_MTYPE_HP_IRON_ON_TRANS_WHITE:       516
+    IDS_MTYPE_HP_IRON_ON_TRANS_DARK:        517
+    IDS_MTYPE_OTHER_SPECIALTY_PAPERS:       518
+    IDS_MTYPE_MATTE_GREETING_CARD:          519
+    IDS_MTYPE_GLOSSY_GREETING_CARD:         520
+    IDS_MTYPE_HP_PHOTO_GREETING_CARD:       521
+    IDS_MTYPE_HP_BROCHURE_FLYER_GLOSSY:     522
+    IDS_MTYPE_HP_BROCHURE_FLYER_MATTE:      523
+    IDS_MTYPE_HP_PREMIUM_PRES_120G_GLOSSY:  524
+    IDS_MTYPE_HP_BROCHURE_180G_GLOSSY:      525
+    IDS_MTYPE_HP_TRIFOLD_BROCHURE_GLOSSY:   526
+    IDS_MTYPE_HP_TRIFOLD_BROCHURE_MATTE:    527
+    IDS_MTYPE_OTHER_GLOSSY_BROCHURE:        528
+    IDS_MTYPE_OTHER_MATTE_BROCHURE:         529
+    IDS_MTYPE_HAGAKI_PLAIN:                 530
+    IDS_MTYPE_HAGAKI_INKJET:                531
+    IDS_MTYPE_HAGAKI_PHOTO:                 532
+    IDS_MTYPE_INKJET_SCRAPBOOK_PHOTO:       533
+    IDS_MTYPE_INKJET_SCRAPBOOK_MATTE:       534
+    IDS_MTYPE_THICK_PLAIN_PAPER:            535
+    IDS_MTYPE_HP_PREMIUM_INKJET_PAPER:      536
+    IDS_MTYPE_OTHER_GREETING_CARDS:         537
+    IDS_MTYPE_HP_BROCHURE_GLOSSY:           538
+    IDS_MTYPE_OTHER_BROCHURE_PAPERS:        539
+    IDS_MTYPE_CARD_STOCK:                   540
+    IDS_MTYPE_HP_PREMIUM_PRES_MATTE:        541
+	IDS_MTYPE_TRANSPARENCY_FILM:            542
+    IDS_MTYPE_HP_EVERYDAY_PHOTO_GLOSSY:     543
+	IDS_MTYPE_GLOSSY:                       544
+    IDS_OUTPUTQUALITY:                      600
+    IDS_OUTPUTQUALITY_AUTOMATIC:            601
+    IDS_OUTPUTQUALITY_FASTDRAFT:            602
+    IDS_OUTPUTQUALITY_NORMAL:               603
+    IDS_OUTPUTQUALITY_BEST:                 604
+    IDS_OUTPUTQUALITY_MAXDPI:               605
+    IDS_OUTPUTQUALITY_WITHRES_DRAFT:        606
+    IDS_OUTPUTQUALITY_WITHRES_NORMAL:       607
+    IDS_OUTPUTQUALITY_WITHRES_BEST:         608
+    IDS_OUTPUTQUALITY_WITHRES_MAXDPI:       609
+	IDS_OUTPUTQUALITY_DRAFT:                610
+    IDS_HPRLT:                              700
+    IDS_HPRLT_OFF:                          701
+    IDS_HPRLT_ON:                           702
+    IDS_BORDERLESSPRINTING:                 703
+    IDS_BORDERLESSPRINTING_WITH_BORDER:     704
+    IDS_BORDERLESSPRINTING_BORDERLESS:      705
+    IDS_PRINTTEXTBLACK:                     706
+    IDS_PRINTTEXTBLACK_DISABLE:             707
+    IDS_PRINTTEXTBLACK_ENABLE:              708
+    IDS_GRAYSCALE:                          709
+    IDS_GRAYSCALE_OFF:                      710
+    IDS_GRAYSCALE_HIGH_QUALITY:             711
+    IDS_GRAYSCALE_BLACK_INK_ONLY:           712
+    IDS_AUTODUPLEXUNIT:                     713
+    IDS_AUTODUPLEXUNIT_NOT_INSTALLED:       714
+    IDS_AUTODUPLEXUNIT_INSTALLED:           715
+    IDS_PRESERVELAYOUT:                     716
+    IDS_PRESERVELAYOUT_NO:                  717
+    IDS_PRESERVELAYOUT_YES:                 718
+    IDS_COLOR_MANAGEMENT:                   719
+    IDS_CSPACE_sRGB:                        720
+    IDS_CSPACE_ADOBE_RGB:                   721
+    IDS_PRINTTEXTASBLACK:                   722
+		
+	IDS_UNSPECIFIED:								723
+	IDS_MTYPE_LJ_HP_LASERJET_90_G:					724
+	IDS_MTYPE_LJ_HP_COLORLASERMATTE_105:			725
+	IDS_MTYPE_LJ_HP_COLORLASER_BROCHURE_MATTE_160:	726
+	IDS_MTYPE_HP_PREM_PRES_MATTE_120:		        727 
+	IDS_MTYPE_HP_PROFESSIONAL_LASER_GLOSS_130:		728
+	IDS_MTYPE_HP_PRESENTATION_GLOSSY_130:		    729 
+	IDS_MTYPE_LJ_INTERMEDIATE_85_95:		        730
+	IDS_MTYPE_LJ_HP_PREMIUM_CHOICE_MATTE_120:		731
+	IDS_MTYPE_HP_MATTE_160:			                732
+	IDS_MTYPE_HP_COVER_MATTE_200:		            733
+	IDS_MTYPE_HP_MATTE_PHOTO_200G:		            734
+	IDS_MTYPE_LJ_HP_COLORLASER_BROUCHUREGLOSSY_160: 735
+	IDS_MTYPE_LJ_HP_SUPERIOR_LASER_GLOSSY_160:		736
+	IDS_MTYPE_HP_TRIFOLD_COLOR_LASER_160:		    737 
+	IDS_MTYPE_LJ_HP_COLOR_LASER_PHOTO_GLOSSY220:	738
+	IDS_MTYPE_LJ_HP_MID_WEIGHT_96_110:		        739 
+	IDS_MTYPE_HEAVY_111_130:	                    740
+	IDS_MTYPE_EXTRAHEAVY_131_175:		            741 
+	IDS_MTYPE_HEAVYGLOSSY_111_130:		            742  
+	IDS_MTYPE_OPAQUE_FILM:		                    743
+	IDS_MTYPE_EXTRAHEAVY_GLOOSY_131_175:	        744
+	IDS_MTYPE_LJ_CARD_GLOSSY_176_220:		        745
+	IDS_MTYPE_LJ_COLORLASER_TRANSPARENCY:		    746 
+	IDS_LABELS_TYPE:	                            747 
+	IDS_LETTERHEAD_TYPE:	                        748  
+	IDS_ENVELOPE_DISPLAY:		                    749
+	IDS_MTYPE_LJ_HEAVY_ENVELOPE:	                750
+	IDS_PREPRINTED_TYPE:							751
+	IDS_PREPUNCHED_TYPE:	                        752
+	IDS_MTYPE_COLORED:		                        753
+	IDS_BOND_TYPE:									754
+	IDS_RECYCLED_TYPE:								755	
+	IDS_ROUGH_TYPE:									756
+	IDS_MTYPE_HEAVY_ROUGH:							757
+	IDS_MTYPE_LJ_HP_TOUGH_PAPER:					758
+	IDS_HP_ECOSMART_LITE_CSL:						759
+	IDS_TYPE_IS_CARD_STOCK:							760
+	IDS_TRANSPARENCY_DISPLAY:						761
+
+	IDS_MSIZE_8K_270X390_MM:						762
+	IDS_MSIZE_16k_195_X_270:						763
+	IDS_MSIZE_16k_184_X_206:						765
+	IDS_MSIZE_16K_197X273:							767
+    IDS_EXECUTIVE_JIS:								867
+
+	IDS_MAX_DPI_ENABLED:							771
+	IDS_MAX_DPI_DISABLED:							772
+}
+            
+*ModelName:      "HP XPS Raster PCL3 Driver"
+*MasterUnits:    PAIR(1200, 1200)
+*ResourceDLL:    "hpbresw81.dll"
+*PrinterType:    PAGE
+*MaxCopies:      9999
+*HardwareCopies: OFF
+*IsXPSDriver?:   TRUE
+*PrintSchemaPrivateNamespaceURI:"http://schemas.monotypeimaging.com/ptpc/2006/1"
+
+*Ifdef: WINNT_60
+*BidiQueryFile: "hpbxiocfgwb.gdl"
+*Endif: WINNT_60
+
+*%******************************************************************************
+*%                            MTI filter feature Enabling
+*%******************************************************************************
+*Ifdef: MonotypeImagingReserved
+*XpsFilterConfiguration:
+{
+   *General:
+   {
+      *Features:
+      {
+         *PageOrderEnable: TRUE
+         *DocCollateEnable: TRUE
+         *JobCollateEnable: TRUE
+         *JobCopyCountEnable: TRUE
+         *DocCopyCountEnable: TRUE
+         *PageCopyCountEnable: TRUE
+         *NUpEnable: TRUE
+         *WatermarksEnable: TRUE
+         *MtiCoversEnable: TRUE
+         *BookletEnable: TRUE
+         *OverlaysEnable: TRUE
+         *InterleavesEnable: TRUE
+         *PosterEnable: TRUE
+         *ScalingEnable: TRUE
+         *ExceptionsEnable: TRUE
+         *PageRangesEnable: TRUE
+         *BindingShiftEnable: TRUE
+         *MirrorImageEnable: TRUE
+      }
+      *Options:
+      {
+         *DefaultPaperOffsetsLeft: 300
+         *DefaultPaperOffsetsTop: 300
+         *DefaultPaperOffsetsRight: 300
+         *DefaultPaperOffsetsBottom: 300
+         *DocumentRelationSearchDistance: 7
+         *CollectInsetsEnable: FALSE
+         *ObeyDiscardsEnable: TRUE
+         *CheckZipIntegrityEnable: TRUE
+         *NUpMismatchRotateEnable: TRUE
+         *NUpMismatchRotateAngle: 0
+         *NUpEjectOnNewSizeEnable: FALSE
+         *NUpScaleMediaEnable: FALSE
+         *WmZoomEnable: TRUE
+         *WmZoomClipEnable: TRUE
+         *ErrorPagesEnable: FALSE
+      }
+      *Rendering:
+        {
+            *GlyphRip: "ufst"
+        }
+   }
+}
+*Endif:
+*%******************************************************************************
+*%                            Pages per sheet
+*%******************************************************************************
+*Feature: DocumentNUp
+{
+	*rcNameID: =IDS_NUP
+	*PrintSchemaKeywordMap: "DocumentNUp"
+	*DefaultOption: 1
+	*Option: 1
+	{
+		*rcNameID: =IDS_1UP	
+	}
+	*Option: 2
+	{
+		*rcNameID: =IDS_2UP
+	}
+	*Option: 4
+	{
+		*rcNameID: =IDS_4UP
+	}
+	*Option: 6
+	{
+		*rcNameID: =IDS_6UP	
+	}
+	*Option: 9
+	{
+		*rcNameID: =IDS_9UP	
+	}
+	*Option: 16
+	{
+		*rcNameID: =IDS_16UP	
+	}
+}
+
+*%******************************************************************************
+*%                           Page order
+*%******************************************************************************
+*Feature: JobPageOrder
+{
+    *Name: "JobPageOrder"
+    *PrintSchemaKeywordMap: "JobPageOrder"
+    *DefaultOption: Reverse
+    *Option: Reverse
+    {
+        *Name: "Front to Back"
+        *PrintSchemaKeywordMap: "Reverse"
+    }
+}
+*%******************************************************************************
+*%                            Job Device Language
+*%******************************************************************************
+*Feature: DeviceLanguage
+{
+    *Name: "DeviceLanguage"
+    *PrintSchemaKeywordMap: "JobDeviceLanguage"
+    *Option: PCLmS
+    {
+        *Name: ""
+        *PrintSchemaKeywordMap: "PCL"
+    }
+}
+*%******************************************************************************
+*%                            Grayscale printing
+*%******************************************************************************
+*Feature: ColorMode
+{
+       *rcNameID: =IDS_GRAYSCALE
+       *PrintSchemaKeywordMap: "PageOutputColor"
+       *DefaultOption: Off
+       *Option: Off
+       {
+              *rcNameID: =IDS_GRAYSCALE_OFF
+              *PrintSchemaKeywordMap: "Color"
+	      *Color?: TRUE
+       }
+       *Option: GrayScale
+       {             
+              *rcNameID: =IDS_GRAYSCALE_HIGH_QUALITY
+              *PrintSchemaKeywordMap: "Grayscale"
+	      *Color?: TRUE
+       }
+       *Option: Monochrome
+       {
+              *rcNameID: =IDS_GRAYSCALE_BLACK_INK_ONLY
+              *PrintSchemaKeywordMap: "Monochrome"
+	      *Color?: FALSE
+       }
+}
+*%******************************************************************************
+*%                            Collate
+*%******************************************************************************
+*Feature: Collate
+{
+	*rcNameID: =IDS_COLLATE_SETTINGS
+	*PrintSchemaKeywordMap: "DocumentCollate"
+	*DefaultOption: ON
+	*ConcealFromUI?:TRUE
+	*Option: OFF
+	{
+		*rcNameID: =IDS_UNCOLLATED
+		*PrintSchemaKeywordMap: "Uncollated"
+	}
+	*Option: ON
+	{
+		*rcNameID: =IDS_COLLATED
+		*PrintSchemaKeywordMap: "Collated"
+	}
+}
+*%******************************************************************************
+*%                            PageMediaSize - Paper Size
+*%******************************************************************************
+*Feature: PaperSize
+{
+    *rcNameID: =PAPER_SIZE_DISPLAY
+    *DefaultOption: LETTER
+    *Option: A4
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PrintableArea: PAIR(9624, 13272)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(9774, 72)
+            }
+        }
+    }
+    
+    *Option: B5
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(8604, 12144)
+		*PrintableArea: PAIR(8304, 11388)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(8454, 72)
+            }
+        }
+    }
+
+    *Option: EXECUTIVE
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(8700, 12600)
+		*PrintableArea: PAIR(8400, 11844)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(8550, 72)
+            }
+        }
+    }
+
+    *Option: ENV_10
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(4950, 11400)
+		*PrintableArea: PAIR(4650, 10644)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4800, 72)
+            }
+        }
+    }
+
+    *Option: LEGAL
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+		*PageDimensions: PAIR(10200, 16800)
+        *PrintableArea: PAIR(9900, 16044)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(10050, 72)
+            }
+        }
+    }
+
+    *Option: LETTER
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PrintableArea: PAIR(9900, 12444)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(10050, 72)
+            }
+        }
+    }
+    *Option: HP_4X6_IN
+    {
+        *rcNameID: =IDS_MSIZE_4X6_IN
+        *PageDimensions: PAIR(4800, 7200)
+        *PrintableArea: PAIR(4500, 6444)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4650, 72)
+            }
+        }        
+    }
+    *Option: HP_5X7_IN
+    {
+        *rcNameID: =IDS_MSIZE_5X7
+        *PageDimensions: PAIR(6000, 8400)
+        *PrintableArea: PAIR(5700, 7644)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5850, 72)
+            }
+        }        
+    }
+    *Option: A5
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(6996, 9924)
+        *PrintableArea: PAIR(6696, 9168)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(6846, 72)
+            }
+        }        
+    }
+    *Option: HP_B5_ISO_176X250_MM
+    {
+        *rcNameID: =IDS_MSIZE_B5_ISO_176X250_MM
+        *PageDimensions: PAIR(8316, 11812)
+        *PrintableArea: PAIR(8016, 11056)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(8166, 72)
+            }
+        }        
+    }
+    *Option: HP_8X10_IN
+    {
+        *rcNameID: =IDS_MSIZE_8X10_IN
+        *PageDimensions: PAIR(9600, 12000)
+        *PrintableArea: PAIR(9300, 11244)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(9450, 72)
+            }
+        }
+    }
+    *Option: HP_MUTSUGIRI_IN
+    {
+        *rcNameID: =IDS_MSIZE_MUTSUGIRI_IN
+        *PageDimensions: PAIR(9600, 12000)
+        *PrintableArea: PAIR(9300, 11244)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(9450, 72)
+            }
+        }
+    }
+    *Option: HP_10X15_CM
+    {
+        *rcNameID: =IDS_MSIZE_10X15_CM
+        *PageDimensions: PAIR(4800, 7200)
+        *PrintableArea: PAIR(4500, 6444)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4650, 72)
+            }
+        }
+    }
+    *Option: HP_4X6_IN_TAB
+    {
+        *rcNameID: =IDS_MSIZE_4X6_IN_TAB
+        *PageDimensions: PAIR(4800, 7200)
+        *PrintableArea: PAIR(4500, 6444)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4650, 72)
+            }
+        }
+    }
+    *Option: A6
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PrintableArea: PAIR(4660, 6236)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4810, 72)
+            }
+        }
+    }
+    *Option: HP_CABINET_MM
+    {
+        *rcNameID: =IDS_MSIZE_CABINET_MM
+        *PageDimensions: PAIR(5670, 7796)
+        *PrintableArea: PAIR(5370, 7040)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5520, 72)
+            }
+        }
+    }
+    *Option: HP_2L_MM
+    {
+        *rcNameID: =IDS_MSIZE_2L_MM
+        *PageDimensions: PAIR(6000, 8403)
+        *PrintableArea: PAIR(5700, 7645)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5850, 72)
+            }
+        }
+    }
+    *Option: HP_13X18_CM
+    {
+        *rcNameID: =IDS_MSIZE_13X18_CM
+        *PageDimensions: PAIR(6000, 8400)
+        *PrintableArea: PAIR(5700, 7644)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5850, 72)
+            }
+        }
+    }
+    *Option: ENV_DL
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(5196, 10392)
+        *PrintableArea: PAIR(4896, 9636)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5046, 72)
+            }
+        }
+    }
+    *Option: ENV_C5
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PrintableArea: PAIR(7353, 10063)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(7503, 72)
+            }
+        }
+    }
+    *Option: ENV_C6
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(5388, 7656)
+        *PrintableArea: PAIR(5088, 6900)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5238, 72)
+            }
+        }
+    }
+    *Option: HP_INDEX_CARD_5X8_IN
+    {
+        *rcNameID: =IDS_MSIZE_INDEX_CARD_5X8_IN
+        *PageDimensions: PAIR(6000, 9600)
+        *PrintableArea: PAIR(5700, 8844)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5850, 72)
+            }
+        }
+    }
+    *Option: STATEMENT
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PageDimensions: PAIR(6600, 10200)
+        *PrintableArea: PAIR(6300, 9444)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(6450, 72)
+            }
+        }
+    }
+    *Option: HP_6X8_IN
+    {
+        *rcNameID: =IDS_MSIZE_6_X_8_IN
+        *PageDimensions: PAIR(7200, 9600)
+        *PrintableArea: PAIR(6900, 8844)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(7050, 72)
+            }
+        }
+    }
+    *Option: HP_JIS_CHOU2_119x277_MM
+    {
+        *rcNameID: =IDS_MSIZE_JIS_CHOU2_119x277_MM
+        *PageDimensions: PAIR(5244, 6900)
+        *PrintableArea: PAIR(4944, 6144)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(5094, 72)
+            }
+        }
+    }
+    *Option: HP_8_5X13_IN
+    {
+        *rcNameID: =IDS_MSIZE_8_5X13_IN
+        *PageDimensions: PAIR(10200, 15600)
+        *PrintableArea: PAIR(9900, 14844)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(10050, 72)
+            }
+        }
+    }
+     *Option: HP_OFUKU_HAGAKI_200X148_MM
+    {
+        *rcNameID: =IDS_MSIZE_OFUKU_HAGAKI_200X148_MM
+        *PageDimensions: PAIR(9449, 6992)
+        *PrintableArea: PAIR(9149, 6236)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(9299, 72)
+            }
+        }
+    }
+	*Option: HP_HAGAKI_100X148_MM
+    {
+        *rcNameID: =IDS_MSIZE_HAGAKI_100X148_MM
+        *PageDimensions: PAIR(4728, 6996)
+        *PrintableArea: PAIR(4428, 6240)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4578, 72)
+            }
+        }
+    }
+    *Option: JAPANESE_POSTCARD
+    {
+        *rcNameID: =RCID_DMPAPER_SYSTEM_NAME
+        *PrintableArea: PAIR(4424, 6236)
+        *PrintableOrigin: PAIR(150, 72)
+        *switch: Orientation
+        {
+            *case: PORTRAIT
+            {
+                *CursorOrigin: PAIR(150, 72)
+            }
+            *case: LANDSCAPE_CC270
+            {
+                *CursorOrigin: PAIR(4574, 72)
+            }
+        }
+    }
+}
+
+*%******************************************************************************
+*%                             PageOrientation
+*%******************************************************************************
+*Feature: Orientation
+{
+    *rcNameID: =ORIENTATION_DISPLAY
+    *DefaultOption: PORTRAIT
+
+    *Option: PORTRAIT
+    {
+        *rcNameID: =PORTRAIT_DISPLAY
+    }
+
+    *Option: LANDSCAPE_CC270
+    {
+        *rcNameID: =LANDSCAPE_DISPLAY
+    }
+}
+
+*%******************************************************************************
+*%                            Printer Memory
+*%******************************************************************************
+*Feature: Memory
+{
+    *rcNameID: =PRINTER_MEMORY_DISPLAY
+    *DefaultOption: 32768KB
+    *Option: 16384KB
+    {
+        *rcNameID: =IDS_16MB
+        *MemoryConfigKB: PAIR(16384, 13950)
+    }
+    *Option: 32768KB
+    {
+        *rcNameID: =IDS_32MB
+        *MemoryConfigKB: PAIR(32768, 28350)
+    }
+}
+
+*%******************************************************************************
+*%                              Resolution
+*%******************************************************************************
+*Feature: Resolution
+{
+    *rcNameID: =RESOLUTION_DISPLAY
+    *DefaultOption: 600x300    
+    *Option: 600x300
+    {
+        *rcNameID: =IDS_MAX_DPI_DISABLED
+        *DPI: PAIR(600, 300)
+        *TextDPI: PAIR(600, 300)
+        *SpotDiameter: 100
+        *Command: CmdBeginRaster { *Cmd : "<1B>*v7S<1B>*r1A" }
+        *Command: CmdEndRaster { *Cmd : "<1B>*rC" }
+        *Command: CmdSendBlockData { *Cmd : "<1B>*b" %d{NumOfDataBytes}"W" }
+    }
+    *Option: 1200x1200
+    {
+        *rcNameID: =IDS_MAX_DPI_ENABLED
+        *DPI: PAIR(1200, 1200)
+        *TextDPI: PAIR(1200, 1200)
+        *SpotDiameter: 100
+        *Command: CmdBeginRaster { *Cmd : "<1B>*v7S<1B>*r1A" }
+        *Command: CmdEndRaster { *Cmd : "<1B>*rC" }
+        *Command: CmdSendBlockData { *Cmd : "<1B>*b" %d{NumOfDataBytes}"W" }
+    }
+}
+*%******************************************************************************
+*%                             Media Type
+*%******************************************************************************
+*Feature: MediaType
+{
+    *rcNameID: =MEDIA_TYPE_DISPLAY
+    *DefaultOption: 0.1004.4770_0_600x300
+    *UpdateQualityMacro?: TRUE
+    *Option: 0.1004.4770_0_600x300
+    {
+        *rcNameID: =IDS_PLAIN_PAPER_NORMAL_QUALITY
+    }
+    *Option: 0.1004.4770_2_300x300
+    {
+        *rcNameID: =IDS_PLAIN_PAPER_FASTDRASFT_QUALITY
+    }
+    *Option: 0.1004.4770_1_600x600
+    {
+        *rcNameID: =IDS_PLAIN_PAPER_BEST_QUALITY
+    }
+    *Option: 0.1004.4770_1_600x600_special
+    {
+        *rcNameID: =IDS_SPECIALTY_PAPER_BEST_QUALITY
+    }
+    *Option: 5.1074.0000_1_600x600
+    {
+        *rcNameID: =IDS_PHOTO_PAPER_BEST_QUALITY
+        *Constraints: ColorMode.Monochrome
+    }
+}
+
+*%******************************************************************************
+*%                             Input Bin
+*%******************************************************************************
+*Feature: InputBin
+{
+    *rcNameID: =IDS_INPUTBIN
+    *DefaultOption: 7
+    *Option: 7
+    {
+        *rcNameID: =IDS_INPUTBIN_MAINTRAY
+    }
+}
+*%******************************************************************************
+*%                         Cursor Commands
+*%******************************************************************************
+*Command: CmdCR { *Cmd : "<0D>" }
+*Command: CmdLF { *Cmd : "<0A>" }
+*Command: CmdFF { *Cmd : "<0C>" }
+
+*%******************************************************************************
+*%                         Constraint section
+*%******************************************************************************
+*InvalidCombination: LIST(MediaType.0.1004.4770_2_300x300, Resolution.1200x1200)
+*InvalidCombination: LIST(MediaType.0.1004.4770_0_600x300, Resolution.1200x1200)
+*InvalidCombination: LIST(MediaType.0.1004.4770_1_600x600, Resolution.1200x1200)
+*InvalidCombination: LIST(MediaType.0.1004.4770_1_600x600_special, Resolution.1200x1200)

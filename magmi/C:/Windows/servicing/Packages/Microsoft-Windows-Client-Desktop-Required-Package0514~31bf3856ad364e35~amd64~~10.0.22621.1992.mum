@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v3">
+  <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package0514" version="10.0.22621.1992" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+  <package identifier="Microsoft-Windows-Client-Desktop-Required-Package0514" releaseType="Feature Pack">
+    <update name="5DD90596B29040F3D4C3BFD804218F0C0EAAFE215A072A30850ECBAA0735943D">
+      <component>
+        <assemblyIdentity name="microsoft-windows-client-desktop-required-deployment05140" version="10.0.22621.1992" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" />
+      </component>
+    </update>
+    <update name="F76D7C01EA0597D83B55548EEF10403A68A5DFE517173AC46B2A1BFF93035172" restart="required">
+      <driver inf="basicdisplay.inf" ranking="normal">
+        <assemblyIdentity name="dual_basicdisplay.inf" version="10.0.22621.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="043781F9AB2BC6AE5CC7673F8D90E60867471D1A621B9F2B3720E26F97B69459" restart="required">
+      <driver inf="basicrender.inf" ranking="normal">
+        <assemblyIdentity name="dual_basicrender.inf" version="10.0.22621.608" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="6E0C21F38447FF26C24C7455AC2AD98F429757B7B345D1E4E5A6C96E6C160C71" restart="required">
+      <driver inf="display.inf" ranking="normal">
+        <assemblyIdentity name="dual_display.inf" version="10.0.22621.1" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="E48768B5AF75C5F08E4E280FCA5277040DB59A3F83066448B82AE38C96D78922" restart="required">
+      <driver inf="input.inf" ranking="normal">
+        <assemblyIdentity name="dual_input.inf" version="10.0.22621.819" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS" type="dualModeDriver" />
+      </driver>
+    </update>
+    <update name="dd30bf8edbe584c7ff4ce1654e2e12de">
+      <package integrate="hidden">
+        <assemblyIdentity name="Microsoft-Windows-Client-Desktop-Required-Package051420" version="10.0.22621.1992" processorArchitecture="amd64" language="neutral" buildType="release" publicKeyToken="31bf3856ad364e35" />
+      </package>
+    </update>
+  </package>
+</assembly>

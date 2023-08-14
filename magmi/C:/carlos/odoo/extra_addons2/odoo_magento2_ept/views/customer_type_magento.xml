@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <!-- customer.magento.type tree view -->
+    <record id="magento_customer_magento_type_view_tree" model="ir.ui.view">
+        <field name="name">customer.magento.type.view.tree</field>
+        <field name="model">customer.magento.type</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+                <field name="code" />
+                <field name="magento_instance_id" readonly="0"/>
+
+            </tree>
+        </field>
+    </record>
+    <!-- customer.magento.type form view -->
+    <record id="magento_customer_magento_type_view_form" model="ir.ui.view">
+        <field name="name">customer.magento.type.view.form</field>
+        <field name="model">customer.magento.type</field>
+        <field name="arch" type="xml">
+            <form >
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                        <field name="magento_instance_id" readonly="0"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="magento_customer_magento_type_action" model="ir.actions.act_window">
+        <field name="name">Tipo de clientes en Magento (Source)</field>
+        <field name="res_model">customer.magento.type</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+            Tipo de cliente de magento .....
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="magento_customer_magento_type_menu" sequence="9" name="Tipo cliente Magento" parent="odoo_magento2_ept.menu_configuration_root" action="magento_customer_magento_type_action"/>
+
+</odoo>

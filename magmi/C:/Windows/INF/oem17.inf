@@ -1,0 +1,106 @@
+[version]
+   signature = "$windows nt$"
+   catalogfile = kltun.cat
+   classguid = {4d36e972-e325-11ce-bfc1-08002be10318}
+   provider = %provider%
+   class = net
+DriverVer = 03/07/2023,30.1231.0.660
+
+[strings]
+   devicedescription = "Kaspersky VPN"
+   provider = "Kaspersky VPN Provider"
+
+;----------------------------------------------------------------
+;                      Manufacturer + Product Section
+;----------------------------------------------------------------
+[manufacturer]
+   %provider% = kltun, ntamd64, ntx86
+
+[kltun.ntamd64]
+   %devicedescription% = kltun.ndi, root\kltun ; Root enumerated
+
+[kltun.ntx86]
+   %devicedescription% = kltun.ndi, root\kltun ; Root enumerated
+
+;---------------------------------------------------------------
+;                             Driver Section
+;---------------------------------------------------------------
+
+;----------------- Characteristics ------------
+;    NCF_PHYSICAL = 0x04
+;    NCF_VIRTUAL = 0x01
+;    NCF_SOFTWARE_ENUMERATED = 0x02
+;    NCF_HIDDEN = 0x08
+;    NCF_NO_SERVICE = 0x10
+;    NCF_HAS_UI = 0x80
+;----------------- Characteristics ------------
+
+[kltun.ndi]
+   copyfiles          = kltun.driver
+   addreg             = kltun.reg
+   characteristics    = 0x81 ; NCF_VIRTUAL | NCF_HAS_UI
+   *iftype            =   53 ; IF_TYPE_PROP_VIRTUAL
+   *mediatype         =   19 ; NdisMediumIP
+   *physicalmediatype =    0 ; NdisPhysicalMediumUnspecified
+   EnableDhcp         =    0
+
+[kltun.ndi.services]
+   addservice = kltun,        2, kltun.service
+
+[kltun.reg]
+   hkr, ndi,            service,      0, "kltun"
+   hkr, ndi\interfaces, upperrange,   0, "ndis5"
+   hkr, ndi\interfaces, lowerrange,   0, "nolower"
+   hkr, ,               manufacturer, 0, "%provider%"
+   hkr, ,               productname,  0, "%devicedescription%"
+
+;----------------------------------------------------------------
+;                             Service Section
+;----------------------------------------------------------------
+
+;---------- Service Type -------------
+;    SERVICE_KERNEL_DRIVER     = 0x01
+;    SERVICE_WIN32_OWN_PROCESS = 0x10
+;---------- Service Type -------------
+
+;---------- Start Mode ---------------
+;    SERVICE_BOOT_START   = 0x0
+;    SERVICE_SYSTEM_START = 0x1
+;    SERVICE_AUTO_START   = 0x2
+;    SERVICE_DEMAND_START = 0x3
+;    SERVICE_DISABLED     = 0x4
+;---------- Start Mode ---------------
+
+[kltun.service]
+   displayname = %devicedescription%
+   servicetype = 1
+   starttype = 3
+   errorcontrol = 1
+   loadordergroup = ndis
+   servicebinary = %12%\kltun.sys
+
+;-----------------------------------------------------------------
+;                                File Installation
+;-----------------------------------------------------------------
+
+;----------------- Copy Flags ------------
+;    COPYFLG_NOSKIP = 0x02
+;    COPYFLG_NOVERSIONCHECK = 0x04
+;----------------- Copy Flags ------------
+
+
+[sourcedisksnames]
+   1 = %devicedescription%, kltun.sys
+
+[sourcedisksfiles]
+   kltun.sys = 1
+
+[destinationdirs]
+   kltun.driver = 12
+
+[kltun.driver]
+   kltun.sys,,,90118    ; (DELFLG_IN_USE1 | COPYFLG_IN_USE_RENAME | COPYFLG_NOPRUNE | COPYFLG_NOVERSIONCHECK | COPYFLG_NOSKIP)  
+
+;---------------------------------------------------------------
+;                                      End
+;---------------------------------------------------------------

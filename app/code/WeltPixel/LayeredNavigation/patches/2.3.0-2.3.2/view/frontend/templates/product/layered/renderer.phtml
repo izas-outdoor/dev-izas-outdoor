@@ -11,11 +11,15 @@
     <div class="swatch-attribute-options clearfix" data-is-multi="<?= $block->getIsMultiSelect($swatchData['attribute_id'])?>">
         <?php foreach ($swatchData['options'] as $option => $label): ?>
             <a href="<?= /* @escapeNotVerified */ $label['link'] ?>"
-               aria-label="<?= /* @escapeNotVerified */ $label['label'] ?>"
-               class="swatch-option-link-layered"
-               data-is-multi="<?= $isMulti ?>"
-               data-opt-path="<?=/* @escapeNotVerified */ $swatchData['attribute_code']?>=<?= /* @escapeNotVerified */ $option?>"
-               id="wp_ln_swatch_attr_<?= /* @escapeNotVerified */ $swatchData['attribute_id']?>_<?= /* @escapeNotVerified */ $option?>">
+            aria-label="<?= /* @escapeNotVerified */ $label['label'] ?>" <?php
+                    if (isset($swatchData['swatches'][$option]['type'])) {
+                        if ($swatchData['swatches'][$option]['type'] == '1') {
+                    ?>title="<?= $label['label'] ?>" <?php
+                        }
+                    }
+                ?> class="swatch-option-link-layered routable" data-is-multi="<?= $isMulti ?>"
+            data-opt-path="<?=/* @escapeNotVerified */ $swatchData['attribute_code']?>=<?= /* @escapeNotVerified */ $option?>"
+            id="wp_ln_swatch_attr_<?= /* @escapeNotVerified */ $swatchData['attribute_id']?>_<?= /* @escapeNotVerified */ $option?>">
                 <?php if (isset($swatchData['swatches'][$option]['type'])) { ?>
                     <?php switch ($swatchData['swatches'][$option]['type']) {
                         case '3':

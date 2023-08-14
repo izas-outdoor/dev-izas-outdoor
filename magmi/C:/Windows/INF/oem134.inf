@@ -1,0 +1,70 @@
+;
+; AsRadioControl.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318}
+PnpLockdown=1
+Provider=%ASUS%
+DriverVer = 07/09/2021,1.0.0.14
+CatalogFile=AsRadioControl.cat
+
+[Manufacturer]
+%ASUS%=ATK,NTamd64
+
+[ATK.NTamd64]
+%DeviceDesc1%=Radio_Control, ACPI\ATK4001
+%DeviceDesc1%=Airplane_Control, ACPI\ATK4002
+
+[Radio_Control]
+CopyFiles=ASSW.CopyFiles
+
+[Airplane_Control]
+CopyFiles=ASSW.CopyFiles
+
+[ASSW.CopyFiles]
+AsRadioControl.sys
+
+
+[Radio_Control.Services]
+AddService= HIDSwitch,2,HIDSwitchServiceInst
+
+[Airplane_Control.Services]
+AddService= HIDSwitch,2,HIDSwitchServiceInst1
+
+
+[HIDSwitchServiceInst]
+DisplayName = %ASSW.DisplayName%
+ServiceType=1           ; SERVICE_KERNEL_DRIVER
+StartType=3             ; SERVICE_DEMAND_START
+ErrorControl=1          ; SERVICE_ERROR_IGNORE
+ServiceBinary=%12%\AsRadioControl.sys
+
+
+[HIDSwitchServiceInst1]
+DisplayName = %ASSW.DisplayName%
+ServiceType=1           ; SERVICE_KERNEL_DRIVER
+StartType=3             ; SERVICE_DEMAND_START
+ErrorControl=1          ; SERVICE_ERROR_IGNORE
+ServiceBinary=%12%\AsRadioControl.sys
+
+
+[DestinationDirs]
+DefaultDestDir = 12		; load driver to system32\drivers
+
+[ControlFlags]
+ExcludeFromselect = *
+
+[SourceDisksNames]
+1 = %DiskID1%,,,,
+
+[SourceDisksFiles]
+AsRadioControl.sys = 1
+
+[Strings]
+ASUS = "ASUSTeK COMPUTER INC."
+DeviceDesc1="ASUS Wireless Radio Control"
+ASSW.DisplayName = "ASUS Wireless Radio Control"
+DiskId1 = "ASUS Wireless Radio Control"
