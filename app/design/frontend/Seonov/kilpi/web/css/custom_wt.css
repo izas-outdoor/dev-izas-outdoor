@@ -6071,14 +6071,14 @@ body.catalogsearch-result-index .page-wrapper #layer-product-list .products-cont
 body.page-with-filter .page-wrapper #layer-product-list .products-container .products .product .label-percent {
     position: absolute;
     /* top: 20px; */
-    padding: 5px 20px;
+    padding: 0.3125vw 1.25vh;
     color: #fff;
     /* background-color: #dc1212; */
-    font-size: 14px;
+    font-size: 1.4vh;
     font-weight: 600;
     /* left: -2px; */
     /* border-bottom-right-radius: 10px; */
-    /* border-top-right-radius: 10px */
+    /* border-top-right-radius: 10px;
 }
 
 .topseller-product-list .product-list .product .label-percent,.products-container .products .product .label-percent {
@@ -8557,7 +8557,7 @@ section{
 #sorter option {
     color: black;
 }
-
+/* 
 select#sorter {
     appearance: none;
     -webkit-appearance: none;
@@ -8575,4 +8575,4 @@ select#sorter {
     color: transparent;
     text-shadow: 0 0 0 #000;
     text-indent: -9999px;
-}
+} */
